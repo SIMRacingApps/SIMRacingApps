@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="exe" name="SIMRacingApps-exe">
+    <property name="verboseFlag" value="0" />
+    <script language="javascript">
+        var logger = project.getBuildListeners().firstElement();
+        var verboseMode = project.getProperty( "verboseFlag" )
+        if ( ! "0".equals( verboseMode ) )
+            logger.setMessageOutputLevel( 9 );
+    </script>
+    <tstamp>
+        <format property="build.time" pattern="yyyy.MM.dd.HH.mm.ss" />
+    </tstamp>
+    <tstamp>
+        <format property="build.date" pattern="yyyy.MM.dd" />
+    </tstamp>
+    <tstamp>
+        <format property="build.year" pattern="yyyy" />
+    </tstamp>
+    <property environment="env" />
+    <property name="launch4j.dir" location="Launch4j" />
+    <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar" />
+    <property name="deployment.dir" value="${user.home}/Documents/SIMRacingApps" />
+    <property name="download.dir" value="X:/SIMRacingApps" />
+    <property name="SIMRacingAppsServer.location" value="../SIMRacingAppsServer" />
+    <property name="SIMRacingApps.github.io.location" value="../SIMRacingApps.github.io" />
+    <property name="SIMRacingAppsSIMPluginiRacing.location" value="../SIMRacingAppsSIMPluginiRacing" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <target name="Server.jar">
+        <ant dir="${SIMRacingAppsServer.location}" target="jar" />
+    </target>
+    <target name="iRacing.sra">
+        <ant dir="${SIMRacingAppsSIMPluginiRacing.location}" target="sra" />
+    </target>
+    <target name="exe" description="Converts the jar files to an exe" depends="Server.jar,iRacing.sra">
+        <sequential>
+            <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
+            <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
+            <echo message="Server Version: ${version}" />
+            
+            <property file="${SIMRacingAppsSIMPluginiRacing.location}/src/com/SIMRacingApps/SIMPlugins/iRacing/version.properties" prefix="iRacing" />
+            <property name="iRacing.version" value="${iRacing.major}.${iRacing.minor}_Build_${iRacing.build}" />
+            <echo message="iRacing Version: ${iRacing.version}" />
+            
+            <jar destfile="${java.io.tmpdir}/SIMRacingApps.jar">
+                <manifest>
+                    <attribute name="Manifest-Version" value="${version}" />
+                    <attribute name="Created-By" value="Jeffrey Gilliam" />
+                    <attribute name="Main-Class" value="com.SIMRacingApps.Server" />
+                </manifest>
+                <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsServer.jar" />
+                <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsPlugin-iRacing_${iRacing.version}.sra" />
+            </jar>
+            
+            <launch4j>
+                <config headerType="console" 
+                        outfile="${java.io.tmpdir}/SIMRacingAppsServer.exe" 
+                        dontWrapJar="false" 
+                        jar="${java.io.tmpdir}/SIMRacingApps.jar" 
+                        errTitle="SIMRacingAppsServer" 
+                        downloadUrl="http://java.com/download" 
+                        icon="${SIMRacingAppsServer.location}/WebContent/favicon.ico">
+                    <classPath mainClass="com.SIMRacingApps.Server">
+                        <!-- cp>%USERPROFILE%/Documents/SIMRacingApps</cp -->
+                        <cp>%HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Personal%/SIMRacingApps></cp>
+                    </classPath>
+                    <jre minVersion="1.8.0" bundledJre64Bit="false" bundledJreAsFallback="false" jdkPreference="preferJre" runtimeBits="64/32" initialHeapSize="256" maxHeapSize="256" />
+                    <singleInstance mutexName="SIMRacingAppsServer" windowTitle="SIMRacingAppsServer" />
+                    <versionInfo txtFileVersion="${version}" fileVersion="${version.major}.${version.minor}.0.0" fileDescription="SIMRacingAppsServer" txtProductVersion="${version}" productVersion="${version.major}.${version.minor}.0.0" productName="SIMRacingApps" internalName="SIMRacingApps" originalFilename="SIMRacingAppsServer.exe" copyright="${version.copyright}" />
+                    <messages jreVersionErr="Requires a Java Runtime Environment Equal or Greater Than" />
+                </config>
+            </launch4j>
+        </sequential>
+    </target>
+
+    <target name="deploy" depends="exe">
+        <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
+        <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
+        <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${deployment.dir}/SIMRacingAppsServer_${version}.exe" />
+        <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${deployment.dir}/SIMRacingAppsServer.exe" />
+        <echo message="Remember to Tag all Git Repositories with: Deployed-Version_${version}"/>
+    </target>
+    
+    <target name="deploy_website">
+        <property file="${version.properties}" prefix="version" />
+        <property name="docs" value="${SIMRacingApps.github.io.location}/docs" />
+        <delete dir="${docs}/documentation" />
+        <copy todir="${docs}/documentation">
+            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/documentation" />
+        </copy>
+        <delete dir="${docs}/JavaScriptDoc" />
+        <copy todir="${docs}/JavaScriptDoc">
+            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/JavaScriptDoc" />
+        </copy>
+        <delete dir="${docs}/JavaDoc" />
+        <copy todir="${docs}/JavaDoc">
+            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/JavaDoc" />
+        </copy>
+        <delete dir="${docs}/apps" />
+        <copy todir="${docs}/apps">
+            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/apps">
+                <include name="**/icon.png" />
+            </fileset>
+        </copy>
+        <delete dir="${docs}/widgets" />
+        <copy todir="${docs}/widgets">
+            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/widgets">
+                <include name="**/icon.png" />
+            </fileset>
+        </copy>
+        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/COPYRIGHT.TXT" tofile="${docs}/COPYRIGHT.TXT" />
+        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/LICENSE.TXT" tofile="${docs}/LICENSE.TXT" />
+        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/NOTICE.TXT" tofile="${docs}/NOTICE.TXT" />
+        <copy todir="${SIMRacingApps.github.io.location}">
+            <fileset dir="${SIMRacingAppsServer.location}/WebContent">
+                <include name="SRA-Logo*.png" />
+                <include name="favicon.*" />
+                <include name="COPYRIGHT.TXT" />
+                <include name="LICENSE.TXT" />
+                <include name="NOTICE.TXT" />
+            </fileset>
+        </copy>
+        <echo file="${SIMRacingApps.github.io.location}/version.json" message='{ "major": "${version.major}", "minor": "${version.minor}", "build": "${version.build}" }' />
+    </target>
+    
+    <target name="release" depends="deploy_website">
+        <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
+        <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
+        <move todir="${download.dir}/archive">
+            <fileset dir="${download.dir}">
+                <include name="SIMRacingAppsServer_${version.major}.*.exe">
+                </include>
+            </fileset>
+        </move>
+        <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer.exe" tofile="${download.dir}/SIMRacingAppsServer_${version}.exe" />
+        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/documentation/SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
+        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/documentation/SIMRacingApps - Quick Start Guide/SIMRacingApps - Quick Start Guide.pdf" todir="${download.dir}" />
+    </target>
+</project>
