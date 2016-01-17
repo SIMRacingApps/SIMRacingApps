@@ -9,6 +9,7 @@
   * It's a ReST interface for developers to access the SIM Data via an HTTP call.
   * It's a HTML5 platform for other developers to write Apps and Widgets and share them with you.
   * It's a Java SDK for developing your own Java Based Apps that can work with any supported SIM.
+  * It has a Plugin Interface for server side clients.
   * And it is free, open source, released under the Apache 2.0 license.
   * Like us on facebook [SIMRacingApps](http://www.facebook.com/SIMRacingApps) to keep up with new releases and tips and tricks.
   * Visit Our Web Page at [SIMRacingApps.com](http://SIMRacingApps.com) for more information.
@@ -27,8 +28,8 @@
 ### On the same computer where the simulator is running:
   * Download the latest version of SIMRacingAppsServer....exe from the [releases page](http://www.github.com/SIMRacingApps/SIMRacingApps/releases/latest) and save it where you can find it later. It is not an installer.
   * Execute SIMRacingAppsServer....exe. 
-  * If you don't have Java 1.8 or better installed, it will direct you to the download page so you can install Java.
-  * Leave this window open while racing. You can minimize it, but note the HTTP://... address in the title of this window first. You will use the address to connect to the server from the client.
+  * If you do not have Java 1.8 or better installed, it will direct you to the download page so you can install Java.
+  * Leave the server window open while racing. You can minimize it, but note the HTTP://... address in the title of this window first. You will use the address to connect to the server from the clients.
   
 ### Clients can be from any device connected to your home network (including the SIM computer):
   * Open the browser (Chrome, FireFox, IE10, EDGE, Safari) and enter the HTTP address of the server.
@@ -37,7 +38,7 @@
     
 ## There is more...
 
-If you are a developer, you can develop your own Apps and Widgets.
+If you are a developer, you can develop your own Apps, Widgets or Plugins.
 Detailed documentation is available right from the server's main page.
 By making the source available, I hope others will join in and help develop this farther. 
 Just fork the source, make your changes and submit a pull request.
@@ -49,10 +50,15 @@ You can also share your App or Widget by creating a .SRA file that can be upload
 
 ## How to work with the SIMRacingApp's repositories
 ### SIMRacingAppsServer
+
+TBD
+
 ### SIMRacingAppsSIMPlugin{SIM}
+
+TBD
 
 =========================================================================================
 
-[Copyright (C) 2015 - 2016 Jeffrey Gilliam](http://SIMRacingApps/COPYRIGHT.TXT)
+[Copyright (C) 2015 - 2016 Jeffrey Gilliam](http://SIMRacingApps.com/COPYRIGHT.TXT)
 
-[Apache License 2.0](http://SIMRacingApps/LICENSE.TXT)
+[Apache License 2.0](http://SIMRacingApps.com/LICENSE.TXT)
