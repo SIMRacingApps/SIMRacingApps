@@ -81,7 +81,7 @@
     </target>
     
     <target name="deploy_website">
-        <property file="${version.properties}" prefix="version" />
+        <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
         <property name="docs" value="${SIMRacingApps.github.io.location}/docs" />
         <delete dir="${docs}/documentation" />
         <copy todir="${docs}/documentation">
