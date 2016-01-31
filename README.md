@@ -11,7 +11,7 @@
   * It's a Java SDK for developing your own Java Based Apps that can work with any supported SIM.
   * It has a Plugin Interface for server side clients.
   * And it is free, open source, released under the Apache 2.0 license.
-  * Like us on facebook [SIMRacingApps](http://www.facebook.com/SIMRacingApps) to keep up with new releases and tips and tricks.
+  * Like us on FaceBook [SIMRacingApps](http://www.facebook.com/SIMRacingApps) to keep up with new releases and tips and tricks.
   * Visit Our Web Page at [SIMRacingApps.com](http://SIMRacingApps.com) for more information.
 
 ## Here is a partial list of the Apps and Widgets that are included.
@@ -71,9 +71,10 @@ Each of the repositories that follow this naming convention is the implementatio
 The results of building this project may be used to include the SIM in the default .exe file that is created.
 If not, the Ant build file can also build a .SRA file that can be uploaded to any SRA server installation to add a SIM.
 
-### [SIMRacingAppsSIMPlugTemplate](http://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
-
-This is a sample repository to use when starting a new SIM Plugin.
+1. [SIMRacingAppsSIMPlugTemplate](http://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
+   This is a sample repository to use when starting a new SIM Plugin.
+1. [SIMRacingAppsSIMPlugiRacing](http://github/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
+   This is a plugin for http://iRacing.com.
 
 ### [SIMRacingAppsOverwolf](http://github/SIMRacingApps/SIMRacingAppsOverwolf)
 
@@ -91,7 +92,7 @@ The main menu is implemented in node.js code to create the windows and launch th
 It remember is the location and sizes of each window in a configuration. 
 You can have multiple configurations as well as the ability to auto launch Apps and Widgets automatically.
 
-### [SIMRacingApps.github.io]](http://github/SIMRacingApps/SIMRacingApps.github.io)
+### [SIMRacingApps.github.io](http://github/SIMRacingApps/SIMRacingApps.github.io)
 
 This repository is for the http://SIMRacingApps.com web site.
 When pushing to this repository, GitHub automatically publishes the content to the web site.
