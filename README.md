@@ -6,7 +6,7 @@
 ## What is SIMRacingApps? 
   * It's a Web Server used to host Apps and Widgets, accessible using any device with a modern browser.
   * It comes with several Apps and Widgets free out of the box.
-  * It's a ReST interface for developers to access the SIM Data via an HTTP call.
+  * It's a ReST interface for developers to access the SIM Data via an HTTP call or using a WebSocket.
   * It's a HTML5 platform for other developers to write Apps and Widgets and share them with you.
   * It's a Java SDK for developing your own Java Based Apps that can work with any supported SIM.
   * It has a Plugin Interface for server side clients.
@@ -26,7 +26,7 @@
 
 ## Want to try it out? It's simple. 
 ### On the same computer where the simulator is running:
-  * Download the latest version of SIMRacingAppsServer....exe from the [releases page](http://www.github.com/SIMRacingApps/SIMRacingApps/releases/latest) and save it where you can find it later. It is not an installer.
+  * Download the latest version of SIMRacingAppsServer....exe from the [releases page](http://www.github.com/SIMRacingApps/SIMRacingApps/releases/latest) and save it where you can find it later. It is not an installer, it is just an .exe file.
   * Execute SIMRacingAppsServer....exe. 
   * If you do not have Java 1.8 or better installed, it will direct you to the download page so you can install Java.
   * Leave the server window open while racing. You can minimize it, but note the HTTP://... address in the title of this window first. You will use the address to connect to the server from the clients.
@@ -49,13 +49,56 @@ See below for details on creating your own App or Widget.
 You can also share your App or Widget by creating a .SRA file that can be uploaded from the main page using the form at the bottom of the page. .SRA files are simply .ZIP files renamed. They are intended to be uploaded on the main menu. Each file in the archive will be extracted to the users personal folder located at Documents/SIMRacingApps.
 
 ## How to work with the SIMRacingApp's repositories
-### SIMRacingAppsServer
+### [SIMRacingApps](http://github/SIMRacingApps/SIMRacingApps)
 
-TBD
+The SIMRacingApps repository is the main repository. 
+It contains the Ant build file for creating the .exe and copying the docs to the website.
+
+It does not contain any source code, but it will get tagged for releases and the .exe will can be found in the releases tab.
+
+### [SIMRacingAppsServer](http://github/SIMRacingApps/SIMRacingAppsServer)
+
+This repository contains both the server side generic API interfaces as well as the HTML5/JavaScript code for the Apps and Widgets. 
+The structure of this repository is setup to support build a WAR file originally because I was going to deploy to TomCat. 
+I found that Jetty worked better for my needs, as it had a way to create an embedded server as long as I started all the servlets myself. The final .exe that is built can also be used in the classpath for a Java based application.
+
+For more information, see the README.md file in the SIMRacingAppsServer repository.
 
 ### SIMRacingAppsSIMPlugin{SIM}
 
-TBD
+Each of the repositories that follow this naming convention is the implementation of a specific SIMs functionality.
+
+The results of building this project may be used to include the SIM in the default .exe file that is created.
+If not, the Ant build file can also build a .SRA file that can be uploaded to any SRA server installation to add a SIM.
+
+### [SIMRacingAppsSIMPlugTemplate](http://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
+
+This is a sample repository to use when starting a new SIM Plugin.
+
+### [SIMRacingAppsOverwolf](http://github/SIMRacingApps/SIMRacingAppsOverwolf)
+
+Overwolf is 3rd Party Software that renders HTML5/JavaScript pages and injects them into the game's display.  
+
+This repository is a client side version of the main menu implemented as an Overwolf package.
+It allows for launching Apps and Widgets and remembering the location and size of each.
+It also allows for creating multiple configurations and switching between them.
+
+### [SIMRacingAppsElectron](http://github/SIMRacingApps/SIMRacingAppsElectron)
+
+Electron is 3rd Party Software that renders HTML5/JavaScript pages in Native OS Windows.
+It allows for control of how these windows look and feel.
+The main menu is implemented in node.js code to create the windows and launch the Apps and Widgets within them.
+It remember is the location and sizes of each window in a configuration. 
+You can have multiple configurations as well as the ability to auto launch Apps and Widgets automatically.
+
+### [SIMRacingApps.github.io]](http://github/SIMRacingApps/SIMRacingApps.github.io)
+
+This repository is for the http://SIMRacingApps.com web site.
+When pushing to this repository, GitHub automatically publishes the content to the web site.
+
+The Ant build file in the [SIMRacingApps](http://github/SIMRacingApps/SIMRacingApps) repository
+will automatically copy the documentation and version files to this repository.
+So, any time you upload a new build, you should also commit and push this one as well. 
 
 =========================================================================================
 
