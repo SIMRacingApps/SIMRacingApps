@@ -77,7 +77,7 @@
         <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
         <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${deployment.dir}/SIMRacingAppsServer_${version}.exe" />
         <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${deployment.dir}/SIMRacingAppsServer.exe" />
-        <echo message="Remember to Tag all Git Repositories with: Deployed-Version_${version}"/>
+        <echo message="Remember to Tag all Git Repositories with: Version_${version}"/>
     </target>
     
     <target name="deploy_website">
