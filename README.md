@@ -60,27 +60,28 @@ It does not contain any source code, but it will get tagged for releases and the
 
 This repository contains both the server side generic API interfaces as well as the HTML5/JavaScript code for the Apps and Widgets. 
 The structure of this repository is setup to support build a WAR file originally because I was going to deploy to TomCat. 
-I found that Jetty worked better for my needs, as it had a way to create an embedded server as long as I started all the servlets myself. The final .exe that is built can also be used in the classpath for a Java based application.
+I found that Jetty worked better for my needs, as it had a way to create an embedded server as long as I started all the servlets myself. The final .exe that is built can also be used in the classpath for a Java based application just as you
+would for a jar file.
 
 For more information, see the README.md file in the SIMRacingAppsServer repository.
 
 ### SIMRacingAppsSIMPlugin{SIM}
 
-Each of the repositories that follow this naming convention is the implementation of a specific SIMs functionality.
+Each of the repositories that follow this naming convention is the implementation of a specific SIM's functionality.
 
 The results of building this project may be used to include the SIM in the default .exe file that is created.
 If not, the Ant build file can also build a .SRA file that can be uploaded to any SRA server installation to add a SIM.
 
-1. [SIMRacingAppsSIMPlugTemplate](http://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
-   This is a sample repository to use when starting a new SIM Plugin.
-1. [SIMRacingAppsSIMPlugiRacing](http://github/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
-   This is a plugin for http://iRacing.com.
+1. [SIMRacingAppsSIMPluginTemplate](http://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
+   This is a sample repository to use when starting a new SIM Plug-in.
+1. [SIMRacingAppsSIMPluginiRacing](http://github/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
+   This is a plug-in for http://iRacing.com.
 
 ### [SIMRacingAppsOverwolf](http://github/SIMRacingApps/SIMRacingAppsOverwolf)
 
 Overwolf is 3rd Party Software that renders HTML5/JavaScript pages and injects them into the game's display.  
 
-This repository is a client side version of the main menu implemented as an Overwolf package.
+This repository is the main menu implemented as an Overwolf package.
 It allows for launching Apps and Widgets and remembering the location and size of each.
 It also allows for creating multiple configurations and switching between them.
 

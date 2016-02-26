@@ -63,7 +63,7 @@
                         <!-- cp>%USERPROFILE%/Documents/SIMRacingApps</cp -->
                         <cp>%HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Personal%/SIMRacingApps></cp>
                     </classPath>
-                    <jre minVersion="1.8.0" bundledJre64Bit="false" bundledJreAsFallback="false" jdkPreference="preferJre" runtimeBits="64/32" initialHeapSize="256" maxHeapSize="256" />
+                    <jre minVersion="1.8.0" bundledJre64Bit="false" bundledJreAsFallback="false" jdkPreference="preferJre" runtimeBits="64/32" initialHeapSize="256" maxHeapSize="512" />
                     <singleInstance mutexName="SIMRacingAppsServer" windowTitle="SIMRacingAppsServer" />
                     <versionInfo txtFileVersion="${version}" fileVersion="${version.major}.${version.minor}.0.0" fileDescription="SIMRacingAppsServer" txtProductVersion="${version}" productVersion="${version.major}.${version.minor}.0.0" productName="SIMRacingApps" internalName="SIMRacingApps" originalFilename="SIMRacingAppsServer.exe" copyright="${version.copyright}" />
                     <messages jreVersionErr="Requires a Java Runtime Environment Equal or Greater Than" />
