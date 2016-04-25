@@ -41,6 +41,7 @@
             <property name="iRacing.version" value="${iRacing.major}.${iRacing.minor}_Build_${iRacing.build}" />
             <echo message="iRacing Version: ${iRacing.version}" />
             
+            <copy overwrite="true" file="SIMRacingAppsServer.l4j.ini" tofile="${java.io.tmpdir}/SIMRacingAppsServer_${version}.l4j.ini" />
             <jar destfile="${java.io.tmpdir}/SIMRacingApps.jar">
                 <manifest>
                     <attribute name="Manifest-Version" value="${version}" />
@@ -48,8 +49,12 @@
                     <attribute name="Main-Class" value="com.SIMRacingApps.Server" />
                 </manifest>
                 <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsServer.jar" />
-                <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsPlugin-iRacing_${iRacing.version}.sra" />
+                <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsPlugin-iRacing.sra" />
+                <fileset dir="${java.io.tmpdir}">
+                    <include name="SIMRacingAppsServer_${version}.l4j.ini" />
+                </fileset>
             </jar>
+            <delete file="${java.io.tmpdir}/SIMRacingAppsServer_${version}.l4j.ini" />
             
             <launch4j>
                 <config headerType="console" 
@@ -82,6 +87,13 @@
     
     <target name="deploy_website">
         <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
+        <property name="buildtype" value="" />
+        <condition property="buildtype" value="BETA">
+            <matches string="${version.build}" pattern="^BETA-" />
+        </condition>
+        <condition property="buildtype" value="BETA">
+            <matches string="${version.build}" pattern="^RC-" />
+        </condition>
         <property name="docs" value="${SIMRacingApps.github.io.location}/docs" />
         <delete dir="${docs}/documentation" />
         <copy todir="${docs}/documentation">
@@ -89,11 +101,11 @@
         </copy>
         <delete dir="${docs}/JavaScriptDoc" />
         <copy todir="${docs}/JavaScriptDoc">
-            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/JavaScriptDoc" />
+            <fileset dir="${deployment.dir}/JavaScriptDoc" />
         </copy>
         <delete dir="${docs}/JavaDoc" />
         <copy todir="${docs}/JavaDoc">
-            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/JavaDoc" />
+            <fileset dir="${deployment.dir}/JavaDoc" />
         </copy>
         <delete dir="${docs}/apps" />
         <copy todir="${docs}/apps">
@@ -119,7 +131,10 @@
                 <include name="NOTICE.TXT" />
             </fileset>
         </copy>
-        <echo file="${SIMRacingApps.github.io.location}/version.json" message='{ "major": "${version.major}", "minor": "${version.minor}", "build": "${version.build}" }' />
+        <echo 
+            file="${SIMRacingApps.github.io.location}/${buildtype}version.json" 
+            message='{ "major": "${version.major}", "minor": "${version.minor}", "build": "${version.build}" }' 
+        />
     </target>
     
     <target name="release" depends="deploy_website">
