@@ -22,6 +22,7 @@
     <property name="deployment.dir" value="${user.home}/Documents/SIMRacingApps" />
     <property name="download.dir" value="X:/SIMRacingApps" />
     <property name="SIMRacingAppsServer.location" value="../SIMRacingAppsServer" />
+    <property name="SIMRacingAppsWebContent.location" value="../SIMRacingAppsWebContent" />
     <property name="SIMRacingApps.github.io.location" value="../SIMRacingApps.github.io" />
     <property name="SIMRacingAppsSIMPluginiRacing.location" value="../SIMRacingAppsSIMPluginiRacing" />
     <property name="debuglevel" value="source,lines,vars" />
@@ -31,7 +32,10 @@
     <target name="iRacing.sra">
         <ant dir="${SIMRacingAppsSIMPluginiRacing.location}" target="sra" />
     </target>
-    <target name="exe" description="Converts the jar files to an exe" depends="Server.jar,iRacing.sra">
+    <target name="WebContent.jar">
+        <ant dir="${SIMRacingAppsWebContent.location}" target="jar" />
+    </target>
+    <target name="exe" description="Converts the jar files to an exe" depends="Server.jar,iRacing.sra,WebContent.jar">
         <sequential>
             <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
             <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
@@ -50,6 +54,7 @@
                 </manifest>
                 <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsServer.jar" />
                 <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsPlugin-iRacing.sra" />
+                <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsWebContent.jar" />
                 <fileset dir="${java.io.tmpdir}">
                     <include name="SIMRacingAppsServer_${version}.l4j.ini" />
                 </fileset>
@@ -63,7 +68,7 @@
                         jar="${java.io.tmpdir}/SIMRacingApps.jar" 
                         errTitle="SIMRacingAppsServer" 
                         downloadUrl="http://java.com/download" 
-                        icon="${SIMRacingAppsServer.location}/WebContent/favicon.ico">
+                        icon="${SIMRacingAppsWebContent.location}/favicon.ico">
                     <classPath mainClass="com.SIMRacingApps.Server">
                         <!-- cp>%USERPROFILE%/Documents/SIMRacingApps</cp -->
                         <cp>%HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Personal%/SIMRacingApps></cp>
