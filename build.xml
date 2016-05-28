@@ -41,6 +41,11 @@
             <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
             <echo message="Server Version: ${version}" />
             
+            <replaceregexp match="^Version.*$" replace="Version: ${version}" byline="true">
+                <fileset dir="documentation" includes="SIMRacingApps_ReleaseNotes.txt" />
+            </replaceregexp>
+            <echo message="Release Notes Updated to: ${version}" />
+            
             <property file="${SIMRacingAppsSIMPluginiRacing.location}/src/com/SIMRacingApps/SIMPlugins/iRacing/version.properties" prefix="iRacing" />
             <property name="iRacing.version" value="${iRacing.major}.${iRacing.minor}_Build_${iRacing.build}" />
             <echo message="iRacing Version: ${iRacing.version}" />
@@ -57,6 +62,9 @@
                 <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsWebContent.jar" />
                 <fileset dir="${java.io.tmpdir}">
                     <include name="SIMRacingAppsServer_${version}.l4j.ini" />
+                </fileset>
+                <fileset dir=".">
+                    <include name="documentation/**" />
                 </fileset>
             </jar>
             <delete file="${java.io.tmpdir}/SIMRacingAppsServer_${version}.l4j.ini" />
@@ -152,7 +160,7 @@
             </fileset>
         </move>
         <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer.exe" tofile="${download.dir}/SIMRacingAppsServer_${version}.exe" />
-        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/documentation/SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
+        <copy overwrite="true" file="SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
         <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/documentation/SIMRacingApps - Quick Start Guide/SIMRacingApps - Quick Start Guide.pdf" todir="${download.dir}" />
         <echo message="Remember to Tag all Git Repositories with: Version_${version}"/>
     </target>
