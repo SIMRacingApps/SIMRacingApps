@@ -1,7 +1,10 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.0_Build_BETA-2016.05.28
+Version: 1.0_Build_BETA-2016.06.02
+    1. Fixed #51 https://github.com/SIMRacingApps/SIMRacingApps/issues/51, 
+       diff between at start/finish doubles for about a second 
+    2. Updated the Dallara DW12 profile. The Oil and Water Level meters needed adjusting.
            
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
@@ -9,23 +12,29 @@ Version: 1.0_Build_BETA-2016.05.28
     1. To get the server running, simply execute the SIMRacingAppsServer...exe 
        on the same computer that the Simulator is running on.
     2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       Please go to http://wiki.SIMRacingApps.com/Java-Update-Configuration 
-       for detailed instructions on how to configure the Java Automatic Updates.
+       NOTE: This page will install the 32-bit version of Java. The 64-bit is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation.
+       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
+       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
     3. Enter the server address (found in the Title Bar of the server window) in your browser 
-       from any device connected to the same network.
+       from any device connected to the same local network.
+       Connecting from outside the local network is not supported and not recommended due to security concerns.
     4. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com`
        for more details and options for running the server.
     
     Electron Client:
-        To install or update Electron Launcher, download the .SRA file's latest version 
-        from http://electron.SIMRacingApps.com, start the SIMRacingAppsServer.exe,
-        connect to the main menu from a browser and upload the .SRA file. 
-        Refer to the Electron's readme file for more information.
+        To install or update Electron Launcher, 
+        1. Download the .SRA file's latest version from http://electron.SIMRacingApps.com 
+        2. Make sure Electron is not running and start the SIMRacingAppsServer.exe
+        3. Connect to the main menu from a browser and upload the .SRA file
+        4. Refer to the Electron's readme file for more information
         
     Overwolf Client:
-        To install or update Overwolf Launcher, download the .OPK file's latest version 
-        from http://overwolf.SIMRacingApps.com, open Overwolf's Dock and load it. 
-        Refer to the instructions in the readme file to install this file into Overwolf.
+        To install or update Overwolf Launcher, 
+        1. Download the .OPK file's latest version from http://overwolf.SIMRacingApps.com
+        2. Open Overwolf's Dock and load it from Settings -> Support -> Development Options -> Install
+           TODO: Submit the package to the Overwolf Store so it can be installed from there. 
+        3. Refer to the instructions in the readme file to install this file into Overwolf.
         WARNING: 
             THERE IS AN OVERWOLF BUG THAT CAUSES IT TO TAKE OVER YOUR USB INPUT DEVICES
             WHENEVER YOU CLICK ON AN APP. THIS CAN CAUSE IT TO SHIFT DOWN, LOOSE FORCE FEEDBACK,
@@ -49,7 +58,7 @@ Version: 1.0_Build_BETA-2016.05.28
 
 ****************** Previous Versions *************************
 
-Version: 1.0_Build_BETA-2016.05.28
+Version: 1.0_Build_BETA-2016.06.02
     1. Added new Relative widgets that displays only the cars in your class.
        Thanks to Mark Hargett at HPP Simulations for this enhancement. 
        If you're not in a multi-class session, it will display all cars.

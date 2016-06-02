@@ -27,13 +27,13 @@
     <property name="SIMRacingAppsSIMPluginiRacing.location" value="../SIMRacingAppsSIMPluginiRacing" />
     <property name="debuglevel" value="source,lines,vars" />
     <target name="Server.jar">
-        <ant dir="${SIMRacingAppsServer.location}" target="jar" />
+        <ant dir="${SIMRacingAppsServer.location}" target="jar" inheritAll="false" />
     </target>
     <target name="iRacing.sra">
-        <ant dir="${SIMRacingAppsSIMPluginiRacing.location}" target="sra" />
+        <ant dir="${SIMRacingAppsSIMPluginiRacing.location}" target="sra" inheritAll="false" />
     </target>
     <target name="WebContent.jar">
-        <ant dir="${SIMRacingAppsWebContent.location}" target="jar" />
+        <ant dir="${SIMRacingAppsWebContent.location}" target="jar" inheritAll="false" />
     </target>
     <target name="exe" description="Converts the jar files to an exe" depends="Server.jar,iRacing.sra,WebContent.jar">
         <sequential>
