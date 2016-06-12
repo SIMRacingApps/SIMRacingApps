@@ -1,7 +1,7 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.0_Build_BETA-2016.06.07
+Version: 1.0_Build_BETA-2016.06.11
     1. Fixed #51 https://github.com/SIMRacingApps/SIMRacingApps/issues/51, 
        diff between at start/finish doubles for about a second 
     2. Updated the Dallara DW12 profile. The Oil and Water Level meters needed adjusting.
@@ -71,7 +71,7 @@ Version: 1.0_Build_BETA-2016.06.07
 
 ****************** Previous Versions *************************
 
-Version: 1.0_Build_BETA-2016.06.07
+1.0_Build_BETA-2016.05.15
     1. Added new Relative widgets that displays only the cars in your class.
        Thanks to Mark Hargett at HPP Simulations for this enhancement. 
        If you're not in a multi-class session, it will display all cars.
