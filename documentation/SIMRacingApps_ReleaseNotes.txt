@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 
 Version: 1.0_Build_BETA-2016.06.12
     1. Fixed #51 https://github.com/SIMRacingApps/SIMRacingApps/issues/51, 
-       diff between at start/finish doubles for about a second. 
+       diff between at start/finish doubles for about a second 
     2. Updated the Dallara DW12 profile. The Oil and Water Level meters needed adjusting.
     3. Minor color adjustment to the FuelTank widget to show a Green background
        on the numbers if you already have enough fuel in the tank to finish, Yellow if you have enough 
