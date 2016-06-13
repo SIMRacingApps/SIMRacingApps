@@ -110,7 +110,8 @@
         <property name="docs" value="${SIMRacingApps.github.io.location}/docs" />
         <delete dir="${docs}/documentation" />
         <copy todir="${docs}/documentation">
-            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/documentation" />
+            <fileset dir="${SIMRacingAppsWebContent.location}/documentation" />
+            <fileset dir="documentation" />
         </copy>
         <delete dir="${docs}/JavaScriptDoc" />
         <copy todir="${docs}/JavaScriptDoc">
@@ -122,21 +123,21 @@
         </copy>
         <delete dir="${docs}/apps" />
         <copy todir="${docs}/apps">
-            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/apps">
+            <fileset dir="${SIMRacingAppsWebContent.location}/apps">
                 <include name="**/icon.png" />
             </fileset>
         </copy>
         <delete dir="${docs}/widgets" />
         <copy todir="${docs}/widgets">
-            <fileset dir="${SIMRacingAppsServer.location}/Webcontent/widgets">
+            <fileset dir="${SIMRacingAppsWebContent.location}/widgets">
                 <include name="**/icon.png" />
             </fileset>
         </copy>
-        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/COPYRIGHT.TXT" tofile="${docs}/COPYRIGHT.TXT" />
-        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/LICENSE.TXT" tofile="${docs}/LICENSE.TXT" />
-        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/NOTICE.TXT" tofile="${docs}/NOTICE.TXT" />
+        <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/COPYRIGHT.TXT" tofile="${docs}/COPYRIGHT.TXT" />
+        <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/LICENSE.TXT" tofile="${docs}/LICENSE.TXT" />
+        <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/NOTICE.TXT" tofile="${docs}/NOTICE.TXT" />
         <copy todir="${SIMRacingApps.github.io.location}">
-            <fileset dir="${SIMRacingAppsServer.location}/WebContent">
+            <fileset dir="${SIMRacingAppsWebContent.location}">
                 <include name="SRA-Logo*.png" />
                 <include name="favicon.*" />
                 <include name="COPYRIGHT.TXT" />
@@ -160,8 +161,8 @@
             </fileset>
         </move>
         <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer.exe" tofile="${download.dir}/SIMRacingAppsServer_${version}.exe" />
-        <copy overwrite="true" file="SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
-        <copy overwrite="true" file="${SIMRacingAppsServer.location}/WebContent/documentation/SIMRacingApps - Quick Start Guide/SIMRacingApps - Quick Start Guide.pdf" todir="${download.dir}" />
+        <copy overwrite="true" file="documentation/SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
+        <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/documentation/SIMRacingApps - Quick Start Guide/SIMRacingApps - Quick Start Guide.pdf" todir="${download.dir}" />
         <echo message="Remember to Tag all Git Repositories with: Version_${version}"/>
     </target>
 </project>
