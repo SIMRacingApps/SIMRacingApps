@@ -1,24 +1,10 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.0_Build_BETA-2016.06.12
-    1. Fixed #51 https://github.com/SIMRacingApps/SIMRacingApps/issues/51, 
-       diff between at start/finish doubles for about a second. 
-    2. Updated the Dallara DW12 profile. The Oil and Water Level meters needed adjusting.
-    3. Minor color adjustment to the FuelTank widget to show a Green background
-       on the numbers if you already have enough fuel in the tank to finish, Yellow if you have enough 
-       room in the tank to get what you need to finish at the next pit and Red if you cannot
-       add enough fuel to finish (More stops will be needed).
-    4. Added an option to the Flags widget to not show the messages, just the flags.
-    5. Added Incidents to several Apps and Widgets. This is for your own/team car. 
-       iRacing did not expose the values for other cars not on your team.
-    6. Added new Track Config for Imola (Autodromo Internazionale Enzo e Dino Ferrari) 
-    7. New API Calls
-       - /Session/IncidentLimit - The incident limit for this session.
-       - /Car/(CARIDENTIFIER)/IsDriving - If you are in the specified car.
-       - /Car/(CARIDENTIFIER)/Incidents - Number of incidents for the driver of the specified car.
-       - /Car/(CARIDENTIFIER)/IncidentsTeam - Number of incidents for the whole team of the specified car.
-           
+Version: 1.0_Build_BETA-2016.06.20
+    1. Minor cosmetic fixes
+    2. Display link to Wiki when port is in use.
+    
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
 ------------------------------------------------------------------------------------------------------
@@ -70,6 +56,24 @@ Version: 1.0_Build_BETA-2016.06.12
     - Redesign the Gauge class.
 
 ****************** Previous Versions *************************
+
+1.0_Build_BETA-2016.06.12
+    1. Fixed #51 https://github.com/SIMRacingApps/SIMRacingApps/issues/51, 
+       diff between at start/finish doubles for about a second. 
+    2. Updated the Dallara DW12 profile. The Oil and Water Level meters needed adjusting.
+    3. Minor color adjustment to the FuelTank widget to show a Green background
+       on the numbers if you already have enough fuel in the tank to finish, Yellow if you have enough 
+       room in the tank to get what you need to finish at the next pit and Red if you cannot
+       add enough fuel to finish (More stops will be needed).
+    4. Added an option to the Flags widget to not show the messages, just the flags.
+    5. Added Incidents to several Apps and Widgets. This is for your own/team car. 
+       iRacing did not expose the values for other cars not on your team.
+    6. Added new Track Config for Imola (Autodromo Internazionale Enzo e Dino Ferrari) 
+    7. New API Calls
+       - /Session/IncidentLimit - The incident limit for this session.
+       - /Car/(CARIDENTIFIER)/IsDriving - If you are in the specified car.
+       - /Car/(CARIDENTIFIER)/Incidents - Number of incidents for the driver of the specified car.
+       - /Car/(CARIDENTIFIER)/IncidentsTeam - Number of incidents for the whole team of the specified car.
 
 1.0_Build_BETA-2016.05.15
     1. Added new Relative widgets that displays only the cars in your class.
