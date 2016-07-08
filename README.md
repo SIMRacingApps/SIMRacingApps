@@ -48,7 +48,7 @@ You can simply develop your App or Widget in your personal folder and SIMRacingA
 See below for details on creating your own App or Widget.
 You can also share your App or Widget by creating a .SRA file that can be uploaded from the main page using the form at the bottom of the page. .SRA files are simply .ZIP files renamed. They are intended to be uploaded on the main menu. Each file in the archive will be extracted to the users personal folder located at Documents/SIMRacingApps.
 
-## How to work with the SIMRacingApp's repositories
+## Developers: How to work with the SIMRacingApp's repositories
 ### [SIMRacingApps](http://github/SIMRacingApps/SIMRacingApps)
 
 The SIMRacingApps repository is the main repository. 
@@ -79,14 +79,14 @@ would for a jar file.
 This repository contains all the Web based Apps and Widgets.
 It's has only 2 3rd party dependencies, RequireJS and AngularJS. 
 Both are supplied in the repository. 
-I do this so I do not rely CDN providers and so it will load faster. 
+I do this so I do not rely on CDN providers and so it will load faster. 
 
 ### SIMRacingAppsSIMPlugin{SIM}
 
 Each of the repositories that follow this naming convention is the implementation of a specific SIM's functionality.
 
 The results of building this project may be used to include the SIM in the default .exe file that is created.
-If not, the Ant build file can also build a .SRA file that can be uploaded to any SRA server installation to add a SIM.
+If not, the Ant build file can also build a .SRA file that can be uploaded to any SRA server installation to add a SIM manually.
 
 1. [SIMRacingAppsSIMPluginTemplate](http://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
    This is a sample repository to use when starting a new SIM Plug-in.
