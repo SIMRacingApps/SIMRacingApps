@@ -56,14 +56,23 @@ It contains the Ant build file for creating the .exe and copying the docs to the
 
 It does not contain any source code, but it will get tagged for releases and the .exe will can be found in the releases tab.
 
+You don't need to download all the repositories to just work on one of them. 
+Just fork the master branch, or one of the release branches and download the one you need.
+Then, using the published SIMRacingAppsServer...exe, run it manually to override the classpath and put your copy first, as follows.
+
+#### java -Xms256m -Xmx512m -classpath "{PathToYourCopyOfTheRepostoriesOutputFolder};{PathToSIMRacingAppsServerExe};{PathToUserDocumentsSIMRacingApps}" com.SIMRacingApps.Server
+
+The output folder of each repository is a little different.
+For more information, see the README.md files in each of the repositories.
+
+Once you have committed your changes in your fork, send me a pull request and I will consider merging your changes into the master branch.
+
 ### [SIMRacingAppsServer](http://github/SIMRacingApps/SIMRacingAppsServer)
 
 This repository contains the server side generic API interface implementation.
 The structure of this repository is setup to support build a WAR file originally because I was going to deploy to TomCat. 
 I found that Jetty worked better for my needs, as it had a way to create an embedded server as long as I started all the servlets myself. The final .exe that is built can also be used in the classpath for a Java based application just as you
 would for a jar file.
-
-For more information, see the README.md file in the SIMRacingAppsServer repository.
 
 ### [SIMRacingAppsWebContent](http://github/SIMRacingApps/SIMRacingAppsWebContent)
 
