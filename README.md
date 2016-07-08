@@ -40,13 +40,14 @@
 
 If you are a developer, you can develop your own Apps, Widgets or Plugins.
 Detailed documentation is available right from the server's main page.
-By making the source available, I hope others will join in and help develop this farther. 
+By making the source available, I hope others will join in and help develop this farther.
+You can find the source on GitHub at http://www.github.com/SIMRacingApps. 
 Just fork the source, make your changes and submit a pull request.
 
-But, you do not have to be a Github expert to help out. 
+But, you do not have to be a GitHub expert to help out. 
 You can simply develop your App or Widget in your personal folder and SIMRacingApps will scan for it and add it to the main page.
 See below for details on creating your own App or Widget.
-You can also share your App or Widget by creating a .SRA file that can be uploaded from the main page using the form at the bottom of the page. .SRA files are simply .ZIP files renamed. They are intended to be uploaded on the main menu. Each file in the archive will be extracted to the users personal folder located at Documents/SIMRacingApps.
+You can also share your App or Widget by creating a .SRA file that can be uploaded to the [FaceBook Group's](https://www.facebook.com/groups/SIMRacingApps) File Section. .SRA files are simply .ZIP files renamed that contain your App or Widget's files relative to the Documents/SIMRacingApps folder. The .SRA file is intended to be uploaded on the SIMRacingApps main menu at the bottom of the page. Each file in the archive will be extracted to the users personal folder located at Documents/SIMRacingApps.
 
 ## Developers: How to work with the SIMRacingApp's repositories
 ### [SIMRacingApps](http://github/SIMRacingApps/SIMRacingApps)
