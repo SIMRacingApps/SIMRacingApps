@@ -65,7 +65,7 @@ would for a jar file.
 
 For more information, see the README.md file in the SIMRacingAppsServer repository.
 
-### [SIMRacingAppsServer](http://github/SIMRacingApps/SIMRacingAppsWebContent)
+### [SIMRacingAppsWebContent](http://github/SIMRacingApps/SIMRacingAppsWebContent)
 
 This repository contains all the Web based Apps and Widgets.
 It's has only 2 3rd party dependencies, RequireJS and AngularJS. 
