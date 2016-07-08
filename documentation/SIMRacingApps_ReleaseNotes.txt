@@ -1,7 +1,7 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.0_Build_2016.06.23
+Version: 1.0_Build_2016.07.07
     1. This is the initial release of the SIMRacingApp's Suite.
     2. As a first release, I only have it working with 1 SIM, iRacing.
        Other SIM plug-ins will be developed at a future date.
