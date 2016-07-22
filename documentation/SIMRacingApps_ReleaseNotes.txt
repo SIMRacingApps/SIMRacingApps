@@ -1,17 +1,11 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.0_Build_2016.07.07
-    1. This is the initial release of the SIMRacingApp's Suite.
-    2. As a first release, I only have it working with 1 SIM, iRacing.
-       Other SIM plug-ins will be developed at a future date.
-    3. Also, full International support is built in, but there are no translations as of yet. 
-       So, I'm looking for volunteers to translate the text to other languages.
-    4. BETA testing has been occurring over the last 9 months and I feel like the software is very stable.
-       But, nothing is perfect. Please use the issues list at http://issues.SIMRacingApps.com, to report
-       any problems. You will have to create a GitHub account to do so.
-    5. If you just have some questions, please join the SIMRacingApps group on FaceBook and post your
-       question there. It can be found at http://facebook.com/groups/SIMRacingApps.
+Version: 1.1_Build_2016.07.22
+    1. This fixes an the issue where SRA would not pick the latest version of Java if the version
+       number of Java was greater than 99. Oracle released versions 101 and 102 recently.
+       This only affects you if you have multiple version of Java installed at the same time.
+       You can also just uninstall the older version of Java.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
@@ -63,3 +57,14 @@ Version: 1.0_Build_2016.07.07
         
 ****************** Previous Versions *************************
 
+1.0_Build_2016.07.07
+    1. This is the initial release of the SIMRacingApp's Suite.
+    2. As a first release, I only have it working with 1 SIM, iRacing.
+       Other SIM plug-ins will be developed at a future date.
+    3. Also, full International support is built in, but there are no translations as of yet. 
+       So, I'm looking for volunteers to translate the text to other languages.
+    4. BETA testing has been occurring over the last 9 months and I feel like the software is very stable.
+       But, nothing is perfect. Please use the issues list at http://issues.SIMRacingApps.com, to report
+       any problems. You will have to create a GitHub account to do so.
+    5. If you just have some questions, please join the SIMRacingApps group on FaceBook and post your
+       question there. It can be found at http://facebook.com/groups/SIMRacingApps.
