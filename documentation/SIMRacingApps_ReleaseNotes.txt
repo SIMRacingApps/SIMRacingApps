@@ -1,14 +1,94 @@
 SIMRacingApps Release Notes
 ---------------------------
+For a complete list of issues completed in this version goto 
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/1)
 
-Version: 1.1_Build_2016.07.22
-    1. This fixes an the issue where SRA would not pick the latest version of Java if the version
-       number of Java was greater than 99. Oracle released versions 101 and 102 recently.
+Version: 1.1_Build_2016.08.25
+       
+    1. Fixed #53 (http://issues.SIMRacingApps.com/53) where SRA would not pick the 
+       latest version of Java if the version number of Java was greater than 99. 
+       Oracle released versions 101 and 102 recently.
        This only affects you if you have multiple version of Java installed at the same time.
        You can also just uninstall the older version of Java.
+       
+    2. Fixed #54 (http://issues.SIMRacingApps.com/54) Pit Count Down plugin to not play when you
+       first enter the session. Also, not to play anything if it doesn't know where the pit stall is.
+       It was counting down to the start/finish line.
+       
+    3. Closed #48 (https://issues.SIMRacingApps.com/48) by Adding new Pit Speed Limit 
+       plugin to beep when you are speeding on pit road.
+       To disable this plugin, add "!Sounds.PitSpeedLimit" to the list of simplugins in the settings.txt.
+       The following variables can be put in your settings.txt file to customize it. 
+       
+       These are the defaults.
+           a. pit-speed-limit-device = {name of your sound device if not your default} 
+           b. pit-speed-limit-volume = 1
+           c. pit-speed-limit-beep-rate = 300
+           d. pit-speed-limit-beep-rate-excessive = 200
+           e. pit-speed-limit-clip = com/SIMRacingApps/SIMPluginCallbacks/Sounds/Clips/speeding_beep.wav
+           
+    4. Closed #59 (https://issues.SIMRacingApps.com/59)
+       Broadcaster, CarSelector, TrackMap: Option to change the camera to the selected car.
+       
+    5. Closed #60 (https://issues.SIMRacingApps.com/60)
+       TrackMap: Add number of cautions and laps to track info box
+       
+    6. I posted a Voice Attack Profile to (https://facebook.com/groups/SIMRacingApps/files).
+       This profile does not use keystrokes to control the SIM, it instead sends the commands directly
+       to the SIMRacingApps Server ReST ATI. Not only is this more robust, but the same commands will work with
+       any SIM supported by SIMRacingApps. Please feel free to download and modify the phrases to your own preferences.
+       You will need the registered version of Voice Attack ($10) to be able to import this profile.
+       For more information on Voice Attack, see (http://wiki.SIMRacingApps.com/How-to-use-Voice-Attack).
+       
+       Here is a list of the commands (Aliases can be found in the profile for some of these):
+       
+       1.  Add Fuel: Tops off the Fuel on the next pit
+       2.  Add Splash Of Fuel(Add Splash): Add just enough fuel to finish the race
+       3.  Ahead: Say who is ahead of you in your class
+       4.  Behind: Say who is behind you in your class
+       5.  Change Four Tires(All Tires, Change All Tires, Four Tires): Changes All 4 tires at next pit stop
+       6.  Change Left Sides(Change Lefts, Left Sides): Change Left Side Tires Only at the next pit stop
+       7.  Change Right Sides(Change Rights, Right Sides, Two Tires): Change Right Side Tires Only
+       8.  Fuel Level: Say your fuel level and how much you need to finish.
+       9.  Full Service: Change all 4 tires and top off with fuel and tearoff
+       10. Incidents: Say how many incidents you have and the limit.
+       11. Lap Time: Say what your last lap time was
+       12. Laps In Tank(Fuel Laps, Laps Until Pit): Say how many laps you can go on fuel
+       13. Laps To Go: Say how many laps to go for the leader
+       14. Leader: Say who the leader is and how far ahead they are
+       15. No Fuel: Do not take any fuel on next pit
+       16. No Service: Do not take any service on next pit. Repairs only.
+       17. No Tires: Do not take any tires on next pit
+       18. Remove Tearoff(Change Tearoff): Remove wind shield tearoff on next pit
+       19. Start Blue Flag: Watch for blue flags and tell me who they are and how far they are behind me
+       20. Start Gear Announcement: Announces each gear after you change into it
+       21. Start Leader Change: Tell me anytime the leader changes and how far they are ahead of me
+       22. Start SIMRacingApps: Start the SIMRacingApps server. Check the path
+       23. Start Spotter: Start the Spotter Tasks
+       24. Stop Spotter: Stop the Spotter tasks
+              
+    7. Closed #61 (https://issues.SIMRacingApps.com/61)
+       WaitingForSIM: Show a splash screen when SIM is not connected.
+       When the SIM connects, it hides itself.
+       You can provide your own image by saving a PNG file called 
+       "WaitingForSIM.png" in your "Documents/SIMRacingApps" folder.
+       The image will scale using an aspect ratio of 16x9.
+       Useful for streamers to put on top of their stream when they are not in a session.
+       Remember to add the "&BACKGROUNDCOLOR=transparent" parameter to the URL.
+
+    8. Closed #64 (https://issues.SIMRacingApps.com/64) by Adding new Sounds.Shift 
+       plugin to beep when you need to shift.
+       To disable this plugin, add "!Sounds.Shift" to the list of simplugins in the settings.txt.
+       The following variables can be put in your settings.txt file to customize it. 
+       
+       These are the defaults.
+           a. shift-device = {name of your sound device if not your default} 
+           b. shift-volume = 1
+           c. shift-clip = com/SIMRacingApps/SIMPluginCallbacks/Sounds/Clips/shift_beep.wav
+           
     
 ------------------------------------------------------------------------------------------------------
----                    Configuration Tips                                                          ---
+---                    Configuration Requirements                                                  ---
 ------------------------------------------------------------------------------------------------------
     1. To get the server running, simply execute the SIMRacingAppsServer...exe 
        on the same computer that the Simulator is running on.
