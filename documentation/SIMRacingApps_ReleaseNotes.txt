@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/1)
 
-Version: 1.1_Build_2016.08.25
+Version: 1.1_Build_2016.09.08
        
     1. Fixed #53 (http://issues.SIMRacingApps.com/53) where SRA would not pick the 
        latest version of Java if the version number of Java was greater than 99. 
@@ -49,23 +49,25 @@ Version: 1.1_Build_2016.08.25
        5.  Change Four Tires(All Tires, Change All Tires, Four Tires): Changes All 4 tires at next pit stop
        6.  Change Left Sides(Change Lefts, Left Sides): Change Left Side Tires Only at the next pit stop
        7.  Change Right Sides(Change Rights, Right Sides, Two Tires): Change Right Side Tires Only
-       8.  Fuel Level: Say your fuel level and how much you need to finish.
-       9.  Full Service: Change all 4 tires and top off with fuel and tearoff
-       10. Incidents: Say how many incidents you have and the limit.
-       11. Lap Time: Say what your last lap time was
-       12. Laps In Tank(Fuel Laps, Laps Until Pit): Say how many laps you can go on fuel
-       13. Laps To Go: Say how many laps to go for the leader
-       14. Leader: Say who the leader is and how far ahead they are
-       15. No Fuel: Do not take any fuel on next pit
-       16. No Service: Do not take any service on next pit. Repairs only.
-       17. No Tires: Do not take any tires on next pit
-       18. Remove Tearoff(Change Tearoff): Remove wind shield tearoff on next pit
-       19. Start Blue Flag: Watch for blue flags and tell me who they are and how far they are behind me
-       20. Start Gear Announcement: Announces each gear after you change into it
-       21. Start Leader Change: Tell me anytime the leader changes and how far they are ahead of me
-       22. Start SIMRacingApps: Start the SIMRacingApps server. Check the path
-       23. Start Spotter: Start the Spotter Tasks
-       24. Stop Spotter: Stop the Spotter tasks
+       8.  Fast Repair: Checks the Fast Repair box if you have any left.
+       9.  Fuel Level: Say your fuel level and how much you need to finish.
+       10.  Full Service: Change all 4 tires and top off with fuel and tearoff
+       11. Incidents: Say how many incidents you have and the limit.
+       12. Lap Time: Say what your last lap time was
+       13. Laps In Tank(Fuel Laps, Laps Until Pit): Say how many laps you can go on fuel
+       14. Laps To Go: Say how many laps to go for the leader
+       15. Leader: Say who the leader is and how far ahead they are
+       16. No Fast Repair: Unchecks the Fast Repair Box.
+       17. No Fuel: Do not take any fuel on next pit
+       18. No Service: Do not take any service on next pit. Repairs only.
+       19. No Tires: Do not take any tires on next pit
+       20. Remove Tearoff(Change Tearoff): Remove wind shield tearoff on next pit
+       21. Start Blue Flag: Watch for blue flags and tell me who they are and how far they are behind me
+       22. Start Gear Announcement: Announces each gear after you change into it
+       23. Start Leader Change: Tell me anytime the leader changes and how far they are ahead of me
+       24. Start SIMRacingApps: Start the SIMRacingApps server. Check the path
+       25. Start Spotter: Start the Spotter Tasks
+       26. Stop Spotter: Stop the Spotter tasks
               
     7. Closed #61 (https://issues.SIMRacingApps.com/61)
        WaitingForSIM: Show a splash screen when SIM is not connected.
@@ -86,7 +88,15 @@ Version: 1.1_Build_2016.08.25
            b. shift-volume = 1
            c. shift-clip = com/SIMRacingApps/SIMPluginCallbacks/Sounds/Clips/shift_beep.wav
            
-    
+    9. Removed support for Satellite views on the TrackMap. MapQuest changed their licensing such that
+       you cannot cache any of their data. To connect to it real-time, you must get a license key.
+       I don't think it's worth getting the real-time key, because some of the tracks do not exist anymore
+       and I'm not allowed to use the static image, because that requires caching it.
+       I will leave the legacy map images out there, but they will be no longer be accessible from the menu.
+       I will continue to support the Open Street Map views.
+       
+    10. Added support for iRacing's new track, Circuit des 24 Heures du Mans.
+       
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Requirements                                                  ---
 ------------------------------------------------------------------------------------------------------
