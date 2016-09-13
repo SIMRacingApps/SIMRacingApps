@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/1)
 
-Version: 1.1_Build_2016.09.08
+Version: 1.1_Build_2016.09.13
        
     1. Fixed #53 (http://issues.SIMRacingApps.com/53) where SRA would not pick the 
        latest version of Java if the version number of Java was greater than 99. 
@@ -40,7 +40,7 @@ Version: 1.1_Build_2016.09.08
        You will need the registered version of Voice Attack ($10) to be able to import this profile.
        For more information on Voice Attack, see (http://wiki.SIMRacingApps.com/How-to-use-Voice-Attack).
        
-       Here is a list of the commands (Aliases can be found in the profile for some of these):
+       Here is the full list of the commands (and aliases):
        
        1.  Add Fuel: Tops off the Fuel on the next pit
        2.  Add Splash Of Fuel(Add Splash): Add just enough fuel to finish the race
@@ -51,7 +51,7 @@ Version: 1.1_Build_2016.09.08
        7.  Change Right Sides(Change Rights, Right Sides, Two Tires): Change Right Side Tires Only
        8.  Fast Repair: Checks the Fast Repair box if you have any left.
        9.  Fuel Level: Say your fuel level and how much you need to finish.
-       10.  Full Service: Change all 4 tires and top off with fuel and tearoff
+       10. Full Service: Change all 4 tires and top off with fuel and tearoff
        11. Incidents: Say how many incidents you have and the limit.
        12. Lap Time: Say what your last lap time was
        13. Laps In Tank(Fuel Laps, Laps Until Pit): Say how many laps you can go on fuel
@@ -96,6 +96,8 @@ Version: 1.1_Build_2016.09.08
        I will continue to support the Open Street Map views.
        
     10. Added support for iRacing's new track, Circuit des 24 Heures du Mans.
+    
+    11. Added support for iRacing's new car, Audi 90 GTO.
        
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Requirements                                                  ---
@@ -103,8 +105,8 @@ Version: 1.1_Build_2016.09.08
     1. To get the server running, simply execute the SIMRacingAppsServer...exe 
        on the same computer that the Simulator is running on.
     2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page will install the 32-bit version of Java. The 64-bit is faster.
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation.
+       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
        Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
        for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
     3. Enter the server address (found in the Title Bar of the server window) in your browser 
