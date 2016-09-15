@@ -20,7 +20,7 @@
     <property name="launch4j.dir" location="Launch4j" />
     <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar" />
     <property name="deployment.dir" value="${user.home}/Documents/SIMRacingApps" />
-    <property name="download.dir" value="X:/SIMRacingApps" />
+    <property name="download.dir" value="O:/OneDrive/SIMRacingApps" />
     <property name="SIMRacingAppsServer.location" value="../SIMRacingAppsServer" />
     <property name="SIMRacingAppsWebContent.location" value="../SIMRacingAppsWebContent" />
     <property name="SIMRacingApps.github.io.location" value="../SIMRacingApps.github.io" />

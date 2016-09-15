@@ -33,7 +33,7 @@ Version: 1.1_Build_2016.09.15
     5. Closed #60 (https://issues.SIMRacingApps.com/60)
        TrackMap: Add number of cautions and laps to track info box
        
-    6. I posted a Voice Attack Profile to (https://facebook.com/groups/SIMRacingApps/files).
+    6. I added a Voice Attack Profile to the release downloads.
        This profile does not use keystrokes to control the SIM, it instead sends the commands directly
        to the SIMRacingApps Server ReST ATI. Not only is this more robust, but the same commands will work with
        any SIM supported by SIMRacingApps. Please feel free to download and modify the phrases to your own preferences.
@@ -62,7 +62,7 @@ Version: 1.1_Build_2016.09.15
        18. No Service: Do not take any service on next pit. Repairs only.
        19. No Tires: Do not take any tires on next pit
        20. Remove Tearoff(Change Tearoff): Remove wind shield tearoff on next pit
-       21. Start Blue Flag: Watch for blue flags and tell me who they are and how far they are behind me
+       21. Start Flags: Watch for flags and tell me what they are
        22. Start Gear Announcement: Announces each gear after you change into it
        23. Start Leader Change: Tell me anytime the leader changes and how far they are ahead of me
        24. Start SIMRacingApps: Start the SIMRacingApps server. Check the path

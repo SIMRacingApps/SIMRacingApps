@@ -1,0 +1,78 @@
+Jetty
+    Web Server for Java
+    Apache License 2.0, http://www.eclipse.org/jetty/licenses.php    
+
+SnakeYaml
+    YAML 1.1 parser and emitter for Java
+    2008 http://www.snakeyaml.org
+    Apache License Version 2.0, http://www.apache.org/licenses/LICENSE-2.0.txt
+    
+Genson
+    Java and Scala to JSON conversion library.
+    http://owlike.github.io/genson/
+    
+    Copyright 2011-2014 Genson - Cepoi Eugen
+    Licensed under the Apache License, Version 2.0 (the "License"); 
+    you may not use this file except in compliance with the License.
+    
+jna
+    https://github.com/twall/jna
+    
+    JNA is dual-licensed under 2 alternative Open Source/Free 
+    licenses: LGPL 2.1 and Apache License 2.0. (starting with
+    JNA version 4.0.0). 
+
+launch4j
+    This program is free software licensed under the BSD 3-Clause License (http://opensource.org/licenses/BSD-3-Clause), 
+    the head subproject (the code which is attached to the wrapped jars) 
+    is licensed under the MIT License (http://opensource.org/licenses/mit-license.html). 
+    Launch4j may be used for wrapping closed source, commercial applications. 
+
+RequireJS
+    RequireJS is released under two licenses: new BSD, and MIT. You may pick the
+    license that best suits your development needs.
+    
+    https://github.com/jrburke/requirejs/blob/master/LICENSE
+
+AngularJS
+    Copyright (c) 2010-2015 Google, Inc. http://angularjs.org
+    Code licensed under the The MIT License. Documentation licensed under CC BY 3.0. 
+
+OpenStreetMap
+    http://www.openstreetmap.org/copyright
+    OpenStreetMap® is open data, licensed under the 
+    Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).
+    The cartography in our map tiles, and our documentation, are licensed 
+    under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA).
+    
+MapQuest
+    Use Attribution, Tiles Courtesy of MapQuest.com
+    
+Atom/Electron
+    MIT License - https://github.com/atom/electron/blob/master/LICENSE 
+
+Sound
+    http://freesound.org        
+    http://creativecommons.org/publicdomain/zero/1.0/
+    Brian Yaczik - Pit Count Down
+
+Graphics
+    Gary Whitson - Logos
+        
+iRacing
+    Information from the irsdk_defines.h are used and translated to the Java syntax.
+    
+    Copyright (c) 2013, iRacing.com Motorsport Simulations, LLC.
+    All rights reserved.
+    
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+    ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    
