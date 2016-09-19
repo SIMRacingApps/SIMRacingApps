@@ -1,9 +1,62 @@
 SIMRacingApps Release Notes
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/1)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.1_Build_2016.09.15
+Version: 1.2_Build_BETA-2016.09.19
+    1. ?
+       
+------------------------------------------------------------------------------------------------------
+---                    Configuration Requirements                                                  ---
+------------------------------------------------------------------------------------------------------
+    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
+       on the same computer that the Simulator is running on.
+    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
+       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
+       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
+       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
+    3. Enter the server address (found in the Title Bar of the server window) in your browser 
+       from any device connected to the same local network.
+       Connecting from outside the local network is not supported and not recommended due to security concerns.
+    4. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+       for more details and options for running the server.
+    
+    Issues:
+        Please visit the issues list at http://issues.SIMRacingApps.com to see if an issue you are have 
+        has already been reported. This list also contains enhancement requests.
+        You will need to create a GitHub account to post a new issue or subscribe to an existing issue. 
+        But, that is the easiest way to keep track of it and follow conversations on the issue.
+        
+    Wiki:
+        There is a Wiki for SIMRacingApps at http://wiki.SIMRacingApps.com.
+        Here you can find solutions, work-around, etc.
+
+    Electron Client:
+        To install or update Electron Launcher, 
+        1. Download the .SRA file's latest version from http://electron.SIMRacingApps.com 
+        2. Make sure Electron is not running and start the SIMRacingAppsServer.exe
+        3. Connect to the main menu from a browser and upload the .SRA file
+        4. Refer to the Electron's readme file for more information
+        
+    Overwolf Client:
+        To install or update Overwolf Launcher, 
+        1. Download the .OPK file's latest version from http://overwolf.SIMRacingApps.com
+        2. Open Overwolf's Dock and load it from Settings -> Support -> Development Options -> Install
+           TODO: Submit the package to the Overwolf Store so it can be installed from there. 
+        3. Refer to the instructions in the readme file to install this file into Overwolf.
+        WARNING: 
+            THERE IS AN OVERWOLF BUG THAT CAUSES IT TO TAKE OVER YOUR USB INPUT DEVICES
+            WHENEVER YOU CLICK ON AN APP. THIS CAN CAUSE IT TO SHIFT DOWN, LOOSE FORCE FEEDBACK,
+            AND OTHER DISASTROUS THINGS. SO, DO NOT CLICK ON AN APP WHILE IN THE CAR.
+            If you do, go into the garage and come back out and it will reset your devices.
+            I have posted the issue to the forums. 
+            You can follow it [here](http://forums.overwolf.com/index.php?/topic/7106-clicking-on-app-overwolf-takes-over-usb-input-devices)
+
+        
+****************** Previous Versions *************************
+
+1.1_Build_2016.09.15
        
     1. Fixed #53 (http://issues.SIMRacingApps.com/53) where SRA would not pick the 
        latest version of Java if the version number of Java was greater than 99. 
@@ -99,56 +152,6 @@ Version: 1.1_Build_2016.09.15
     
     11. Added support for iRacing's new car, Audi 90 GTO.
        
-------------------------------------------------------------------------------------------------------
----                    Configuration Requirements                                                  ---
-------------------------------------------------------------------------------------------------------
-    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
-       on the same computer that the Simulator is running on.
-    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
-       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
-       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
-    3. Enter the server address (found in the Title Bar of the server window) in your browser 
-       from any device connected to the same local network.
-       Connecting from outside the local network is not supported and not recommended due to security concerns.
-    4. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
-       for more details and options for running the server.
-    
-    Issues:
-        Please visit the issues list at http://issues.SIMRacingApps.com to see if an issue you are have 
-        has already been reported. This list also contains enhancement requests.
-        You will need to create a GitHub account to post a new issue or subscribe to an existing issue. 
-        But, that is the easiest way to keep track of it and follow conversations on the issue.
-        
-    Wiki:
-        There is a Wiki for SIMRacingApps at http://wiki.SIMRacingApps.com.
-        Here you can find solutions, work-around, etc.
-
-    Electron Client:
-        To install or update Electron Launcher, 
-        1. Download the .SRA file's latest version from http://electron.SIMRacingApps.com 
-        2. Make sure Electron is not running and start the SIMRacingAppsServer.exe
-        3. Connect to the main menu from a browser and upload the .SRA file
-        4. Refer to the Electron's readme file for more information
-        
-    Overwolf Client:
-        To install or update Overwolf Launcher, 
-        1. Download the .OPK file's latest version from http://overwolf.SIMRacingApps.com
-        2. Open Overwolf's Dock and load it from Settings -> Support -> Development Options -> Install
-           TODO: Submit the package to the Overwolf Store so it can be installed from there. 
-        3. Refer to the instructions in the readme file to install this file into Overwolf.
-        WARNING: 
-            THERE IS AN OVERWOLF BUG THAT CAUSES IT TO TAKE OVER YOUR USB INPUT DEVICES
-            WHENEVER YOU CLICK ON AN APP. THIS CAN CAUSE IT TO SHIFT DOWN, LOOSE FORCE FEEDBACK,
-            AND OTHER DISASTROUS THINGS. SO, DO NOT CLICK ON AN APP WHILE IN THE CAR.
-            If you do, go into the garage and come back out and it will reset your devices.
-            I have posted the issue to the forums. 
-            You can follow it [here](http://forums.overwolf.com/index.php?/topic/7106-clicking-on-app-overwolf-takes-over-usb-input-devices)
-
-        
-****************** Previous Versions *************************
-
 1.0_Build_2016.07.07
     1. This is the initial release of the SIMRacingApp's Suite.
     2. As a first release, I only have it working with 1 SIM, iRacing.

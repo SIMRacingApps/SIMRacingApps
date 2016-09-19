@@ -66,6 +66,11 @@
                 <fileset dir=".">
                     <include name="documentation/**" />
                 </fileset>
+                <fileset dir=".">
+                    <include name="COPYRIGHT.TXT" />
+                    <include name="LICENSE.TXT" />
+                    <include name="NOTICE.TXT" />
+                </fileset>
             </jar>
             <delete file="${java.io.tmpdir}/SIMRacingAppsServer_${version}.l4j.ini" />
             
@@ -133,18 +138,18 @@
                 <include name="**/icon.png" />
             </fileset>
         </copy>
-        <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/COPYRIGHT.TXT" tofile="${docs}/COPYRIGHT.TXT" />
-        <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/LICENSE.TXT" tofile="${docs}/LICENSE.TXT" />
-        <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/NOTICE.TXT" tofile="${docs}/NOTICE.TXT" />
+        <copy overwrite="true" file="COPYRIGHT.TXT" tofile="${docs}/COPYRIGHT.TXT" />
+        <copy overwrite="true" file="LICENSE.TXT" tofile="${docs}/LICENSE.TXT" />
+        <copy overwrite="true" file="NOTICE.TXT" tofile="${docs}/NOTICE.TXT" />
         <copy todir="${SIMRacingApps.github.io.location}">
             <fileset dir="${SIMRacingAppsWebContent.location}">
                 <include name="SRA-Logo*.png" />
                 <include name="favicon.*" />
-                <include name="COPYRIGHT.TXT" />
-                <include name="LICENSE.TXT" />
-                <include name="NOTICE.TXT" />
             </fileset>
         </copy>
+        <copy overwrite="true" file="COPYRIGHT.TXT" tofile="${SIMRacingApps.github.io.location}/COPYRIGHT.TXT" />
+        <copy overwrite="true" file="LICENSE.TXT" tofile="${SIMRacingApps.github.io.location}/LICENSE.TXT" />
+        <copy overwrite="true" file="NOTICE.TXT" tofile="${SIMRacingApps.github.io.location}/NOTICE.TXT" />
         <echo 
             file="${SIMRacingApps.github.io.location}/${buildtype}version.json" 
             message='{ "major": "${version.major}", "minor": "${version.minor}", "build": "${version.build}" }' 
