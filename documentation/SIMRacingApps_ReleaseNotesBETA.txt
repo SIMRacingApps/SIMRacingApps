@@ -9,7 +9,7 @@ Version: 1.2_Build_BETA-2016.09.19
        settings.txt ->
            pit-count-down-replay = false 
            pit-speed-limit-replay = false
-           shift = false 
+           shift-replay = false 
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
@@ -24,7 +24,7 @@ Version: 1.2_Build_BETA-2016.09.19
     3. Enter the server address (found in the Title Bar of the server window) in your browser 
        from any device connected to the same local network.
        Connecting from outside the local network is not supported and not recommended due to security concerns.
-    4. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com`
+    4. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
        for more details and options for running the server.
     
     Electron Client:
