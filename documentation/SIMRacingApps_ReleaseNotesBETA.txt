@@ -2,7 +2,14 @@ SIMRacingApps Release Notes
 ---------------------------
 
 Version: 1.2_Build_BETA-2016.09.19
-    1. ?
+    1. Closed #70 (http://issues.SIMRacingApps.com/70)
+       Closed #69 (http://issues.SIMRacingApps.com/69)
+       Sounds.PitCountDown,PitSpeedLimit,Shift to activate during live, not during replay.
+       A new settings.txt variables were created to override this, and they default to false.
+       settings.txt ->
+           pit-count-down-replay = false 
+           pit-speed-limit-replay = false
+           shift = false 
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
