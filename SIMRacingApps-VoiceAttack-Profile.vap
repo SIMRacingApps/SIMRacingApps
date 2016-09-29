@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-16"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>d8733a75-5e72-495e-9305-5f2d6d79faba</Id>
+  <Id>7faf27ab-916c-4799-8861-f9d348b1a706</Id>
   <Name>SIMRacingApps</Name>
   <Commands>
     <Command>
-      <Id>8d6357d8-f093-46e3-88f8-cb03097097e1</Id>
+      <Id>ae8f9836-496e-45d6-b6b8-37853b89377e</Id>
       <CommandString>Add Fuel</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -14,7 +14,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>41543b21-78b5-43f4-aca1-73842c8b0648</Id>
+          <Id>61f486c5-cda8-46af-80a4-2d6daff59031</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -22,7 +22,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -51,7 +51,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1b5be0f7-1a70-4273-af46-3d8f9bd29886</Id>
+          <Id>d6fd7bc9-3326-4661-96ab-953c29b0531f</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -59,7 +59,7 @@
           <Context>SRA_Fuel</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setValueNext/999</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setValueNext/999</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -88,7 +88,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>80971010-8375-4795-94cc-ee0de098af52</Id>
+          <Id>c4897185-5aa7-4585-9a15-48917ad5c900</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -96,7 +96,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -125,7 +125,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>94f82764-20a7-49bf-afa0-7bae78334160</Id>
+          <Id>d6583471-e2f7-4ac7-a5c9-d70b700f5fc2</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -190,7 +190,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>b83fc1ac-106e-4db9-86ed-0849fc9633ba</lastEditedAction>
+      <lastEditedAction>5eeee59c-9baa-4598-83f4-40928e11925b</lastEditedAction>
       <Referrer xsi:nil="true" />
       <ExecType>0</ExecType>
       <Confidence>0</Confidence>
@@ -207,7 +207,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>809175c5-3663-4dd0-96a7-2717ad31b3ed</Id>
+      <Id>f9dfffc4-f98c-4827-aad2-a3f59e7de1c6</Id>
       <CommandString>Add Splash</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -217,12 +217,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2ba06292-8495-48eb-a274-c0045fc7d00d</Id>
+          <Id>71578615-77bc-4e8c-87ff-52a1f7d32429</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>a5ca768a-7e57-4ab2-8424-da8b0e1b2a05</Context>
+          <Context>7755628c-348c-4ac4-b193-327691c109f3</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -298,7 +298,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>a5ca768a-7e57-4ab2-8424-da8b0e1b2a05</Id>
+      <Id>7755628c-348c-4ac4-b193-327691c109f3</Id>
       <CommandString>Add Splash Of Fuel</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -308,7 +308,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>18cb6903-6ee7-4806-b48c-f0e9162884ce</Id>
+          <Id>e2b5e273-be4e-4417-ab3b-75e5faea857a</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -316,7 +316,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -345,7 +345,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>349bbd01-cadd-4d1a-9b3f-b25432d1fd3e</Id>
+          <Id>422bec41-f974-46a6-a815-becbeb8aba78</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -353,7 +353,7 @@
           <Context>SRA_FuelNeeded</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/FuelLevelNeeded/0?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/FuelLevelNeeded/0?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -382,7 +382,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ce788da9-8190-460c-b767-32dd5f912e0e</Id>
+          <Id>b8628893-5c5e-4b03-8c94-b0ccf99af165</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -415,7 +415,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>944c4ba7-09e9-433c-9ba6-db3f01f1c974</Id>
+          <Id>9e585ea4-046f-4cc9-8031-e873e3e341a2</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -423,7 +423,7 @@
           <Context>SRA_FuelUOM</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=UOMDesc</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=UOMDesc</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -452,7 +452,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>149725b7-4437-46e9-9dda-1e2f3247cab0</Id>
+          <Id>b1c6a957-7358-4726-8b4d-aadd5449aa4b</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -484,7 +484,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>563126f1-5548-4306-a437-5e7455bba4f2</Id>
+          <Id>8027a95b-8507-4e88-80e4-b30cfcd6db75</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -517,7 +517,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3cfe88d3-02c2-407a-860e-f6e84bc003c4</Id>
+          <Id>7d5300fa-e3f6-4fba-8301-a985821b3eff</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -525,7 +525,7 @@
           <Context>SRA_Fuel</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -554,7 +554,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2e09b1c0-5132-4089-b31c-259d6c65aba5</Id>
+          <Id>56407cf0-cd03-4fd7-a247-0e194612a84b</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -587,7 +587,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ac9974ea-3548-4c31-80f6-027eac8fdc9f</Id>
+          <Id>a1e80def-134b-47a9-b0b6-bc260644a009</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -619,7 +619,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>147173d4-0665-4dab-8c75-20654c323d94</Id>
+          <Id>c4d4bfd9-534f-48ad-b237-8833d92cec7a</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -627,7 +627,7 @@
           <Context>SRA_FuelCapacity</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/CapacityMaximum?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/CapacityMaximum?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -656,7 +656,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2e2c25fc-f8e3-486b-8dd6-629a231c5ada</Id>
+          <Id>3e4cc5c4-a216-4e38-bd03-43390967a911</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -688,7 +688,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e989be19-2bc1-4352-8a10-7b8d3666fedc</Id>
+          <Id>e8482382-095e-4577-a63e-4d7579c676df</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -721,7 +721,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c8fbfb84-8edd-4d80-8312-5fe2a1f41c2e</Id>
+          <Id>81cdb81f-4fac-42ce-9c94-20a09e9613ef</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -754,7 +754,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>868f9f41-6336-4860-9644-bafec5a9ab04</Id>
+          <Id>f50984e1-540a-4d19-bfed-e2ca9356bc3c</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -762,7 +762,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -791,7 +791,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>711f3d21-0db7-43c4-827b-f88cc3130f23</Id>
+          <Id>b6380882-a1db-490d-99e3-eaf640688731</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -799,7 +799,7 @@
           <Context>SRA_FuelAdd</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setValueNext/{DEC:SRA_dFuelNeeded}</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setValueNext/{DEC:SRA_dFuelNeeded}</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -828,7 +828,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>98f29521-fd93-46c6-b5d4-390c46bd143b</Id>
+          <Id>17d2d115-dadb-4bdb-959e-e643c5c6e179</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -861,7 +861,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>081d2bbb-3abc-4b35-bf94-ed9b65b19dc3</Id>
+          <Id>1c6905cc-f0f7-41ea-a21f-1418ca96cb99</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -893,7 +893,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>29776f04-a887-45ff-809a-1190ae374198</Id>
+          <Id>6e405976-df05-42c9-8dda-f8ca0ef28ce8</Id>
           <ActionType>ConditionElse</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -924,7 +924,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c8153fec-4a6c-4172-af59-3d165671a513</Id>
+          <Id>84fe9440-e4f6-4e0c-96da-d402979ba2ee</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -956,7 +956,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>930aeba0-a0e6-4403-9b07-7e547c0f653e</Id>
+          <Id>d4a4a66e-fd62-448d-a01f-61d5fa519407</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -987,7 +987,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d8aa10f9-2372-4605-ace7-da64bb783201</Id>
+          <Id>d57aeae5-951f-4175-ae1e-f876d4054b59</Id>
           <ActionType>ConditionElse</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1018,7 +1018,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6376c6d8-ca33-4751-87c1-807b9f91a978</Id>
+          <Id>511f4a1d-7227-42db-a567-38e3956e8f62</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1026,7 +1026,7 @@
           <Context>SRA_FuelAdd</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1055,7 +1055,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a8cd0b89-e601-4618-9ba5-15ba0af0db51</Id>
+          <Id>b58d5ee9-fa51-432c-86a3-976ffed04789</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -1087,12 +1087,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>409135c7-c10c-4d6c-b847-d85f28416b69</Id>
+          <Id>8c3502f4-61ae-450d-b4a2-e2d24e8c6717</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>6d2c305e-9d27-4b19-a2ca-bb9db9deeb37</Context>
+          <Context>e89fff19-6066-4e7c-8d56-ab5a5e76538f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1119,12 +1119,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e3b5a0be-5eb3-4fc2-95aa-22d05c8efc6c</Id>
+          <Id>bac92ba7-b016-4afc-9c2d-f9e5fea5fe4d</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>147740ba-33de-4806-a058-51b1d479df54</Context>
+          <Context>aea749f1-58e5-4c49-83bf-607981a2d62c</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1151,7 +1151,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4eb1a312-1e86-4cbc-9ff0-d9fe61c5b406</Id>
+          <Id>f5702bdb-898f-4ce3-8427-cd298a15f008</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1215,7 +1215,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>9a10e0b6-97f4-4b34-9102-670a60ccd4dd</lastEditedAction>
+      <lastEditedAction>e6f0be63-c7a3-4d72-a6a2-6bbc96985b92</lastEditedAction>
       <Referrer xsi:nil="true" />
       <ExecType>0</ExecType>
       <Confidence>0</Confidence>
@@ -1232,7 +1232,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>1552652c-e9c0-4dc9-a202-d2798d79d98e</Id>
+      <Id>72f6545a-6c7a-4f18-822d-6c32327b1e08</Id>
       <CommandString>Ahead</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1242,7 +1242,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e64b4068-0421-457b-9893-74f2a60571b7</Id>
+          <Id>7a4dc712-c80a-4b75-82aa-fcf67e2b34f9</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1250,7 +1250,7 @@
           <Context>SRA_Number</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/RLC1/Number?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/RLC1/Number?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1279,7 +1279,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>010a8db0-064d-480c-932d-c86889f75553</Id>
+          <Id>f7bb4d48-a9c4-41a7-8b1e-cab676e396df</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1287,7 +1287,7 @@
           <Context>SRA_Name</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/RLC1/DriverName?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/RLC1/DriverName?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1316,7 +1316,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3673956e-366f-40cc-aad6-1093083882f0</Id>
+          <Id>b8fe828b-aedf-481b-9e8b-ee908bcb8fee</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1324,7 +1324,7 @@
           <Context>SRA_Ahead</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/DiffCarsRelative/REFERENCE/RLC1?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/DiffCarsRelative/REFERENCE/RLC1?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1353,7 +1353,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>73faa669-2094-4252-87ab-d0feda512300</Id>
+          <Id>4eb8b8b6-0eae-4d98-a54f-fdddbcd5d749</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1361,7 +1361,7 @@
           <Context>SRA_AheadUOM</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/DiffCarsRelative/REFERENCE/RLC1?output=uomdesc</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/DiffCarsRelative/REFERENCE/RLC1?output=uomdesc</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1390,7 +1390,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d9760091-a1af-4018-9111-358006a5ed2b</Id>
+          <Id>5f37ac19-8d95-40ce-a45d-3d95021702b4</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -1423,7 +1423,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d1f94937-0bfc-4df9-a345-5d6fe87987eb</Id>
+          <Id>48ac7b49-45d0-4850-a5e9-52dc75699512</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1455,7 +1455,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>58d8edf1-7fdd-4712-a9d0-e75eac5f586b</Id>
+          <Id>54adca5e-d73f-45bf-baf1-d20edddff92b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1537,7 +1537,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>fcf30797-127c-4ad0-a687-49910e6cb56d</Id>
+      <Id>95efd817-3f87-4f88-96fa-6f5330aaef2a</Id>
       <CommandString>all tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1547,12 +1547,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>655693b4-8bc0-42fb-bd3f-acdcd3fac854</Id>
+          <Id>94b4de15-03f6-4ba1-9b3e-edd2543000d5</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>496139f4-33ac-447f-aa0d-8a26f9e61351</Context>
+          <Context>a1cbdf26-a7d1-47f8-8818-d88edef4489a</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1628,7 +1628,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>523d0df5-529c-4183-9be5-6d7c25971dac</Id>
+      <Id>292a9a7d-12e9-4c5e-8bb9-14322d558874</Id>
       <CommandString>Behind</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1638,7 +1638,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6d6347d5-97fc-40e6-a89d-4579bd79044f</Id>
+          <Id>9c797834-7636-4ff7-8d04-1d5a8ac7cb83</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1646,7 +1646,7 @@
           <Context>SRA_Number</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/RLC-1/Number?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/RLC-1/Number?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1675,7 +1675,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e30706d9-1bf4-4365-acf0-4725a6f973c5</Id>
+          <Id>803306e2-1a33-45f3-ab1b-f02bb4bd1b42</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1683,7 +1683,7 @@
           <Context>SRA_Name</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/RLC-1/DriverName?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/RLC-1/DriverName?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1712,7 +1712,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4f3b79d6-651a-4fbf-90d7-73184e60f07b</Id>
+          <Id>54616279-4c30-4d15-9f92-68c1f9941416</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1720,7 +1720,7 @@
           <Context>SRA_Behind</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/DiffCarsRelative/RLC-1/REFERENCE?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/DiffCarsRelative/RLC-1/REFERENCE?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1749,7 +1749,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f8c71015-0be9-41e0-9df0-0ca9cbece9a7</Id>
+          <Id>9526bbb6-40ea-4855-b560-c2ef557b3d7a</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1757,7 +1757,7 @@
           <Context>SRA_BehindUOM</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/DiffCarsRelative/RLC-1/REFERENCE?output=uomdesc</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/DiffCarsRelative/RLC-1/REFERENCE?output=uomdesc</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -1786,7 +1786,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e95ba5c7-86e7-4c87-9c8f-8409a63b6b7f</Id>
+          <Id>cba1f3e7-3002-4e47-8428-8f65b2d3c74c</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -1819,7 +1819,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6c007b49-ab8c-470f-95ea-5c4ac74e686e</Id>
+          <Id>ca27728d-29a8-4749-8646-5a97fb6c44ec</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1851,7 +1851,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>dffe8c40-6fd2-4237-b76d-28d05f425bdb</Id>
+          <Id>7f70b5b5-9eff-413f-a5f9-6aac5abbb24b</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1933,7 +1933,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>40c41839-e769-4946-b8c6-16ace24ccf94</Id>
+      <Id>18611f32-0cb7-492f-8a45-8ea3354e3ab5</Id>
       <CommandString>Change All Tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1943,12 +1943,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>28fdaf98-bab8-405b-b11b-92a5a76c3ca7</Id>
+          <Id>2d3eaed9-ecea-41e6-b7ee-db2fc29ed0e5</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>496139f4-33ac-447f-aa0d-8a26f9e61351</Context>
+          <Context>a1cbdf26-a7d1-47f8-8818-d88edef4489a</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2024,7 +2024,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>8050043e-1ff7-47f9-b678-ecff9b3e0477</Id>
+      <Id>ac8c0475-c968-4b03-87c0-d4ddc6b58622</Id>
       <CommandString>Change For Tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2034,12 +2034,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>548f66c2-bd92-4584-bebf-504f1b469d66</Id>
+          <Id>2c6602ec-399e-47c6-96c9-72d01eca5e9f</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>496139f4-33ac-447f-aa0d-8a26f9e61351</Context>
+          <Context>a1cbdf26-a7d1-47f8-8818-d88edef4489a</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2115,7 +2115,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>496139f4-33ac-447f-aa0d-8a26f9e61351</Id>
+      <Id>a1cbdf26-a7d1-47f8-8818-d88edef4489a</Id>
       <CommandString>Change Four Tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2125,7 +2125,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a435ec93-80fb-4dcb-ba95-2b3681e69c0e</Id>
+          <Id>a0039fb2-0372-4713-9af4-9fbb122db03f</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2133,7 +2133,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2162,7 +2162,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>843b81b9-4a6a-41af-94b8-6b0e88c7cf06</Id>
+          <Id>3e1f47ba-b231-4beb-8916-77323c724f93</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2170,7 +2170,7 @@
           <Context>SRA_RF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2199,7 +2199,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>728cc0d0-6ab5-4890-a112-8f116bd8c8d3</Id>
+          <Id>3f6f9de5-fddb-411b-8964-eb961d5e7d70</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2207,7 +2207,7 @@
           <Context>SRA_RR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2236,7 +2236,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d117ddef-130c-4fe0-bfb1-14097af6dff1</Id>
+          <Id>fa108f01-6d3c-403d-b5ba-04a58598b209</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2244,7 +2244,7 @@
           <Context>SRA_LF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2273,7 +2273,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>23a3da3a-ad9e-4016-9ef5-66d1deb51294</Id>
+          <Id>dbac0f00-1330-43bb-8ca5-6be42b40ad51</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2281,7 +2281,7 @@
           <Context>SRA_LR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2310,7 +2310,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6cde1c88-5c30-4eea-be2b-26e1c6a3d3fa</Id>
+          <Id>05905b97-430b-44db-aa11-9336eef8b9c8</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2318,7 +2318,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2347,7 +2347,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b60a5260-8484-4e7b-86e5-bcc2773cb3db</Id>
+          <Id>831f2b8c-2389-466d-ba8e-1836724b0ead</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2429,7 +2429,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>a0bae10a-ec90-4b3c-bfd2-c9c05e3051f3</Id>
+      <Id>fc4a4820-40ee-484a-bda6-9ce698fe67d3</Id>
       <CommandString>Change Left Sides</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2439,7 +2439,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6a567dad-a27a-4118-b7c6-fee5b899231a</Id>
+          <Id>9df353e2-f87c-4d9e-bd4e-52639f0d665c</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2447,7 +2447,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2476,7 +2476,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>fc673411-800f-4180-b792-9ca53ce705e1</Id>
+          <Id>576de5a7-14b1-4e19-b756-4a0a6f049712</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2484,7 +2484,7 @@
           <Context>SRA_LF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2513,7 +2513,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>8d00dacb-29a3-4f54-9a5b-1871de9189b3</Id>
+          <Id>50307067-06ce-4511-91e0-ed4c3498ecb9</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2521,7 +2521,7 @@
           <Context>SRA_LR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2550,7 +2550,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1f0b4760-ea7f-4053-8122-f982213d1b92</Id>
+          <Id>12f1f08a-a442-4ec6-8d96-66015d35f463</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2558,7 +2558,7 @@
           <Context>SRA_RF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2587,7 +2587,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b15cfaaa-c0b5-4e69-9870-9c96532b6921</Id>
+          <Id>32f884af-41f7-45a2-b18e-b2df1bfc09ba</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2595,7 +2595,7 @@
           <Context>SRA_RR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2624,7 +2624,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6e7e229c-cc2a-4983-8f8a-5332705a6164</Id>
+          <Id>f0c74352-52e6-4d8e-9032-73d953ec1f2a</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2632,7 +2632,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2661,7 +2661,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ccfef951-1341-4e9c-b4ac-682e32c5d932</Id>
+          <Id>a0d4ffb1-ed9b-4240-9462-340d959498ef</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2743,7 +2743,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>d51f1031-825e-4755-9f32-a7ea1cb8e5d5</Id>
+      <Id>e3604de4-20dd-4340-bfa9-e50f4d0b363a</Id>
       <CommandString>Change Lefts</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2753,12 +2753,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ad483a89-3d98-4748-be6d-9cd921a42739</Id>
+          <Id>02d74afe-45d6-433c-97a2-0f354c45c78d</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>a0bae10a-ec90-4b3c-bfd2-c9c05e3051f3</Context>
+          <Context>fc4a4820-40ee-484a-bda6-9ce698fe67d3</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2834,7 +2834,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>bb60d4b1-92cc-47d9-9417-930c6d834536</Id>
+      <Id>9e7eebf1-c5cb-4f7e-8c38-e78e762172bf</Id>
       <CommandString>Change Right Sides</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2844,7 +2844,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>612d8607-dc1d-48e4-b55e-4ce034c0dc78</Id>
+          <Id>7a6abb62-f168-408f-ac62-20a117f573c2</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2852,7 +2852,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2881,7 +2881,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b7333054-cf71-4101-8dc7-62a96d78ea13</Id>
+          <Id>ccf13068-3969-4332-9b75-13bb0339b5a5</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2889,7 +2889,7 @@
           <Context>SRA_RF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2918,7 +2918,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6115453e-c4b2-414a-9fac-8013912c6345</Id>
+          <Id>6b0c1328-eb24-4bb6-9a60-deac61e8aa4b</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2926,7 +2926,7 @@
           <Context>SRA_RR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2955,7 +2955,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d94dd225-2ded-4855-9af1-f245c00cf968</Id>
+          <Id>3323bf05-b488-4ad9-82fc-73b437355a4a</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2963,7 +2963,7 @@
           <Context>SRA_LF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -2992,7 +2992,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6be3ae7d-3ec7-4319-b262-7222cb9cb982</Id>
+          <Id>99ace091-d459-4f77-be4c-d7c80c51996d</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3000,7 +3000,7 @@
           <Context>SRA_LR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3029,7 +3029,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a71bf3b6-83c1-417d-8004-6161cc8104ae</Id>
+          <Id>f185ec39-06af-438f-abfd-5d1e9c7f925c</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3037,7 +3037,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3066,7 +3066,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>bc1fd3b1-f474-490c-a68c-7f58f58d4ebf</Id>
+          <Id>5e85223a-0b8f-4cf8-9151-0538fbde2fdc</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3148,7 +3148,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>bebee153-9b10-4adc-b5b1-4b30e3887624</Id>
+      <Id>246e609a-f75c-4bf2-a326-2bb9186a2a49</Id>
       <CommandString>Change Rights</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3158,12 +3158,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>dbf26e81-7298-44d5-b983-0fd51612dcbc</Id>
+          <Id>002e95c2-8e60-48b2-8a6b-dac6df75a1d9</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>bb60d4b1-92cc-47d9-9417-930c6d834536</Context>
+          <Context>9e7eebf1-c5cb-4f7e-8c38-e78e762172bf</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3239,7 +3239,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>5033f3de-1321-4d58-894a-9c1905e99d67</Id>
+      <Id>362945cc-4eee-4404-88f8-518559ab9dd4</Id>
       <CommandString>Change Tearoff</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3249,12 +3249,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a0fab864-63de-4465-a2d8-9bf79c0e2089</Id>
+          <Id>91363609-75f2-4a4f-94c2-99b047a84fa6</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>8d2cc766-578c-4b36-9ec9-14b50455d769</Context>
+          <Context>1ebeb79c-9b8c-4dcc-99af-94bc424ad5a7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3330,7 +3330,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>a16585e2-eb2c-4cca-9863-05eaaf53d079</Id>
+      <Id>9d8db5db-44a9-4272-add8-90c3a7637ed4</Id>
       <CommandString>Change Windshield Tearoff</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3340,12 +3340,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2fc6c7d1-a4cd-409e-b920-a877605dd298</Id>
+          <Id>860024d5-105e-44e4-af5e-3c820e998517</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>8d2cc766-578c-4b36-9ec9-14b50455d769</Context>
+          <Context>1ebeb79c-9b8c-4dcc-99af-94bc424ad5a7</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3421,7 +3421,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>98c664c5-2d0c-4996-b38c-b5685dfc76a5</Id>
+      <Id>8cb5aea6-22a5-436c-adba-aeac86afb191</Id>
       <CommandString>Fast Repair</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3431,7 +3431,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>575a7971-ec82-44f5-a813-2dc0c5dd732a</Id>
+          <Id>5f520910-9c78-4ac9-9bc7-dd5f522fc2aa</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3439,7 +3439,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3468,7 +3468,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f73e15b3-f548-421e-b0a8-33b3d90c147e</Id>
+          <Id>594b4c74-b0a6-40b9-af84-0e2fe391d0ac</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3476,7 +3476,7 @@
           <Context>SRA_FastRepair</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FastRepairs/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FastRepairs/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3505,7 +3505,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>5b1b1433-ae32-4f22-9b63-02752cf0a864</Id>
+          <Id>070c520d-3367-49b8-a87a-6b90e07470cd</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3587,7 +3587,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>93713280-6d88-43df-8999-990886581c05</Id>
+      <Id>75ff9237-7565-4367-8d30-1d6812f20be9</Id>
       <CommandString>for tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3597,12 +3597,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>79cb59bd-2f68-4bb7-a9df-fb7eeac37353</Id>
+          <Id>4db7f092-bd3c-463c-a44b-08156beaa96a</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>496139f4-33ac-447f-aa0d-8a26f9e61351</Context>
+          <Context>a1cbdf26-a7d1-47f8-8818-d88edef4489a</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3678,7 +3678,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>a6f7c215-d1ec-4c08-8000-7517ee65e9d1</Id>
+      <Id>39d20ab4-39dc-4798-b7cd-a9c5cff27852</Id>
       <CommandString>Four Tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3688,12 +3688,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>244ddf5d-b860-40c0-8808-426593ce5055</Id>
+          <Id>f0425594-fb6a-48d2-8774-960a72229a52</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>496139f4-33ac-447f-aa0d-8a26f9e61351</Context>
+          <Context>a1cbdf26-a7d1-47f8-8818-d88edef4489a</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3769,7 +3769,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>de918eed-83d5-4c35-a9ea-86843af491da</Id>
+      <Id>1d813f5e-cf80-4d08-ac57-cf34e30df032</Id>
       <CommandString>Fuel Laps</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3779,12 +3779,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e626f7d4-2623-4b71-9b21-c8b64383e2ae</Id>
+          <Id>9b522fda-93bf-405e-a503-d5a412d50360</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>6d2c305e-9d27-4b19-a2ca-bb9db9deeb37</Context>
+          <Context>e89fff19-6066-4e7c-8d56-ab5a5e76538f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3860,7 +3860,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>44e21112-ad17-427a-923f-7a16b11d4767</Id>
+      <Id>a09eda77-d54e-4396-8ad8-187e6f2b5382</Id>
       <CommandString>Fuel Level</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3870,7 +3870,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>82aadeed-7641-4c7b-a419-1437fec5731d</Id>
+          <Id>e39b868e-3be9-4367-99c3-210a8e9df45d</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3878,7 +3878,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3907,7 +3907,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>5f09e376-b570-45e6-ada3-35784df8c97a</Id>
+          <Id>298b365c-4200-401f-ab6c-262e1bcda526</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3915,7 +3915,7 @@
           <Context>SRA_Fuel</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3944,7 +3944,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4e86ec46-513b-48a8-a8ad-501021915dad</Id>
+          <Id>96477ee1-3b45-4959-b30f-391338ae5fe4</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3952,7 +3952,7 @@
           <Context>SRA_FuelUOM</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=UOMDesc</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/ValueCurrent?output=UOMDesc</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -3981,7 +3981,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4325b6fe-9ab8-4efa-8b6d-e09a87eb8c0d</Id>
+          <Id>1f89a113-edda-4dbe-b5f3-d9f49512e1f4</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -4014,7 +4014,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c57f82f8-058d-4c3c-8e47-232548362319</Id>
+          <Id>e03ea709-b039-4ba9-bbcb-26d3cf8a01fe</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4046,7 +4046,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>fef15428-767a-4cd3-a6dc-d9b309e30e96</Id>
+          <Id>904ac3cb-30e6-4fde-85c8-18641bf12595</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4054,7 +4054,7 @@
           <Context>SRA_FuelNeeded</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/FuelLevelNeeded/0?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/FuelLevelNeeded/0?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4083,7 +4083,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ee472b4d-c2f2-48b3-947b-cba190f74ea3</Id>
+          <Id>acb1b764-8178-4176-9d6f-2455f135fb7b</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4116,7 +4116,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>040b846f-28be-4ed8-bcc9-f261bc22dbd3</Id>
+          <Id>fd7058b3-c4a6-4e49-81a4-16a2600442ea</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4148,10 +4148,10 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a672dbc4-1dab-458c-b374-9bc2273b1744</Id>
+          <Id>fb49a0bf-d2f3-4e87-a9f8-b9de02591d14</Id>
           <ActionType>DecimalSet</ActionType>
-          <Duration>0</Duration>
-          <Delay>0</Delay>
+          <Duration>1</Duration>
+          <Delay>1</Delay>
           <KeyCodes />
           <X>0</X>
           <Y>0</Y>
@@ -4181,7 +4181,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4d8cac2d-1cb7-4bb4-8b21-ae3e0323491a</Id>
+          <Id>0628c074-7b62-4e60-932e-438da5010409</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4213,7 +4213,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c17186a5-007b-4238-affc-fa8e9713a9c6</Id>
+          <Id>9d285952-c9eb-4925-8791-a7b7190da00b</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -4245,7 +4245,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>9a9eeb8a-d465-4772-a5c7-be4457ebc880</Id>
+          <Id>1463ced2-fe33-459d-9f1f-4671c8ef3ddb</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4278,7 +4278,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>bb7d0f1d-b3fe-479e-970d-8effbb8cf1ea</Id>
+          <Id>3a796348-dd92-4aa9-9a9d-f153f42f4aa7</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4310,7 +4310,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>49eb0fc6-6564-4a51-8f14-cf083fe848e4</Id>
+          <Id>f611e535-c316-41c5-99a4-00264e41aca0</Id>
           <ActionType>ConditionElse</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4341,7 +4341,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d532d5c2-87d3-4ccf-815c-39785e2b5f46</Id>
+          <Id>2f566ef6-259d-4f55-ada0-21c92995bf3c</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4349,7 +4349,7 @@
           <Context>SRA_FuelNeededToFinish</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/FuelLevelToFinish/0?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/FuelLevelToFinish/0?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4378,7 +4378,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>feac7547-e4a4-41a8-ac83-abc7efe9bd43</Id>
+          <Id>d6c91065-b03f-4f76-b0b7-8696638d4d81</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -4411,7 +4411,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c1ba509c-df1b-4a7f-8c80-47b578637030</Id>
+          <Id>641d6d5e-9084-43c7-9db0-d98dcf2f6ad6</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4443,7 +4443,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>70f01936-6ca5-4ff1-bc55-1ae71318faa6</Id>
+          <Id>9118d091-5939-4d3a-be52-525bed9eff78</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4507,7 +4507,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>5e5a1171-62eb-4888-80a9-f87c45e527e5</lastEditedAction>
+      <lastEditedAction>77ec5d17-3d22-48eb-88e0-386c2744cf9e</lastEditedAction>
       <Referrer xsi:nil="true" />
       <ExecType>0</ExecType>
       <Confidence>0</Confidence>
@@ -4524,7 +4524,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>1ce19c48-d806-430c-afe5-07fca4666944</Id>
+      <Id>92751550-7a4e-4120-b2ac-66f4266fc1ed</Id>
       <CommandString>Full Service</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4534,7 +4534,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>cd713f9b-44a5-47c5-98c5-261e58c10f60</Id>
+          <Id>364f7769-8da6-4b87-a2df-80e855208ac7</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4542,7 +4542,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4571,7 +4571,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f3efd5b9-ab12-4ba4-914d-275671dcb359</Id>
+          <Id>27e3cf5d-10af-44b5-a8e9-1316375bdd12</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4579,7 +4579,7 @@
           <Context>SRA_RF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4608,7 +4608,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3fb34edb-6eed-407a-9913-f433442462eb</Id>
+          <Id>66e46254-cb15-40b1-8903-ce07c36c87ab</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4616,7 +4616,7 @@
           <Context>SRA_RR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4645,7 +4645,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2d828ee3-04ee-4c33-b2e0-8035ba50adde</Id>
+          <Id>1b05cfe7-8cb1-4d37-aae5-743af2b28d52</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4653,7 +4653,7 @@
           <Context>SRA_LF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4682,7 +4682,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ee30bf23-ff2d-407e-ac3c-0722933341fd</Id>
+          <Id>79a5746d-359e-4c2a-b2d5-f9a56002f3ee</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4690,7 +4690,7 @@
           <Context>SRA_LR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4719,7 +4719,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1cabf68b-f996-424a-bc82-2dbd723ea98f</Id>
+          <Id>94eaa385-d8d7-47fc-b274-efa091b958f8</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4727,7 +4727,7 @@
           <Context>SRA_Fuel</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setValueNext/999</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setValueNext/999</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4756,7 +4756,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>77d970ee-ad21-4964-96d8-ec628a58b159</Id>
+          <Id>b0e49117-4392-422f-9896-e3cc24bbc99a</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4764,7 +4764,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4793,7 +4793,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>050bd6d8-e5fc-463b-8d5f-68d54b52ae1c</Id>
+          <Id>0d655c02-6cee-4ff7-9303-2b7c10f2cb75</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4875,7 +4875,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>de3d02fe-a960-4992-adbb-bebf43451ae4</Id>
+      <Id>7f99650a-d7b8-44d6-b07a-0c6be6257057</Id>
       <CommandString>Incidents</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4885,7 +4885,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>9cc8e6bf-c8ea-4dd3-ba2e-60cef98e43b9</Id>
+          <Id>79394482-9d5f-4603-b395-6b982a080ff5</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4893,7 +4893,7 @@
           <Context>SRA_Incidents</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Incidents?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Incidents?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4922,7 +4922,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>eeb8a3ad-cbf4-4625-8a82-344a12657916</Id>
+          <Id>702faeab-e94c-4ef5-a8f8-a4adea61eaab</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4930,7 +4930,7 @@
           <Context>SRA_IncidentLimit</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/IncidentLimit?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/IncidentLimit?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -4959,7 +4959,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>fa8616cd-7c5c-48aa-ba2e-f40fb6c2bc22</Id>
+          <Id>19b91b45-fdde-4097-8971-0fad76b09fff</Id>
           <ActionType>IntSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4992,7 +4992,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>9fdc4739-75d6-4b6a-b2ea-ceba8c84ad49</Id>
+          <Id>1c362798-5832-453c-a373-8064a649124c</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5024,7 +5024,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ec4cffb3-7b1e-4efc-bdcf-586a74bc34b8</Id>
+          <Id>f06d8f84-b88f-4feb-b738-0ef34187be62</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5057,7 +5057,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>29eea53d-de19-4e34-910d-7623a2590efb</Id>
+          <Id>c607ec8d-fbcc-4961-9504-e3e24b6be4ff</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5089,7 +5089,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e821f23a-7d76-46fc-842c-3a5d955b750e</Id>
+          <Id>0a8e012d-1e83-4b55-8ca9-36d26579cd7b</Id>
           <ActionType>ConditionElse</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5120,7 +5120,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>71a7a106-4b82-4403-b9fd-bb6821b9d407</Id>
+          <Id>f97fb505-124e-43bb-b59f-3a3ea9cb3691</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5152,7 +5152,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>64654484-ee65-4cf4-8fc6-5e34346d5e15</Id>
+          <Id>c534beba-13d8-4215-842e-cb7a3b7c3529</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5233,7 +5233,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>e1a52d5c-a611-49cb-8f15-992e787e82d9</Id>
+      <Id>4ce23b66-32b0-4e6d-b1c3-6db9bcce8bd1</Id>
       <CommandString>Lap time</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5243,7 +5243,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>16942148-3b1d-40ec-913f-e06f239abe7b</Id>
+          <Id>8bb1467a-9aaa-4507-91b2-f9cb47fe75b4</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5251,7 +5251,7 @@
           <Context>SRA_LapTime</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/LapTime/LAST?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/LapTime/LAST?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5280,7 +5280,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ada0fb03-f4d3-4e44-8f45-c7e6c94d4240</Id>
+          <Id>bff21558-8419-485d-9dbc-3beac3f0118f</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>3</Duration>
           <Delay>1</Delay>
@@ -5313,7 +5313,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a35babf4-1c7f-4773-a8e7-d6a60515efbe</Id>
+          <Id>fa104999-293a-4eae-a4d2-b30c1cfdf20a</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5345,7 +5345,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c95af62e-a658-45f6-a0d8-579bb3191320</Id>
+          <Id>9b72c44f-3a52-46d7-b8cb-76f50e02e904</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5427,7 +5427,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>6d2c305e-9d27-4b19-a2ca-bb9db9deeb37</Id>
+      <Id>e89fff19-6066-4e7c-8d56-ab5a5e76538f</Id>
       <CommandString>Laps In Tank</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5437,7 +5437,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>da657763-01a2-4712-93c5-62889d263252</Id>
+          <Id>3ee89f94-147f-4903-8d5c-765284356cf5</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5445,7 +5445,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5474,7 +5474,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3a2175b3-bdd3-47c0-9d5d-3453e7d046b3</Id>
+          <Id>665e7069-2a00-4ca7-8169-f47baa38bf58</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5482,7 +5482,7 @@
           <Context>SRA_FuelLaps</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/FuelLaps/0?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/FuelLaps/0?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5511,7 +5511,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>aba0ec5f-87c4-454d-80ca-12bc256525ae</Id>
+          <Id>94510b56-7deb-4438-845d-ee33c617150e</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -5544,7 +5544,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1d7bff15-9fe7-40e5-877d-b926dc510d0a</Id>
+          <Id>8039c9a1-8015-47d8-897d-23f2f1fe897b</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -5576,12 +5576,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>efabfffe-b0f6-4861-ad3f-32116bced07b</Id>
+          <Id>774e7cdd-b8fa-40d8-98a7-b47828620cd4</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>147740ba-33de-4806-a058-51b1d479df54</Context>
+          <Context>aea749f1-58e5-4c49-83bf-607981a2d62c</Context>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5658,7 +5658,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>147740ba-33de-4806-a058-51b1d479df54</Id>
+      <Id>aea749f1-58e5-4c49-83bf-607981a2d62c</Id>
       <CommandString>Laps To Go</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5668,7 +5668,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>29b6df61-9b56-404e-9347-28e4a8644ead</Id>
+          <Id>80fbba67-05da-4865-bb74-abd89572a681</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5676,7 +5676,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5705,7 +5705,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>84bad08b-4027-4c97-a689-924f46c6a147</Id>
+          <Id>70a025c9-60f2-44df-ad43-7ddaf6eab927</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5713,7 +5713,7 @@
           <Context>SRA_LapsToGo</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/LapsToGo?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/LapsToGo?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5742,7 +5742,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>cb4096b8-6dae-45fc-a2cf-d25d58bf94af</Id>
+          <Id>41319db8-b9cb-4ca1-959a-54e75f9c939c</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5774,7 +5774,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>0d4de115-39b8-4585-a6c4-5e209b350260</Id>
+          <Id>c97de623-d122-439b-8d85-f823ae6202c3</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5856,7 +5856,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>c0553b30-893e-40f2-9f02-35dc834132e7</Id>
+      <Id>e967f539-765f-4477-9e04-06d3da32163c</Id>
       <CommandString>Laps Until Pit</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5866,12 +5866,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ee690158-bc81-4247-a0e1-c9d5d67c3e93</Id>
+          <Id>6b22f309-f26a-41ab-8466-e93c22109498</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>6d2c305e-9d27-4b19-a2ca-bb9db9deeb37</Context>
+          <Context>e89fff19-6066-4e7c-8d56-ab5a5e76538f</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5947,7 +5947,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>bbf23cda-b235-4b41-befe-1b6df806df51</Id>
+      <Id>919c7670-2d14-41b0-8fe0-215a6d83d9eb</Id>
       <CommandString>Leader</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5957,7 +5957,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a8b51ff9-ed68-4b83-b37c-90d84bd8a38d</Id>
+          <Id>f4e5414d-21ed-4adb-aa72-974c8680a59f</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -5965,7 +5965,7 @@
           <Context>SRA_Number</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/LEADER/Number?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/LEADER/Number?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -5994,7 +5994,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>124df206-6ad5-497b-a972-afebe441c6d5</Id>
+          <Id>c075d994-7b29-4fbc-9f13-1b2b88bd8654</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6002,7 +6002,7 @@
           <Context>SRA_Name</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/LEADER/DriverName?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/LEADER/DriverName?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6031,7 +6031,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ddfc3aff-50a2-47be-9b16-d07925cf9675</Id>
+          <Id>4bcc537f-dc72-4df7-b50b-dc09c63d6c8a</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6065,7 +6065,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f8ab3af0-ff7f-4e57-8072-b7732166aa4e</Id>
+          <Id>25bc1d66-1e79-4119-9d66-80b0ba80fc9d</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6073,7 +6073,7 @@
           <Context>SRA_Ahead</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/DiffCars/REFERENCE/LEADER?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/DiffCars/REFERENCE/LEADER?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6102,7 +6102,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d2b192dc-3af4-4ac9-8f67-5ff114948617</Id>
+          <Id>3bd08ef0-f9a6-4156-99e7-149b49ffad74</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6110,7 +6110,7 @@
           <Context>SRA_AheadUOM</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/DiffCars/REFERENCE/LEADER?output=uomdesc</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/DiffCars/REFERENCE/LEADER?output=uomdesc</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6139,7 +6139,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f5b6013d-ad7c-44f7-b8b5-8ae7a0b3d61a</Id>
+          <Id>e00691b3-0c37-4f45-98d6-204928795abc</Id>
           <ActionType>DecimalSet</ActionType>
           <Duration>1</Duration>
           <Delay>1</Delay>
@@ -6172,7 +6172,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2791558b-c018-4b1b-92f1-ece4db076929</Id>
+          <Id>eb3a7840-3c86-4e07-b4da-23e0d1134162</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6204,9 +6204,9 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>486f9fc6-4d1c-409a-976d-a6787eae057a</Id>
+          <Id>2bded2c3-439a-45ac-923a-4babf4547e71</Id>
           <ActionType>Say</ActionType>
-          <Duration>0</Duration>
+          <Duration>1</Duration>
           <Delay>0</Delay>
           <KeyCodes />
           <Context>Number {TXT:SRA_Number} {TXT:SRA_Name} is {DEC:SRA_dAhead} {TXT:SRA_AheadUOM} ahead</Context>
@@ -6236,7 +6236,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e100471e-476a-4e3c-a3a7-d0f6fee7773a</Id>
+          <Id>68cc41e6-76d8-45b9-8762-bb3ebf12c1a8</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6300,7 +6300,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>ed2ba3e9-97e8-47ca-88c5-a77ef78b700b</lastEditedAction>
+      <lastEditedAction>4cdb896f-56bb-48a1-bce1-a26668ec804e</lastEditedAction>
       <Referrer xsi:nil="true" />
       <ExecType>0</ExecType>
       <Confidence>0</Confidence>
@@ -6317,7 +6317,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>5ff7eba4-2fe7-43a7-ad23-59864d0b89e3</Id>
+      <Id>2993314c-b8c5-4d06-b70a-a926d7343e5a</Id>
       <CommandString>Left Sides</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6327,12 +6327,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a02fedd1-ae84-41f3-ae3b-196a4e52d2d3</Id>
+          <Id>43a3b273-0f0a-45f0-a50c-5f6800866e06</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>a0bae10a-ec90-4b3c-bfd2-c9c05e3051f3</Context>
+          <Context>fc4a4820-40ee-484a-bda6-9ce698fe67d3</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6408,7 +6408,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>62469f9d-0e46-463c-a913-3bf37a55901f</Id>
+      <Id>90569f43-95a4-4e66-ae0a-dec3edf917c1</Id>
       <CommandString>No Fast Repair</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6418,7 +6418,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>8ff6c053-fe5e-4e88-a199-2a0035863809</Id>
+          <Id>18f76e5a-64c0-4e39-b5a5-e78b5032ff9f</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6426,7 +6426,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6455,7 +6455,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>7b00b5ec-98f0-4209-97ec-1189d4141677</Id>
+          <Id>75b9bb4d-53e0-4f66-953e-0561fdccefb8</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6463,7 +6463,7 @@
           <Context>SRA_FastRepair</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FastRepairs/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FastRepairs/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6492,7 +6492,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2d32a2a8-a63a-4483-a1b4-ccedd4f17edf</Id>
+          <Id>d5ebed34-a2c2-49ab-bd0e-4bd607104473</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6574,7 +6574,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>da5965ea-13c0-404e-9ea8-716fcd58dd83</Id>
+      <Id>b75afd17-d40a-4bb4-ae64-1582eb80aca7</Id>
       <CommandString>No Fuel</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6584,7 +6584,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a11103ed-6998-4c08-9544-39d9c0a8045b</Id>
+          <Id>3f302b90-5084-4503-b0fe-9e8d30795498</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6592,7 +6592,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6621,7 +6621,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4b965990-6a0d-42b8-a26a-b8ec3443fdd2</Id>
+          <Id>bee424f9-85d6-40af-ae12-951f4b8e1942</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6629,7 +6629,7 @@
           <Context>SRA_Fuel</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6658,7 +6658,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b103e3bf-b435-4fa4-9482-a0028cb63c93</Id>
+          <Id>d2e48f7b-98d5-470d-b44c-9aaca9aacf8e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6740,7 +6740,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>5ff0344e-69ff-4a62-8249-6453764ab43f</Id>
+      <Id>65db5c1b-f0ee-4ae6-a0a4-685bd66da9e0</Id>
       <CommandString>No Service</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6750,7 +6750,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>eecbe64c-807c-49e7-99bb-7d44f2ee8e0f</Id>
+          <Id>eb800524-b64f-4013-8d79-84f99c4f48a4</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6758,7 +6758,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6787,7 +6787,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>416395d0-e30d-4110-bf6a-465d126f4c8c</Id>
+          <Id>56ec9d5f-ef7e-454d-9834-3212543ae981</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6795,7 +6795,7 @@
           <Context>SRA_RF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6824,7 +6824,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>60a2c005-030a-47b5-8227-bfa3c9ffb211</Id>
+          <Id>5238d32a-46a4-432a-9403-98b3b62a14eb</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6832,7 +6832,7 @@
           <Context>SRA_RR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6861,7 +6861,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c7f62da9-d02d-4610-b7cc-6ee1f1709e87</Id>
+          <Id>c8dd3db8-f5b5-42e0-ab54-d82616697abb</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6869,7 +6869,7 @@
           <Context>SRA_LF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6898,7 +6898,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>beca55d6-4ce4-49b5-b69a-76f70018a2ca</Id>
+          <Id>04cb8a01-dbe3-4d49-b2bc-ad916c047952</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6906,7 +6906,7 @@
           <Context>SRA_LR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6935,7 +6935,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b0c681a1-0953-48bd-92b6-20a9dd2b8d3c</Id>
+          <Id>1751d1ea-2510-48e8-9794-b9990e20762c</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6943,7 +6943,7 @@
           <Context>SRA_Fuel</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/FuelLevel/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -6972,7 +6972,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>61352892-c7b6-455c-a731-58c659341f19</Id>
+          <Id>05d12880-1cb1-44d4-9bc7-cb574c39e866</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -6980,7 +6980,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7009,7 +7009,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>379dfcfb-07f9-4211-8721-e02fcd06bc2c</Id>
+          <Id>5add92da-2b03-431d-b311-95312b0298c0</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7091,7 +7091,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>3f64038f-87fd-47bf-af7e-c997e6820ff5</Id>
+      <Id>2ca9b60d-fe66-4f46-8360-59a9886d55f7</Id>
       <CommandString>No Tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -7101,7 +7101,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>7831e16d-0b4a-4643-aa68-ec544bcbe531</Id>
+          <Id>8d19212f-c5c4-4005-a5bc-012459ae8cfa</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7109,7 +7109,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7138,7 +7138,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>91b08ec9-71d6-4318-9eda-4c494b922f25</Id>
+          <Id>e2796eba-4193-41ab-b0e9-3de10d42941c</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7146,7 +7146,7 @@
           <Context>SRA_RF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRF/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7175,7 +7175,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e56e0326-6fd6-4208-8d4c-040448a6eca0</Id>
+          <Id>8be78ce8-9216-4185-b5e5-d9fbce4bc556</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7183,7 +7183,7 @@
           <Context>SRA_RR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureRR/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7212,7 +7212,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4ef7dbde-1c77-45b0-a6bf-c001ef81489c</Id>
+          <Id>65f5d2b2-7c9c-40c2-ae4f-97e6bc0e1339</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7220,7 +7220,7 @@
           <Context>SRA_LF</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLF/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7249,7 +7249,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f3b027fb-310e-4ada-b3d6-9e2908427cfe</Id>
+          <Id>089b008b-b51c-404d-8f18-e36fe0a71c38</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7257,7 +7257,7 @@
           <Context>SRA_LR</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/N</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/TirePressureLR/setChangeFlag/N</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7286,7 +7286,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>8461218d-2ee4-4102-916e-7fa5e837eac3</Id>
+          <Id>577b965c-e3f3-4fb5-b354-616b5845cef4</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7368,7 +7368,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>8d2cc766-578c-4b36-9ec9-14b50455d769</Id>
+      <Id>1ebeb79c-9b8c-4dcc-99af-94bc424ad5a7</Id>
       <CommandString>Remove Tearoff</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -7378,7 +7378,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ce2a117c-8da3-4f42-8f23-a40689b10514</Id>
+          <Id>22724f46-97ce-481f-a247-233daaa133ff</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7386,7 +7386,7 @@
           <Context>SRA_HasPitCommands</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/HasAutomaticPitCommands</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7415,7 +7415,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>85a94dda-0eff-4f09-b128-aa5fe7d71171</Id>
+          <Id>470e0ac8-aa98-4499-81a1-54a89a762a21</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7423,7 +7423,7 @@
           <Context>SRA_WS</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/WindshieldTearoff/setChangeFlag/Y</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7452,7 +7452,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c9a07596-c9cb-4030-b4d3-ff82b8e70cec</Id>
+          <Id>c604a2e2-0842-4c0b-b6e9-4d691f848907</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7534,7 +7534,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>29782b4e-763b-474e-96db-ff48055b4a1c</Id>
+      <Id>b062c03d-e6c5-449c-9a96-628469edba4a</Id>
       <CommandString>Right Sides</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -7544,12 +7544,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>841af17d-e109-416e-819e-e6f396a9ab36</Id>
+          <Id>987148e7-cbaa-4921-8171-24ed81d4836c</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>bb60d4b1-92cc-47d9-9417-930c6d834536</Context>
+          <Context>9e7eebf1-c5cb-4f7e-8c38-e78e762172bf</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7625,7 +7625,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>26c582ff-fd9f-46ae-a499-fcda6f78a415</Id>
+      <Id>cdb64473-ad20-4828-877e-c3f6074d8839</Id>
       <CommandString>Start Flags</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -7635,7 +7635,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>7c6fba3e-5348-473e-b5b1-58acbc35be19</Id>
+          <Id>15a2a0d8-ec9c-463e-9bba-2d32776e8bd3</Id>
           <ActionType>BooleanSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7670,7 +7670,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>de5d5793-6382-4608-8068-abdddf6f516e</Id>
+          <Id>a0286192-ae8c-4589-a863-67bc0fe8d7a8</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7707,7 +7707,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>89d05221-84dc-4531-ac75-f1849396457f</Id>
+          <Id>aaad36b5-7bd2-44a6-9bd8-1caf0f65184c</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7739,7 +7739,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>cc6c39c5-4323-4a1a-8194-ca282cea847a</Id>
+          <Id>7e08bab2-109c-4d21-bdac-cd8c27bbbf6a</Id>
           <ActionType>WhileStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7748,7 +7748,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>42</ConditionPairing>
+          <ConditionPairing>45</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>SRA_loop</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -7772,7 +7772,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>831e0b7b-f823-4077-a43a-0100555415da</Id>
+          <Id>9a4a55a3-1c5d-41a6-9d24-e11ca1bdb5a5</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7809,7 +7809,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>8daef229-b5c5-4ee3-a230-76591e952a22</Id>
+          <Id>3393bef1-5aa1-431d-b795-c67ed7a3e459</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7817,7 +7817,7 @@
           <Context>SRA_BlueFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/isBlueFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/isBlueFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7846,7 +7846,44 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>52fc6aba-5970-4976-b0ff-8b938d1844e9</Id>
+          <Id>31411fbb-02d2-4e75-8456-ba5c5e3ddc8d</Id>
+          <ActionType>TextSet</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>SRA_WhiteFlag</Context>
+          <Context2 />
+          <Context3 />
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/isWhiteFlag?output=value</Context4>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>4</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>fbeda4cd-b76a-4dcf-8796-f5a39f5c5c81</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7854,7 +7891,7 @@
           <Context>SRA_YellowFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/isYellowFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/isYellowFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7883,7 +7920,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6fc3d9de-dc02-48b3-9c4a-142e8bf41b00</Id>
+          <Id>a44a85b8-aa12-4879-89f0-a2bdc8e832b8</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7891,7 +7928,7 @@
           <Context>SRA_BlackFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/isBlackFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/isBlackFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7920,7 +7957,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ebd92a58-2ecb-4b46-b5ec-74f7db2f893a</Id>
+          <Id>534a5fc3-1059-4d70-a1e7-0f8a00754ab2</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7928,7 +7965,7 @@
           <Context>SRA_CautionFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/isCautionFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/isCautionFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7957,7 +7994,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a918cb16-9a70-45eb-9b9e-9c220501a32d</Id>
+          <Id>42d16d9b-5da2-4e34-9769-044b9ed98d9a</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -7965,7 +8002,7 @@
           <Context>SRA_GreenFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/isGreenFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/isGreenFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -7994,7 +8031,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>43029ab5-ea0f-4e27-a3c4-39dbff4722ca</Id>
+          <Id>d3f7e688-9a9f-4201-b473-e3fdc3083056</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8002,7 +8039,7 @@
           <Context>SRA_RedFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/isRedFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/isRedFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -8031,7 +8068,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>d3e5319b-7a92-4783-a526-18337bde8d3a</Id>
+          <Id>ba99135d-e1b1-4f40-bfe3-7980ac763f88</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8039,7 +8076,7 @@
           <Context>SRA_CrossedFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/isCrossedFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/isCrossedFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -8068,7 +8105,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>0933a636-41e1-41a2-a768-c1928d92276a</Id>
+          <Id>9ed63080-77f0-4c51-99bd-c5da9cf37f74</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8076,7 +8113,7 @@
           <Context>SRA_CheckeredFlag</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Session/isCheckeredFlag?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Session/isCheckeredFlag?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -8105,7 +8142,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>5d4e76b4-3d70-4d7a-8589-8f2cc5b3ee9b</Id>
+          <Id>5ec19882-b014-46af-8873-6639974b75e2</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8115,7 +8152,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>15</ConditionPairing>
+          <ConditionPairing>16</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_RedFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8139,7 +8176,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>82eb172d-0096-4ced-8838-b341162cd675</Id>
+          <Id>d1a488b5-4786-43af-a3b0-c4f09702fbac</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8176,7 +8213,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ea40cab0-ab32-40ce-9ca4-53a654073459</Id>
+          <Id>85c6e5f4-87ba-409c-aa77-90ba7f08f321</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8186,7 +8223,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>17</ConditionPairing>
+          <ConditionPairing>18</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_CheckeredFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8210,7 +8247,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1834f6d0-b793-4528-a16a-c09aedd452e8</Id>
+          <Id>c2bdef6d-c171-450b-a286-e151a28df3ea</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8247,7 +8284,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>7a0332b9-4502-4280-82c4-d06af22aec33</Id>
+          <Id>9dcaa998-ec4a-4f42-b8e5-a09d4e901534</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8257,7 +8294,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>19</ConditionPairing>
+          <ConditionPairing>20</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_BlackFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8281,7 +8318,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1c542da1-ac66-4b8c-a506-9e510b0daa18</Id>
+          <Id>ec2395e4-8d23-4ce7-80e2-398c168d8915</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8318,7 +8355,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4eb6543f-23d7-40f7-9b52-46530f7e27b4</Id>
+          <Id>682144c0-c61a-4f30-9143-583a0a8c51d4</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8328,7 +8365,78 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>21</ConditionPairing>
+          <ConditionPairing>22</ConditionPairing>
+          <ConditionGroup>1</ConditionGroup>
+          <ConditionStartNameFrom>{TXT:SRA_WhiteFlag}</ConditionStartNameFrom>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>1</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>91d56e74-b5b4-4a47-a009-c621a5aa9bd5</Id>
+          <ActionType>TextSet</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>SRA_Flag</Context>
+          <Context2 xml:space="preserve">White</Context2>
+          <Context3 />
+          <Context4 />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>110b1d8d-32cf-44ef-be93-7d09898aa8de</Id>
+          <ActionType>ConditionElseIf</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context2 xml:space="preserve">true</Context2>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>24</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_YellowFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8352,7 +8460,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a3731b78-08fc-4df8-9688-9f649c56e86e</Id>
+          <Id>368b5c0e-55fd-4313-aab6-9800cb3a2d1e</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8389,7 +8497,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>93c3060f-13a1-40be-946f-06c477e1dfbd</Id>
+          <Id>d8d822de-a146-45a9-9f36-d521467e7578</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8399,7 +8507,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>23</ConditionPairing>
+          <ConditionPairing>26</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_CautionFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8423,7 +8531,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1a75aec8-507a-4145-8151-c7466852f3e5</Id>
+          <Id>443281cc-cff2-4566-8b96-fe0468a7cac6</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8460,7 +8568,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e8542200-853c-40f0-8782-c1f923b552eb</Id>
+          <Id>4c814ee6-708b-4e4f-914f-25d955e626b9</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8470,7 +8578,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>25</ConditionPairing>
+          <ConditionPairing>28</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_GreenFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8494,7 +8602,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>dbe993eb-1514-4240-912f-d158e159b9d1</Id>
+          <Id>2dbeb26e-888d-4fb1-9a5e-2d20403f9a31</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8531,7 +8639,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>9ad22196-7d6f-43e1-aae3-a0d9fe83a7ae</Id>
+          <Id>1cbb77f3-51c8-4857-bfae-aa7482d4b023</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8541,7 +8649,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>27</ConditionPairing>
+          <ConditionPairing>30</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_BlueFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8565,7 +8673,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f90f8102-d7f4-4bb5-99a0-28eb3d5612cf</Id>
+          <Id>9e202b1e-0aa1-4646-bbb0-981b396acf46</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8602,7 +8710,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>bf703f93-6a65-4a0b-9a3c-56d2cd9f55f1</Id>
+          <Id>fb3213e7-fe83-47e9-afc3-1028b2ad1578</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8612,7 +8720,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>29</ConditionPairing>
+          <ConditionPairing>32</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartNameFrom>{TXT:SRA_CrossedFlag}</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8636,7 +8744,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ff28be27-9869-4441-af59-868559d7228d</Id>
+          <Id>6a979851-431d-4b84-a39b-d6171c17c85b</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8673,7 +8781,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>81f9ba9f-d4e5-45c9-9d4f-fb117fb4557c</Id>
+          <Id>14f297d7-45f7-4d4b-9fc3-c1658d066dd3</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8682,7 +8790,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>13</ConditionPairing>
+          <ConditionPairing>14</ConditionPairing>
           <ConditionGroup>1</ConditionGroup>
           <ConditionStartOperator>0</ConditionStartOperator>
           <ConditionStartValue>0</ConditionStartValue>
@@ -8704,7 +8812,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b61f5da4-8313-42b3-b994-a8d7f0690010</Id>
+          <Id>6680526d-2989-42cc-b464-e71447b1a8e6</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8714,7 +8822,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>41</ConditionPairing>
+          <ConditionPairing>44</ConditionPairing>
           <ConditionGroup>2</ConditionGroup>
           <ConditionStartNameFrom>SRA_PrevFlag</ConditionStartNameFrom>
           <ConditionStartOperator>1</ConditionStartOperator>
@@ -8738,7 +8846,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>db80538f-0066-401d-a191-e5cc028d2740</Id>
+          <Id>41baacf5-074b-4349-b98a-e4e812af4de9</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8770,7 +8878,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>8f6c439f-84b5-4501-a17c-b9087e3a3eb1</Id>
+          <Id>57bfb612-be2c-440b-a409-7ba80bd31b9b</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8780,7 +8888,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>35</ConditionPairing>
+          <ConditionPairing>38</ConditionPairing>
           <ConditionGroup>3</ConditionGroup>
           <ConditionStartNameFrom>SRA_Flag</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8804,7 +8912,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>38a33f2d-f4f5-4c42-9bc1-81970750e9e7</Id>
+          <Id>5ee75818-487a-410f-af03-0a2482f0e89d</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -8836,12 +8944,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ccaac642-22f7-4ee3-98f1-0ead7b771265</Id>
+          <Id>8b4fbe91-5b34-44b9-9473-b54bc4f9e9e5</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>523d0df5-529c-4183-9be5-6d7c25971dac</Context>
+          <Context>292a9a7d-12e9-4c5e-8bb9-14322d558874</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -8868,7 +8976,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>8d828c3d-de42-49aa-8a63-08aad9b755b6</Id>
+          <Id>27a3abad-66f4-4411-8390-07191cc5f111</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8878,7 +8986,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>37</ConditionPairing>
+          <ConditionPairing>40</ConditionPairing>
           <ConditionGroup>3</ConditionGroup>
           <ConditionStartNameFrom>SRA_Flag</ConditionStartNameFrom>
           <ConditionStartOperator>0</ConditionStartOperator>
@@ -8902,7 +9010,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e67198ca-5030-445a-a18f-54632cf44513</Id>
+          <Id>3117baf2-8d5b-4197-b505-256d60ce9f94</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -8934,7 +9042,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>5c979105-b4d9-4330-99cc-344651b637c1</Id>
+          <Id>54ce3ecc-6de1-456d-bd49-4de754bb89e1</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -8944,7 +9052,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>39</ConditionPairing>
+          <ConditionPairing>42</ConditionPairing>
           <ConditionGroup>3</ConditionGroup>
           <ConditionStartNameFrom>SRA_Flag</ConditionStartNameFrom>
           <ConditionStartOperator>1</ConditionStartOperator>
@@ -8968,7 +9076,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a1739bf6-6cac-49bb-9d2e-c2fe28a1242e</Id>
+          <Id>301e72f0-5d66-4ef6-8c08-023d356f2f27</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -9000,7 +9108,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>5476af24-4d2f-4f24-be66-4c2fae740c2e</Id>
+          <Id>034bd0fa-c326-4b96-a250-5f14a036b870</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9009,7 +9117,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>32</ConditionPairing>
+          <ConditionPairing>35</ConditionPairing>
           <ConditionGroup>3</ConditionGroup>
           <ConditionStartOperator>0</ConditionStartOperator>
           <ConditionStartValue>0</ConditionStartValue>
@@ -9031,7 +9139,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>766290e2-777a-4239-adb8-fe2991fcb0de</Id>
+          <Id>21630496-8977-4d03-8639-4da1ca890152</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9068,7 +9176,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>dab1f6f8-29e2-4574-82a2-21c8ef5ef5e6</Id>
+          <Id>0b715d39-f044-419c-81cc-64a724fda881</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9077,7 +9185,7 @@
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
-          <ConditionPairing>30</ConditionPairing>
+          <ConditionPairing>33</ConditionPairing>
           <ConditionGroup>2</ConditionGroup>
           <ConditionStartOperator>0</ConditionStartOperator>
           <ConditionStartValue>0</ConditionStartValue>
@@ -9099,7 +9207,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3d168715-d1dd-48bb-ac55-e12b92d83afb</Id>
+          <Id>d97f7ffe-4b1a-43be-8b9b-3ee91d73fd39</Id>
           <ActionType>WhileEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9163,7 +9271,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>508841e2-c37a-4803-aa45-a3f0d49a5f15</lastEditedAction>
+      <lastEditedAction>51c043e4-569f-4927-bf85-7dd2b344885a</lastEditedAction>
       <Referrer xsi:nil="true" />
       <ExecType>0</ExecType>
       <Confidence>0</Confidence>
@@ -9180,7 +9288,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>12d2cb19-346d-412f-baad-79d226a47f3c</Id>
+      <Id>96d3534a-f947-49f7-8d1e-ff0a3cd69b80</Id>
       <CommandString>Start Gear Annoucement</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -9190,7 +9298,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e1de85ba-5891-453f-bee4-67e3c5f82c6f</Id>
+          <Id>e2e9f2e7-5bb5-4dae-88af-12efb6558bf5</Id>
           <ActionType>BooleanSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9225,7 +9333,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>8845d8f1-273d-46bf-9598-0a32c8913a05</Id>
+          <Id>f3402178-b09a-4097-99d8-25520b90a144</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9262,7 +9370,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>5135bf9e-04d3-4c89-954b-c1dea3787464</Id>
+          <Id>180b4ba6-21f3-440f-a82c-ccf03665f949</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9294,7 +9402,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>0cce05d9-ac3a-46cf-9790-8eb48b316771</Id>
+          <Id>11173464-a5bc-49ce-8d43-dd644f95fa17</Id>
           <ActionType>WhileStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9327,7 +9435,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2696cc1f-9919-48c9-aac9-5524944096a0</Id>
+          <Id>2c2677fd-802b-4ff3-af4d-95104614cfb9</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9335,7 +9443,7 @@
           <Context>SRA_Gear</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/REFERENCE/Gauge/Gear/ValueCurrent?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/REFERENCE/Gauge/Gear/ValueCurrent?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -9364,7 +9472,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3173a6aa-332d-4bd4-9365-a9324ff44d41</Id>
+          <Id>9b34fa10-335e-4b09-a043-d62ef46e8241</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9398,7 +9506,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>72151ff8-28cf-49b7-828c-bcb9e9dea5c5</Id>
+          <Id>d1758573-e44f-42d5-9854-9594d56271f6</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9435,7 +9543,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>1f7d923e-cff9-42e4-9421-cca6ca0a2d8c</Id>
+          <Id>7551d9d1-d382-49b1-83eb-9a0fad8f70a9</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9469,7 +9577,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3cf613b8-1014-4603-b8bc-8aa1ec53c08a</Id>
+          <Id>c84245be-b1ed-4b02-8f45-9bc10e12beee</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9501,7 +9609,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>9aba2c5b-241a-43be-9ea3-8ff85cf0b15d</Id>
+          <Id>71a80a72-752d-4964-a502-d19d19a64d58</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9535,7 +9643,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>177c25f0-7ddb-4ebe-b7ee-9b3d06fe6060</Id>
+          <Id>076ee684-0075-4d46-92a0-7dc2e36b41db</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9569,7 +9677,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2d7511c6-c510-415d-9045-0b59a5bb31af</Id>
+          <Id>77c093ed-25b0-4834-a6cd-2656d057c6c3</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9601,7 +9709,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b7d197e3-2a14-48bd-8d3c-d02c692ce32f</Id>
+          <Id>df431475-dfad-4732-97e2-381ff274fdd7</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9635,7 +9743,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6d0f85b2-9a97-4ed3-8b15-3928eafae115</Id>
+          <Id>6a26c0a9-c5fd-4c36-a2b9-2d4adfdf7082</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9667,7 +9775,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>121302a0-8d6b-4378-b3ad-1a4c5208295c</Id>
+          <Id>65b1df78-b82b-4f77-bb28-1c5281e55378</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9701,7 +9809,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a74adda0-5ec9-40bd-9168-2221b3e8a5ba</Id>
+          <Id>b4b96f0e-dc4d-4f8c-bb9c-c7f6f26d7ed0</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9733,7 +9841,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>9cf3e854-f835-439b-8c80-80932d2c82d9</Id>
+          <Id>c2259254-d0ec-4629-8526-650cda474492</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9767,7 +9875,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>866d3771-78c8-4d90-b6a7-6697f3909b86</Id>
+          <Id>dbfe2c3e-3975-424f-be20-854171dfa65e</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9799,7 +9907,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>f9623241-9fa9-4101-8f90-a556bc7964b0</Id>
+          <Id>1f70b4e3-597e-4c68-b47b-c8f53b1aa03f</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9833,7 +9941,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>0a28e3ce-8b73-4ba6-9e63-f80f75faaaf9</Id>
+          <Id>b70465cc-cee1-4c69-9d8b-3f31536521f5</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9865,7 +9973,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>00486450-487f-4072-be0a-d1b5007a1ed1</Id>
+          <Id>07df70e8-3753-4e5e-aced-a837f313a2be</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9899,7 +10007,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>5463cfba-704f-4f10-a201-81ec7bd5f071</Id>
+          <Id>92b4f23f-b949-4f02-8f4c-5b4b5be604ed</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9931,7 +10039,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>996441e6-81af-4460-9735-1cf4d079a947</Id>
+          <Id>6e22d382-8e08-4705-b196-c4b076e20ff5</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9965,7 +10073,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>0576b935-05a6-4799-b5b3-a2c152415c71</Id>
+          <Id>b05b7862-3b7e-4855-9425-397b44b24da4</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -9997,7 +10105,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>21c97d00-8bd3-4185-889b-d31f8095c4fc</Id>
+          <Id>cf759183-6835-41aa-bbcb-1f0c7e7953fc</Id>
           <ActionType>ConditionElseIf</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10031,7 +10139,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>78c12034-f396-4181-971b-bcddcd8f45d5</Id>
+          <Id>2d7ec79b-bbe9-4986-b0f2-6c9c8bec8b96</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10063,7 +10171,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c06be2a9-bad5-46c9-8a43-948392610f50</Id>
+          <Id>cdcae949-654f-47c7-8b3b-c65ace1393f3</Id>
           <ActionType>ConditionElse</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10094,7 +10202,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b371bb10-191b-43c2-ab74-5a29992231fa</Id>
+          <Id>6ae69ed9-6ad7-4682-aab5-5381a751ec5a</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10126,7 +10234,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e8649f02-7bbe-4734-9f4a-22b45f088eb7</Id>
+          <Id>3043f2b8-3f6e-4e2f-b620-b3956d085aff</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10157,7 +10265,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>69a82938-4a85-4cc4-a396-fa3e09a01585</Id>
+          <Id>00329e16-1250-4024-bdaf-5118cb171f2f</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10188,7 +10296,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>0dd0f78d-67db-42ff-b5ac-9fa715006d7f</Id>
+          <Id>d9ed8935-dbf9-4dd5-a4f0-7abfc51ea8e6</Id>
           <ActionType>WhileEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10269,7 +10377,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>be3ac679-74f1-4e03-bbdc-c797cbe3df59</Id>
+      <Id>7fab5099-2c7c-4cc2-997f-cf8310f0e662</Id>
       <CommandString>Start Leader Change</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -10279,7 +10387,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>fd31b96c-24e0-4c77-b556-0881dca3e130</Id>
+          <Id>fbf2edd7-b667-4737-b083-c958a9046ba9</Id>
           <ActionType>BooleanSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10314,7 +10422,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>14ac9429-bd0a-4880-b394-cdeff3139060</Id>
+          <Id>a8d91539-bd7a-4904-8741-76ae429c50b4</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10351,7 +10459,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>ac14795e-4fb3-4f2b-b86b-e07eaa86dc16</Id>
+          <Id>d6e1a986-83bb-4a08-a8f7-a3d5f66fcbcb</Id>
           <ActionType>WriteToLog</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10383,7 +10491,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>6d52f09c-491f-471f-bea2-8676a5d99da5</Id>
+          <Id>87127a2c-6483-4e6d-bbb9-ccb4cb806aec</Id>
           <ActionType>WhileStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10416,7 +10524,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>bca75c70-ac4e-449e-8264-7bb13b174437</Id>
+          <Id>df1ace7d-376c-4893-85c9-cc2b66cbab36</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10424,7 +10532,7 @@
           <Context>SRA_LeaderNumber</Context>
           <Context2 />
           <Context3 />
-          <Context4>http://localhost/SIMRacingApps/Data/Car/LEADER/Number?output=value</Context4>
+          <Context4>http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}/SIMRacingApps/Data/Car/LEADER/Number?output=value</Context4>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -10453,7 +10561,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>a93fca30-f47f-49c1-905b-4fd059b31c0c</Id>
+          <Id>0d471a99-bc4e-4467-a716-7863c74ccfd0</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10487,7 +10595,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>b36f2c8d-461c-4f53-973f-557fdf4f798d</Id>
+          <Id>0f797b99-afeb-4e19-8a53-66eea86ebc81</Id>
           <ActionType>ConditionStart</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10521,7 +10629,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e8aede1e-3273-417d-9a8c-2a6a0d475330</Id>
+          <Id>e64eedab-0127-4a78-a584-3471f0d0cfe5</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -10553,12 +10661,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>3e6290e7-11a5-4ec7-a295-1b9e3468fd78</Id>
+          <Id>c0e586f2-18ee-4d3d-932b-b6d63c7ea604</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>bbf23cda-b235-4b41-befe-1b6df806df51</Context>
+          <Context>919c7670-2d14-41b0-8fe0-215a6d83d9eb</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -10585,7 +10693,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e4b1041b-2af2-40ac-b43c-f59d4615732e</Id>
+          <Id>6ad9cee7-c054-4e65-b60b-e82bb9739156</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10616,7 +10724,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>0f4a85c6-5d56-4b44-b434-69679ca8a2fd</Id>
+          <Id>05087571-b1e8-4326-b9bd-abb394794d32</Id>
           <ActionType>TextSet</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10653,7 +10761,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>516196ee-f2ce-42c5-8ba5-a2c680e1707c</Id>
+          <Id>33214546-a49e-427f-ab6f-112ba6c28f67</Id>
           <ActionType>ConditionEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10684,7 +10792,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>4573d74b-153d-4243-b8f3-70c19fa66af1</Id>
+          <Id>1b92153d-887b-4a48-b4a3-cc0bb7f92d17</Id>
           <ActionType>WhileEnd</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10765,7 +10873,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>02f59205-4e69-4688-8b39-3e8ffa36ede5</Id>
+      <Id>4abc6015-e6fd-41af-93d8-0e212cbe42fd</Id>
       <CommandString>Start SIMRacingApps</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -10775,7 +10883,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>aceb198c-b615-4228-9c93-adc78c272cfc</Id>
+          <Id>e7871b62-f492-4d8b-b7cd-025ca7ff568e</Id>
           <ActionType>Launch</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -10861,7 +10969,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>eb321efc-d344-40ea-870b-da82394ae70f</Id>
+      <Id>32cdb7b8-3757-4467-b9aa-827cc7353f91</Id>
       <CommandString>Start Spotter</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -10871,7 +10979,7 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>673182d0-2030-4c37-b0c9-75fd6b30cbc4</Id>
+          <Id>0ae533af-1db1-461e-9196-a6e5a3585ec0</Id>
           <ActionType>Say</ActionType>
           <Duration>1</Duration>
           <Delay>0</Delay>
@@ -10903,12 +11011,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>396bacdc-3d6f-4bf4-8b34-e0cf20019fd1</Id>
+          <Id>7079b013-0d7e-4ced-9c70-fbf8350832a3</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>be3ac679-74f1-4e03-bbdc-c797cbe3df59</Context>
+          <Context>7fab5099-2c7c-4cc2-997f-cf8310f0e662</Context>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -10935,12 +11043,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>c898e85d-351c-4e9d-8264-09943ca789d4</Id>
+          <Id>f5855d06-4661-472a-a848-46ae1884c372</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>12d2cb19-346d-412f-baad-79d226a47f3c</Context>
+          <Context>96d3534a-f947-49f7-8d1e-ff0a3cd69b80</Context>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -10967,12 +11075,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>2e547bdb-55b8-4f9b-a2fd-2665078e03a6</Id>
+          <Id>35eb067a-61e1-4a88-8946-af87e8961d4f</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>26c582ff-fd9f-46ae-a499-fcda6f78a415</Context>
+          <Context>cdb64473-ad20-4828-877e-c3f6074d8839</Context>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -11049,7 +11157,268 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>15df5690-8a5d-4abd-b779-f8e5f9c78206</Id>
+      <Id>ae2a961a-a4b4-470d-aee3-1632aaa37431</Id>
+      <CommandString>Startup</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>69f6f67e-05ce-4c9d-9ca9-8bde885665bd</Id>
+          <ActionType>WriteToLog</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>Starting up</Context>
+          <X>3</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>461e60c2-6fe2-42d1-b092-640423681991</Id>
+          <ActionType>Say</ActionType>
+          <Duration>1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>Starting up</Context>
+          <X>100</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>0642f878-d0d8-4648-8119-66178dff072a</Id>
+          <ActionType>TextSet</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>SRA_Host</Context>
+          <Context2 xml:space="preserve">localhost</Context2>
+          <Context3 />
+          <Context4 />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>c590da10-ece1-4ceb-863e-c73d38fb0bb8</Id>
+          <ActionType>TextSet</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>SRA_Port</Context>
+          <Context2 xml:space="preserve">80</Context2>
+          <Context3 />
+          <Context4 />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>3504ada7-5475-4306-b71a-1336e9c599d0</Id>
+          <ActionType>WriteToLog</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>SRA URL is http://{TXT:SRA_HOST:localhost}:{TXT:SRA_Port:80}</Context>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <Id>c6242651-58ed-49a1-b12f-62fac91add15</Id>
+          <ActionType>ExecuteCommand</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>32cdb7b8-3757-4467-b9aa-827cc7353f91</Context>
+          <X>1</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>559c3fea-20d3-4f7d-9800-b1ec8cfeb1ff</lastEditedAction>
+      <Referrer xsi:nil="true" />
+      <ExecType>0</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
+    </Command>
+    <Command>
+      <Id>06a02582-7290-4d8f-976b-956115105d36</Id>
       <CommandString>Stop Spotter</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -11059,12 +11428,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>368a1734-4188-484b-b628-16b83e94df69</Id>
+          <Id>b4bdcb36-7d44-4a42-9252-48b6b2b19f93</Id>
           <ActionType>KillCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>be3ac679-74f1-4e03-bbdc-c797cbe3df59</Context>
+          <Context>7fab5099-2c7c-4cc2-997f-cf8310f0e662</Context>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -11091,12 +11460,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>bebeb034-97af-4afe-b9a8-d2de3c54a413</Id>
+          <Id>115a0015-9e5e-4749-a45c-9b17d6970397</Id>
           <ActionType>KillCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>26c582ff-fd9f-46ae-a499-fcda6f78a415</Context>
+          <Context>cdb64473-ad20-4828-877e-c3f6074d8839</Context>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -11123,12 +11492,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>efff3bce-40bb-45b6-a07a-7867f2f4ea01</Id>
+          <Id>849a7cff-a6ef-482e-83ba-465c96810a00</Id>
           <ActionType>KillCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>12d2cb19-346d-412f-baad-79d226a47f3c</Context>
+          <Context>96d3534a-f947-49f7-8d1e-ff0a3cd69b80</Context>
           <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -11205,7 +11574,7 @@
       <BaseId>00000000-0000-0000-0000-000000000000</BaseId>
     </Command>
     <Command>
-      <Id>2910b7ec-a2bd-4b6b-8cfa-0563a85e590e</Id>
+      <Id>0bdd8093-39b5-4c33-b9e3-5ac48eded842</Id>
       <CommandString>two tires</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -11215,12 +11584,12 @@
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
-          <Id>e75b67b2-1628-454a-9f2f-4c4948aa8422</Id>
+          <Id>5d5a23f1-5322-4401-a6ea-16367144ff28</Id>
           <ActionType>ExecuteCommand</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>bb60d4b1-92cc-47d9-9417-930c6d834536</Context>
+          <Context>9e7eebf1-c5cb-4f7e-8c38-e78e762172bf</Context>
           <X>1</X>
           <Y>0</Y>
           <Z>0</Z>
@@ -11331,8 +11700,8 @@
   <Confidence>0</Confidence>
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
-  <InitializeCommandEnabled>false</InitializeCommandEnabled>
-  <InitializeCommandId xsi:nil="true" />
+  <InitializeCommandEnabled>true</InitializeCommandEnabled>
+  <InitializeCommandId>ae2a961a-a4b4-470d-aee3-1632aaa37431</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>
@@ -11340,5 +11709,5 @@
   <EnableProfileSwitch>false</EnableProfileSwitch>
   <CategoryGroups />
   <GroupCategory>false</GroupCategory>
-  <LastEditedCommand>d21bc823-fb4b-41fc-90a9-6fce08085b53</LastEditedCommand>
+  <LastEditedCommand>41855ccc-23e2-4ef0-aefc-da5d79f31426</LastEditedCommand>
 </Profile>
