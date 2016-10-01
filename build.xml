@@ -108,13 +108,6 @@
     
     <target name="deploy_website">
         <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
-        <property name="buildtype" value="" />
-        <condition property="buildtype" value="BETA">
-            <matches string="${version.build}" pattern="^BETA-" />
-        </condition>
-        <condition property="buildtype" value="BETA">
-            <matches string="${version.build}" pattern="^RC-" />
-        </condition>
         <property name="docs" value="${SIMRacingApps.github.io.location}/docs" />
         <delete dir="${docs}/documentation" />
         <copy todir="${docs}/documentation">
@@ -154,7 +147,7 @@
         <copy overwrite="true" file="LICENSE.TXT" tofile="${SIMRacingApps.github.io.location}/LICENSE.TXT" />
         <copy overwrite="true" file="NOTICE.TXT" tofile="${SIMRacingApps.github.io.location}/NOTICE.TXT" />
         <echo 
-            file="${SIMRacingApps.github.io.location}/${buildtype}version.json" 
+            file="${SIMRacingApps.github.io.location}/${build.prefix}version.json" 
             message='{ "major": "${version.major}", "minor": "${version.minor}", "build": "${version.build}" }' 
         />
     </target>
