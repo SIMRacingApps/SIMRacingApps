@@ -47,6 +47,9 @@
             <replaceregexp match="^Version.*$" replace="Version: ${version}" byline="true">
                 <fileset dir="documentation" includes="SIMRacingApps_ReleaseNotes.txt" />
             </replaceregexp>
+            <replaceregexp match="^Version.*$" replace="Version: ${version}" byline="true">
+                <fileset dir="documentation" includes="SIMRacingApps_${build.prefix}ReleaseNotes.txt" />
+            </replaceregexp>
             <echo message="Release Notes Updated to: ${version}" />
             
             <property file="${SIMRacingAppsSIMPluginiRacing.location}/src/com/SIMRacingApps/SIMPlugins/iRacing/version.properties" prefix="iRacing" />

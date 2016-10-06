@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2016.09.29
+Version: 1.2_Build_BETA-2016.10.06
     1. Closed #70 (http://issues.SIMRacingApps.com/70)
        Closed #69 (http://issues.SIMRacingApps.com/69)
        Closed #63 (http://issues.SIMRacingApps.com/63)
@@ -49,6 +49,9 @@ Version: 1.2_Build_BETA-2016.09.29
        
     4. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
 
+    5. Now displays the Brake Bias on the Brake Pressure gauges.
+
+    For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Requirements                                                  ---

@@ -1,8 +1,12 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.2_Build_BETA-2016.09.29
+Version: 1.2_Build_BETA-2016.10.06
     1. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
+    
+    2. Now displays the Brake Bias on the Brake Pressure gauges.
+    
+    For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
