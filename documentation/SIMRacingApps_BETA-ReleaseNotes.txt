@@ -1,14 +1,13 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.2_Build_BETA-2016.10.07
-    1. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
-    
-    2. Now displays the Brake Bias on the Brake Pressure gauges.
-    
-    3. Added an array of drivers in the session to the DataPublisher output.
-       See http://issues.SIMRacingApps.com/71 for details.
-    
+Version: 1.2_Build_BETA-2016.10.09
+    1. Added "DataPublisher-Post-Log" variable to the settings so developers can 
+       see what's being transmitted and received. It defaults to false. 
+
+    2. In the DataPublisher output, some of the data had trailing spaces. I removed them.
+       I also set the Content-Type to "application/json; charset=UTF-8" on the POST request.
+        
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -63,6 +62,14 @@ Version: 1.2_Build_BETA-2016.10.07
 
 ****************** Previous Versions *************************
 
+1.2_Build_BETA-2016.10.07
+    1. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
+    
+    2. Now displays the Brake Bias on the Brake Pressure gauges.
+    
+    3. Added an array of drivers in the session to the DataPublisher output.
+       See http://issues.SIMRacingApps.com/71 for details.
+       
 1.2_Build_BETA-2016.09.29
     1. Closed #70 (http://issues.SIMRacingApps.com/70)
        Closed #69 (http://issues.SIMRacingApps.com/69)
