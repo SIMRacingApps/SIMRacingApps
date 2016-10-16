@@ -1,12 +1,9 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.2_Build_BETA-2016.10.09
-    1. Added "DataPublisher-Post-Log" variable to the settings so developers can 
-       see what's being transmitted and received. It defaults to false. 
-
-    2. In the DataPublisher output, some of the data had trailing spaces. I removed them.
-       I also set the Content-Type to "application/json; charset=UTF-8" on the POST request.
+Version: 1.2_Build_BETA-2016.10.16
+    1. Fixed issue where brake bias was not displaying the correct number
+       of decimal places when the value was negative.
         
     For notes on previous BETA builds, see below.
     
@@ -62,6 +59,13 @@ Version: 1.2_Build_BETA-2016.10.09
 
 ****************** Previous Versions *************************
 
+1.2_Build_BETA-2016.10.09
+    1. Added "DataPublisher-Post-Log" variable to the settings so developers can 
+       see what's being transmitted and received. It defaults to false. 
+
+    2. In the DataPublisher output, some of the data had trailing spaces. I removed them.
+       I also set the Content-Type to "application/json; charset=UTF-8" on the POST request.
+       
 1.2_Build_BETA-2016.10.07
     1. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
     

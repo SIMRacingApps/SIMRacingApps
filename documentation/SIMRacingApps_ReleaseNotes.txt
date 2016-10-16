@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2016.10.09
+Version: 1.2_Build_BETA-2016.10.16
     1. Closed #70 (http://issues.SIMRacingApps.com/70)
        Closed #69 (http://issues.SIMRacingApps.com/69)
        Closed #63 (http://issues.SIMRacingApps.com/63)
