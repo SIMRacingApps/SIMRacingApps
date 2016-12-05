@@ -1,10 +1,10 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.2_Build_BETA-2016.11.14
-    1. Fixed #75 where the camera was not selecting the correct car. 
-       Had to use the CarNumberRaw in the broadcast command, not the car index.
-    
+Version: 1.2_Build_BETA-2016.12.05
+    1. Fixed #76 (http://issues.SIMRacingApps.com/76)
+       where the volume settings were not working.
+
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -59,6 +59,11 @@ Version: 1.2_Build_BETA-2016.11.14
 
 ****************** Previous Versions *************************
 
+1.2_Build_BETA-2016.11.14
+    1. Fixed #75 (http://issues.SIMRacingApps.com/75)
+       where the camera was not selecting the correct car. 
+       Had to use the CarNumberRaw in the broadcast command, not the car index.
+       
 1.2_Build_BETA-2016.10.16
     1. Fixed issue where brake bias was not displaying the correct number
        of decimal places when the value was negative.

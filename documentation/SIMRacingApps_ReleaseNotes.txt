@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2016.11.14
+Version: 1.2_Build_BETA-2016.12.05
     1. Closed #70 (http://issues.SIMRacingApps.com/70)
        Closed #69 (http://issues.SIMRacingApps.com/69)
        Closed #63 (http://issues.SIMRacingApps.com/63)
@@ -53,6 +53,9 @@ Version: 1.2_Build_BETA-2016.11.14
 
     6. Fixed #75 where the camera was not selecting the correct car. 
        Had to use the CarNumberRaw in the broadcast command, not the car index.
+
+    7. Fixed #76 (http://issues.SIMRacingApps.com/76)
+       where the volume settings were not working.
 
     For notes on previous versions, see below.
        
