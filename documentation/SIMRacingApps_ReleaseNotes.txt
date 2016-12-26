@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2016.12.05
+Version: 1.2_Build_BETA-2016.12.26
     1. Closed #70 (http://issues.SIMRacingApps.com/70)
        Closed #69 (http://issues.SIMRacingApps.com/69)
        Closed #63 (http://issues.SIMRacingApps.com/63)
@@ -44,7 +44,7 @@ Version: 1.2_Build_BETA-2016.12.05
        VoiceAttack: Allow users to define the port and host
        New command "Startup" was created with 2 new variables, SRA_Host and SRA_Port.
        Edit this command and change these if needed.
-       Also, the profile not automatically executes the "Startup" command on load.
+       Also, the profile now automatically executes the "Startup" command on load.
        Added new spotter command to announce pit road speed when entering and exiting pits.
        
     4. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
@@ -57,6 +57,13 @@ Version: 1.2_Build_BETA-2016.12.05
     7. Fixed #76 (http://issues.SIMRacingApps.com/76)
        where the volume settings were not working.
 
+    8. Fixed #78 (http://issues.SIMRacingApps.com/78)
+       In Voice Attack Profile, Blue flag in multi class identifies drivers in same class only.
+       I changed it to call out the immediate car behind you.
+
+    9. Fixed #80 (http://issues.SIMRacingApps.com/80)
+       Excessive CPU being using when idle.
+    
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------

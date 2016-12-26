@@ -1,9 +1,9 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.2_Build_BETA-2016.12.05
-    1. Fixed #76 (http://issues.SIMRacingApps.com/76)
-       where the volume settings were not working.
+Version: 1.2_Build_BETA-2016.12.26
+    1. Fixed #80 (http://issues.SIMRacingApps.com/80)
+       Excessive CPU being using when idle.
 
     For notes on previous BETA builds, see below.
     
@@ -47,17 +47,14 @@ Version: 1.2_Build_BETA-2016.12.05
     Wiki:
         There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
 
-========== TODO List for Version 1.0 (Or defer them to 2.0?) ====================
-    The complete TODO List can be found at http://issues.SIMRacingApps.com.
-     
-    - Add ability for users to override any car profile setting in the settings.txt.
-    - Add ability to save favorites for the menu and let the user modify the properties.
-    - Need to design how to back out a patch once the fix is delivered in the next version.
-    - Document how to translate to other languages all the text and get someone to translate (volunteers?)
-    - Translation support for the Main Menu Descriptions.
-    - Redesign the Gauge class.
-
 ****************** Previous Versions *************************
+
+1.2_Build_BETA-2016.12.17
+    1. Fixed #76 (http://issues.SIMRacingApps.com/76)
+       where the volume settings were not working.
+    2. Fixed #78 (http://issues.SIMRacingApps.com/78)
+       In Voice Attack Profile, Blue flag in multi class identifies drivers in same class only.
+       I changed it to call out the immediate car behind you.
 
 1.2_Build_BETA-2016.11.14
     1. Fixed #75 (http://issues.SIMRacingApps.com/75)
