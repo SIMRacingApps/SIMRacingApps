@@ -3,7 +3,7 @@ SIMRacingApps Release Notes
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2016.12.26
+Version: 1.2_Build_BETA-2017.01.01
     1. Closed #70 (http://issues.SIMRacingApps.com/70)
        Closed #69 (http://issues.SIMRacingApps.com/69)
        Closed #63 (http://issues.SIMRacingApps.com/63)
@@ -63,6 +63,9 @@ Version: 1.2_Build_BETA-2016.12.26
 
     9. Fixed #80 (http://issues.SIMRacingApps.com/80)
        Excessive CPU being using when idle.
+
+    10.Added profile for the new Safety car. 
+       Mainly so the manufacture's logo will be right.
     
     For notes on previous versions, see below.
        

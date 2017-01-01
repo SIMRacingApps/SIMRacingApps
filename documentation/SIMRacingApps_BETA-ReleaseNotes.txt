@@ -1,9 +1,9 @@
 SIMRacingApps Release Notes
 ---------------------------
 
-Version: 1.2_Build_BETA-2016.12.26
-    1. Fixed #80 (http://issues.SIMRacingApps.com/80)
-       Excessive CPU being using when idle.
+Version: 1.2_Build_BETA-2017.01.01
+    1. Added profile for the new Safety car. 
+       Mainly so the manufacture's logo will be right.
 
     For notes on previous BETA builds, see below.
     
@@ -49,6 +49,10 @@ Version: 1.2_Build_BETA-2016.12.26
 
 ****************** Previous Versions *************************
 
+1.2_Build_BETA-2016.12.26
+    1. Fixed #80 (http://issues.SIMRacingApps.com/80)
+       Excessive CPU being using when idle.
+       
 1.2_Build_BETA-2016.12.17
     1. Fixed #76 (http://issues.SIMRacingApps.com/76)
        where the volume settings were not working.
