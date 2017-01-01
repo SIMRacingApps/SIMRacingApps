@@ -1,4 +1,5 @@
 SIMRacingApps Release Notes
+Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
 Version: 1.2_Build_BETA-2017.01.01
