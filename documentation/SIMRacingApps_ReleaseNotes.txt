@@ -5,9 +5,9 @@ For a complete list of issues completed in this version goto
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
 Version: 1.2_Build_BETA-2017.01.01
-    1. Closed #70 (http://issues.SIMRacingApps.com/70)
-       Closed #69 (http://issues.SIMRacingApps.com/69)
-       Closed #63 (http://issues.SIMRacingApps.com/63)
+    1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
+       Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
+       Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
        Sounds.PitCountDown,PitSpeedLimit,Shift to activate during live, not during replay.
        A new settings.txt variables were created to override this, and they default to false.
        settings.txt ->
@@ -15,7 +15,7 @@ Version: 1.2_Build_BETA-2017.01.01
            pit-speed-limit-replay = false
            shift-replay = false 
 
-    2. Closed #71 (http://issues.SIMRacingApps.com/71)
+    2. Closed #71 (https://github.com/SIMRacingApps/SIMRacingApps/issues/71)
        Data Publisher Plugin: Send data to external server.
        See link to issue for specific details.
        To have you data published to your league's web site,
@@ -40,8 +40,8 @@ Version: 1.2_Build_BETA-2017.01.01
            /Session/Id
            /Session/LeagueId
            
-    3. Closed #72 (http://issues.SIMRacingApps.com/72)
-       Closed #49 (http://issues.SIMRacingApps.com/49)
+    3. Closed #72 (https://github.com/SIMRacingApps/SIMRacingApps/issues/72)
+       Closed #49 (https://github.com/SIMRacingApps/SIMRacingApps/issues/49)
        VoiceAttack: Allow users to define the port and host
        New command "Startup" was created with 2 new variables, SRA_Host and SRA_Port.
        Edit this command and change these if needed.
@@ -55,14 +55,14 @@ Version: 1.2_Build_BETA-2017.01.01
     6. Fixed #75 where the camera was not selecting the correct car. 
        Had to use the CarNumberRaw in the broadcast command, not the car index.
 
-    7. Fixed #76 (http://issues.SIMRacingApps.com/76)
+    7. Fixed #76 (https://github.com/SIMRacingApps/SIMRacingApps/issues/76)
        where the volume settings were not working.
 
-    8. Fixed #78 (http://issues.SIMRacingApps.com/78)
+    8. Fixed #78 (https://github.com/SIMRacingApps/SIMRacingApps/issues/78)
        In Voice Attack Profile, Blue flag in multi class identifies drivers in same class only.
        I changed it to call out the immediate car behind you.
 
-    9. Fixed #80 (http://issues.SIMRacingApps.com/80)
+    9. Fixed #80 (https://github.com/SIMRacingApps/SIMRacingApps/issues/80)
        Excessive CPU being using when idle.
 
     10.Added profile for the new Safety car. 
@@ -122,13 +122,13 @@ Version: 1.2_Build_BETA-2017.01.01
 
 1.1_Build_2016.09.15
        
-    1. Fixed #53 (http://issues.SIMRacingApps.com/53) where SRA would not pick the 
+    1. Fixed #53 (https://github.com/SIMRacingApps/SIMRacingApps/issues/53) where SRA would not pick the 
        latest version of Java if the version number of Java was greater than 99. 
        Oracle released versions 101 and 102 recently.
        This only affects you if you have multiple version of Java installed at the same time.
        You can also just uninstall the older version of Java.
        
-    2. Fixed #54 (http://issues.SIMRacingApps.com/54) Pit Count Down plugin to not play when you
+    2. Fixed #54 (https://github.com/SIMRacingApps/SIMRacingApps/issues/54) Pit Count Down plugin to not play when you
        first enter the session. Also, not to play anything if it doesn't know where the pit stall is.
        It was counting down to the start/finish line.
        
