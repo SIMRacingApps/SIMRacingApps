@@ -132,7 +132,7 @@ Version: 1.2_Build_BETA-2017.01.01
        first enter the session. Also, not to play anything if it doesn't know where the pit stall is.
        It was counting down to the start/finish line.
        
-    3. Closed #48 (https://issues.SIMRacingApps.com/48) by Adding new Pit Speed Limit 
+    3. Closed #48 (https://github.com/SIMRacingApps/SIMRacingApps/issues/48) by Adding new Pit Speed Limit 
        plugin to beep when you are speeding on pit road.
        To disable this plugin, add "!Sounds.PitSpeedLimit" to the list of simplugins in the settings.txt.
        The following variables can be put in your settings.txt file to customize it. 
@@ -144,10 +144,10 @@ Version: 1.2_Build_BETA-2017.01.01
            d. pit-speed-limit-beep-rate-excessive = 200
            e. pit-speed-limit-clip = com/SIMRacingApps/SIMPluginCallbacks/Sounds/Clips/speeding_beep.wav
            
-    4. Closed #59 (https://issues.SIMRacingApps.com/59)
+    4. Closed #59 (https://github.com/SIMRacingApps/SIMRacingApps/issues/59)
        Broadcaster, CarSelector, TrackMap: Option to change the camera to the selected car.
        
-    5. Closed #60 (https://issues.SIMRacingApps.com/60)
+    5. Closed #60 (https://github.com/SIMRacingApps/SIMRacingApps/issues/60)
        TrackMap: Add number of cautions and laps to track info box
        
     6. I added a Voice Attack Profile to the release downloads.
@@ -186,7 +186,7 @@ Version: 1.2_Build_BETA-2017.01.01
        25. Start Spotter: Start the Spotter Tasks
        26. Stop Spotter: Stop the Spotter tasks
               
-    7. Closed #61 (https://issues.SIMRacingApps.com/61)
+    7. Closed #61 (https://github.com/SIMRacingApps/SIMRacingApps/issues/61)
        WaitingForSIM: Show a splash screen when SIM is not connected.
        When the SIM connects, it hides itself.
        You can provide your own image by saving a PNG file called 
@@ -195,7 +195,7 @@ Version: 1.2_Build_BETA-2017.01.01
        Useful for streamers to put on top of their stream when they are not in a session.
        Remember to add the "&BACKGROUNDCOLOR=transparent" parameter to the URL.
 
-    8. Closed #64 (https://issues.SIMRacingApps.com/64) by Adding new Sounds.Shift 
+    8. Closed #64 (https://github.com/SIMRacingApps/SIMRacingApps/issues/64) by Adding new Sounds.Shift 
        plugin to beep when you need to shift.
        To disable this plugin, add "!Sounds.Shift" to the list of simplugins in the settings.txt.
        The following variables can be put in your settings.txt file to customize it. 
