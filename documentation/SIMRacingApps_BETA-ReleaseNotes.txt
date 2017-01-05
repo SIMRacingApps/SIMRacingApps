@@ -2,9 +2,10 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.01.01
+Version: 1.2_Build_BETA-2017.01.05
     1. Added profile for the new Safety car. 
        Mainly so the manufacture's logo will be right.
+    2. Added Fuel Tank Size to the Fuel Tank Widget.
 
     For notes on previous BETA builds, see below.
     

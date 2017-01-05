@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.01.01
+Version: 1.2_Build_BETA-2017.01.05
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -52,7 +52,8 @@ Version: 1.2_Build_BETA-2017.01.01
 
     5. Now displays the Brake Bias on the Brake Pressure gauges.
 
-    6. Fixed #75 where the camera was not selecting the correct car. 
+    6. Fixed #75 (https://github.com/SIMRacingApps/SIMRacingApps/issues/75)
+       where the camera was not selecting the correct car. 
        Had to use the CarNumberRaw in the broadcast command, not the car index.
 
     7. Fixed #76 (https://github.com/SIMRacingApps/SIMRacingApps/issues/76)
@@ -67,6 +68,9 @@ Version: 1.2_Build_BETA-2017.01.01
 
     10.Added profile for the new Safety car. 
        Mainly so the manufacture's logo will be right.
+    
+    11. Added Fuel Tank Size to the Fuel Tank Widget.
+    
     
     For notes on previous versions, see below.
        
