@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.01.08
+Version: 1.2_Build_BETA-2017.01.10
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -76,6 +76,9 @@ Version: 1.2_Build_BETA-2017.01.08
        The URL is now broadcasted on port 28888.
        There is a sample client posted to GitHub at (https://github.com/SIMRacingApps/SIMRacingAppsURLClientTest)
     
+    13. Fixed #82 (https://github.com/SIMRacingApps/SIMRacingApps/issues/82)
+       settings.txt - simplugins variable needs to ignore trailing spaces
+       
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------

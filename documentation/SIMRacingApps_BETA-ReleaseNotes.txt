@@ -2,15 +2,10 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.01.08
-    1. Added profile for the new Safety car. 
-       Mainly so the manufacture's logo will be right.
-    2. Added Fuel Tank Size to the Fuel Tank Widget.
-    3. Closed #81 (https://github.com/SIMRacingApps/SIMRacingApps/issues/81)
-       Allow Clients to be able to discover the server.
-       The URL is now broadcasted on port 28888.
-       There is a sample client posted to GitHub at (https://github.com/SIMRacingApps/SIMRacingAppsURLClientTest)
-
+Version: 1.2_Build_BETA-2017.01.10
+    1. Fixed #82 (https://github.com/SIMRacingApps/SIMRacingApps/issues/82)
+       settings.txt - simplugins variable needs to ignore trailing spaces
+       
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -54,6 +49,15 @@ Version: 1.2_Build_BETA-2017.01.08
         There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
 
 ****************** Previous Versions *************************
+
+1.2_Build_BETA-2017.01.08
+    1. Added profile for the new Safety car. 
+       Mainly so the manufacture's logo will be right.
+    2. Added Fuel Tank Size to the Fuel Tank Widget.
+    3. Closed #81 (https://github.com/SIMRacingApps/SIMRacingApps/issues/81)
+       Allow Clients to be able to discover the server.
+       The URL is now broadcasted on port 28888.
+       There is a sample client posted to GitHub at (https://github.com/SIMRacingApps/SIMRacingAppsURLClientTest)
 
 1.2_Build_BETA-2016.12.26
     1. Fixed #80 (https://github.com/SIMRacingApps/SIMRacingApps/issues/80)
