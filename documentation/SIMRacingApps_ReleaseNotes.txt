@@ -78,6 +78,11 @@ Version: 1.2_Build_BETA-2017.01.10
     
     13. Fixed #82 (https://github.com/SIMRacingApps/SIMRacingApps/issues/82)
        settings.txt - simplugins variable needs to ignore trailing spaces
+
+    14. Fixed #85 (https://github.com/SIMRacingApps/SIMRacingApps/issues/85)
+       Yield was spell wrong in the Voice Attack Profile
+       I also added a new commands "Time Remaining", "Pass Left", "Pass Right".
+       The pass left/right is sent as a private message to the car behind you.
        
     For notes on previous versions, see below.
        
