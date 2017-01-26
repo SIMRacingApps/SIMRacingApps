@@ -2,14 +2,15 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.01.23
+Version: 1.2_Build_BETA-2017.01.26
     1. Fixed #82 (https://github.com/SIMRacingApps/SIMRacingApps/issues/82)
        settings.txt - simplugins variable needs to ignore trailing spaces
     2. Fixed #85 (https://github.com/SIMRacingApps/SIMRacingApps/issues/85)
        Yield was spell wrong in the Voice Attack Profile
        I also added a new commands "Time Remaining", "Pass Left", "Pass Right".
        The pass left/right is sent as a private message to the car behind you.
-       
+    3. Added the Porsche 911 Cup profile for the January 2017 build.
+           
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
