@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.01.31
+Version: 1.2_Build_BETA-2017.02.13
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -90,6 +90,9 @@ Version: 1.2_Build_BETA-2017.01.31
        Tire Measurements Don't Change on all Dallara tires.
        This should also fix other cars with intermittent problems with tire measurements.
        
+    17. Fixed #87 (https://github.com/SIMRacingApps/SIMRacingApps/issues/87)
+       TrackMap: Some tracks do not show track path
+
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
