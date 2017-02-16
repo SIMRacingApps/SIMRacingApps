@@ -2,9 +2,12 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.02.13
+Version: 1.2_Build_BETA-2017.02.15
     1. Fixed #87 (https://github.com/SIMRacingApps/SIMRacingApps/issues/87)
        TrackMap: Some tracks do not show track path
+    
+    2. Fixed an issue where the Pit Speed Limit values were not working 
+       when your system is not configured for the United States.
        
     For notes on previous BETA builds, see below.
     
