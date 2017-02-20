@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.02.15
+Version: 1.2_Build_BETA-2017.02.20
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -95,6 +95,12 @@ Version: 1.2_Build_BETA-2017.02.15
 
     18. Fixed an issue where the Pit Speed Limit values were not working 
        when your system is not configured for the United States.
+
+    19. Added German translations for Apps and Widgets from H.Geiger.
+       Note: The main menu has not been translated at this time.
+       Electron and Overwolf will default to your Window's language seting.
+       I added a -lang option to the Electron batch files in version 1.4.0.
+       Anyone wishing to translate into other languages, please post a message to SIMRacingApps on FaceBook.
        
     For notes on previous versions, see below.
        
