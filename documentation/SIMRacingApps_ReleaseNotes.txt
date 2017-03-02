@@ -98,7 +98,7 @@ Version: 1.2_Build_BETA-2017.03.02
 
     19. Added German translations for Apps and Widgets from H.Geiger.
        Note: The main menu has not been translated at this time.
-       Electron and Overwolf will default to your Window's language seting.
+       Electron and Overwolf will default to your Window's language setting.
        I added a -lang option to the Electron batch files in version 1.4.0.
        Anyone wishing to translate into other languages, please post a message to SIMRacingApps on FaceBook.
        
