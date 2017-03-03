@@ -4,7 +4,14 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 
 Version: 1.2_Build_BETA-2017.03.02
     1. Updates to the German Translations
+    
+    2. Updated Electron Client to 1.5.0 to fix null JavaScript Errors when using transparent option.
+    
+    3. Updated Main Menu to support translations.
+    
+    4. Updated Electron (1.5.0) to support menu translations
        
+    5. Updated Overwolf (1.5.0) to support menu translations and the language chosen in the Overwolf settings.
        
     For notes on previous BETA builds, see below.
     
