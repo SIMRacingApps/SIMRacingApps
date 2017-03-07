@@ -58,6 +58,9 @@ Sound
 
 Graphics
     Gary Whitson - Logos
+
+Translations
+    H. Geiger - German 
         
 iRacing
     Information from the irsdk_defines.h are used and translated to the Java syntax.

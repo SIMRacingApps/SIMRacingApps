@@ -2,16 +2,12 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.03.02
-    1. Updates to the German Translations
-    
-    2. Updated Electron Client to 1.5.0 to fix null JavaScript Errors when using transparent option.
-    
-    3. Updated Main Menu to support translations.
-    
-    4. Updated Electron (1.5.0) to support menu translations
-       
-    5. Updated Overwolf (1.5.0) to support menu translations and the language chosen in the Overwolf settings.
+Version: 1.2_Build_BETA-2017.03.07
+    1. Fixed the main menu so it can be translated
+       and added the German translations.
+       If your browser is not telling be the correct language, then launch
+       the menu as follows "http://{YourIP}?lang=de".
+       PM me if you are interested in translating SRA into other languages.
        
     For notes on previous BETA builds, see below.
     
@@ -56,6 +52,17 @@ Version: 1.2_Build_BETA-2017.03.02
         There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
 
 ****************** Previous Versions *************************
+
+1.2_Build_BETA-2017.03.02
+    1. Updates to the German Translations
+    
+    2. Updated Electron Client to 1.5.0 to fix null JavaScript Errors when using transparent option.
+    
+    3. Updated Main Menu to support translations.
+    
+    4. Updated Electron (1.5.0) to support menu translations
+       
+    5. Updated Overwolf (1.5.0) to support menu translations and the language chosen in the Overwolf settings.
 
 1.2_Build_BETA-2017.02.20
     1. Fixed #87 (https://github.com/SIMRacingApps/SIMRacingApps/issues/87)
