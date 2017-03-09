@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.03.07
+Version: 1.2_Build_BETA-2017.03.08
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -101,7 +101,9 @@ Version: 1.2_Build_BETA-2017.03.07
        I added a -lang option to the Electron batch files in version 1.5.0.
        I added support for the Overwolf language settings version 1.5.0.
        Anyone wishing to translate into other languages, please post a message to SIMRacingApps on FaceBook.
-       
+
+    20. Added the Bullring track in Las Vagas from the March 2017 build. 
+           
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
