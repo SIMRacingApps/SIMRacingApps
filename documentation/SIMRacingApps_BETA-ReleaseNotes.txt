@@ -2,13 +2,14 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.03.08
+Version: 1.2_Build_BETA-2017.03.09
     1. Fixed the main menu so it can be translated
        and added the German translations.
        If your browser is not telling be the correct language, then launch
        the menu as follows "http://{YourIP}?lang=de".
        PM me if you are interested in translating SRA into other languages.
-    2. Added the Bullring track in Las Vagas from the March 2017 build. 
+    2. Added The Bullring track in Las Vagas from the March 2017 build. 
+    3. Fixed a couple of translation related bugs in Electron and Overwolf version 1.5.1.
        
     For notes on previous BETA builds, see below.
     
