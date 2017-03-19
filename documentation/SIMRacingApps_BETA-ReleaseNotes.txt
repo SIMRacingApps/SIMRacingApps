@@ -2,15 +2,19 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.03.09
-    1. Fixed the main menu so it can be translated
-       and added the German translations.
-       If your browser is not telling be the correct language, then launch
-       the menu as follows "http://{YourIP}?lang=de".
-       PM me if you are interested in translating SRA into other languages.
-    2. Added The Bullring track in Las Vagas from the March 2017 build. 
-    3. Fixed a couple of translation related bugs in Electron and Overwolf version 1.5.1.
-       
+Version: 1.2_Build_BETA-2017.03.18
+    1. Closed #92 (https://github.com/SIMRacingApps/SIMRacingApps/issues/92)
+       Updated the Voice Attack Profile to say minutes and seconds on the commands that say time.
+       Changed Ahead/Behind to be for all classes.
+       Removed Ahead/Behind Relative and replace with Ahead/Behind Class.
+       Added more chat commands to Voice Attack for (Pitting In, Pitting Out, Thanks, and You're Welcome).
+    2. Closed #4 (https://github.com/SIMRacingApps/SIMRacingApps/issues/4)
+       Allow spectator in the relative results
+    3. Fixed issue causing the BarGauge/OilTemp widget to not appear on the menu.
+    4. Added changes to use the first IP address instead of the last one.
+       Some VPN devices add to the list and the first one is usually right.
+       Also allow user to override with "-ip" command line option.
+              
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -19,14 +23,20 @@ Version: 1.2_Build_BETA-2017.03.09
     1. To get the server running, simply execute the SIMRacingAppsServer...exe 
        on the same computer that the Simulator is running on.
     2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page will install the 32-bit version of Java. The 64-bit is faster.
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation.
+       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
        Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
        for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
-    3. Enter the server address (found in the Title Bar of the server window) in your browser 
+    3. If a Firewall is running, you might get prompted to allow the server to run.
+       Depending on if your Ethernet connection was made private or public, 
+       you may be asked to confirm that also. Please select allow.
+       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
+       for both in-bound and out-bound traffic on all ports. 
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
+    4. Enter the server address (found in the Title Bar of the server window) in your browser 
        from any device connected to the same local network.
        Connecting from outside the local network is not supported and not recommended due to security concerns.
-    4. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
        for more details and options for running the server.
     
     Electron Client:
@@ -54,6 +64,16 @@ Version: 1.2_Build_BETA-2017.03.09
         There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
 
 ****************** Previous Versions *************************
+
+1.2_Build_BETA-2017.03.09
+    1. Closed #91 (https://github.com/SIMRacingApps/SIMRacingApps/issues/91)
+       Fixed the main menu so it can be translated
+       and added the German translations.
+       If your browser is not telling be the correct language, then launch
+       the menu as follows "http://{YourIP}?lang=de".
+       PM me if you are interested in translating SRA into other languages.
+    2. Added The Bullring track in Las Vegas from the March 2017 build. 
+    3. Fixed a couple of translation related bugs in Electron and Overwolf version 1.5.1.
 
 1.2_Build_BETA-2017.03.02
     1. Updates to the German Translations

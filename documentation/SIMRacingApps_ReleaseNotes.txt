@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.03.09
+Version: 1.2_Build_BETA-2017.03.18
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -40,14 +40,20 @@ Version: 1.2_Build_BETA-2017.03.09
            /Session/Id
            /Session/LeagueId
            
-    3. Closed #72 (https://github.com/SIMRacingApps/SIMRacingApps/issues/72)
+    3. VoiceAttack:
+       Closed #72 (https://github.com/SIMRacingApps/SIMRacingApps/issues/72)
        Closed #49 (https://github.com/SIMRacingApps/SIMRacingApps/issues/49)
-       VoiceAttack: Allow users to define the port and host
+       Closed #92 (https://github.com/SIMRacingApps/SIMRacingApps/issues/92)
+       Allow users to define the port and host
        New command "Startup" was created with 2 new variables, SRA_Host and SRA_Port.
        Edit this command and change these if needed.
        Also, the profile now automatically executes the "Startup" command on load.
        Added new spotter command to announce pit road speed when entering and exiting pits.
-       
+       Updated the profile to say minutes and seconds on the commands that have time.
+       Changed Ahead/Behind to be for all classes.
+       Removed Ahead/Behind Relative and replace with Ahead/Behind Class.
+       Added Chat commands for Pitting In, Pitting Out, Thanks, and You're Welcome
+
     4. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
 
     5. Now displays the Brake Bias on the Brake Pressure gauges.
@@ -91,18 +97,26 @@ Version: 1.2_Build_BETA-2017.03.09
        This should also fix other cars with intermittent problems with tire measurements.
        
     17. Fixed #87 (https://github.com/SIMRacingApps/SIMRacingApps/issues/87)
-       TrackMap: Some tracks do not show track path
+       TrackMap: Some tracks do not show track path when your language is not English on the server.
 
     18. Fixed an issue where the Pit Speed Limit values were not working 
        when your system is not configured for the United States.
 
-    19. Added German translations for Apps and Widgets from H.Geiger.
+    19. Closed #91 (https://github.com/SIMRacingApps/SIMRacingApps/issues/91)
+       Added German translations for Apps and Widgets from H.Geiger.
        Clients will default to your Window's language setting.
        I added a -lang option to the Electron batch files in version 1.5.0.
        I added support for the Overwolf language settings version 1.5.0.
        Anyone wishing to translate into other languages, please post a message to SIMRacingApps on FaceBook.
 
-    20. Added the Bullring track in Las Vagas from the March 2017 build. 
+    20. Added the Bullring track in Las Vegas from the March 2017 build. 
+
+    21. Closed #4 (https://github.com/SIMRacingApps/SIMRacingApps/issues/4)
+       Allow spectator in the relative results
+
+    22. Added changes to use the first IP address instead of the last one.
+       Some VPN devices add to the list and the first one is usually right.
+       Also allow user to override with "-ip" command line option.
            
     For notes on previous versions, see below.
        
@@ -116,10 +130,16 @@ Version: 1.2_Build_BETA-2017.03.09
        See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
        Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
        for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
-    3. Enter the server address (found in the Title Bar of the server window) in your browser 
+    3. If a Firewall is running, you might get prompted to allow the server to run.
+       Depending on if your Ethernet connection was made private or public, 
+       you may be asked to confirm that also. Please select allow.
+       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
+       for both in-bound and out-bound traffic on all ports. 
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
+    4. Enter the server address (found in the Title Bar of the server window) in your browser 
        from any device connected to the same local network.
        Connecting from outside the local network is not supported and not recommended due to security concerns.
-    4. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
        for more details and options for running the server.
     
     Issues:
