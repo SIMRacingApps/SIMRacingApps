@@ -2,19 +2,15 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.03.18
-    1. Closed #92 (https://github.com/SIMRacingApps/SIMRacingApps/issues/92)
-       Updated the Voice Attack Profile to say minutes and seconds on the commands that say time.
-       Changed Ahead/Behind to be for all classes.
-       Removed Ahead/Behind Relative and replace with Ahead/Behind Class.
-       Added more chat commands to Voice Attack for (Pitting In, Pitting Out, Thanks, and You're Welcome).
-    2. Closed #4 (https://github.com/SIMRacingApps/SIMRacingApps/issues/4)
-       Allow spectator in the relative results
-    3. Fixed issue causing the BarGauge/OilTemp widget to not appear on the menu.
-    4. Added changes to use the first IP address instead of the last one.
-       Some VPN devices add to the list and the first one is usually right.
-       Also allow user to override with "-ip" command line option.
-              
+Version: 1.2_Build_BETA-2017.03.27
+    1. Fixed #96 (https://github.com/SIMRacingApps/SIMRacingApps/issues/96)
+       TeamSpeak 3.1.3 or later added a security key to be able to access the client remotely.
+       
+            teamspeak-apikey = your key
+
+       You can find your key in TeamSpeak -> Options -> Addons -> Plugins -> ClientQuery -> Settings
+       and either update or add an entry to the settings.txt file.
+
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -64,6 +60,19 @@ Version: 1.2_Build_BETA-2017.03.18
         There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
 
 ****************** Previous Versions *************************
+
+1.2_Build_BETA-2017.03.18
+    1. Closed #92 (https://github.com/SIMRacingApps/SIMRacingApps/issues/92)
+       Updated the Voice Attack Profile to say minutes and seconds on the commands that say time.
+       Changed Ahead/Behind to be for all classes.
+       Removed Ahead/Behind Relative and replace with Ahead/Behind Class.
+       Added more chat commands to Voice Attack for (Pitting In, Pitting Out, Thanks, and You're Welcome).
+    2. Closed #4 (https://github.com/SIMRacingApps/SIMRacingApps/issues/4)
+       Allow spectator in the relative results
+    3. Fixed issue causing the BarGauge/OilTemp widget to not appear on the menu.
+    4. Added changes to use the first IP address instead of the last one.
+       Some VPN devices add to the list and the first one is usually right.
+       Also allow user to override with "-ip" command line option.
 
 1.2_Build_BETA-2017.03.09
     1. Closed #91 (https://github.com/SIMRacingApps/SIMRacingApps/issues/91)
