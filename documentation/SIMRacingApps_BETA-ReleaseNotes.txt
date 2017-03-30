@@ -2,7 +2,7 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.2_Build_BETA-2017.03.27
+Version: 1.2_Build_BETA-2017.03.30
     1. Fixed #96 (https://github.com/SIMRacingApps/SIMRacingApps/issues/96)
        TeamSpeak 3.1.3 or later added a security key to be able to access the client remotely.
        
@@ -11,6 +11,11 @@ Version: 1.2_Build_BETA-2017.03.27
        You can find your key in TeamSpeak -> Options -> Addons -> Plugins -> ClientQuery -> Settings
        and either update or add an entry to the settings.txt file.
 
+    2. Added Dirt profiles for new Cars and Tracks from the iRacing 3/29/2017 build.
+       Some of the profiles I had to override iRacings RPM Shift settings, they were wrong.
+       Also added support for the In Car Rear Wing values to be shown in the Crew Chief 
+       and Pit Controller apps for the Sprint Cars.
+       
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------

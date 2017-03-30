@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.03.27
+Version: 1.2_Build_BETA-2017.03.30
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -109,7 +109,9 @@ Version: 1.2_Build_BETA-2017.03.27
        I added support for the Overwolf language settings version 1.5.0.
        Anyone wishing to translate into other languages, please post a message to SIMRacingApps on FaceBook.
 
-    20. Added the Bullring track in Las Vegas from the March 2017 build. 
+    20. Added the Bullring track in Las Vegas from the March 2017 build.
+       If you downloaded the track profile, you can delete it from your
+       Documents/SIMRacingApps/com/SIMRacingApps/Tracks folder. 
 
     21. Closed #4 (https://github.com/SIMRacingApps/SIMRacingApps/issues/4)
        Allow spectator in the relative results
@@ -125,6 +127,11 @@ Version: 1.2_Build_BETA-2017.03.27
 
        You can find your key in TeamSpeak -> Options -> Addons -> Plugins -> ClientQuery -> Settings
        and either update or add an entry to the settings.txt file.
+
+    24. Added Dirt profiles for new Cars and Tracks from the iRacing 3/29/2017 build.
+       Some of the profiles I had to override iRacings RPM Shift settings, they were wrong.
+       Also added support for the In Car Rear Wing values to be shown in the Crew Chief 
+       and Pit Controller apps for the Sprint Cars.
            
     For notes on previous versions, see below.
        
