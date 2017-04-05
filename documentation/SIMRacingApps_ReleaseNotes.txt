@@ -4,7 +4,12 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/4)
 
-Version: 1.2_Build_BETA-2017.03.30
+In addition to the Server changes listed here, I have also released new versions 
+of Electron and Overwolf. Download them from
+    http://Electron.SIMRacingApps.com
+    http://Overwolf.SIMRacingApps.com
+
+Version: 1.2_Build_2017.04.03
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
        Closed #69 (https://github.com/SIMRacingApps/SIMRacingApps/issues/69)
        Closed #63 (https://github.com/SIMRacingApps/SIMRacingApps/issues/63)
@@ -53,6 +58,9 @@ Version: 1.2_Build_BETA-2017.03.30
        Changed Ahead/Behind to be for all classes.
        Removed Ahead/Behind Relative and replace with Ahead/Behind Class.
        Added Chat commands for Pitting In, Pitting Out, Thanks, and You're Welcome
+       Added ALT-T keysend to the Remove Tearoff command. So, visors will tearoff immediately.
+           NOTE: This only works if you have not remapped the action in iRacing.
+       
 
     4. Removed my shift point overrides for the Nissan ZXT. iRacing fixed their numbers.
 

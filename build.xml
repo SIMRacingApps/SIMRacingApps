@@ -9,7 +9,7 @@
     </script>
     <property name="build.major" value="1" />
     <property name="build.minor" value="2" />
-    <property name="build.prefix" value="BETA-" />
+    <property name="build.prefix" value="" />
     <tstamp>
         <format property="build.time" pattern="yyyy.MM.dd.HH.mm.ss" />
     </tstamp>
@@ -94,7 +94,7 @@
                     </classPath>
                     <jre minVersion="1.8.0" bundledJre64Bit="false" bundledJreAsFallback="false" jdkPreference="preferJre" runtimeBits="64/32" initialHeapSize="256" maxHeapSize="512" />
                     <singleInstance mutexName="SIMRacingAppsServer" windowTitle="SIMRacingAppsServer" />
-                    <versionInfo txtFileVersion="${version}" fileVersion="${version.major}.${version.minor}.0.0" fileDescription="SIMRacingAppsServer" txtProductVersion="${version}" productVersion="${version.major}.${version.minor}.0.0" productName="SIMRacingApps" internalName="SIMRacingApps" originalFilename="SIMRacingAppsServer.exe" copyright="${version.copyright}" />
+                    <versionInfo txtFileVersion="${version}" fileVersion="${version.major}.${version.minor}.${version.year}.${version.month}${version.day2}" fileDescription="SIMRacingAppsServer" txtProductVersion="${version}" productVersion="${version.major}.${version.minor}.0.0" productName="SIMRacingApps" internalName="SIMRacingApps" originalFilename="SIMRacingAppsServer.exe" copyright="${version.copyright}" />
                     <messages jreVersionErr="Requires a Java Runtime Environment Equal or Greater Than" />
                 </config>
             </launch4j>
