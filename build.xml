@@ -7,18 +7,6 @@
         if ( ! "0".equals( verboseMode ) )
             logger.setMessageOutputLevel( 9 );
     </script>
-    <property name="build.major" value="1" />
-    <property name="build.minor" value="2" />
-    <property name="build.prefix" value="" />
-    <tstamp>
-        <format property="build.time" pattern="yyyy.MM.dd.HH.mm.ss" />
-    </tstamp>
-    <tstamp>
-        <format property="build.date" pattern="yyyy.MM.dd" />
-    </tstamp>
-    <tstamp>
-        <format property="build.year" pattern="yyyy" />
-    </tstamp>
     <property environment="env" />
     <property name="launch4j.dir" location="Launch4j" />
     <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar" />
@@ -48,7 +36,7 @@
                 <fileset dir="documentation" includes="SIMRacingApps_ReleaseNotes.txt" />
             </replaceregexp>
             <replaceregexp match="^Version.*$" replace="Version: ${version}" byline="true">
-                <fileset dir="documentation" includes="SIMRacingApps_${build.prefix}ReleaseNotes.txt" />
+                <fileset dir="documentation" includes="SIMRacingApps_${version.prefix}ReleaseNotes.txt" />
             </replaceregexp>
             <echo message="Release Notes Updated to: ${version}" />
             
@@ -150,7 +138,7 @@
         <copy overwrite="true" file="LICENSE.TXT" tofile="${SIMRacingApps.github.io.location}/LICENSE.TXT" />
         <copy overwrite="true" file="NOTICE.TXT" tofile="${SIMRacingApps.github.io.location}/NOTICE.TXT" />
         <echo 
-            file="${SIMRacingApps.github.io.location}/${build.prefix}version.json" 
+            file="${SIMRacingApps.github.io.location}/${version.prefix}version.json" 
             message='{ "major": "${version.major}", "minor": "${version.minor}", "build": "${version.build}" }' 
         />
     </target>
@@ -166,7 +154,7 @@
         </move>
         <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer.exe" tofile="${download.dir}/SIMRacingAppsServer_${version}.exe" />
         <copy overwrite="true" file="documentation/SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
-        <copy overwrite="true" file="documentation/SIMRacingApps_${build.prefix}ReleaseNotes.txt" todir="${download.dir}" />
+        <copy overwrite="true" file="documentation/SIMRacingApps_${version.prefix}ReleaseNotes.txt" todir="${download.dir}" />
         <copy overwrite="true" file="SIMRacingApps-VoiceAttack-Profile.vap" todir="${download.dir}" />
         <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/documentation/SIMRacingApps - Quick Start Guide/SIMRacingApps - Quick Start Guide.pdf" todir="${download.dir}" />
         <echo message="Remember to Tag all Git Repositories with: Version_${version}"/>
