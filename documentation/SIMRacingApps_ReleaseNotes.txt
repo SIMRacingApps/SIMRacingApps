@@ -9,7 +9,7 @@ of Electron and Overwolf. Download them from
     http://Electron.SIMRacingApps.com
     http://Overwolf.SIMRacingApps.com
 
-Version: 1.3_Build_BETA-2017.04.25
+Version: 1.3_Build_BETA-2017.04.27
     1. TeamSpeak
        Added the ability to disable the TeamSpeak integration. 
        Add/update the following to the settings.txt file.
@@ -19,6 +19,13 @@ Version: 1.3_Build_BETA-2017.04.25
        - Added a command for the leader of your class "Leader Class"
        - Changed Ahead/Behind and Class commands to be by position instead of relative.
          This way when a lap down it will talk about the cars you're competing with.
+         The old commands are still there, just renamed to "Ahead/Behind Relative".
+         
+    3. Fixed #94 (https://github.com/SIMRacingApps/SIMRacingApps/issues/94)
+       iRacing Replay missing some telemetry values. 
+       Now takes Position, LapCompleted from replay.
+       Please note that there are many values missing from the replay
+       or they are the session ending values and will not change.
 
     For notes on previous versions, see below.
        
