@@ -1,8 +1,12 @@
 SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
+For a complete list of issues completed in this version goto 
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/5)
+and click on either open or closed. Be sure to look at the date closed
+and download the BETA released after that date.
 
-Version: 1.3_Build_BETA-2017.04.27
+Version: 1.3_Build_BETA-2017.05.09
     1. TeamSpeak
        Added the ability to disable the TeamSpeak integration. 
        Add/update the following to the settings.txt file.
@@ -19,6 +23,22 @@ Version: 1.3_Build_BETA-2017.04.27
        Now takes Position, LapCompleted from replay.
        Please note that there are many values missing from the replay
        or they are the session ending values and will not change.
+       
+    4. Closed #52 (https://github.com/SIMRacingApps/SIMRacingApps/issues/52)
+       Closed #95 (https://github.com/SIMRacingApps/SIMRacingApps/issues/95)
+       Camera Control Widget created called CameraSelector.
+       It is stand alone and embedded in the Spotter/Broadcaster App.
+       You can select up to 20 cameras with ability to focus on the leader, crashes, exciting, or a driver.
+       New APIs added:
+            /Session/setCamera/(CAMERA)/(FOCUSON)/(CARIDENTIFIER)
+            /Session/setCamera/(FOCUSON)/(CARIDENTIFIER)
+           
+    5. Closed #99 (https://github.com/SIMRacingApps/SIMRacingApps/issues/99)
+       New Replay Controller Widget
+       New APIs added"
+            /Session/Replay
+            /Session/setReplay/(COMMAND)
+            /Session/setReplayPosition/(COMMAND)
 
     For notes on previous BETA builds, see below.
     
