@@ -6,7 +6,7 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.3_Build_BETA-2017.05.09
+Version: 1.3_Build_BETA-2017.05.11
     1. TeamSpeak
        Added the ability to disable the TeamSpeak integration. 
        Add/update the following to the settings.txt file.
