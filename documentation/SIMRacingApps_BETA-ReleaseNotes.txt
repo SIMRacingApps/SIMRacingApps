@@ -6,39 +6,14 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.3_Build_BETA-2017.05.11
-    1. TeamSpeak
-       Added the ability to disable the TeamSpeak integration. 
-       Add/update the following to the settings.txt file.
-         teamspeak = N
-         
-    2. Voice Attack Profile
-       - Added a command for the leader of your class "Leader Class"
-       - Changed Ahead/Behind and their Class commands to be by position instead of relative.
-         This way when you're a lap down it will talk about the cars you're competing with.
-         The old commands are still there, just renamed to "Ahead/Behind Relative".
-       
-    3. Fixed #94 (https://github.com/SIMRacingApps/SIMRacingApps/issues/94)
-       iRacing Replay missing some telemetry values. 
-       Now takes Position, LapCompleted from replay.
-       Please note that there are many values missing from the replay
-       or they are the session ending values and will not change.
-       
-    4. Closed #52 (https://github.com/SIMRacingApps/SIMRacingApps/issues/52)
-       Closed #95 (https://github.com/SIMRacingApps/SIMRacingApps/issues/95)
-       Camera Control Widget created called CameraSelector.
-       It is stand alone and embedded in the Spotter/Broadcaster App.
-       You can select up to 20 cameras with ability to focus on the leader, crashes, exciting, or a driver.
-       New APIs added:
-            /Session/setCamera/(CAMERA)/(FOCUSON)/(CARIDENTIFIER)
-            /Session/setCamera/(FOCUSON)/(CARIDENTIFIER)
-           
-    5. Closed #99 (https://github.com/SIMRacingApps/SIMRacingApps/issues/99)
-       New Replay Controller Widget
-       New APIs added"
-            /Session/Replay
-            /Session/setReplay/(COMMAND)
-            /Session/setReplayPosition/(COMMAND)
+Version: 1.3_Build_BETA-2017.05.18
+    1. Added Forward/Backward Skip buttons to ReplayControl widget.
+       For now they skip 15 seconds.
+       Also updated the /Session/setReplayPostion API to support 15/30/60 second skip forward/backward.
+    
+    2. Updated the German translations for the new widgets, thanks to H. Geiger.
+    
+    3. Updated the Flags graphics, thanks to Brad Lawson.
 
     For notes on previous BETA builds, see below.
     
@@ -90,3 +65,36 @@ Version: 1.3_Build_BETA-2017.05.11
 
 ****************** Previous Versions *************************
 
+1.3_Build_BETA-2017.05.11
+    1. TeamSpeak
+       Added the ability to disable the TeamSpeak integration. 
+       Add/update the following to the settings.txt file.
+         teamspeak = N
+         
+    2. Voice Attack Profile
+       - Added a command for the leader of your class "Leader Class"
+       - Changed Ahead/Behind and their Class commands to be by position instead of relative.
+         This way when you're a lap down it will talk about the cars you're competing with.
+         The old commands are still there, just renamed to "Ahead/Behind Relative".
+       
+    3. Fixed #94 (https://github.com/SIMRacingApps/SIMRacingApps/issues/94)
+       iRacing Replay missing some telemetry values. 
+       Now takes Position, LapCompleted from replay.
+       Please note that there are many values missing from the replay
+       or they are the session ending values and will not change.
+       
+    4. Closed #52 (https://github.com/SIMRacingApps/SIMRacingApps/issues/52)
+       Closed #95 (https://github.com/SIMRacingApps/SIMRacingApps/issues/95)
+       Camera Control Widget created called CameraSelector.
+       It is stand alone and embedded in the Spotter/Broadcaster App.
+       You can select up to 20 cameras with ability to focus on the leader, crashes, exciting, or a driver.
+       New APIs added:
+            /Session/setCamera/(CAMERA)/(FOCUSON)/(CARIDENTIFIER)
+            /Session/setCamera/(FOCUSON)/(CARIDENTIFIER)
+           
+    5. Closed #99 (https://github.com/SIMRacingApps/SIMRacingApps/issues/99)
+       New Replay Controller Widget
+       New APIs added"
+            /Session/Replay
+            /Session/setReplay/(COMMAND)
+            /Session/setReplayPosition/(COMMAND)

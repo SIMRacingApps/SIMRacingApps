@@ -58,6 +58,7 @@ Sound
 
 Graphics
     Gary Whitson - Logos
+    Brad Lawson - Flags
 
 Translations
     H. Geiger - German 
