@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/5?closed=1)
 
-Version: 1.3_Build_BETA-2017.05.18
+Version: 1.3_Build_BETA-2017.05.21
     1. TeamSpeak
        Added the ability to disable the TeamSpeak integration. 
        Add/update the following to the settings.txt file.
@@ -37,6 +37,9 @@ Version: 1.3_Build_BETA-2017.05.18
             /Session/Replay
             /Session/setReplay/(COMMAND)
             /Session/setReplayPosition/(COMMAND)
+
+    6. Fixed #100 (https://github.com/SIMRacingApps/SIMRacingApps/issues/100)
+       TeamSpeak - When whispering, popup sometimes hangs open
 
     For notes on previous versions, see below.
        
