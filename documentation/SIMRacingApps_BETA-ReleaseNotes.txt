@@ -6,17 +6,11 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.3_Build_BETA-2017.05.21
-    1. Added Forward/Backward Skip buttons to ReplayControl widget.
-       For now they skip 15 seconds.
-       Also updated the /Session/setReplayPostion API to support 15/30/60 second skip forward/backward.
-    
-    2. Updated the German translations for the new widgets, thanks to H. Geiger.
-    
-    3. Updated the Flags graphics, thanks to Brad Lawson.
-    
-    4. Fixed #100 (https://github.com/SIMRacingApps/SIMRacingApps/issues/100)
-       TeamSpeak - When whispering, popup sometimes hangs open
+Version: 1.3_Build_BETA-2017.05.30
+    1. Created new widget called CarTelemetry. It is intended to go with 
+       the Laps and Standings Banner widgets for streamers and broadcasters.
+       It shows the drivers name, speed, rpm, throttle and brake.
+       
 
     For notes on previous BETA builds, see below.
     
@@ -67,6 +61,18 @@ Version: 1.3_Build_BETA-2017.05.21
         There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
 
 ****************** Previous Versions *************************
+
+1.3_Build_BETA-2017.05.21
+    1. Added Forward/Backward Skip buttons to ReplayControl widget.
+       For now they skip 15 seconds.
+       Also updated the /Session/setReplayPostion API to support 15/30/60 second skip forward/backward.
+    
+    2. Updated the German translations for the new widgets, thanks to H. Geiger.
+    
+    3. Updated the Flags graphics, thanks to Brad Lawson.
+    
+    4. Fixed #100 (https://github.com/SIMRacingApps/SIMRacingApps/issues/100)
+       TeamSpeak - When whispering, popup sometimes hangs open
 
 1.3_Build_BETA-2017.05.11
     1. TeamSpeak

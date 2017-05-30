@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/5?closed=1)
 
-Version: 1.3_Build_BETA-2017.05.21
+Version: 1.3_Build_BETA-2017.05.30
     1. TeamSpeak
        Added the ability to disable the TeamSpeak integration. 
        Add/update the following to the settings.txt file.
@@ -40,6 +40,10 @@ Version: 1.3_Build_BETA-2017.05.21
 
     6. Fixed #100 (https://github.com/SIMRacingApps/SIMRacingApps/issues/100)
        TeamSpeak - When whispering, popup sometimes hangs open
+
+    7. Created new widget called CarTelemetry. It is intended to go with 
+       the Laps and Standings Banner widgets for streamers and broadcasters.
+       It shows the drivers name, speed, rpm, throttle and brake.
 
     For notes on previous versions, see below.
        
