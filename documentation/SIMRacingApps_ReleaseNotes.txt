@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/5?closed=1)
 
-Version: 1.3_Build_BETA-2017.05.30
+Version: 1.3_Build_BETA-2017.06.07
     1. TeamSpeak
        Added the ability to disable the TeamSpeak integration. 
        Add/update the following to the settings.txt file.
@@ -44,6 +44,10 @@ Version: 1.3_Build_BETA-2017.05.30
     7. Created new widget called CarTelemetry. It is intended to go with 
        the Laps and Standings Banner widgets for streamers and broadcasters.
        It shows the drivers name, speed, rpm, throttle and brake.
+
+    8. iRacing June 7, 2017 Build 
+       - New Track Map for Myrtle Beach
+       - New Car Profiles for Ferrari 488 GTE and Ford GT 2017
 
     For notes on previous versions, see below.
        
