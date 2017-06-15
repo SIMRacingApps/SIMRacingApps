@@ -2,52 +2,9 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/5?closed=1)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/6?closed=1)
 
-Version: 1.3_Build_2017.06.13
-    1. TeamSpeak
-       Added the ability to disable the TeamSpeak integration. 
-       Add/update the following to the settings.txt file.
-         teamspeak = N
-           
-    2. Voice Attack Profile
-       - Added a command for the leader of your class "Leader Class"
-       - Changed Ahead/Behind and Class commands to be by position instead of relative.
-         This way when a lap down it will talk about the cars you're competing with.
-         The old commands are still there, just renamed to "Ahead/Behind Relative".
-         
-    3. Fixed #94 (https://github.com/SIMRacingApps/SIMRacingApps/issues/94)
-       iRacing Replay missing some telemetry values. 
-       Now takes Position, LapCompleted from replay.
-       Please note that there are many values missing from the replay
-       or they are the session ending values and will not change.
-
-    4. Closed #52 (https://github.com/SIMRacingApps/SIMRacingApps/issues/52)
-       Closed #95 (https://github.com/SIMRacingApps/SIMRacingApps/issues/95)
-       Camera Control Widget created called CameraSelector.
-       It is stand alone and embedded in the Spotter/Broadcaster App.
-       You can select up to 20 cameras with ability to focus on the leader, crashes, exciting, or a driver.
-       New APIs added:
-           /Session/setCamera/(CAMERA)/(FOCUSON)/(CARIDENTIFIER)
-           /Session/setCamera/(FOCUSON)/(CARIDENTIFIER)
-
-    5. Closed #99 (https://github.com/SIMRacingApps/SIMRacingApps/issues/99)
-       New Replay Controller Widget
-       New APIs added"
-            /Session/Replay
-            /Session/setReplay/(COMMAND)
-            /Session/setReplayPosition/(COMMAND)
-
-    6. Fixed #100 (https://github.com/SIMRacingApps/SIMRacingApps/issues/100)
-       TeamSpeak - When whispering, popup sometimes hangs open
-
-    7. Created new widget called CarTelemetry. It is intended to go with 
-       the Laps and Standings Banner widgets for streamers and broadcasters.
-       It shows the drivers name, speed, rpm, throttle and brake.
-
-    8. iRacing June 7, 2017 Build 
-       - New Track Map for Myrtle Beach
-       - New Car Profiles for Ferrari 488 GTE and Ford GT 2017
+Version: 1.4_Build_BETA-2017.06.15
 
     For notes on previous versions, see below.
        
@@ -106,6 +63,51 @@ Version: 1.3_Build_2017.06.13
 
         
 ****************** Previous Versions *************************
+
+1.3_Build_2017.06.13
+    1. TeamSpeak
+       Added the ability to disable the TeamSpeak integration. 
+       Add/update the following to the settings.txt file.
+         teamspeak = N
+           
+    2. Voice Attack Profile
+       - Added a command for the leader of your class "Leader Class"
+       - Changed Ahead/Behind and Class commands to be by position instead of relative.
+         This way when a lap down it will talk about the cars you're competing with.
+         The old commands are still there, just renamed to "Ahead/Behind Relative".
+         
+    3. Fixed #94 (https://github.com/SIMRacingApps/SIMRacingApps/issues/94)
+       iRacing Replay missing some telemetry values. 
+       Now takes Position, LapCompleted from replay.
+       Please note that there are many values missing from the replay
+       or they are the session ending values and will not change.
+
+    4. Closed #52 (https://github.com/SIMRacingApps/SIMRacingApps/issues/52)
+       Closed #95 (https://github.com/SIMRacingApps/SIMRacingApps/issues/95)
+       Camera Control Widget created called CameraSelector.
+       It is stand alone and embedded in the Spotter/Broadcaster App.
+       You can select up to 20 cameras with ability to focus on the leader, crashes, exciting, or a driver.
+       New APIs added:
+           /Session/setCamera/(CAMERA)/(FOCUSON)/(CARIDENTIFIER)
+           /Session/setCamera/(FOCUSON)/(CARIDENTIFIER)
+
+    5. Closed #99 (https://github.com/SIMRacingApps/SIMRacingApps/issues/99)
+       New Replay Controller Widget
+       New APIs added"
+            /Session/Replay
+            /Session/setReplay/(COMMAND)
+            /Session/setReplayPosition/(COMMAND)
+
+    6. Fixed #100 (https://github.com/SIMRacingApps/SIMRacingApps/issues/100)
+       TeamSpeak - When whispering, popup sometimes hangs open
+
+    7. Created new widget called CarTelemetry. It is intended to go with 
+       the Laps and Standings Banner widgets for streamers and broadcasters.
+       It shows the drivers name, speed, rpm, throttle and brake.
+
+    8. iRacing June 7, 2017 Build 
+       - New Track Map for Myrtle Beach
+       - New Car Profiles for Ferrari 488 GTE and Ford GT 2017
 
 1.2_Build_2017.04.03
     1. Closed #70 (https://github.com/SIMRacingApps/SIMRacingApps/issues/70)
