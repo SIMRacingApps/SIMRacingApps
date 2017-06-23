@@ -57,20 +57,6 @@ Version: 1.4_Build_BETA-2017.06.23
         3. Connect to the main menu from a browser and upload the .SRA file
         4. Refer to the Electron's readme file for more information
         
-    Overwolf Client:
-        To install or update Overwolf Launcher, 
-        1. Download the .OPK file's latest version from http://overwolf.SIMRacingApps.com
-        2. Open Overwolf's Dock and load it from Settings -> Support -> Development Options -> Install
-           TODO: Submit the package to the Overwolf Store so it can be installed from there. 
-        3. Refer to the instructions in the readme file to install this file into Overwolf.
-        WARNING: 
-            THERE IS AN OVERWOLF BUG THAT CAUSES IT TO TAKE OVER YOUR USB INPUT DEVICES
-            WHENEVER YOU CLICK ON AN APP. THIS CAN CAUSE IT TO SHIFT DOWN, LOOSE FORCE FEEDBACK,
-            AND OTHER DISASTROUS THINGS. SO, DO NOT CLICK ON AN APP WHILE IN THE CAR.
-            If you do, go into the garage and come back out and it will reset your devices.
-            I have posted the issue to the forums. 
-            You can follow it [here](http://forums.overwolf.com/index.php?/topic/7106-clicking-on-app-overwolf-takes-over-usb-input-devices)
-
         
 ****************** Previous Versions *************************
 
