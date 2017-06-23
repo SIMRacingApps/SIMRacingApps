@@ -6,7 +6,7 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.06.22
+Version: 1.4_Build_BETA-2017.06.23
     1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
        Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
        
@@ -15,6 +15,8 @@ Version: 1.4_Build_BETA-2017.06.22
 
     3. Added a small delay in the Voice Attack Profile in the spotter loops
        to cut down on CPU usage.
+       
+    4. Implemented a better SOF (Strength of field) calculation posted on the iRacing forums.
 
     For notes on previous BETA builds, see below.
     
