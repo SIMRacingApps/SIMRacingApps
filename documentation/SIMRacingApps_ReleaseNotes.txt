@@ -4,7 +4,15 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/6?closed=1)
 
-Version: 1.4_Build_BETA-2017.06.15
+Version: 1.4_Build_BETA-2017.06.22
+    1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
+       Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
+       
+    2. Fixed #104 (https://github.com/SIMRacingApps/SIMRacingApps/issues/104)
+       Standings App not working when out of car
+       
+    3. Added a small delay in the Voice Attack Profile in the spotter loops
+       to cut down on CPU usage.
 
     For notes on previous versions, see below.
        
