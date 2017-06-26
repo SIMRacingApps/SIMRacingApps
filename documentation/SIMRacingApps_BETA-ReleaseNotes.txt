@@ -6,7 +6,7 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.06.xx
+Version: 1.4_Build_BETA-2017.06.25
     1. Fixed #106 (https://github.com/SIMRacingApps/SIMRacingApps/issues/106)
        TeamSpeak: null pointer errors when plugin is turned off
 
