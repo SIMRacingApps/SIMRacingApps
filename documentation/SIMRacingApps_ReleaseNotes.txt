@@ -16,6 +16,13 @@ Version: 1.4_Build_BETA-2017.06.23
 
     4. Implemented a better SOF (Strength of field) calculation posted on the iRacing forums.
 
+    5. Fixed #106 (https://github.com/SIMRacingApps/SIMRacingApps/issues/106)
+       TeamSpeak: null pointer errors when plugin is turned off
+
+    6. Fixed #107 (https://github.com/SIMRacingApps/SIMRacingApps/issues/107)
+       iRacing: The CameraInfo.GroupName is not quoted and can contain invalid characters
+       I added quotes before the YAML is parsed.
+
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------

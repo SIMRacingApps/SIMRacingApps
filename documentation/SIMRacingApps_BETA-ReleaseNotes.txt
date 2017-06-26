@@ -6,18 +6,14 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.06.23
-    1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
-       Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
-       
-    2. Fixed #104 (https://github.com/SIMRacingApps/SIMRacingApps/issues/104)
-       Standings App not working when out of car
+Version: 1.4_Build_BETA-2017.06.xx
+    1. Fixed #106 (https://github.com/SIMRacingApps/SIMRacingApps/issues/106)
+       TeamSpeak: null pointer errors when plugin is turned off
 
-    3. Added a small delay in the Voice Attack Profile in the spotter loops
-       to cut down on CPU usage.
+    2. Fixed #107 (https://github.com/SIMRacingApps/SIMRacingApps/issues/107)
+       iRacing: The CameraInfo.GroupName is not quoted and can contain invalid characters
+       I added quotes before the YAML is parsed.
        
-    4. Implemented a better SOF (Strength of field) calculation posted on the iRacing forums.
-
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -55,3 +51,15 @@ Version: 1.4_Build_BETA-2017.06.23
 ****************** Previous Versions *************************
 
 For versions prior to 1.4, see the regular release notes.
+
+1.4_Build_BETA-2017.06.23
+    1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
+       Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
+       
+    2. Fixed #104 (https://github.com/SIMRacingApps/SIMRacingApps/issues/104)
+       Standings App not working when out of car
+
+    3. Added a small delay in the Voice Attack Profile in the spotter loops
+       to cut down on CPU usage.
+       
+    4. Implemented a better SOF (Strength of field) calculation posted on the iRacing forums.
