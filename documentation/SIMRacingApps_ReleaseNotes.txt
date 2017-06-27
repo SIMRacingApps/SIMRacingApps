@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/6?closed=1)
 
-Version: 1.4_Build_BETA-2017.06.25
+Version: 1.4_Build_BETA-2017.06.26
     1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
        Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
        
@@ -22,6 +22,9 @@ Version: 1.4_Build_BETA-2017.06.25
     6. Fixed #107 (https://github.com/SIMRacingApps/SIMRacingApps/issues/107)
        iRacing: The CameraInfo.GroupName is not quoted and can contain invalid characters
        I added quotes before the YAML is parsed.
+
+    7. Voice Attack was sending the "You're Welcome" message to the wrong car.
+       It should send it to the car in front of you.
 
     For notes on previous versions, see below.
        

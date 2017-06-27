@@ -6,13 +6,16 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.06.25
+Version: 1.4_Build_BETA-2017.06.26
     1. Fixed #106 (https://github.com/SIMRacingApps/SIMRacingApps/issues/106)
        TeamSpeak: null pointer errors when plugin is turned off
 
     2. Fixed #107 (https://github.com/SIMRacingApps/SIMRacingApps/issues/107)
        iRacing: The CameraInfo.GroupName is not quoted and can contain invalid characters
        I added quotes before the YAML is parsed.
+    
+    3. Voice Attack was sending the "You're Welcome" message to the wrong car.
+       It should send it to the car in front of you.
        
     For notes on previous BETA builds, see below.
     
