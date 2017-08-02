@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/6?closed=1)
 
-Version: 1.4_Build_BETA-2017.07.04
+Version: 1.4_Build_BETA-2017.07.29
     1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
        Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
        
@@ -28,6 +28,17 @@ Version: 1.4_Build_BETA-2017.07.04
 
     8. Fixed #110 (https://github.com/SIMRacingApps/SIMRacingApps/issues/110)
        TrackMap: SPA Endurance Config has finish line in wrong place
+
+    9. Closed #116 (https://github.com/SIMRacingApps/SIMRacingApps/issues/116)
+       Closed #117 (https://github.com/SIMRacingApps/SIMRacingApps/issues/117)
+       Electron Client is now bundled with the Server. 
+       To have the apps stay on top of iRacing, you will need to enable "Windowed" mode.
+       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
+       
+       The following entries in Documents/SIMRacingApps/settings.txt need to exist to enable it.
+       
+       electron-autoupdate = Y
+       electron-autostart = Y
 
     For notes on previous versions, see below.
        

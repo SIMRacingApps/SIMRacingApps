@@ -14,6 +14,7 @@
     <property name="download.dir" value="O:/OneDrive/SIMRacingApps" />
     <property name="SIMRacingAppsServer.location" value="../SIMRacingAppsServer" />
     <property name="SIMRacingAppsWebContent.location" value="../SIMRacingAppsWebContent" />
+    <property name="SIMRacingAppsElectron.location" value="../SIMRacingAppsElectron" />
     <property name="SIMRacingApps.github.io.location" value="../SIMRacingApps.github.io" />
     <property name="SIMRacingAppsSIMPluginiRacing.location" value="../SIMRacingAppsSIMPluginiRacing" />
     <property name="debuglevel" value="source,lines,vars" />
@@ -26,7 +27,10 @@
     <target name="WebContent.jar">
         <ant dir="${SIMRacingAppsWebContent.location}" target="jar" inheritAll="false" />
     </target>
-    <target name="exe" description="Converts the jar files to an exe" depends="Server.jar,iRacing.sra,WebContent.jar">
+    <target name="electron-apps.sra">
+        <ant dir="${SIMRacingAppsElectron.location}" target="sra" inheritAll="false" />
+    </target>
+    <target name="exe" description="Converts the jar files to an exe" depends="Server.jar,iRacing.sra,WebContent.jar,electron-apps.sra">
         <sequential>
             <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
             <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
@@ -54,6 +58,7 @@
                 <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsServer.jar" />
                 <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsPlugin-iRacing.sra" />
                 <zipgroupfileset file="${java.io.tmpdir}/SIMRacingAppsWebContent.jar" />
+                <zipgroupfileset file="${java.io.tmpdir}/electron-apps.sra" />
                 <fileset dir="${java.io.tmpdir}">
                     <include name="SIMRacingAppsServer_${version}.l4j.ini" />
                 </fileset>
