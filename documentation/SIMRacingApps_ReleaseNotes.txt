@@ -75,15 +75,7 @@ Version: 1.4_Build_BETA-2017.08.17
     Wiki:
         There is a Wiki for SIMRacingApps at http://wiki.SIMRacingApps.com.
         Here you can find solutions, work-around, etc.
-
-    Electron Client:
-        To install or update Electron Launcher, 
-        1. Download the .SRA file's latest version from http://electron.SIMRacingApps.com 
-        2. Make sure Electron is not running and start the SIMRacingAppsServer.exe
-        3. Connect to the main menu from a browser and upload the .SRA file
-        4. Refer to the Electron's readme file for more information
-        
-        
+       
 ****************** Previous Versions *************************
 
 1.3_Build_2017.06.13
