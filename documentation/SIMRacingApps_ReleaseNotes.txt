@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/6?closed=1)
 
-Version: 1.4_Build_BETA-2017.07.29
+Version: 1.4_Build_BETA-2017.08.17
     1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
        Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
        
@@ -39,6 +39,8 @@ Version: 1.4_Build_BETA-2017.07.29
        
        electron-autoupdate = Y
        electron-autostart = Y
+
+    10. Fixed issue when Team Names and Custom Camera Names were causing java errors.
 
     For notes on previous versions, see below.
        

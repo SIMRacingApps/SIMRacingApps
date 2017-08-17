@@ -6,21 +6,9 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.07.29
-    1. Fixed #110 (https://github.com/SIMRacingApps/SIMRacingApps/issues/110)
-       TrackMap: SPA Endurance Config has finish line in wrong place
-       
-    2. Closed #116 (https://github.com/SIMRacingApps/SIMRacingApps/issues/116)
-       Closed #117 (https://github.com/SIMRacingApps/SIMRacingApps/issues/117)
-       Electron Client is now bundled with the Server. 
-       To have the apps stay on top of iRacing, you will need to enable "Windowed" mode.
-       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
-       
-       The following entries in Documents/SIMRacingApps/settings.txt need to exist to enable it.
-       
-       electron-autoupdate = Y
-       electron-autostart = Y
-       
+Version: 1.4_Build_BETA-2017.08.17
+    1. Fixed issue when Team Names and Custom Camera Names were causing java errors.
+    
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -59,6 +47,21 @@ Version: 1.4_Build_BETA-2017.07.29
 
 For versions prior to 1.4, see the regular release notes.
 
+1.4_Build_BETA-2017.07.29
+    1. Fixed #110 (https://github.com/SIMRacingApps/SIMRacingApps/issues/110)
+       TrackMap: SPA Endurance Config has finish line in wrong place
+       
+    2. Closed #116 (https://github.com/SIMRacingApps/SIMRacingApps/issues/116)
+       Closed #117 (https://github.com/SIMRacingApps/SIMRacingApps/issues/117)
+       Electron Client is now bundled with the Server. 
+       To have the apps stay on top of iRacing, you will need to enable "Windowed" mode.
+       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
+       
+       The following entries in Documents/SIMRacingApps/settings.txt need to exist to enable it.
+       
+       electron-autoupdate = Y
+       electron-autostart = Y
+       
 1.4_Build_BETA-2017.06.26
     1. Fixed #106 (https://github.com/SIMRacingApps/SIMRacingApps/issues/106)
        TeamSpeak: null pointer errors when plugin is turned off
