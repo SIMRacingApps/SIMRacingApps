@@ -6,8 +6,11 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.08.17
+Version: 1.4_Build_BETA-2017.08.28
     1. Fixed issue when Team Names and Custom Camera Names were causing java errors.
+    
+    2. Added Settings to the main menu as a selectable item.
+       Cleaned up the settings window and disabled the wrapping of the lines.
     
     For notes on previous BETA builds, see below.
     
