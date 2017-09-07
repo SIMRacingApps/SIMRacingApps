@@ -6,13 +6,19 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.08.29
+Version: 1.4_Build_BETA-2017.09.07
     1. Fixed issue when Team Names and Custom Camera Names were causing java errors.
     
     2. Added Settings to the main menu as a selectable item.
        Cleaned up the settings window and disabled the wrapping of the lines.
        
     3. Fixed issue where shift sounds were inconsistent on the Dallara DW12.
+    
+    4. Close #120 (https://github.com/SIMRacingApps/SIMRacingApps/issues/120)
+       Car Numbers hard to read
+       Can be controlled in the settings with this variable. Default is yes.
+       
+       use-sim-colors = N
     
     For notes on previous BETA builds, see below.
     
