@@ -58,6 +58,9 @@ Version: 1.4_Build_BETA-2017.09.07
        - Ferrari 488 GTE Car
        - Dirt version of Lanier National Speedway Track
        - Snetterton Curcuit Track
+
+    15. Fixed #119 (https://github.com/SIMRacingApps/SIMRacingApps/issues/119)
+       Sound: Master Volume not working
        
     For notes on previous versions, see below.
        
