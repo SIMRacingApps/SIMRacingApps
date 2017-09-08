@@ -19,6 +19,12 @@ Version: 1.4_Build_BETA-2017.09.07
        Can be controlled in the settings with this variable. Default is yes.
        
        use-sim-colors = N
+       
+    5. Added new tracks and cars from iRacing's Sept. 2017 build.
+       - Dirt UPM Modified Car
+       - Ferrari 488 GTE Car
+       - Dirt version of Lanier National Speedway Track
+       - Snetterton Curcuit Track
     
     For notes on previous BETA builds, see below.
     
