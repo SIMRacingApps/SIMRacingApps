@@ -6,28 +6,8 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.09.07
-    1. Fixed issue when Team Names and Custom Camera Names were causing java errors.
-    
-    2. Added Settings to the main menu as a selectable item.
-       Cleaned up the settings window and disabled the wrapping of the lines.
-       
-    3. Fixed issue where shift sounds were inconsistent on the Dallara DW12.
-    
-    4. Close #120 (https://github.com/SIMRacingApps/SIMRacingApps/issues/120)
-       Car Numbers hard to read
-       Can be controlled in the settings with this variable. Default is yes.
-       
-       use-sim-colors = N
-       
-    5. Added new tracks and cars from iRacing's Sept. 2017 build.
-       - Dirt UPM Modified Car
-       - Ferrari 488 GTE Car
-       - Dirt version of Lanier National Speedway Track
-       - Snetterton Curcuit Track
-       
-    6. Fixed #119 (https://github.com/SIMRacingApps/SIMRacingApps/issues/119)
-       Sound: Master Volume not working
+Version: 1.4_Build_BETA-2017.09.xx
+    1. 
     
     For notes on previous BETA builds, see below.
     
@@ -60,7 +40,32 @@ Version: 1.4_Build_BETA-2017.09.07
 
 For versions prior to 1.4, see the regular release notes.
 
-1.4_Build_BETA-2017.07.29
+1.4_Build_BETA-2017.09.07
+    1. Fixed issue when Team Names and Custom Camera Names were causing java errors.
+    
+    2. Added Settings to the main menu as a selectable item.
+       Cleaned up the settings window and disabled the wrapping of the lines.
+       
+    3. Fixed issue where shift sounds were inconsistent on the Dallara DW12.
+    
+    4. Close #120 (https://github.com/SIMRacingApps/SIMRacingApps/issues/120)
+       Car Numbers hard to read
+       Can be controlled in the settings with this variable. Default is yes.
+       
+       use-sim-colors = N
+       
+    5. Added new tracks and cars from iRacing's Sept. 2017 build.
+       - Dirt UPM Modified Car
+       - Ferrari 488 GTE Car
+       - Dirt version of Lanier National Speedway Track
+       - Snetterton Curcuit Track
+       
+    6. Fixed #119 (https://github.com/SIMRacingApps/SIMRacingApps/issues/119)
+       Sound: Master Volume not working
+       Now accepts values between 0 and 100 where it would only work before 
+       if you stayed between 0 and 1.
+       
+ 1.4_Build_BETA-2017.07.29
     1. Fixed #110 (https://github.com/SIMRacingApps/SIMRacingApps/issues/110)
        TrackMap: SPA Endurance Config has finish line in wrong place
        
