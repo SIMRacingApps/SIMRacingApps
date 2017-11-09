@@ -2,9 +2,63 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/6?closed=1)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/7?closed=1)
 
-Version: 1.4_Build_2017.09.17
+Version: 1.5_Build_BETA-2017.11.07
+    1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
+       Team Driver Swap PitCommander issue
+       When changing drivers, this issue could have caused the pit service to stop adding
+       fuel or not change tires remaining tires if the swap occurred before the service was completed.
+    
+    2. Fixed #108 (https://github.com/SIMRacingApps/SIMRacingApps/issues/108)
+       PitCommands: Changes tires when you drop onto pit road
+       
+    3. Fixed #123 (https://github.com/SIMRacingApps/SIMRacingApps/issues/123)
+       Server crashes when camera pack uses invalid characters for YMAL in the name
+
+    4. Fixed #125 (https://github.com/SIMRacingApps/SIMRacingApps/issues/125)
+       WeatherInfo Widget text not sized to window
+       
+    5. Fixed #126 (https://github.com/SIMRacingApps/SIMRacingApps/issues/126)
+       StandingsBanner widget doesn't display laps down correctly
+           
+    For notes on previous versions, see below.
+       
+------------------------------------------------------------------------------------------------------
+---                    Configuration Requirements                                                  ---
+------------------------------------------------------------------------------------------------------
+    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
+       on the same computer that the Simulator is running on.
+    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
+       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
+       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
+       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
+    3. If a Firewall is running, you might get prompted to allow the server to run.
+       Depending on if your Ethernet connection was made private or public, 
+       you may be asked to confirm that also. Please select allow.
+       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
+       for both in-bound and out-bound traffic on all ports. 
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
+    4. Enter the server address (found in the Title Bar of the server window) in your browser 
+       from any device connected to the same local network.
+       Connecting from outside the local network is not supported and not recommended due to security concerns.
+    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+       for more details and options for running the server.
+    
+    Issues:
+        Please visit the issues list at http://issues.SIMRacingApps.com to see if an issue you are have 
+        has already been reported. This list also contains enhancement requests.
+        You will need to create a GitHub account to post a new issue or subscribe to an existing issue. 
+        But, that is the easiest way to keep track of it and follow conversations on the issue.
+        
+    Wiki:
+        There is a Wiki for SIMRacingApps at http://wiki.SIMRacingApps.com.
+        Here you can find solutions, work-around, etc.
+       
+****************** Previous Versions *************************
+
+1.4_Build_2017.10.22
     1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
        Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
        
@@ -62,42 +116,6 @@ Version: 1.4_Build_2017.09.17
     15. Fixed #119 (https://github.com/SIMRacingApps/SIMRacingApps/issues/119)
        Sound: Master Volume not working
        
-    For notes on previous versions, see below.
-       
-------------------------------------------------------------------------------------------------------
----                    Configuration Requirements                                                  ---
-------------------------------------------------------------------------------------------------------
-    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
-       on the same computer that the Simulator is running on.
-    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
-       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
-       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
-    3. If a Firewall is running, you might get prompted to allow the server to run.
-       Depending on if your Ethernet connection was made private or public, 
-       you may be asked to confirm that also. Please select allow.
-       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
-       for both in-bound and out-bound traffic on all ports. 
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
-    4. Enter the server address (found in the Title Bar of the server window) in your browser 
-       from any device connected to the same local network.
-       Connecting from outside the local network is not supported and not recommended due to security concerns.
-    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
-       for more details and options for running the server.
-    
-    Issues:
-        Please visit the issues list at http://issues.SIMRacingApps.com to see if an issue you are have 
-        has already been reported. This list also contains enhancement requests.
-        You will need to create a GitHub account to post a new issue or subscribe to an existing issue. 
-        But, that is the easiest way to keep track of it and follow conversations on the issue.
-        
-    Wiki:
-        There is a Wiki for SIMRacingApps at http://wiki.SIMRacingApps.com.
-        Here you can find solutions, work-around, etc.
-       
-****************** Previous Versions *************************
-
 1.3_Build_2017.06.13
     1. TeamSpeak
        Added the ability to disable the TeamSpeak integration. 

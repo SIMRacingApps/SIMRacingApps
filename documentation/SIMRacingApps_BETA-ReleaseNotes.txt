@@ -2,13 +2,28 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/6)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/7)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.4_Build_BETA-2017.09.xx
-    1. 
+Version: 1.5_Build_BETA-2017.11.07
+    1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
+       Team Driver Swap PitCommander issue
+       When changing drivers, this issue could have caused the pit service to stop adding
+       fuel or not change tires remaining tires if the swap occurred before the service was completed.
     
+    2. Fixed #108 (https://github.com/SIMRacingApps/SIMRacingApps/issues/108)
+       PitCommands: Changes tires when you drop onto pit road
+       
+    3. Fixed #123 (https://github.com/SIMRacingApps/SIMRacingApps/issues/123)
+       Server crashes when camera pack uses invalid characters for YMAL in the name
+
+    4. Fixed #125 (https://github.com/SIMRacingApps/SIMRacingApps/issues/125)
+       WeatherInfo Widget text not sized to window
+       
+    5. Fixed #126 (https://github.com/SIMRacingApps/SIMRacingApps/issues/126)
+       StandingsBanner widget doesn't display laps down correctly
+       
     For notes on previous BETA builds, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -38,67 +53,5 @@ Version: 1.4_Build_BETA-2017.09.xx
 
 ****************** Previous Versions *************************
 
-For versions prior to 1.4, see the regular release notes.
+For versions prior to 1.5, see the regular release notes.
 
-1.4_Build_BETA-2017.09.07
-    1. Fixed issue when Team Names and Custom Camera Names were causing java errors.
-    
-    2. Added Settings to the main menu as a selectable item.
-       Cleaned up the settings window and disabled the wrapping of the lines.
-       
-    3. Fixed issue where shift sounds were inconsistent on the Dallara DW12.
-    
-    4. Close #120 (https://github.com/SIMRacingApps/SIMRacingApps/issues/120)
-       Car Numbers hard to read
-       Can be controlled in the settings with this variable. Default is yes.
-       
-       use-sim-colors = N
-       
-    5. Added new tracks and cars from iRacing's Sept. 2017 build.
-       - Dirt UPM Modified Car
-       - Ferrari 488 GTE Car
-       - Dirt version of Lanier National Speedway Track
-       - Snetterton Curcuit Track
-       
-    6. Fixed #119 (https://github.com/SIMRacingApps/SIMRacingApps/issues/119)
-       Sound: Master Volume not working
-       Now accepts values between 0 and 100 where it would only work before 
-       if you stayed between 0 and 1.
-       
- 1.4_Build_BETA-2017.07.29
-    1. Fixed #110 (https://github.com/SIMRacingApps/SIMRacingApps/issues/110)
-       TrackMap: SPA Endurance Config has finish line in wrong place
-       
-    2. Closed #116 (https://github.com/SIMRacingApps/SIMRacingApps/issues/116)
-       Closed #117 (https://github.com/SIMRacingApps/SIMRacingApps/issues/117)
-       Electron Client is now bundled with the Server. 
-       To have the apps stay on top of iRacing, you will need to enable "Windowed" mode.
-       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
-       
-       The following entries in Documents/SIMRacingApps/settings.txt need to exist to enable it.
-       
-       electron-autoupdate = Y
-       electron-autostart = Y
-       
-1.4_Build_BETA-2017.06.26
-    1. Fixed #106 (https://github.com/SIMRacingApps/SIMRacingApps/issues/106)
-       TeamSpeak: null pointer errors when plugin is turned off
-
-    2. Fixed #107 (https://github.com/SIMRacingApps/SIMRacingApps/issues/107)
-       iRacing: The CameraInfo.GroupName is not quoted and can contain invalid characters
-       I added quotes before the YAML is parsed.
-    
-    3. Voice Attack was sending the "You're Welcome" message to the wrong car.
-       It should send it to the car in front of you.
-
-1.4_Build_BETA-2017.06.23
-    1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)
-       Brake Bias .5 Increment on cars that show the actual percentage, not the delta.
-       
-    2. Fixed #104 (https://github.com/SIMRacingApps/SIMRacingApps/issues/104)
-       Standings App not working when out of car
-
-    3. Added a small delay in the Voice Attack Profile in the spotter loops
-       to cut down on CPU usage.
-       
-    4. Implemented a better SOF (Strength of field) calculation posted on the iRacing forums.
