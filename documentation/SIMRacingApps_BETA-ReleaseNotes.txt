@@ -6,23 +6,10 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.5_Build_BETA-2017.11.07
-    1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
-       Team Driver Swap PitCommander issue
-       When changing drivers, this issue could have caused the pit service to stop adding
-       fuel or not change tires remaining tires if the swap occurred before the service was completed.
-    
-    2. Fixed #108 (https://github.com/SIMRacingApps/SIMRacingApps/issues/108)
-       PitCommands: Changes tires when you drop onto pit road
-       
-    3. Fixed #123 (https://github.com/SIMRacingApps/SIMRacingApps/issues/123)
-       Server crashes when camera pack uses invalid characters for YMAL in the name
-
-    4. Fixed #125 (https://github.com/SIMRacingApps/SIMRacingApps/issues/125)
-       WeatherInfo Widget text not sized to window
-       
-    5. Fixed #126 (https://github.com/SIMRacingApps/SIMRacingApps/issues/126)
-       StandingsBanner widget doesn't display laps down correctly
+Version: 1.5_Build_BETA-2017.11.14
+    1. Fixed #127 (https://github.com/SIMRacingApps/SIMRacingApps/issues/127)
+       Electron: Error when "documents" is on OneDrive
+       Error: EINVAL: invalid argument, lstat 'C:\Users\{user}\OneDrive'
        
     For notes on previous BETA builds, see below.
     
@@ -55,3 +42,20 @@ Version: 1.5_Build_BETA-2017.11.07
 
 For versions prior to 1.5, see the regular release notes.
 
+Version: 1.5_Build_BETA-2017.11.14
+    1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
+       Team Driver Swap PitCommander issue
+       When changing drivers, this issue could have caused the pit service to stop adding
+       fuel or not change tires remaining tires if the swap occurred before the service was completed.
+    
+    2. Fixed #108 (https://github.com/SIMRacingApps/SIMRacingApps/issues/108)
+       PitCommands: Changes tires when you drop onto pit road
+       
+    3. Fixed #123 (https://github.com/SIMRacingApps/SIMRacingApps/issues/123)
+       Server crashes when camera pack uses invalid characters for YMAL in the name
+
+    4. Fixed #125 (https://github.com/SIMRacingApps/SIMRacingApps/issues/125)
+       WeatherInfo Widget text not sized to window
+       
+    5. Fixed #126 (https://github.com/SIMRacingApps/SIMRacingApps/issues/126)
+       StandingsBanner widget doesn't display laps down correctly
