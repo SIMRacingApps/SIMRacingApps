@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/7?closed=1)
 
-Version: 1.5_Build_BETA-2017.11.14
+Version: 1.5_Build_BETA-2017.12.09
     1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
        Team Driver Swap PitCommander issue
        When changing drivers, this issue could have caused the pit service to stop adding
@@ -25,6 +25,21 @@ Version: 1.5_Build_BETA-2017.11.14
     6. Fixed #127 (https://github.com/SIMRacingApps/SIMRacingApps/issues/127)
        Electron: Error when "documents" is on OneDrive
        Error: EINVAL: invalid argument, lstat 'C:\Users\{user}\OneDrive'
+
+    7. Added option for the pit count down to stop at.
+       You can set the following variables to change it.
+          pit-count-down-stop = 0
+
+    8. Added support for iRacing's Dec 2017 build.
+       - Dirt Midget
+       - Ford Fiesta RS WRC
+       - VW Beetle GRC
+       - Knoxville Raceway
+       - Daytona circa 2007 (Rallycross - Long) 
+       - Daytona circa 2007 (Rallycross - Short) 
+       - Iowa Speedway (Rallycross) 
+       - Lucas Oil Raceway (Rallycross) 
+       - Phoenix International Raceway - 2008 (Rallycross) 
            
     For notes on previous versions, see below.
        

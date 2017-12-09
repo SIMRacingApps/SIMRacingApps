@@ -6,12 +6,23 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.5_Build_BETA-2017.11.14
-    1. Fixed #127 (https://github.com/SIMRacingApps/SIMRacingApps/issues/127)
-       Electron: Error when "documents" is on OneDrive
-       Error: EINVAL: invalid argument, lstat 'C:\Users\{user}\OneDrive'
+Version: 1.5_Build_BETA-2017.12.09
+    1. Added option for the pit count down to stop at.
+       You can set the following variables to change it.
+          pit-count-down-stop = 0
+    
+    2. Added support for iRacing's Dec 2017 build.
+       - Dirt Midget
+       - Ford Fiesta RS WRC
+       - VW Beetle GRC
+       - Knoxville Raceway
+       - Daytona circa 2007 (Rallycross - Long) 
+       - Daytona circa 2007 (Rallycross - Short) 
+       - Iowa Speedway (Rallycross) 
+       - Lucas Oil Raceway (Rallycross) 
+       - Phoenix International Raceway - 2008 (Rallycross) 
        
-    For notes on previous BETA builds, see below.
+    For notes on previous BETA builds for version 1.5, see below.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
@@ -42,7 +53,12 @@ Version: 1.5_Build_BETA-2017.11.14
 
 For versions prior to 1.5, see the regular release notes.
 
-Version: 1.5_Build_BETA-2017.11.14
+1.5_Build_BETA-2017.11.14
+    1. Fixed #127 (https://github.com/SIMRacingApps/SIMRacingApps/issues/127)
+       Electron: Error when "documents" is on OneDrive
+       Error: EINVAL: invalid argument, lstat 'C:\Users\{user}\OneDrive'
+       
+1.5_Build_BETA-2017.11.07
     1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
        Team Driver Swap PitCommander issue
        When changing drivers, this issue could have caused the pit service to stop adding
