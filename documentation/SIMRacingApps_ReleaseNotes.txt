@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/7?closed=1)
 
-Version: 1.5_Build_BETA-2017.12.09
+Version: 1.5_Build_2017.12.11
     1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
        Team Driver Swap PitCommander issue
        When changing drivers, this issue could have caused the pit service to stop adding
@@ -35,12 +35,18 @@ Version: 1.5_Build_BETA-2017.12.09
        - Ford Fiesta RS WRC
        - VW Beetle GRC
        - Knoxville Raceway
-       - Daytona circa 2007 (Rallycross - Long) 
-       - Daytona circa 2007 (Rallycross - Short) 
-       - Iowa Speedway (Rallycross) 
-       - Lucas Oil Raceway (Rallycross) 
-       - Phoenix International Raceway - 2008 (Rallycross) 
-           
+       - Daytona circa 2007 (Rallycross - Long)ï¿½
+       - Daytona circa 2007 (Rallycross - Short)ï¿½
+       - Iowa Speedway (Rallycross)ï¿½
+       - Lucas Oil Raceway (Rallycross)ï¿½
+       - Phoenix International Raceway - 2008 (Rallycross)ï¿½
+
+    9. In the new version of Electron, they fixed a bug that I was relying on as a feature.
+       To get the blue bar to pop up at the top of each widget, I was catching the mouse events.
+       They are no long sending those events because they consider that area the window title area.
+       You can still grab in that area and move the widget and you can right click to close it.
+       Therefore, for now, I'm going to put this release out without the bar. 
+               
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
