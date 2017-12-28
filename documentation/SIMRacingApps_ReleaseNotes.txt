@@ -4,7 +4,99 @@ Copyright (C) 2015 - 2017 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/7?closed=1)
 
-Version: 1.5_Build_2017.12.11
+Version: 1.6_Build_BETA-2017.12.28
+    1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
+       CarLeft, CarRight: Show when car(s) are to the left or right of you
+       Added 2 new widgets, CarLeft and CarRight.
+       These are simply arrows that follow the spotter indicators. 
+       There are 2 sets of them, so you can place 2 lefts in different places.
+       Use the transparent feature of Electron, to hide them when they're not showing.
+
+    2. Added new API call to get the spotter messages.
+           /Car/(CARIDENTIFIER)/SpotterMessage
+       Can return the following
+          - (blank) = not talking
+          - CLEAR = no cars around you
+          - CARLEFT = car to your left
+          - CARRIGHT = car to your right
+          - CARLEFTRIGHT = car on your left and right
+          - CARSLEFT = 2 or more cars on your left
+          - CARSRIGHT = 2 or more cars on your right 
+    
+    3. Fixed #131 (https://github.com/SIMRacingApps/SIMRacingApps/issues/131)
+       Java 9 support.
+    
+    4. StandingsBanner widget now alternates between driver name and team name. 
+    
+    5. Closed #124 (https://github.com/SIMRacingApps/SIMRacingApps/issues/124)
+       TeamSpeak: Update alias with your name from iRacing
+       You can turn this off in the settings with "teamspeak-update-name = N" 
+
+    6. Closed #132 (https://github.com/SIMRacingApps/SIMRacingApps/issues/132)
+       VoiceAttack: Add commands to hide/unhide apps
+       Added new API calls /Session/setAppsHidden and /Session/IsAppsHidden.
+       Electron Apps 3.1.0 and better now respects this flag.
+
+    7. Voice Attack Profile: Added commands for replay commands, camera changes and window control.
+        - Hide All
+        - Show All
+        - Play
+        - Pause or Stop
+        - Rewind
+        - Fast Forward or Forward
+        - Slow Motion or Slow Down or Slow or Slower
+        - Next Lap
+        - Previous Lap
+        - Camera Chopper
+        - Camera Blimp
+        - Camera Cockpit
+        - Camera Gyro
+        - Camera TV1
+        - Camera TV2
+        - Camera TV3
+        - Camera Pit Lane
+        - Camera Pit Lane 2
+        - Camera Chase
+        - Camera Far Chase
+        - Camera Rear Chase
+    
+    For notes on previous versions, see below.
+       
+------------------------------------------------------------------------------------------------------
+---                    Configuration Requirements                                                  ---
+------------------------------------------------------------------------------------------------------
+    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
+       on the same computer that the Simulator is running on.
+    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
+       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
+       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
+       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
+    3. If a Firewall is running, you might get prompted to allow the server to run.
+       Depending on if your Ethernet connection was made private or public, 
+       you may be asked to confirm that also. Please select allow.
+       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
+       for both in-bound and out-bound traffic on all ports. 
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
+    4. Enter the server address (found in the Title Bar of the server window) in your browser 
+       from any device connected to the same local network.
+       Connecting from outside the local network is not supported and not recommended due to security concerns.
+    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+       for more details and options for running the server.
+    
+    Issues:
+        Please visit the issues list at http://issues.SIMRacingApps.com to see if an issue you are have 
+        has already been reported. This list also contains enhancement requests.
+        You will need to create a GitHub account to post a new issue or subscribe to an existing issue. 
+        But, that is the easiest way to keep track of it and follow conversations on the issue.
+        
+    Wiki:
+        There is a Wiki for SIMRacingApps at http://wiki.SIMRacingApps.com.
+        Here you can find solutions, work-around, etc.
+       
+****************** Previous Versions *************************
+
+1.5_Build_2017.12.11
     1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
        Team Driver Swap PitCommander issue
        When changing drivers, this issue could have caused the pit service to stop adding
@@ -46,42 +138,6 @@ Version: 1.5_Build_2017.12.11
        They are no long sending those events because they consider that area the window title area.
        You can still grab in that area and move the widget and you can right click to close it.
        Therefore, for now, I'm going to put this release out without the bar. 
-               
-    For notes on previous versions, see below.
-       
-------------------------------------------------------------------------------------------------------
----                    Configuration Requirements                                                  ---
-------------------------------------------------------------------------------------------------------
-    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
-       on the same computer that the Simulator is running on.
-    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
-       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
-       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
-    3. If a Firewall is running, you might get prompted to allow the server to run.
-       Depending on if your Ethernet connection was made private or public, 
-       you may be asked to confirm that also. Please select allow.
-       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
-       for both in-bound and out-bound traffic on all ports. 
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
-    4. Enter the server address (found in the Title Bar of the server window) in your browser 
-       from any device connected to the same local network.
-       Connecting from outside the local network is not supported and not recommended due to security concerns.
-    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
-       for more details and options for running the server.
-    
-    Issues:
-        Please visit the issues list at http://issues.SIMRacingApps.com to see if an issue you are have 
-        has already been reported. This list also contains enhancement requests.
-        You will need to create a GitHub account to post a new issue or subscribe to an existing issue. 
-        But, that is the easiest way to keep track of it and follow conversations on the issue.
-        
-    Wiki:
-        There is a Wiki for SIMRacingApps at http://wiki.SIMRacingApps.com.
-        Here you can find solutions, work-around, etc.
-       
-****************** Previous Versions *************************
 
 1.4_Build_2017.10.22
     1. Fixed #103 (https://github.com/SIMRacingApps/SIMRacingApps/issues/103)

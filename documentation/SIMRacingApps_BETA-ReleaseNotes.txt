@@ -2,27 +2,67 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2017 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/7)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/8)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.5_Build_BETA-2017.12.09
-    1. Added option for the pit count down to stop at.
-       You can set the following variables to change it.
-          pit-count-down-stop = 0
-    
-    2. Added support for iRacing's Dec 2017 build.
-       - Dirt Midget
-       - Ford Fiesta RS WRC
-       - VW Beetle GRC
-       - Knoxville Raceway
-       - Daytona circa 2007 (Rallycross - Long) 
-       - Daytona circa 2007 (Rallycross - Short) 
-       - Iowa Speedway (Rallycross) 
-       - Lucas Oil Raceway (Rallycross) 
-       - Phoenix International Raceway - 2008 (Rallycross) 
+Version: 1.6_Build_BETA-2017.12.28
+    1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
+       CarLeft, CarRight: Show when car(s) are to the left or right of you
+       Added 2 new widgets, CarLeft and CarRight.
+       These are simply arrows that follow the spotter indicators. 
+       There are 2 sets of them, so you can place 2 lefts in different places.
+       Use the transparent feature of Electron, to hide them when they're not showing.
        
-    For notes on previous BETA builds for version 1.5, see below.
+    2. Added new API call to get the spotter messages.
+           /Car/(CARIDENTIFIER)/SpotterMessage
+       Can return the following
+          - (blank) = not talking
+          - CLEAR = no cars around you
+          - CARLEFT = car to your left
+          - CARRIGHT = car to your right
+          - CARLEFTRIGHT = car on your left and right
+          - CARSLEFT = 2 or more cars on your left
+          - CARSRIGHT = 2 or more cars on your right
+    
+    3. Fixed #131 (https://github.com/SIMRacingApps/SIMRacingApps/issues/131)
+       Java 9 support.
+    
+    4. StandingsBanner widget now alternates between driver name and team name.
+    
+    5. Closed #124 (https://github.com/SIMRacingApps/SIMRacingApps/issues/124)
+       TeamSpeak: Update alias with your name from iRacing
+       You can turn this off in the settings with "teamspeak-update-name = N" 
+
+    6. Closed #132 (https://github.com/SIMRacingApps/SIMRacingApps/issues/132)
+       VoiceAttack: Add commands to hide/unhide apps
+       Added new API calls /Session/setAppsHidden and /Session/IsAppsHidden.
+       Electron Apps 3.1.0 and better now respects this flag.
+
+    7. Voice Attack Profile: Added commands for replay commands, camera changes and window control.
+        - Hide All
+        - Show All
+        - Play
+        - Pause or Stop
+        - Rewind
+        - Fast Forward or Forward
+        - Slow Motion or Slow Down or Slow or Slower
+        - Next Lap
+        - Previous Lap
+        - Camera Chopper
+        - Camera Blimp
+        - Camera Cockpit
+        - Camera Gyro
+        - Camera TV1
+        - Camera TV2
+        - Camera TV3
+        - Camera Pit Lane
+        - Camera Pit Lane 2
+        - Camera Chase
+        - Camera Far Chase
+        - Camera Rear Chase
+       
+    For notes on previous BETA builds for version 1.6, see below.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
@@ -51,27 +91,5 @@ Version: 1.5_Build_BETA-2017.12.09
 
 ****************** Previous Versions *************************
 
-For versions prior to 1.5, see the regular release notes.
+For versions prior to 1.6, see the regular release notes.
 
-1.5_Build_BETA-2017.11.14
-    1. Fixed #127 (https://github.com/SIMRacingApps/SIMRacingApps/issues/127)
-       Electron: Error when "documents" is on OneDrive
-       Error: EINVAL: invalid argument, lstat 'C:\Users\{user}\OneDrive'
-       
-1.5_Build_BETA-2017.11.07
-    1. Fixed #98 (https://github.com/SIMRacingApps/SIMRacingApps/issues/98)
-       Team Driver Swap PitCommander issue
-       When changing drivers, this issue could have caused the pit service to stop adding
-       fuel or not change tires remaining tires if the swap occurred before the service was completed.
-    
-    2. Fixed #108 (https://github.com/SIMRacingApps/SIMRacingApps/issues/108)
-       PitCommands: Changes tires when you drop onto pit road
-       
-    3. Fixed #123 (https://github.com/SIMRacingApps/SIMRacingApps/issues/123)
-       Server crashes when camera pack uses invalid characters for YMAL in the name
-
-    4. Fixed #125 (https://github.com/SIMRacingApps/SIMRacingApps/issues/125)
-       WeatherInfo Widget text not sized to window
-       
-    5. Fixed #126 (https://github.com/SIMRacingApps/SIMRacingApps/issues/126)
-       StandingsBanner widget doesn't display laps down correctly
