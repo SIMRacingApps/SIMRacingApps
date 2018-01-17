@@ -102,6 +102,9 @@ This repository is the main menu implemented as an Overwolf package.
 It allows for launching Apps and Widgets and remembering the location and size of each.
 It also allows for creating multiple configurations and switching between them.
 
+NOTE: Due to Overwolf having issues from time to time with iRacing's anti-cheat software. 
+I have become frustrated with trying to keep it working. As of the end of 2017, I am no longer actively supporting this. Feel free to clone this and work on it yourself and I will consider merging any pull requests you send me.
+
 ### [SIMRacingAppsElectron](http://github/SIMRacingApps/SIMRacingAppsElectron)
 
 Electron is 3rd Party Software that renders HTML5/JavaScript pages in Native OS Windows.
@@ -109,6 +112,15 @@ It allows for control of how these windows look and feel.
 The main menu is implemented in node.js code to create the windows and launch the Apps and Widgets within them.
 It remember is the location and sizes of each window in a configuration. 
 You can have multiple configurations as well as the ability to auto launch Apps and Widgets automatically.
+
+NOTE: As of the 1.4 release of SIMRacingApps Server, the Electron client is bundled and enabled by default. 
+If upgrading from an earlier version, it will not be enabled by default. 
+To do so, add/update the following variables in the settings.
+
+electron-autoupdate = Y
+
+electron-autostart = Y
+
 
 ### [SIMRacingApps.github.io](http://github/SIMRacingApps/SIMRacingApps.github.io)
 
@@ -121,6 +133,6 @@ So, any time you upload a new build, you should also commit and push this one as
 
 =========================================================================================
 
-[Copyright (C) 2015 - 2017 Jeffrey Gilliam](http://SIMRacingApps.com/COPYRIGHT.TXT)
+[Copyright (C) 2015 - 2018 Jeffrey Gilliam](http://SIMRacingApps.com/COPYRIGHT.TXT)
 
 [Apache License 2.0](http://SIMRacingApps.com/LICENSE.TXT)

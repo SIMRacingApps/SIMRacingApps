@@ -1,10 +1,10 @@
 SIMRacingApps Release Notes
-Copyright (C) 2015 - 2017 Jeffrey Gilliam
+Copyright (C) 2015 - 2018 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/7?closed=1)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/8?closed=1)
 
-Version: 1.6_Build_BETA-2017.12.28
+Version: 1.6_Build_BETA-2018.01.17
     1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
        CarLeft, CarRight: Show when car(s) are to the left or right of you
        Added 2 new widgets, CarLeft and CarRight.
@@ -59,6 +59,19 @@ Version: 1.6_Build_BETA-2017.12.28
         - Camera Chase
         - Camera Far Chase
         - Camera Rear Chase
+    
+    8. Fixed #131 (https://github.com/SIMRacingApps/SIMRacingApps/issues/131)
+       PitCountDown: Doesn't work with JJ Spotter Pack
+       
+    9. Closed #133 (https://github.com/SIMRacingApps/SIMRacingApps/issues/133)
+       Standings Banner: For your class only
+
+    10. Closed #135 (https://github.com/SIMRacingApps/SIMRacingApps/issues/135)
+        Standings Banner Vertical: For your class only
+
+    11. Closed #137 (https://github.com/SIMRacingApps/SIMRacingApps/issues/137)
+        Feature: Setup Protector
+        Created a new widget called InGarage that you can supply your own image if you wish.
     
     For notes on previous versions, see below.
        
