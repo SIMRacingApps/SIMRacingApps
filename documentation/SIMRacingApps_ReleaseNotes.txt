@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/8?closed=1)
 
-Version: 1.6_Build_BETA-2018.01.17
+Version: 1.6_Build_BETA-2018.01.23
     1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
        CarLeft, CarRight: Show when car(s) are to the left or right of you
        Added 2 new widgets, CarLeft and CarRight.
@@ -42,7 +42,7 @@ Version: 1.6_Build_BETA-2018.01.17
         - Show All
         - Play
         - Pause or Stop
-        - Rewind
+        - Rewind, Reverse
         - Fast Forward or Forward
         - Slow Motion or Slow Down or Slow or Slower
         - Next Lap
@@ -72,6 +72,13 @@ Version: 1.6_Build_BETA-2018.01.17
     11. Closed #137 (https://github.com/SIMRacingApps/SIMRacingApps/issues/137)
         Feature: Setup Protector
         Created a new widget called InGarage that you can supply your own image if you wish.
+
+    12. Fixed the Sebring Track Image.
+
+    13. Closed #89 (https://github.com/SIMRacingApps/SIMRacingApps/issues/89)
+        Closed #140 (https://github.com/SIMRacingApps/SIMRacingApps/issues/140)
+        CarSelector Widget does not support 50+ car fields
+        All Widets/Apps using CarSelector, now uses CarSelector64 for up to 64 cars.
     
     For notes on previous versions, see below.
        
@@ -81,7 +88,7 @@ Version: 1.6_Build_BETA-2018.01.17
     1. To get the server running, simply execute the SIMRacingAppsServer...exe 
        on the same computer that the Simulator is running on.
     2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page will install the 32-bit version of Java. The 64-bit version is faster.
+       NOTE: This page may install the 32-bit version of Java. The 64-bit version is faster.
        See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
        Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
        for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
