@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/8?closed=1)
 
-Version: 1.6_Build_BETA-2018.01.23
+Version: 1.6_Build_BETA-2018.02.01
     1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
        CarLeft, CarRight: Show when car(s) are to the left or right of you
        Added 2 new widgets, CarLeft and CarRight.
@@ -80,6 +80,30 @@ Version: 1.6_Build_BETA-2018.01.23
         CarSelector Widget does not support 50+ car fields
         All Widets/Apps using CarSelector, now uses CarSelector64 for up to 64 cars.
     
+    14. Fixed #136 (https://github.com/SIMRacingApps/SIMRacingApps/issues/136)
+        VoiceAttack, Start Gear Announcement, setting SRA_loop false still loops.
+        Change to use local variables.
+        The preferred way to disable a spotter loop, is to remove it from the "Start Spotter" command
+       
+    15. Fixed #141 (https://github.com/SIMRacingApps/SIMRacingApps/issues/141)
+        Invalid Characters in the UserName causes server to crash
+        This fixes Brian Wertman's and Don Runkle Jr.'s issues where SRA would only crash on Sunday nights.
+        Turns out, the league he runs on Sunday, the admins were putting invalid characters in the UserName.
+
+    16. Closed #101 (https://github.com/SIMRacingApps/SIMRacingApps/issues/101)
+        Add option to all widgets to autohide
+        Electron 4.x was enhanced to allow users to select when an app/widget should be visible.
+        Options are when: NotConnected, InCar, InGarage, InReplay
+        These options are saved with your configuration.
+    
+    17. Fixed favorites to allow https URLs.
+        
+    18. Closed #138 (https://github.com/SIMRacingApps/SIMRacingApps/issues/138)
+        Electron: Ability to click through the transparent areas
+        What this means is if you need to move or resize an Electron widget, 
+        you will need to turn off transparency, move/resize, then turn it back on.
+        You can disable this feature by adding "electron-noclickthrough=y" to the settings.
+        
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
