@@ -76,7 +76,8 @@
             <launch4j>
                 <config headerType="console" 
                         outfile="${java.io.tmpdir}/SIMRacingAppsServer.exe" 
-                        dontWrapJar="false" 
+                        dontWrapJar="false"
+                        stayalive="true"
                         jar="${java.io.tmpdir}/SIMRacingApps.jar" 
                         errTitle="SIMRacingAppsServer" 
                         downloadUrl="http://java.com/download" 
