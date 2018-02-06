@@ -16,7 +16,7 @@ Genson
     you may not use this file except in compliance with the License.
     
 jna
-    https://github.com/twall/jna
+    https://github.com/java-native-access/jna
     
     JNA is dual-licensed under 2 alternative Open Source/Free 
     licenses: LGPL 2.1 and Apache License 2.0. (starting with

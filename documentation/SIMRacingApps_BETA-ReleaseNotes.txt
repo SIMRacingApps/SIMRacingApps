@@ -6,32 +6,19 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.6_Build_BETA-2018.02.01
+Version: 1.6_Build_BETA-2018.02.06
 
-    1. Fixed #136 (https://github.com/SIMRacingApps/SIMRacingApps/issues/136)
-       VoiceAttack, Start Gear Announcement, setting SRA_loop false still loops.
-       Change to use local variables.
-       The preferred way to disable a spotter loop, is to remove it from the "Start Spotter" command
-       
-    2. Fixed #141 (https://github.com/SIMRacingApps/SIMRacingApps/issues/141)
-       Invalid Characters in the UserName causes server to crash
-       This fixes Brian Wertman's and Don Runkle Jr.'s issues where SRA would only crash on Sunday nights.
-       Turns out, the league he runs on Sunday, the admins were putting invalid characters in the UserName.
-
-    3. Closed #101 (https://github.com/SIMRacingApps/SIMRacingApps/issues/101)
-       Add option to all widgets to autohide
-       Electron 4.x was enhanced to allow users to select when an app/widget should be visible.
-       Options are when: NotConnected, InCar, InGarage, InReplay
-       These options are saved with your configuration.
-       
-    4. Fixed favorites to allow https URLs.
+    1. Added RadioTransmitting Widget. Contributed by Ricky Thompson.
     
-    5. Closed #138 (https://github.com/SIMRacingApps/SIMRacingApps/issues/138)
-       Electron: Ability to click through the transparent areas
-       What this means is if you need to move or resize an Electron widget, 
-       you will need to turn off transparency, move/resize, then turn it back on.
-       You can disable this feature by adding "electron-noclickthrough=y" to the settings.
+    2. Fixed issue where empty folders in the Documents\SIMRacingApps\favorites, apps, widgets
+       would prevent any user defined files from loading. 
        
+    3. Closed #143 (https://github.com/SIMRacingApps/SIMRacingApps/issues/143)
+       Camera Selector support more than 20 cameras
+       New widget called CameraSelectorCustom can have 30 cameras.
+       
+    4. Updated JNA library from 4.2.1 to 4.5.1.
+           
     For notes on previous BETA builds for version 1.6, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -62,6 +49,32 @@ Version: 1.6_Build_BETA-2018.02.01
 ****************** Previous Versions *************************
 
 For versions prior to 1.6, see the regular release notes.
+
+1.6_Build_BETA-2018.02.01
+
+    1. Fixed #136 (https://github.com/SIMRacingApps/SIMRacingApps/issues/136)
+       VoiceAttack, Start Gear Announcement, setting SRA_loop false still loops.
+       Change to use local variables.
+       The preferred way to disable a spotter loop, is to remove it from the "Start Spotter" command
+       
+    2. Fixed #141 (https://github.com/SIMRacingApps/SIMRacingApps/issues/141)
+       Invalid Characters in the UserName causes server to crash
+       This fixes Brian Wertman's and Don Runkle Jr.'s issues where SRA would only crash on Sunday nights.
+       Turns out, the league he runs on Sunday, the admins were putting invalid characters in the UserName.
+
+    3. Closed #101 (https://github.com/SIMRacingApps/SIMRacingApps/issues/101)
+       Add option to all widgets to autohide
+       Electron 4.x was enhanced to allow users to select when an app/widget should be visible.
+       Options are when: NotConnected, InCar, InGarage, InReplay
+       These options are saved with your configuration.
+       
+    4. Fixed favorites to allow https URLs.
+    
+    5. Closed #138 (https://github.com/SIMRacingApps/SIMRacingApps/issues/138)
+       Electron: Ability to click through the transparent areas
+       What this means is if you need to move or resize an Electron widget, 
+       you will need to turn off transparency, move/resize, then turn it back on.
+       You can disable this feature by adding "electron-noclickthrough=y" to the settings.
 
 1.6_Build_BETA-2018.01.23
 
