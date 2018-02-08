@@ -6,7 +6,7 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.6_Build_BETA-2018.02.06
+Version: 1.6_Build_BETA-2018.02.07
 
     1. Added RadioTransmitting Widget. Contributed by Ricky Thompson.
     
