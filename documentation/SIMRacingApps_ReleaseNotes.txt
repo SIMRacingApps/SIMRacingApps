@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/8?closed=1)
 
-Version: 1.6_Build_BETA-2018.02.07
+Version: 1.6_Build_BETA-2018.02.13
     1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
        CarLeft, CarRight: Show when car(s) are to the left or right of you
        Added 2 new widgets, CarLeft and CarRight.
@@ -114,7 +114,19 @@ Version: 1.6_Build_BETA-2018.02.07
         New widget called CameraSelectorCustom can have 30 cameras.
 
     22. Updated JNA library from 4.2.1 to 4.5.1.
-        
+
+    23. Wrote my own YAML parser and retired the SnakeYaml parser.
+        Did this to stop chasing iRacing's bad YAML output. 
+        This one is very forgiving.
+
+    24. Closed #90 (https://github.com/SIMRacingApps/SIMRacingApps/issues/90)
+        StandingsTopX widgets = StandingsTop60, Spectator60, Spotter60
+
+    25. Closed #139 (https://github.com/SIMRacingApps/SIMRacingApps/issues/139)
+        Detect to display Laps or Time Remaining on all widgets
+        Standings, Relative, LapTiming, CrewChief, Digital Dash were modified to show the
+        approximation of laps remaining and/or the time remaining.
+
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------

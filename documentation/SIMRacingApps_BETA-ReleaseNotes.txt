@@ -6,19 +6,23 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.6_Build_BETA-2018.02.07
+Version: 1.6_Build_BETA-2018.02.13
 
-    1. Added RadioTransmitting Widget. Contributed by Ricky Thompson.
-    
-    2. Fixed issue where empty folders in the Documents\SIMRacingApps\favorites, apps, widgets
-       would prevent any user defined files from loading. 
+    1. Wrote my own YAML parser and retired the SnakeYaml parser.
+       Did this to stop chasing iRacing's bad YAML output. 
+       This one is very forgiving.
+
+    2. Closed #90 (https://github.com/SIMRacingApps/SIMRacingApps/issues/90)
+       StandingsTopX widgets = StandingsTop60, Spectator60, Spotter60
        
-    3. Closed #143 (https://github.com/SIMRacingApps/SIMRacingApps/issues/143)
-       Camera Selector support more than 20 cameras
-       New widget called CameraSelectorCustom can have 30 cameras.
-       
-    4. Updated JNA library from 4.2.1 to 4.5.1.
-           
+    3. Fixed Electron issue where sometimes a JavaScript exception would
+       occur when launching an App or Widget. Retrying would most of the time work.
+
+    4. Closed #139 (https://github.com/SIMRacingApps/SIMRacingApps/issues/139)
+       Detect to display Laps or Time Remaining on all widgets
+       Standings, Relative, LapTiming, CrewChief, Digital Dash were modified to show the
+       approximation of laps remaining and/or the time remaining.
+                  
     For notes on previous BETA builds for version 1.6, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -49,6 +53,19 @@ Version: 1.6_Build_BETA-2018.02.07
 ****************** Previous Versions *************************
 
 For versions prior to 1.6, see the regular release notes.
+
+1.6_Build_BETA-2018.02.08
+
+    1. Added RadioTransmitting Widget. Contributed by Ricky Thompson.
+    
+    2. Fixed issue where empty folders in the Documents\SIMRacingApps\favorites, apps, widgets
+       would prevent any user defined files from loading. 
+       
+    3. Closed #143 (https://github.com/SIMRacingApps/SIMRacingApps/issues/143)
+       Camera Selector support more than 20 cameras
+       New widget called CameraSelectorCustom can have 30 cameras.
+       
+    4. Updated JNA library from 4.2.1 to 4.5.1.
 
 1.6_Build_BETA-2018.02.01
 
