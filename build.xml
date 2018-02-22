@@ -84,7 +84,7 @@
                         icon="${SIMRacingAppsWebContent.location}/favicon.ico">
                     <classPath mainClass="com.SIMRacingApps.Server">
                         <!-- cp>%USERPROFILE%/Documents/SIMRacingApps</cp -->
-                        <cp>%HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Personal%/SIMRacingApps></cp>
+                        <cp>%HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Personal%/SIMRacingApps</cp>
                     </classPath>
                     <jre minVersion="1.8.0" 
                          bundledJre64Bit="false" 
