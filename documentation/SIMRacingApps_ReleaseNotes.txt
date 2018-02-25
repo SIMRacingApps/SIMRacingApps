@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/8?closed=1)
 
-Version: 1.6_Build_BETA-2018.02.13
+Version: 1.6_Build_BETA-2018.02.22
     1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
        CarLeft, CarRight: Show when car(s) are to the left or right of you
        Added 2 new widgets, CarLeft and CarRight.
@@ -59,6 +59,7 @@ Version: 1.6_Build_BETA-2018.02.13
         - Camera Chase
         - Camera Far Chase
         - Camera Rear Chase
+        - Camera Spectator
     
     8. Fixed #134 (https://github.com/SIMRacingApps/SIMRacingApps/issues/134)
        PitCountDown: Doesn't work with JJ Spotter Pack
@@ -95,6 +96,8 @@ Version: 1.6_Build_BETA-2018.02.13
         Electron 4.x was enhanced to allow users to select when an app/widget should be visible.
         Options are when: NotConnected, InCar, InGarage, InReplay
         These options are saved with your configuration.
+        Electron also automatically reloads the App/Widget if you change Transparent or Frame.
+        Electron does not allow transparent and frame to be selected at the same time.
     
     17. Fixed favorites to allow https URLs.
         
@@ -127,6 +130,29 @@ Version: 1.6_Build_BETA-2018.02.13
         Standings, Relative, LapTiming, CrewChief, Digital Dash were modified to show the
         approximation of laps remaining and/or the time remaining.
 
+    26. Closed #148 (https://github.com/SIMRacingApps/SIMRacingApps/issues/148) 
+        Server: Remap Driver Names
+        Simply add the name to change in the settings with SIM name on the left.
+        Any spaces on the left side must have a backslash in front of the space.
+        Use this to highlight friends, enemies, blacklist, whatever
+          Jeffrey\ Gilliam = *[Jeff Gilliam] 
+          John\ Doe27 = >>John Doe
+          Young\ Gun = !!Danger Danger
+          
+    27. Closed #146 (https://github.com/SIMRacingApps/SIMRacingApps/issues/146)
+        StandingsBannerVertical20: For 10 static and 10 rotating full length of the screen
+
+    28. Added a Track Map version that only shows the Reference Car and the Leader.
+    
+    29. Fixed TrackMap for Daytona Rally Cross Long
+    
+    30. Server will now try to bind to ports 80, 8080, 5555.
+        If first one is in use, it will try the next and so on.
+        You can still change the first port it tries in the settings.
+        If your port is busy, then 8080 and 5555 will be tried.
+    
+    31. Added ability to edit useroverrides.css to the menu
+
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
@@ -148,7 +174,10 @@ Version: 1.6_Build_BETA-2018.02.13
     4. Enter the server address (found in the Title Bar of the server window) in your browser 
        from any device connected to the same local network.
        Connecting from outside the local network is not supported and not recommended due to security concerns.
-    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+    5. To use the Electron client with the Apps/Widgets overlaid on top of the SIM, you 
+       must have the SIM running in Windowed mode. Please see the following Wiki info to configure the SIM.
+       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
+    6. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
        for more details and options for running the server.
     
     Issues:

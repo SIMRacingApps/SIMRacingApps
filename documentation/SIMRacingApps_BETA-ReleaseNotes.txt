@@ -1,4 +1,4 @@
-SIMRacingApps Release Notes
+SIMRacingApps BETA Release Notes
 Copyright (C) 2015 - 2018 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
@@ -6,23 +6,42 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.6_Build_BETA-2018.02.13
+Version: 1.6_Build_BETA-2018.02.22
 
-    1. Wrote my own YAML parser and retired the SnakeYaml parser.
-       Did this to stop chasing iRacing's bad YAML output. 
-       This one is very forgiving.
-
-    2. Closed #90 (https://github.com/SIMRacingApps/SIMRacingApps/issues/90)
-       StandingsTopX widgets = StandingsTop60, Spectator60, Spotter60
+    1. Electron 4.0.3: Now reloads App/Widget when Transparent and Frame 
+       are changed automatically.
+       Also does not allow both to be selected at the same time.
+       Fixed the broken link to the settings.
        
-    3. Fixed Electron issue where sometimes a JavaScript exception would
-       occur when launching an App or Widget. Retrying would most of the time work.
+    2. Closed #148 (https://github.com/SIMRacingApps/SIMRacingApps/issues/148) 
+       Server: Remap Driver Names
+       Simply add the name to change in the settings with SIM name on the left.
+       Any spaces on the left side must have a backslash in front of the space.
+       Use this to highlight friends, enemies, blacklist, whatever
+          Jeffrey\ Gilliam = *[Jeff Gilliam] 
+          John\ Doe27 = >>John Doe
+          Young\ Gun = !!Danger Danger
+          
+    3. Closed #146 (https://github.com/SIMRacingApps/SIMRacingApps/issues/146)
+       StandingsBannerVertical20: For 10 static and 10 rotating full length of the screen
+       
+    4. Added a Track Map version that only shows the Reference Car and the Leader.
+    
+    5. Voice Attack: Added the command "Camera Spectator".
+       I saw this is a new camera available in iRacing (at least at Atlanta)
+       May not be at all tracks.
+    
+    6. Updated the German translations.
+    
+    7. Fixed TrackMap for Daytona Rally Cross Long
+    
+    8. Server will now try to bind to ports 80, 8080, 5555.
+       If first one is in use, it will try the next and so on.
+       You can still change the first port it tries in the settings.
+       If your port is busy, then 8080 and 5555 will be tried.
 
-    4. Closed #139 (https://github.com/SIMRacingApps/SIMRacingApps/issues/139)
-       Detect to display Laps or Time Remaining on all widgets
-       Standings, Relative, LapTiming, CrewChief, Digital Dash were modified to show the
-       approximation of laps remaining and/or the time remaining.
-                  
+    9. Added ability to edit useroverrides.css to the menu
+                          
     For notes on previous BETA builds for version 1.6, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -44,7 +63,10 @@ Version: 1.6_Build_BETA-2018.02.13
     4. Enter the server address (found in the Title Bar of the server window) in your browser 
        from any device connected to the same local network.
        Connecting from outside the local network is not supported and not recommended due to security concerns.
-    5. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+    5. To use the Electron client with the Apps/Widgets overlaid on top of the SIM, you 
+       must have the SIM running in Windowed mode. Please see the following Wiki info to configure the SIM.
+       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
+    6. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
        for more details and options for running the server.
     
     Wiki:
@@ -54,7 +76,24 @@ Version: 1.6_Build_BETA-2018.02.13
 
 For versions prior to 1.6, see the regular release notes.
 
-1.6_Build_BETA-2018.02.08
+1.6_Build_BETA-2018.02.13
+
+    1. Wrote my own YAML parser and retired the SnakeYaml parser.
+       Did this to stop chasing iRacing's bad YAML output. 
+       This one is very forgiving.
+
+    2. Closed #90 (https://github.com/SIMRacingApps/SIMRacingApps/issues/90)
+       StandingsTopX widgets = StandingsTop60, Spectator60, Spotter60
+       
+    3. Fixed Electron issue where sometimes a JavaScript exception would
+       occur when launching an App or Widget. Retrying would most of the time work.
+
+    4. Closed #139 (https://github.com/SIMRacingApps/SIMRacingApps/issues/139)
+       Detect to display Laps or Time Remaining on all widgets
+       Standings, Relative, LapTiming, CrewChief, Digital Dash were modified to show the
+       approximation of laps remaining and/or the time remaining.
+
+1.6_Build_BETA-2018.02.07
 
     1. Added RadioTransmitting Widget. Contributed by Ricky Thompson.
     
