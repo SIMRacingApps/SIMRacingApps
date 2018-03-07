@@ -6,7 +6,70 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.6_Build_BETA-2018.02.22
+Version: 1.6_Build_BETA-2018.03.06
+
+    1. Decided to rename CameraSelectorCustom to CameraSelector30, because iRacing now has
+       more than 20 cameras, standard, at some tracks. 
+       
+    2. Added Angular-Animate package so developers can add some animations to their widgets.
+    
+    3. Added 2 new widgets for the non-purists, 
+       AnalogGauge/Spek/Speedomter and BarGauge/Speedometer
+       I did not put these in any existing App, they are stand alone.
+
+    4. Changed the setting "teamspeak-update-name" default to N.
+       It is off by default because it doesn't work in a team or when spotting,
+       because it changes it to the driver's name in those sessions. 
+       
+    5. Electron: updated to 1.7.12 from 1.7.9.
+    
+    6. Fixed link to wiki page when ports are in use.
+    
+    7. iRacing Build 2018.03.06 Content
+        - Audi R18 
+        - Dallara IR18 
+        - Porsche 919 Hybrid 
+        - The Dirt Track at Charlotte 
+        - Limaland Motorsports Park 
+        - Pocono Raceway track upgrade 
+        - Sonoma Raceway (Rallycross) 
+    
+                              
+    For notes on previous BETA builds for version 1.6, see below.
+    
+------------------------------------------------------------------------------------------------------
+---                    Configuration Tips                                                          ---
+------------------------------------------------------------------------------------------------------
+    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
+       on the same computer that the Simulator is running on.
+    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
+       NOTE: This page may install the 32-bit version of Java. The 64-bit version is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
+       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
+       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
+    3. If a Firewall is running, you might get prompted to allow the server to run.
+       Depending on if your Ethernet connection was made private or public, 
+       you may be asked to confirm that also. Please select allow.
+       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
+       for both in-bound and out-bound traffic on all ports. 
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
+    4. Enter the server address (found in the Title Bar of the server window) in your browser 
+       from any device connected to the same local network.
+       Connecting from outside the local network is not supported and not recommended due to security concerns.
+    5. To use the Electron client with the Apps/Widgets overlaid on top of the SIM, you 
+       must have the SIM running in Windowed mode. Please see the following Wiki info to configure the SIM.
+       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
+    6. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+       for more details and options for running the server.
+    
+    Wiki:
+        There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
+
+****************** Previous Versions *************************
+
+For versions prior to 1.6, see the regular release notes.
+
+1.6_Build_BETA-2018.02.22
 
     1. Electron 4.0.3: Now reloads App/Widget when Transparent and Frame 
        are changed automatically.
@@ -41,40 +104,6 @@ Version: 1.6_Build_BETA-2018.02.22
        If your port is busy, then 8080 and 5555 will be tried.
 
     9. Added ability to edit useroverrides.css to the menu
-                          
-    For notes on previous BETA builds for version 1.6, see below.
-    
-------------------------------------------------------------------------------------------------------
----                    Configuration Tips                                                          ---
-------------------------------------------------------------------------------------------------------
-    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
-       on the same computer that the Simulator is running on.
-    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page may install the 32-bit version of Java. The 64-bit version is faster.
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
-       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
-       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
-    3. If a Firewall is running, you might get prompted to allow the server to run.
-       Depending on if your Ethernet connection was made private or public, 
-       you may be asked to confirm that also. Please select allow.
-       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
-       for both in-bound and out-bound traffic on all ports. 
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
-    4. Enter the server address (found in the Title Bar of the server window) in your browser 
-       from any device connected to the same local network.
-       Connecting from outside the local network is not supported and not recommended due to security concerns.
-    5. To use the Electron client with the Apps/Widgets overlaid on top of the SIM, you 
-       must have the SIM running in Windowed mode. Please see the following Wiki info to configure the SIM.
-       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
-    6. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
-       for more details and options for running the server.
-    
-    Wiki:
-        There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
-
-****************** Previous Versions *************************
-
-For versions prior to 1.6, see the regular release notes.
 
 1.6_Build_BETA-2018.02.13
 
