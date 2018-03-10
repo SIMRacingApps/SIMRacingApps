@@ -6,34 +6,9 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.6_Build_BETA-2018.03.06
+Version: 1.6_Build_BETA-2018.03.07
 
-    1. Decided to rename CameraSelectorCustom to CameraSelector30, because iRacing now has
-       more than 20 cameras, standard, at some tracks. 
-       
-    2. Added Angular-Animate package so developers can add some animations to their widgets.
-    
-    3. Added 2 new widgets for the non-purists, 
-       AnalogGauge/Spek/Speedomter and BarGauge/Speedometer
-       I did not put these in any existing App, they are stand alone.
-
-    4. Changed the setting "teamspeak-update-name" default to N.
-       It is off by default because it doesn't work in a team or when spotting,
-       because it changes it to the driver's name in those sessions. 
-       
-    5. Electron: updated to 1.7.12 from 1.7.9.
-    
-    6. Fixed link to wiki page when ports are in use.
-    
-    7. iRacing Build 2018.03.06 Content
-        - Audi R18 
-        - Dallara IR18 
-        - Porsche 919 Hybrid 
-        - The Dirt Track at Charlotte 
-        - Limaland Motorsports Park 
-        - Pocono Raceway track upgrade 
-        - Sonoma Raceway (Rallycross) 
-    
+    1. Fixed the settings editor on Safari, Firefox and IE11.    
                               
     For notes on previous BETA builds for version 1.6, see below.
     
@@ -68,6 +43,34 @@ Version: 1.6_Build_BETA-2018.03.06
 ****************** Previous Versions *************************
 
 For versions prior to 1.6, see the regular release notes.
+
+1.6_Build_BETA-2018.03.06
+
+    1. Decided to rename CameraSelectorCustom to CameraSelector30, because iRacing now has
+       more than 20 cameras, standard, at some tracks. 
+       
+    2. Added Angular-Animate package so developers can add some animations to their widgets.
+    
+    3. Added 2 new widgets for the non-purists, 
+       AnalogGauge/Spek/Speedomter and BarGauge/Speedometer
+       I did not put these in any existing App, they are stand alone.
+
+    4. Changed the setting "teamspeak-update-name" default to N.
+       It is off by default because it doesn't work in a team or when spotting,
+       because it changes it to the driver's name in those sessions. 
+       
+    5. Electron: updated to 1.7.12 from 1.7.9.
+    
+    6. Fixed link to wiki page when ports are in use.
+    
+    7. iRacing Build 2018.03.06 Content
+        - Audi R18 
+        - Dallara IR18 
+        - Porsche 919 Hybrid 
+        - The Dirt Track at Charlotte 
+        - Limaland Motorsports Park 
+        - Pocono Raceway track upgrade 
+        - Sonoma Raceway (Rallycross) 
 
 1.6_Build_BETA-2018.02.22
 

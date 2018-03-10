@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/8?closed=1)
 
-Version: 1.6_Build_BETA-2018.03.06
+Version: 1.6_Build_2018.03.10
     1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
        CarLeft, CarRight: Show when car(s) are to the left or right of you
        Added 2 new widgets, CarLeft and CarRight.
