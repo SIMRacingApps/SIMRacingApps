@@ -4,7 +4,11 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/8?closed=1)
 
-Version: 1.6_Build_2018.03.10
+Version: 1.6_Build_2018.03.11
+    1. Patch to check to see if Electron is running before trying to install the new version.
+       All Electron.exe process should be closed before starting the new server.
+
+1.6_Build_2018.03.10
     1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
        CarLeft, CarRight: Show when car(s) are to the left or right of you
        Added 2 new widgets, CarLeft and CarRight.
