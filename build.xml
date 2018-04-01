@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." default="exe" name="SIMRacingApps-exe">
+<project basedir="." default="signed" name="SIMRacingApps-exe">
     <property name="verboseFlag" value="0" />
     <script language="javascript">
         var logger = project.getBuildListeners().firstElement();
@@ -9,6 +9,26 @@
     </script>
     <property environment="env" />
     <property name="launch4j.dir" location="Launch4j" />
+    
+    <property name="sign4j.exe" value="Launch4j/sign4j/sign4j.exe" />
+    <!-- get jsign from https://ebourg.github.io/jsign -->
+    <property name="jsign.jar" value="jsign-2.0.jar" />
+    <!--
+        To build your own signed exe, you must provide your own certificate.
+        Here are the steps to build one.
+
+        - To create a self signed certificate for testing, run this command (change to your stuff)
+        - It will prompt for a password that you will use later when building the exe
+        - This will be used at some point to generate a certificate request to send to a certificate authority
+        - to get a certified certificate. But, for now, this should at least prevent tampering with the exe file.
+        
+        cd {yourCertificatePath}
+        "C:\Program Files\Java\jre1.8.0_161\bin\keytool.exe" -genkey -dname "CN=Jeffrey Gilliam, L=Marietta, ST=GA, C=US, OU=, O=SIMRacingApps" -alias SIMRacingApps.com -keyalg RSA -destkeystore SIMRacingApps.pfx -keysize 2048 -storetype pkcs12    
+     -->
+    <property name="certificate.path" value="O:/OneDrive/Documents OneDrive/Certificates" />
+    <property name="key.store" value="${certificate.path}/SIMRacingApps.pfx" />
+    <property name="key.alias" value="SIMRacingApps.com" />
+    
     <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar" />
     <property name="deployment.dir" value="${user.home}/Documents/SIMRacingApps" />
     <property name="download.dir" value="O:/OneDrive/SIMRacingApps" />
@@ -73,6 +93,7 @@
             </jar>
             <delete file="${java.io.tmpdir}/SIMRacingAppsServer_${version}.l4j.ini" />
             
+            <!-- get launch4j at http://launch4j.sourceforge.net -->
             <launch4j>
                 <config headerType="console" 
                         outfile="${java.io.tmpdir}/SIMRacingAppsServer.exe" 
@@ -102,12 +123,31 @@
             </launch4j>
         </sequential>
     </target>
-
-    <target name="deploy" depends="exe">
+    
+    <target name="signed" depends="exe">
+        <!-- Set the environment variable CertPass in the build run properties.
+        <echo message="Look for password prompt to continue..."/>
+        <input message="Certificate Password" addproperty="store.pass" />
+        -->
+        <property name="store.pass" value="${env.CertPass}" />
+        <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
+        <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
+        <echo message="Server Version: ${version}" />
+        
+        <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${java.io.tmpdir}/SIMRacingAppsServer-signed.exe" />
+        <echo message="If the sign4j process fails, sure to set the environment variable CertPass in the build run properties"/>
+        <exec executable="${sign4j.exe}" resultProperty="sign4j.result" failonerror="true">
+          <arg line="javaw -jar ${jsign.jar} --alias '${key.alias}' --keystore '${key.store}' --storepass '${store.pass}' --storetype PKCS12 '${java.io.tmpdir}/SIMRacingAppsServer-signed.exe'"/>
+        </exec>
+    </target>
+    
+    <target name="deploy" depends="signed">
         <property file="${SIMRacingAppsServer.location}/src/com/SIMRacingApps/version.properties" prefix="version" />
         <property name="version" value="${version.major}.${version.minor}_Build_${version.build}" />
         <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${deployment.dir}/SIMRacingAppsServer_${version}.exe" />
         <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${deployment.dir}/SIMRacingAppsServer.exe" />
+        <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer-signed.exe" tofile="${deployment.dir}/SIMRacingAppsServer_${version}-signed.exe" />
+        <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer-signed.exe" tofile="${deployment.dir}/SIMRacingAppsServer-signed.exe" />
         <echo message="Remember to Tag all Git Repositories with: Version_${version}"/>
     </target>
     
@@ -166,7 +206,8 @@
                 </include>
             </fileset>
         </move>
-        <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer.exe" tofile="${download.dir}/SIMRacingAppsServer_${version}.exe" />
+        <copy overwrite="true" file="${download.dir}/SIMRacingAppsServer_${version}.exe" todir="${download.dir}"/>
+        <copy overwrite="true" file="${download.dir}/SIMRacingAppsServer_${version}-signed.exe" todir="${download.dir}"/>
         <copy overwrite="true" file="documentation/SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
         <copy overwrite="true" file="documentation/SIMRacingApps_${version.prefix}ReleaseNotes.txt" todir="${download.dir}" />
         <copy overwrite="true" file="SIMRacingApps-VoiceAttack-Profile.vap" todir="${download.dir}" />
