@@ -2,11 +2,6 @@ Jetty
     Web Server for Java
     Apache License 2.0, http://www.eclipse.org/jetty/licenses.php    
 
-SnakeYaml
-    YAML 1.1 parser and emitter for Java
-    2008 http://www.snakeyaml.org
-    Apache License Version 2.0, http://www.apache.org/licenses/LICENSE-2.0.txt
-    
 Genson
     Java and Scala to JSON conversion library.
     http://owlike.github.io/genson/
