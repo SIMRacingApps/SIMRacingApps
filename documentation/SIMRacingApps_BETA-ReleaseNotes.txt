@@ -2,15 +2,76 @@ SIMRacingApps BETA Release Notes
 Copyright (C) 2015 - 2018 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/8)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/9)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.6_Build_BETA-2018.03.07
+Version: 1.7_Build_BETA-2018.03.31
 
-    1. Fixed the settings editor on Safari, Firefox and IE11.    
-                              
-    For notes on previous BETA builds for version 1.6, see below.
+    1. Now providing a "signed" Server exe for testing in the wild.
+       Please download and try it out and send me pictures of prompts
+       that anti-virus software says about it.
+       It is not linked to a certified authority, but it should prevent tampering with the exe.
+       
+    2. When a session has limited laps and it is timed, 
+       display the lesser of TimeRemaining and EstimatedTimeRemaining.
+
+    3. Closed #154 (https://github.com/SIMRacingApps/SIMRacingApps/issues/154)
+       Voice Attack command for returning weather information
+       Added "whats the weather". Thanks to Ricky Thompson for the submission.
+       Also added the following:
+       a. Laps Led
+       b. Increment Right Front
+       c. Decrement Right Front
+       d. Increment Right Rear
+       e. Decrement Right Rear
+       f. Increment Right Sides
+       g. Decrement Right Sides
+       h. Increment Left Front
+       i. Decrement Left Front
+       j. Increment Left Rear
+       k. Decrement Left Rear
+       l. Increment Left Sides
+       m. Decrement Left Sides
+       n. Increment All Tires
+       o. Decrement All Tires
+
+    4. Closed #151 (https://github.com/SIMRacingApps/SIMRacingApps/issues/151)
+       CarNumber: Add ability for user to provide PNG file
+       Images will expand, but best to use aspect ratio of 1.6 or (800x480)
+       Path: Documents/SIMRacingApps/CarNumbers/LeagueID-{leagueId}/{carNumber}.png
+
+    5. Closed #153 (https://github.com/SIMRacingApps/SIMRacingApps/issues/153)
+       REFERENCE car should follow who the camera has selected.
+       Can be turned on/off in settings using (reference-camera = y/n)
+       
+    6. Added widgets for displaying the SRA logo so streamers can show SRA some love.
+       SRALogo, SRALogoURL
+       
+    7. Updated Jetty Engine from 9.3.7 to 9.4.9
+    
+    8. Fixed #159 (https://github.com/SIMRacingApps/SIMRacingApps/issues/159)
+       Electron: When Apps become visible, a hidden task bar will unhide and stay there.
+       This occurred when using the new visible feature as well as "show all" command
+       from Voice Attack. This hides the apps from the task bar. 
+       If you don't have this problem and you wish to see them on the task bar,
+       add this to your settings to turn it back on.
+           electron-showappsontaskbar = Y
+           
+    9. Created a CameraSelectorVertical30 which shows the CarSelector widget on the bottom.
+
+    10. Closed #152 (https://github.com/SIMRacingApps/SIMRacingApps/issues/152)
+        Store the lowest & highest positions per driver/class
+        Added these to the API in the first 1.7 BETA
+            /Car/(CARIDENTIFIER)/PositionLowest
+            /Car/(CARIDENTIFIER)/PositionHighest
+            /Car/(CARIDENTIFIER)/PositionLowestClass
+            /Car/(CARIDENTIFIER)/PositionHighestClass
+            
+    11. On the Main Menu, disabled the "Upload" button until a file was chosen.
+        Thanks to Steve Kubay for reporting this. It was putting you in a place you could not back out of.
+                                          
+    For notes on previous BETA builds for version 1.7, see below.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
@@ -42,209 +103,5 @@ Version: 1.6_Build_BETA-2018.03.07
 
 ****************** Previous Versions *************************
 
-For versions prior to 1.6, see the regular release notes.
+For versions prior to 1.7, see the regular release notes.
 
-1.6_Build_BETA-2018.03.06
-
-    1. Decided to rename CameraSelectorCustom to CameraSelector30, because iRacing now has
-       more than 20 cameras, standard, at some tracks. 
-       
-    2. Added Angular-Animate package so developers can add some animations to their widgets.
-    
-    3. Added 2 new widgets for the non-purists, 
-       AnalogGauge/Spek/Speedomter and BarGauge/Speedometer
-       I did not put these in any existing App, they are stand alone.
-
-    4. Changed the setting "teamspeak-update-name" default to N.
-       It is off by default because it doesn't work in a team or when spotting,
-       because it changes it to the driver's name in those sessions. 
-       
-    5. Electron: updated to 1.7.12 from 1.7.9.
-    
-    6. Fixed link to wiki page when ports are in use.
-    
-    7. iRacing Build 2018.03.06 Content
-        - Audi R18 
-        - Dallara IR18 
-        - Porsche 919 Hybrid 
-        - The Dirt Track at Charlotte 
-        - Limaland Motorsports Park 
-        - Pocono Raceway track upgrade 
-        - Sonoma Raceway (Rallycross) 
-
-1.6_Build_BETA-2018.02.22
-
-    1. Electron 4.0.3: Now reloads App/Widget when Transparent and Frame 
-       are changed automatically.
-       Also does not allow both to be selected at the same time.
-       Fixed the broken link to the settings.
-       
-    2. Closed #148 (https://github.com/SIMRacingApps/SIMRacingApps/issues/148) 
-       Server: Remap Driver Names
-       Simply add the name to change in the settings with SIM name on the left.
-       Any spaces on the left side must have a backslash in front of the space.
-       Use this to highlight friends, enemies, blacklist, whatever
-          Jeffrey\ Gilliam = *[Jeff Gilliam] 
-          John\ Doe27 = >>John Doe
-          Young\ Gun = !!Danger Danger
-          
-    3. Closed #146 (https://github.com/SIMRacingApps/SIMRacingApps/issues/146)
-       StandingsBannerVertical20: For 10 static and 10 rotating full length of the screen
-       
-    4. Added a Track Map version that only shows the Reference Car and the Leader.
-    
-    5. Voice Attack: Added the command "Camera Spectator".
-       I saw this is a new camera available in iRacing (at least at Atlanta)
-       May not be at all tracks.
-    
-    6. Updated the German translations.
-    
-    7. Fixed TrackMap for Daytona Rally Cross Long
-    
-    8. Server will now try to bind to ports 80, 8080, 5555.
-       If first one is in use, it will try the next and so on.
-       You can still change the first port it tries in the settings.
-       If your port is busy, then 8080 and 5555 will be tried.
-
-    9. Added ability to edit useroverrides.css to the menu
-
-1.6_Build_BETA-2018.02.13
-
-    1. Wrote my own YAML parser and retired the SnakeYaml parser.
-       Did this to stop chasing iRacing's bad YAML output. 
-       This one is very forgiving.
-
-    2. Closed #90 (https://github.com/SIMRacingApps/SIMRacingApps/issues/90)
-       StandingsTopX widgets = StandingsTop60, Spectator60, Spotter60
-       
-    3. Fixed Electron issue where sometimes a JavaScript exception would
-       occur when launching an App or Widget. Retrying would most of the time work.
-
-    4. Closed #139 (https://github.com/SIMRacingApps/SIMRacingApps/issues/139)
-       Detect to display Laps or Time Remaining on all widgets
-       Standings, Relative, LapTiming, CrewChief, Digital Dash were modified to show the
-       approximation of laps remaining and/or the time remaining.
-
-1.6_Build_BETA-2018.02.07
-
-    1. Added RadioTransmitting Widget. Contributed by Ricky Thompson.
-    
-    2. Fixed issue where empty folders in the Documents\SIMRacingApps\favorites, apps, widgets
-       would prevent any user defined files from loading. 
-       
-    3. Closed #143 (https://github.com/SIMRacingApps/SIMRacingApps/issues/143)
-       Camera Selector support more than 20 cameras
-       New widget called CameraSelectorCustom can have 30 cameras.
-       
-    4. Updated JNA library from 4.2.1 to 4.5.1.
-
-1.6_Build_BETA-2018.02.01
-
-    1. Fixed #136 (https://github.com/SIMRacingApps/SIMRacingApps/issues/136)
-       VoiceAttack, Start Gear Announcement, setting SRA_loop false still loops.
-       Change to use local variables.
-       The preferred way to disable a spotter loop, is to remove it from the "Start Spotter" command
-       
-    2. Fixed #141 (https://github.com/SIMRacingApps/SIMRacingApps/issues/141)
-       Invalid Characters in the UserName causes server to crash
-       This fixes Brian Wertman's and Don Runkle Jr.'s issues where SRA would only crash on Sunday nights.
-       Turns out, the league he runs on Sunday, the admins were putting invalid characters in the UserName.
-
-    3. Closed #101 (https://github.com/SIMRacingApps/SIMRacingApps/issues/101)
-       Add option to all widgets to autohide
-       Electron 4.x was enhanced to allow users to select when an app/widget should be visible.
-       Options are when: NotConnected, InCar, InGarage, InReplay
-       These options are saved with your configuration.
-       
-    4. Fixed favorites to allow https URLs.
-    
-    5. Closed #138 (https://github.com/SIMRacingApps/SIMRacingApps/issues/138)
-       Electron: Ability to click through the transparent areas
-       What this means is if you need to move or resize an Electron widget, 
-       you will need to turn off transparency, move/resize, then turn it back on.
-       You can disable this feature by adding "electron-noclickthrough=y" to the settings.
-
-1.6_Build_BETA-2018.01.23
-
-    1. Voice Attack
-       - Added "Reverse" as an alias for "Rewind".
-       
-    2. Fixed the Sebring Track Image.
-
-    3. Closed #89 (https://github.com/SIMRacingApps/SIMRacingApps/issues/89)
-       Closed #140 (https://github.com/SIMRacingApps/SIMRacingApps/issues/140)
-       CarSelector Widget does not support 50+ car fields
-       All Widets/Apps using CarSelector, now uses CarSelector64 for up to 64 cars.
-       
-    4. Updated the German Translations for the new widgets.
-    
-1.6_Build_BETA-2018.01.17
-
-    1. Fixed #134 (https://github.com/SIMRacingApps/SIMRacingApps/issues/134)
-       PitCountDown: Doesn't work with JJ Spotter Pack
-    
-    2. Closed #133 (https://github.com/SIMRacingApps/SIMRacingApps/issues/133)
-       Standings Banner: For your class only
-       
-    3. Closed #135 (https://github.com/SIMRacingApps/SIMRacingApps/issues/135)
-       Standings Banner Vertical: For your class only
-       
-    4. Closed #137 (https://github.com/SIMRacingApps/SIMRacingApps/issues/137)
-       Feature: Setup Protector
-       Created a new widget called InGarage that you can supply your own image if you wish.
-
-1.6_Build_BETA-2017.12.28
-    1. Closed #122 (https://github.com/SIMRacingApps/SIMRacingApps/issues/122)
-       CarLeft, CarRight: Show when car(s) are to the left or right of you
-       Added 2 new widgets, CarLeft and CarRight.
-       These are simply arrows that follow the spotter indicators. 
-       There are 2 sets of them, so you can place 2 lefts in different places.
-       Use the transparent feature of Electron, to hide them when they're not showing.
-       
-    2. Added new API call to get the spotter messages.
-           /Car/(CARIDENTIFIER)/SpotterMessage
-       Can return the following
-          - (blank) = not talking
-          - CLEAR = no cars around you
-          - CARLEFT = car to your left
-          - CARRIGHT = car to your right
-          - CARLEFTRIGHT = car on your left and right
-          - CARSLEFT = 2 or more cars on your left
-          - CARSRIGHT = 2 or more cars on your right
-    
-    3. Fixed #131 (https://github.com/SIMRacingApps/SIMRacingApps/issues/131)
-       Java 9 support.
-    
-    4. StandingsBanner widget now alternates between driver name and team name.
-    
-    5. Closed #124 (https://github.com/SIMRacingApps/SIMRacingApps/issues/124)
-       TeamSpeak: Update alias with your name from iRacing
-       You can turn this off in the settings with "teamspeak-update-name = N" 
-
-    6. Closed #132 (https://github.com/SIMRacingApps/SIMRacingApps/issues/132)
-       VoiceAttack: Add commands to hide/unhide apps
-       Added new API calls /Session/setAppsHidden and /Session/IsAppsHidden.
-       Electron Apps 3.1.0 and better now respects this flag.
-
-    7. Voice Attack Profile: Added commands for replay commands, camera changes and window control.
-        - Hide All
-        - Show All
-        - Play
-        - Pause or Stop
-        - Rewind
-        - Fast Forward or Forward
-        - Slow Motion or Slow Down or Slow or Slower
-        - Next Lap
-        - Previous Lap
-        - Camera Chopper
-        - Camera Blimp
-        - Camera Cockpit
-        - Camera Gyro
-        - Camera TV1
-        - Camera TV2
-        - Camera TV3
-        - Camera Pit Lane
-        - Camera Pit Lane 2
-        - Camera Chase
-        - Camera Far Chase
-        - Camera Rear Chase
