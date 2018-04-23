@@ -114,7 +114,7 @@
                          runtimeBits="64/32" 
                          initialHeapSize="256" 
                          maxHeapSize="512">
-                        <opt>-Djna.nosys=true -server -XX:+DisableExplicitGC -Xincgc</opt>
+                        <opt>-Djna.nosys=true</opt>
                     </jre>
                     <singleInstance mutexName="SIMRacingAppsServer" windowTitle="SIMRacingAppsServer" />
                     <versionInfo txtFileVersion="${version}" fileVersion="${version.major}.${version.minor}.${version.year}.${version.month}${version.day2}" fileDescription="SIMRacingAppsServer" txtProductVersion="${version}" productVersion="${version.major}.${version.minor}.0.0" productName="SIMRacingApps" internalName="SIMRacingApps" originalFilename="SIMRacingAppsServer.exe" copyright="${version.copyright}" />
