@@ -206,8 +206,8 @@
                 </include>
             </fileset>
         </move>
-        <copy overwrite="true" file="${download.dir}/SIMRacingAppsServer_${version}.exe" todir="${download.dir}"/>
-        <copy overwrite="true" file="${download.dir}/SIMRacingAppsServer_${version}-signed.exe" todir="${download.dir}"/>
+        <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer_${version}.exe" todir="${download.dir}"/>
+        <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer_${version}-signed.exe" todir="${download.dir}"/>
         <copy overwrite="true" file="documentation/SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
         <copy overwrite="true" file="documentation/SIMRacingApps_${version.prefix}ReleaseNotes.txt" todir="${download.dir}" />
         <copy overwrite="true" file="SIMRacingApps-VoiceAttack-Profile.vap" todir="${download.dir}" />
