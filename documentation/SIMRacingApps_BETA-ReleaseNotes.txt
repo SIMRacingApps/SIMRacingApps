@@ -6,7 +6,68 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.7_Build_BETA-2018.05.08
+Version: 1.7_Build_BETA-2018.06.07
+
+    1. Closed #111 (https://github.com/SIMRacingApps/SIMRacingApps/issues/111)
+       Created LapTimes Widget and added lap time averages to API.
+       The widget display averages for 5,10,15,20,30,40 laps
+       
+       /Car/(CARIDENTIFIER)/Lap/AVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/AVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       
+    2. Changed logic for fuel mileage calculations at a road course to count the first green lap.
+    
+    3. Added new content for iRacing's 2018 Season 3 build.
+        - Porsche 911 RSR
+        - Subaru WRX STI
+        - Detroit Grand Prix at Belle Isle
+        
+    4. Closed #166 (https://github.com/SIMRacingApps/SIMRacingApps/issues/166)
+       Towing: Time Left Available June 2018 from iRacing
+       The Car's Status will also show TOWING, thus not counting that time for being in your Pit Stall.
+       
+                                              
+    For notes on previous BETA builds for version 1.7, see below.
+    
+------------------------------------------------------------------------------------------------------
+---                    Configuration Tips                                                          ---
+------------------------------------------------------------------------------------------------------
+    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
+       on the same computer that the Simulator is running on.
+    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
+       NOTE: This page may install the 32-bit version of Java. The 64-bit version is faster.
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
+       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
+       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
+    3. If a Firewall is running, you might get prompted to allow the server to run.
+       Depending on if your Ethernet connection was made private or public, 
+       you may be asked to confirm that also. Please select allow.
+       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
+       for both in-bound and out-bound traffic on all ports. 
+       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
+    4. Enter the server address (found in the Title Bar of the server window) in your browser 
+       from any device connected to the same local network.
+       Connecting from outside the local network is not supported and not recommended due to security concerns.
+    5. To use the Electron client with the Apps/Widgets overlaid on top of the SIM, you 
+       must have the SIM running in Windowed mode. Please see the following Wiki info to configure the SIM.
+       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
+    6. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
+       for more details and options for running the server.
+    
+    Wiki:
+        There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
+
+****************** Previous Versions *************************
+
+For versions prior to 1.7, see the regular release notes.
+
+1.7_Build_BETA-2018.05.08
 
     1. Now providing a "signed" Server exe for testing in the wild.
        Please download and try it out and send me pictures of prompts
@@ -79,6 +140,7 @@ Version: 1.7_Build_BETA-2018.05.08
     14. New PlugIn to use LIFX Lights for the Flags. http://lifx.com.
         To enable the lights, follow the instructions found at 
         http://github.com/SIMRacingApps/SIMRacingApps/wiki/LIFX-Lights-Setup
+        Thanks to Gary Whitson for providing me with a unit to test with.
         
     15. Added option to auto start your browser on the SIMRacingApps menu
         if you are not going to be auto starting Electron.
@@ -87,38 +149,3 @@ Version: 1.7_Build_BETA-2018.05.08
            browser-autostart = Y
 
     16. Fixed the shift points on the Ferrari 488 GT3 car. They were too low.
-                                          
-    For notes on previous BETA builds for version 1.7, see below.
-    
-------------------------------------------------------------------------------------------------------
----                    Configuration Tips                                                          ---
-------------------------------------------------------------------------------------------------------
-    1. To get the server running, simply execute the SIMRacingAppsServer...exe 
-       on the same computer that the Simulator is running on.
-    2. If you do not have Java 1.8 or better installed, it will redirect you to the Java download page.
-       NOTE: This page may install the 32-bit version of Java. The 64-bit version is faster.
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/Java-64-Bit-Installation on how to find it.
-       Also see http://wiki.SIMRacingApps.com/Java-Update-Configuration 
-       for detailed instructions on how to configure Java's Automatic Updates so it doesn't interrupt your racing.
-    3. If a Firewall is running, you might get prompted to allow the server to run.
-       Depending on if your Ethernet connection was made private or public, 
-       you may be asked to confirm that also. Please select allow.
-       If your Firewall doesn't prompt you, then you will have to add an exception to allow "java.exe"
-       for both in-bound and out-bound traffic on all ports. 
-       See https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-fix-Firewall-issues for more information.
-    4. Enter the server address (found in the Title Bar of the server window) in your browser 
-       from any device connected to the same local network.
-       Connecting from outside the local network is not supported and not recommended due to security concerns.
-    5. To use the Electron client with the Apps/Widgets overlaid on top of the SIM, you 
-       must have the SIM running in Windowed mode. Please see the following Wiki info to configure the SIM.
-       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-iRacing-in-Windowed-Mode
-    6. Please refer to the Quick Start Guide at http://quickstart.SIMRacingApps.com
-       for more details and options for running the server.
-    
-    Wiki:
-        There are many other recommendations on the SIMRacingApps Wiki at http://wiki.SIMRacingApps.com.
-
-****************** Previous Versions *************************
-
-For versions prior to 1.7, see the regular release notes.
-

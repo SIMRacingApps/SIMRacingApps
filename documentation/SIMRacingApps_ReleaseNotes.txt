@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/9?closed=1)
 
-Version: 1.7_Build_BETA-2018.05.08
+Version: 1.7_Build_BETA-2018.06.07
 
     1. Now providing a "signed" Server exe for testing in the wild.
        Please download and try it out and send me pictures of prompts
@@ -77,6 +77,7 @@ Version: 1.7_Build_BETA-2018.05.08
     14. New PlugIn to use LIFX Lights for the Flags. http://lifx.com.
         To enable the lights, follow the instructions found at 
         http://github.com/SIMRacingApps/SIMRacingApps/wiki/LIFX-Lights-Setup
+        Thanks to Gary Whitson for providing me with a unit to test with.
         
     15. Added option to auto start your browser on the SIMRacingApps menu
         if you are not going to be auto starting Electron.
@@ -85,6 +86,30 @@ Version: 1.7_Build_BETA-2018.05.08
            browser-autostart = Y 
            
     16. Fixed the shift points on the Ferrari 488 GT3 car. They were too low.
+
+    17. Closed #111 (https://github.com/SIMRacingApps/SIMRacingApps/issues/111)
+       Created LapTimes Widget and added lap time averages to API.
+       The widget display averages for 5,10,15,20,30,40 laps
+       
+       /Car/(CARIDENTIFIER)/Lap/AVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/AVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
+
+    18. Changed logic for fuel mileage calculations at a road course to count the first green lap.
+        
+    19. Added new content for iRacing's 2018 Season 3 build.
+        - Porsche 911 RSR
+        - Subaru WRX STI
+        - Detroit Grand Prix at Belle Isle
+        
+    20. Closed #166 (https://github.com/SIMRacingApps/SIMRacingApps/issues/166)
+        Towing: Time Left Available June 2018 from iRacing
+        The Car's Status will also show TOWING, thus not counting that time for being in your Pit Stall.
         
     For notes on previous versions, see below.
        
