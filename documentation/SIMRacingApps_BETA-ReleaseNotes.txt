@@ -6,7 +6,7 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.7_Build_BETA-2018.06.21
+Version: 1.7_Build_BETA-2018.06.25
 
     1. Fixed issue where sometimes it thinks you were resetting the car when 
        stopping in your pit and taking less than full service.
