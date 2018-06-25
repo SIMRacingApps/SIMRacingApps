@@ -111,11 +111,11 @@ Version: 1.7_Build_BETA-2018.06.21
         Towing: Time Left Available June 2018 from iRacing
         The Car's Status will also show TOWING, thus not counting that time for being in your Pit Stall.
 
-    21. Fixed issue where sometimes it thinks you were reseting the car when 
+    21. Fixed issue where sometimes it thinks you were resetting the car when 
         stopping in your pit and taking less than full service.
 
     22. Fixed #171 (https://github.com/SIMRacingApps/SIMRacingApps/issues/171)
-        Fuel Widgits - Incorrect fuel units on Porsche 919
+        Fuel Widgets - Incorrect fuel units on Porsche 919
         Changed from weight to volume.
         
     For notes on previous versions, see below.
