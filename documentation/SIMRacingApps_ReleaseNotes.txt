@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/9?closed=1)
 
-Version: 1.7_Build_BETA-2018.06.07
+Version: 1.7_Build_BETA-2018.06.21
 
     1. Now providing a "signed" Server exe for testing in the wild.
        Please download and try it out and send me pictures of prompts
@@ -110,6 +110,13 @@ Version: 1.7_Build_BETA-2018.06.07
     20. Closed #166 (https://github.com/SIMRacingApps/SIMRacingApps/issues/166)
         Towing: Time Left Available June 2018 from iRacing
         The Car's Status will also show TOWING, thus not counting that time for being in your Pit Stall.
+
+    21. Fixed issue where sometimes it thinks you were reseting the car when 
+        stopping in your pit and taking less than full service.
+
+    22. Fixed #171 (https://github.com/SIMRacingApps/SIMRacingApps/issues/171)
+        Fuel Widgits - Incorrect fuel units on Porsche 919
+        Changed from weight to volume.
         
     For notes on previous versions, see below.
        

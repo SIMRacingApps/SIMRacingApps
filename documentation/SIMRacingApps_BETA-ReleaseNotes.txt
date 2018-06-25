@@ -6,33 +6,15 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.7_Build_BETA-2018.06.07
+Version: 1.7_Build_BETA-2018.06.21
 
-    1. Closed #111 (https://github.com/SIMRacingApps/SIMRacingApps/issues/111)
-       Created LapTimes Widget and added lap time averages to API.
-       The widget display averages for 5,10,15,20,30,40 laps
+    1. Fixed issue where sometimes it thinks you were reseting the car when 
+       stopping in your pit and taking less than full service.
        
-       /Car/(CARIDENTIFIER)/Lap/AVERAGE/(LAPSTOAVERAGE)
-       /Car/(CARIDENTIFIER)/Lap/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
-       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGE/(LAPSTOAVERAGE)
-       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
-       /Car/(CARIDENTIFIER)/LapTime/AVERAGE/(LAPSTOAVERAGE)
-       /Car/(CARIDENTIFIER)/LapTime/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
-       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGE/(LAPSTOAVERAGE)
-       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
-       
-    2. Changed logic for fuel mileage calculations at a road course to count the first green lap.
-    
-    3. Added new content for iRacing's 2018 Season 3 build.
-        - Porsche 911 RSR
-        - Subaru WRX STI
-        - Detroit Grand Prix at Belle Isle
-        
-    4. Closed #166 (https://github.com/SIMRacingApps/SIMRacingApps/issues/166)
-       Towing: Time Left Available June 2018 from iRacing
-       The Car's Status will also show TOWING, thus not counting that time for being in your Pit Stall.
-       
-                                              
+    2. Fixed #171 (https://github.com/SIMRacingApps/SIMRacingApps/issues/171)
+       Fuel Widgits - Incorrect fuel units on Porsche 919
+       Changed from weight to volume.
+                                                  
     For notes on previous BETA builds for version 1.7, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -67,6 +49,32 @@ Version: 1.7_Build_BETA-2018.06.07
 
 For versions prior to 1.7, see the regular release notes.
 
+1.7_Build_BETA-2018.06.07
+
+    1. Closed #111 (https://github.com/SIMRacingApps/SIMRacingApps/issues/111)
+       Created LapTimes Widget and added lap time averages to API.
+       The widget display averages for 5,10,15,20,30,40 laps
+       
+       /Car/(CARIDENTIFIER)/Lap/AVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/Lap/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/AVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/AVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGE/(LAPSTOAVERAGE)
+       /Car/(CARIDENTIFIER)/LapTime/RUNNINGAVERAGESINCEPITTING/(LAPSTOAVERAGE)
+       
+    2. Changed logic for fuel mileage calculations at a road course to count the first green lap.
+    
+    3. Added new content for iRacing's 2018 Season 3 build.
+        - Porsche 911 RSR
+        - Subaru WRX STI
+        - Detroit Grand Prix at Belle Isle
+        
+    4. Closed #166 (https://github.com/SIMRacingApps/SIMRacingApps/issues/166)
+       Towing: Time Left Available June 2018 from iRacing
+       The Car's Status will also show TOWING, thus not counting that time for being in your Pit Stall.
+       
 1.7_Build_BETA-2018.05.08
 
     1. Now providing a "signed" Server exe for testing in the wild.
