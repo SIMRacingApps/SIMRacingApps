@@ -25,8 +25,7 @@
         cd {yourCertificatePath}
         "C:\Program Files\Java\jre1.8.0_161\bin\keytool.exe" -genkey -dname "CN=Jeffrey Gilliam, L=Marietta, ST=GA, C=US, OU=, O=SIMRacingApps" -alias SIMRacingApps.com -keyalg RSA -destkeystore SIMRacingApps.pfx -keysize 2048 -storetype pkcs12    
      -->
-    <property name="certificate.path" value="O:/OneDrive/Documents OneDrive/Certificates" />
-    <property name="key.store" value="${certificate.path}/SIMRacingApps.pfx" />
+    <property name="key.store" value="${env.CertPath}/SIMRacingApps.pfx" />
     <property name="key.alias" value="SIMRacingApps.com" />
     
     <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar" />
@@ -125,7 +124,7 @@
     </target>
     
     <target name="signed" depends="exe">
-        <!-- Set the environment variable CertPass in the build run properties.
+        <!-- Set the environment variables CertPath and CertPass in the Ant build environment properties.
         <echo message="Look for password prompt to continue..."/>
         <input message="Certificate Password" addproperty="store.pass" />
         -->
@@ -135,7 +134,7 @@
         <echo message="Server Version: ${version}" />
         
         <copy overwrite="true" file="${java.io.tmpdir}/SIMRacingAppsServer.exe" tofile="${java.io.tmpdir}/SIMRacingAppsServer-signed.exe" />
-        <echo message="If the sign4j process fails, sure to set the environment variable CertPass in the build run properties"/>
+        <echo message="If the sign4j process fails, sure to set the environment variables CertPath and CertPass in the Ant build environment properties"/>
         <exec executable="${sign4j.exe}" resultProperty="sign4j.result" failonerror="true">
           <arg line="javaw -jar ${jsign.jar} --alias '${key.alias}' --keystore '${key.store}' --storepass '${store.pass}' --storetype PKCS12 '${java.io.tmpdir}/SIMRacingAppsServer-signed.exe'"/>
         </exec>
