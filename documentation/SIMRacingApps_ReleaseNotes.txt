@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/9?closed=1)
 
-Version: 1.7_Build_BETA-2018.06.25
+Version: 1.7_Build_BETA-2018.07.12
 
     1. Now providing a "signed" Server exe for testing in the wild.
        Please download and try it out and send me pictures of prompts
@@ -118,6 +118,15 @@ Version: 1.7_Build_BETA-2018.06.25
         Fuel Widgets - Incorrect fuel units on Porsche 919
         Changed from weight to volume.
         
+    24. Fixed issue where the Endurance config at Circuit de Spa-Francorchamps
+        was not working in the Track Map widget.
+     
+    25. Fixed issue with the CarSelector64 and the Apps/Widgets that use it,
+        where the 3rd row was not correct.
+
+    26. Closed #174 (https://github.com/SIMRacingApps/SIMRacingApps/issues/174)
+        Minimum Speed: Also flag slow cars in the qualifying session
+
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
