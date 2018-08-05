@@ -6,28 +6,23 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.7_Build_BETA-2018.07.12
+Version: 1.7_Build_BETA-2018.08.04
 
-    1. Fixed issue where sometimes it thinks you were resetting the car when 
-       stopping in your pit and taking less than full service.
-       
-    2. Fixed #171 (https://github.com/SIMRacingApps/SIMRacingApps/issues/171)
-       Fuel Widgets - Incorrect fuel units on Porsche 919
-       Changed from weight to volume.
-       
-    3. Fixed issue where the averages were considering previous laps when
-       you exit a session and come back in later. This is a problem for
-       practice sessions as well as races with teams.
-       
-    4. Fixed issue where the Endurance config at Circuit de Spa-Francorchamps
-       was not working in the Track Map widget.
-       
-    5. Fixed issue with the CarSelector64 and the Apps/Widgets that use it,
-       where the 3rd row was not correct.
-                                                       
-    6. Closed #174 (https://github.com/SIMRacingApps/SIMRacingApps/issues/174)
-       Minimum Speed: Also flag slow cars in the qualifying session
+    1. Fixed issue with the formatting of the RelativeSmall widget.
+       This was introduced in a previous 1.7 BETA version and is not a 
+       problem in 1.6.
 
+    2. Fixed #178 (https://github.com/SIMRacingApps/SIMRacingApps/issues/178)
+       Spelling error for 'Ending Version'
+
+    3. Fixed #177 (https://github.com/SIMRacingApps/SIMRacingApps/issues/177)
+       Fixed #179 (https://github.com/SIMRacingApps/SIMRacingApps/issues/179)
+       Port not shown in window title when port 80 is in use.
+       
+    4. Fixed issue mapping TeamSpeak Nicknames to Driver Names when they have been mapped in the settings.
+    
+    5. Fixed where the start/finish was on some of the Nurburgring configurations in the TrackMap.
+    
     For notes on previous BETA builds for version 1.7, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -61,6 +56,28 @@ Version: 1.7_Build_BETA-2018.07.12
 ****************** Previous Versions *************************
 
 For versions prior to 1.7, see the regular release notes.
+
+1.7_Build_BETA-2018.07.12
+
+    1. Fixed issue where sometimes it thinks you were resetting the car when 
+       stopping in your pit and taking less than full service.
+       
+    2. Fixed #171 (https://github.com/SIMRacingApps/SIMRacingApps/issues/171)
+       Fuel Widgets - Incorrect fuel units on Porsche 919
+       Changed from weight to volume.
+       
+    3. Fixed issue where the averages were considering previous laps when
+       you exit a session and come back in later. This is a problem for
+       practice sessions as well as races with teams.
+       
+    4. Fixed issue where the Endurance config at Circuit de Spa-Francorchamps
+       was not working in the Track Map widget.
+       
+    5. Fixed issue with the CarSelector64 and the Apps/Widgets that use it,
+       where the 3rd row was not correct.
+                                                       
+    6. Closed #174 (https://github.com/SIMRacingApps/SIMRacingApps/issues/174)
+       Minimum Speed: Also flag slow cars in the qualifying session
 
 1.7_Build_BETA-2018.06.07
 

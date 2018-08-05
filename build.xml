@@ -22,7 +22,7 @@
         - This will be used at some point to generate a certificate request to send to a certificate authority
         - to get a certified certificate. But, for now, this should at least prevent tampering with the exe file.
         
-        cd {yourCertificatePath}
+        cd ${env.CertPath}
         "C:\Program Files\Java\jre1.8.0_161\bin\keytool.exe" -genkey -dname "CN=Jeffrey Gilliam, L=Marietta, ST=GA, C=US, OU=, O=SIMRacingApps" -alias SIMRacingApps.com -keyalg RSA -destkeystore SIMRacingApps.pfx -keysize 2048 -storetype pkcs12    
      -->
     <property name="key.store" value="${env.CertPath}/SIMRacingApps.pfx" />
