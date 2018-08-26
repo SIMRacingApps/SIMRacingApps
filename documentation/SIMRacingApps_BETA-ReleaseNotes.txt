@@ -6,23 +6,22 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.7_Build_BETA-2018.08.04
+Version: 1.7_Build_BETA-2018.08.20
 
-    1. Fixed issue with the formatting of the RelativeSmall widget.
-       This was introduced in a previous 1.7 BETA version and is not a 
-       problem in 1.6.
-
-    2. Fixed #178 (https://github.com/SIMRacingApps/SIMRacingApps/issues/178)
-       Spelling error for 'Ending Version'
-
-    3. Fixed #177 (https://github.com/SIMRacingApps/SIMRacingApps/issues/177)
-       Fixed #179 (https://github.com/SIMRacingApps/SIMRacingApps/issues/179)
-       Port not shown in window title when port 80 is in use.
-       
-    4. Fixed issue mapping TeamSpeak Nicknames to Driver Names when they have been mapped in the settings.
+    1. Changed how Electron disables hardware acceleration to be compatible with future versions.
+       Updated Electron to version 1.7.12 to 2.0.7
     
-    5. Fixed where the start/finish was on some of the Nurburgring configurations in the TrackMap.
-    
+    2. Now you can put a users TeamSpeak nickname in the settings and map it to their iRacing name.
+       This will allow the radio transmitting indicators to work when they key up in TeamSpeak.
+       Consider my TeamSpeak name is "Jeff Gilliam", then map it this way to my iRacing Name.
+       If users append or prepend a car number, I remove that before comparing. So, do not include in the mapping.
+           Jeff\ Gilliam = Jeffrey Gilliam
+           
+    3. Fixed #172 (https://github.com/SIMRacingApps/SIMRacingApps/issues/172)
+       TimingDelta widget not correct in team events
+       Fixed issue where the TimingDelta widget did not correctly calculate your session best lap time
+       when you are in a team session and the fastest lap was not set by you.
+        
     For notes on previous BETA builds for version 1.7, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -56,6 +55,23 @@ Version: 1.7_Build_BETA-2018.08.04
 ****************** Previous Versions *************************
 
 For versions prior to 1.7, see the regular release notes.
+
+1.7_Build_BETA-2018.08.04
+
+    1. Fixed issue with the formatting of the RelativeSmall widget.
+       This was introduced in a previous 1.7 BETA version and is not a 
+       problem in 1.6.
+
+    2. Fixed #178 (https://github.com/SIMRacingApps/SIMRacingApps/issues/178)
+       Spelling error for 'Ending Version'
+
+    3. Fixed #177 (https://github.com/SIMRacingApps/SIMRacingApps/issues/177)
+       Fixed #179 (https://github.com/SIMRacingApps/SIMRacingApps/issues/179)
+       Port not shown in window title when port 80 is in use.
+       
+    4. Fixed issue mapping TeamSpeak Nicknames to Driver Names when they have been mapped in the settings.
+    
+    5. Fixed where the start/finish was on some of the Nurburgring configurations in the TrackMap.
 
 1.7_Build_BETA-2018.07.12
 

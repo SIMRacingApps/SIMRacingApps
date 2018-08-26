@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/9?closed=1)
 
-Version: 1.7_Build_BETA-2018.08.04
+Version: 1.7_Build_BETA-2018.08.20
 
     1. Now providing a "signed" Server exe for testing in the wild.
        Please download and try it out and send me pictures of prompts
@@ -135,8 +135,21 @@ Version: 1.7_Build_BETA-2018.08.04
         Port not shown in window title when port 80 is in use.
         
     29. Fixed issue mapping TeamSpeak Nicknames to Driver Names when they have been mapped in the settings.
+        Now you can put a users TeamSpeak nickname in the settings and map it to their iRacing name.
+        This will allow the radio transmitting indicators to work when they key up in TeamSpeak.
+        Consider my TeamSpeak name is "Jeff Gilliam", then map it this way to my iRacing Name.
+        If users append or prepend a car number, I remove that before comparing. So, do not include in the mapping.
+           Jeff\ Gilliam = Jeffrey Gilliam
     
     30. Fixed where the start/finish was on some of the Nurburgring configurations in the TrackMap.
+
+    31. Changed how Electron disables hardware acceleration to be compatible with future versions.
+        Updated Electron to version 1.7.12 to 2.0.7
+
+    32. Fixed #172 (https://github.com/SIMRacingApps/SIMRacingApps/issues/172)
+        TimingDelta widget not correct in team events
+        Fixed issue where the TimingDelta widget did not correctly calculate your session best lap time
+        when you are in a team session and the fastest lap was not set by you.
     
     For notes on previous versions, see below.
        
