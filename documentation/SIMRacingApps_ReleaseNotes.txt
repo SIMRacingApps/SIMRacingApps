@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/9?closed=1)
 
-Version: 1.7_Build_BETA-2018.08.20
+Version: 1.7_Build_BETA-2018.09.05
 
     1. Now providing a "signed" Server exe for testing in the wild.
        Please download and try it out and send me pictures of prompts
@@ -150,6 +150,13 @@ Version: 1.7_Build_BETA-2018.08.20
         TimingDelta widget not correct in team events
         Fixed issue where the TimingDelta widget did not correctly calculate your session best lap time
         when you are in a team session and the fastest lap was not set by you.
+
+    33. iRacing 2018 Sept build
+       a. iRacing renamed the Wedge Adjustment variables.
+       b. Michigan rescan
+       c. Chevrolet Camaro ZL1
+       d. Atlanta Configurations for Rallycross
+       e. Kokomo Speedway
     
     For notes on previous versions, see below.
        
