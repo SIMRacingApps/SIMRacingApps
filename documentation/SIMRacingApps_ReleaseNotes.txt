@@ -4,7 +4,11 @@ Copyright (C) 2015 - 2018 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/9?closed=1)
 
-Version: 1.7_Build_2018.09.10
+Version: 1.7_Build_2018.09.26
+    1. Fixed issue where StandingsBannerVertical20 and StandingsBannerClassVertical20 
+       was not rotating the bottom half.
+
+1.7_Build_2018.09.10
 
     1. Now providing a "signed" Server exe for testing in the wild.
        Please download and try it out and send me pictures of prompts
