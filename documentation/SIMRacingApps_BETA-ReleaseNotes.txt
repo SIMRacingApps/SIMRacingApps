@@ -2,23 +2,26 @@ SIMRacingApps BETA Release Notes
 Copyright (C) 2015 - 2019 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/10)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/11)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.8_Build_BETA-2018.12.27
+Version: 1.9_Build_BETA-2019.03.05
 
-    1. Added new widget SIMTime, to display the virtual SIM time of the session.
-       Also modified all Apps/Widgets that currently displays time, to display the SIMTime.
-       Also added new API call, /Session/Time, that returns that time in UTC.
-       Also added new API call, /Track/TimeZone, to get the time zone for the current track.
-       With this 2 new API calls, the client can display the time in the track's time zone.
+    1.  Fixed #193 (https://github.com/SIMRacingApps/SIMRacingApps/issues/193)
+        Repair timers reset in replay window
+        Now the repair time will show when in a replay as long as your car has the camera focus.
+                   
+    2.  Close #192 (https://github.com/SIMRacingApps/SIMRacingApps/issues/192)
+        TrackMap: Add SIM Date and Time
+        
+    3.  Added Content from iRacing's March 2019 build.
+       -BWM M8 GTE
+       -Charolotte (Oval, Roval Long, Legends RC Short, Legends RC Medium)
        
-    2. Added new track, Chili Bowl, from iRacing's 12/18/2018 release.
-    
-    3. Updated Electron to 4.0.0. 
+    4.  Fixed issue with Steering Wheel rotation when you select Metric in the Garage.
                        
-    For notes on previous BETA builds for version 1.8, see below.
+    For notes on previous BETA builds for version 1.9, see below.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
@@ -50,72 +53,5 @@ Version: 1.8_Build_BETA-2018.12.27
 
 ****************** Previous Versions *************************
 
-For versions prior to 1.8, see the regular release notes.
+For versions prior to 1.9, see the regular release notes.
 
-1.8_Build_BETA-2018.12.08
-
-    1. Renamed electron.exe to SIMRacingApps-electron.exe and Updated Electron to 3.0.7 from 2.0.7.
-       When checking if Electron is already running, other applications that use electron
-       would give false positives. Renamed it to avoid conflicts.
-       If you are not using the packaged version of electron,
-       simply copy electron.exe to SIMRacingApps-electron.exe and restart the server.
-       
-    2. Fixed issues with TrackMap at COTA (Circuit of the Americas).
-       Finish Line in wrong place (Grand Prix,West)
-       Pit Road not mapped correctly (East).
-       
-    3. Closed #170 (https://github.com/SIMRacingApps/SIMRacingApps/issues/170)
-       Added HYS Bar Gauge widgets for battery charge percentage and deployment #170
-
-    4. Closed #185 (https://github.com/SIMRacingApps/SIMRacingApps/issues/185)
-       Widget to show all In Car adjustment values #185
-       Added new widget called InCarAdjustments.
-       Added the following new gauges to the API. [/Car/(CARIDENTIFIER)/(GAUGETYPE)]
-       - ABS
-       - AntiRollFront
-       - AntiRollRear
-       - BrakeBiasAdjustment
-       - DiffEntry
-       - DiffExit
-       - DiffMiddle
-       - DiffPreload
-       - DisableFuelCut
-       - EngineBraking
-       - EnginePower
-       - FullCourseYellowMode
-       - FuelCutPosition
-       - FuelMixture
-       - HYSBoostHold
-       - HYSDisableBoostHold
-       - HYSCharge
-       - HYSDeployment
-       - HYSDeployMode
-       - HYSDeployTrim
-       - HYSRegenGain
-       - InLapMode
-       - LowFuelAccept
-       - PeakBrakeBias
-       - PitSpeedLimiter
-       - BrakeConnectedRF
-       - Starter
-       - ThrottleShape
-       - TractionControl
-       - TractionControlFront
-       - TractionControlRear
-       - WeightJackerRight
-       - WeightJackerLeft
-       - WingRear
-       ****NOTE: The following In-Car Adjustments or Button assignments are not in the iRacing telemetry.
-       - ABS Switch
-       - Boost Map 
-       - Br sys mode
-       - Deploy Throttle
-       - IBS Mode
-       - Launch RPM Limit
-       - FTC Lateral Slip
-       - RTC Lateral Slip
-       
-    5. Changes for the December 2018 iRacing build.
-       1. Telemetry variables were renamed (Tape, Left Wedge, Right Wedge)
-       2. Charlotte Roval and Tsukuba Tracks
-       3. Dallara F3 and Formula Renault 3.5 Cars

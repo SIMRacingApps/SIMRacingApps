@@ -2,24 +2,23 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2019 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/10?closed=1)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/11?closed=1)
 
-Version: 1.8_Build_2019.01.26
+Version: 1.9_Build_BETA-2019.03.05
 
-    1. Fix an issue with the FuelTank, TirePressure widgets, and the Voice Attack "Add Splash" command.
-       The wrong value was being sent to the SIM when the unit of measure defined for the car
-       was different from your "Metric" setting in iRacing. 
-       For example: If the car is the Ferrari 488 (which is liters) and your Metric setting is not checked in iRacing.
-       
-    2. Added support for SIMTime to be multiplied by a factor.
-       Currently, iRacing doesn't log the multiplier in the telemetry that the session is using.
-       Until they do, you can set the following variable in your settings each time
-       you get into a session that is using a multiplier.
-       {value} should be the integer portion of what iRacing is displaying.
-       iRacing displays 1x, 2x, 4x, etc. but you should enter 1, 2, or 4.
-       
-          simtime-multiplier = {value}
+    1.  Fixed #193 (https://github.com/SIMRacingApps/SIMRacingApps/issues/193)
+        Repair timers reset in replay window
+        Now the repair time will show when in a replay as long as your car has the camera focus.
                    
+    2.  Close #192 (https://github.com/SIMRacingApps/SIMRacingApps/issues/192)
+        TrackMap: Add SIM Date and Time
+        
+    3.  Added Content from iRacing's March 2019 build.
+       -BWM M8 GTE
+       -Charolotte (Oval, Roval Long, Legends RC Short, Legends RC Medium)
+
+    4.  Fixed issue with Steering Wheel rotation when you select Metric in the Garage.
+        
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
@@ -59,7 +58,23 @@ Version: 1.8_Build_2019.01.26
        
 ****************** Previous Versions *************************
 
-Version: 1.8_Build_2019.01.26
+1.8_Build_BETA-2019.01.26
+
+    1. Fix an issue with the FuelTank, TirePressure widgets, and the Voice Attack "Add Splash" command.
+       The wrong value was being sent to the SIM when the unit of measure defined for the car
+       was different from your "Metric" setting in iRacing. 
+       For example: If the car is the Ferrari 488 (which is liters) and your Metric setting is not checked in iRacing.
+       
+    2. Added support for SIMTime to be multiplied by a factor.
+       Currently, iRacing doesn't log the multiplier in the telemetry that the session is using.
+       Until they do, you can set the following variable in your settings each time
+       you get into a session that is using a multiplier.
+       {value} should be the integer portion of what iRacing is displaying.
+       iRacing displays 1x, 2x, 4x, etc. but you should enter 1, 2, or 4.
+       
+          simtime-multiplier = {value}
+
+1.8_Build_BETA-2019.01.19
 
     1. Copied electron.exe to SIMRacingApps-electron.exe and Updated Electron to 4.0.0 from 2.0.7.
        When checking if Electron is already running, other applications that use electron
