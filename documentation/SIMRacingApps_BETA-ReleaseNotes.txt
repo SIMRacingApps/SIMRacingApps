@@ -6,21 +6,32 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.9_Build_BETA-2019.03.05
+Version: 1.9_Build_BETA-2019.04.05
 
-    1.  Fixed #193 (https://github.com/SIMRacingApps/SIMRacingApps/issues/193)
-        Repair timers reset in replay window
-        Now the repair time will show when in a replay as long as your car has the camera focus.
-                   
-    2.  Close #192 (https://github.com/SIMRacingApps/SIMRacingApps/issues/192)
-        TrackMap: Add SIM Date and Time
-        
-    3.  Added Content from iRacing's March 2019 build.
-       -BWM M8 GTE
-       -Charolotte (Oval, Roval Long, Legends RC Short, Legends RC Medium)
+    1. Fixed issue causing the JavaScript error when the storage folder gets corrupted.
+    
+    2. Fixed #194 (https://github.com/SIMRacingApps/SIMRacingApps/issues/194)
+       Vertical Standings 20 second page blank
        
-    4.  Fixed issue with Steering Wheel rotation when you select Metric in the Garage.
-                       
+    3. Added New Charlotte Configuration for Legends RC Long from the iRacing Match 19, 2019 build. 
+
+    4. Closed #191 (https://github.com/SIMRacingApps/SIMRacingApps/issues/191)
+       Pit stall position audio warning
+       Also added the following messages to the /Car/(CARIDENTIFIER)/Messages API. 
+       - PITSERVICEINPROGRESS: "Pit Service In Progress"
+       - STRAIGHTENUP: "Straighten Up"
+       - TOOFARBACK: "Too Far Back"
+       - TOOFARFORWARD: "Too Far Forward"
+       - TOOFARLEFT: "Too Far Left"
+       - TOOFARRIGHT: "Too Far Right"
+       - TOOMUCHDAMAGE: "Too Much Damage"
+
+    5. Closed #182 (https://github.com/SIMRacingApps/SIMRacingApps/issues/182)
+       Checkered Flag in Standings Banner not working in replay mode
+       
+    6. Closed #186 (https://github.com/SIMRacingApps/SIMRacingApps/issues/186)
+       TeamSpeak: When talking, show channel as @TEAMSPEAK
+                               
     For notes on previous BETA builds for version 1.9, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -55,3 +66,17 @@ Version: 1.9_Build_BETA-2019.03.05
 
 For versions prior to 1.9, see the regular release notes.
 
+1.9_Build_BETA-2019.03.16
+
+    1.  Fixed #193 (https://github.com/SIMRacingApps/SIMRacingApps/issues/193)
+        Repair timers reset in replay window
+        Now the repair time will show when in a replay as long as your car has the camera focus.
+                   
+    2.  Close #192 (https://github.com/SIMRacingApps/SIMRacingApps/issues/192)
+        TrackMap: Add SIM Date and Time
+        
+    3.  Added Content from iRacing's March 2019 build.
+       -BWM M8 GTE
+       -Charolotte (Oval, Roval Long, Legends RC Short, Legends RC Medium)
+       
+    4.  Fixed issue with Steering Wheel rotation when you select Metric in the Garage.
