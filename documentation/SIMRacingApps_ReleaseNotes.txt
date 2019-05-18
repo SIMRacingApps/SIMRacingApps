@@ -4,42 +4,27 @@ Copyright (C) 2015 - 2019 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/11?closed=1)
 
-Version: 1.9_Build_2019.04.12
+Version: 1.10_Build_BETA-2019.05.18
+    1.  Fixed another JavaScript error in Electron when your configurations get corrupted.
+        Unfortunately when this happens, if you have configurations other than "default", you will have to recreate them.
 
-    1.  Fixed #193 (https://github.com/SIMRacingApps/SIMRacingApps/issues/193)
-        Repair timers reset in replay window
-        Now the repair time will show when in a replay as long as your car has the camera focus.
-                   
-    2.  Close #192 (https://github.com/SIMRacingApps/SIMRacingApps/issues/192)
-        TrackMap: Add SIM Date and Time
+    2.  Added new widgets for Text Gauges.
+    
+    3.  Close #202 (https://github.com/SIMRacingApps/SIMRacingApps/issues/202)
+        Added new Apps called NASCAR-Digital-Dash and NASCAR-Analog-Dash.
+        These are very basic. Use these as is or copy them and customize them.
         
-    3.  Added Content from iRacing's March 2019 build.
-       -BWM M8 GTE
-       -Charlotte (Oval, Roval Long, Legends RC Short, Legends RC Medium, Legends RC Long)
-
-    4.  Fixed issue with Steering Wheel rotation when you select Metric in the Garage.
-        
-    5.  Fixed issue causing the JavaScript error when the storage folder gets corrupted.
-
-    6.  Fixed #194 (https://github.com/SIMRacingApps/SIMRacingApps/issues/194)
-        Vertical Standings 20 second page blank
-
-    7.  Closed #191 (https://github.com/SIMRacingApps/SIMRacingApps/issues/191)
-        Pit stall position audio warning
-        Also added the following messages to the /Car/(CARIDENTIFIER)/Messages API. 
-        - PITSERVICEINPROGRESS: "Pit Service In Progress"
-        - STRAIGHTENUP: "Straighten Up"
-        - TOOFARBACK: "Too Far Back"
-        - TOOFARFORWARD: "Too Far Forward"
-        - TOOFARLEFT: "Too Far Left"
-        - TOOFARRIGHT: "Too Far Right"
-        - TOOMUCHDAMAGE: "Too Much Damage"
-
-    8. Closed #182 (https://github.com/SIMRacingApps/SIMRacingApps/issues/182)
-       Checkered Flag in Standings Banner not working in replay mode
-       
-    9. Closed #186 (https://github.com/SIMRacingApps/SIMRacingApps/issues/186)
-       TeamSpeak: When talking, show channel as @TEAMSPEAK
+    4.  Close #201 (https://github.com/SIMRacingApps/SIMRacingApps/issues/201)
+        Added new G-Force widget contributed by Gary Prince.
+        Resulted in 2 new API methods:
+          /Car/(CARIDENTIFIER)/LongitudeAcceraltion/(UOM)
+          /Car/(CARIDENTIFIER)/LatitudeAcceraltion/(UOM)
+          
+    5.  Fixed #203 (https://github.com/SIMRacingApps/SIMRacingApps/issues/203)
+        CMD Black box appears, then disappears and Server does not start.
+        Exception in thread "main" java.lang.UnsatisfiedLinkError: 
+        Can't obtain InputStream for com/sun/jna/win32-x86-64/jnidispatch.dll
+        Updated JNA library from 4.5 to 5.3.
     
     For notes on previous versions, see below.
        
@@ -79,6 +64,43 @@ Version: 1.9_Build_2019.04.12
         Here you can find solutions, work-around, etc.
        
 ****************** Previous Versions *************************
+
+1.9_Build_2019.04.12
+
+    1.  Fixed #193 (https://github.com/SIMRacingApps/SIMRacingApps/issues/193)
+        Repair timers reset in replay window
+        Now the repair time will show when in a replay as long as your car has the camera focus.
+                   
+    2.  Close #192 (https://github.com/SIMRacingApps/SIMRacingApps/issues/192)
+        TrackMap: Add SIM Date and Time
+        
+    3.  Added Content from iRacing's March 2019 build.
+       -BWM M8 GTE
+       -Charlotte (Oval, Roval Long, Legends RC Short, Legends RC Medium, Legends RC Long)
+
+    4.  Fixed issue with Steering Wheel rotation when you select Metric in the Garage.
+        
+    5.  Fixed issue causing the JavaScript error when the storage folder gets corrupted.
+
+    6.  Fixed #194 (https://github.com/SIMRacingApps/SIMRacingApps/issues/194)
+        Vertical Standings 20 second page blank
+
+    7.  Closed #191 (https://github.com/SIMRacingApps/SIMRacingApps/issues/191)
+        Pit stall position audio warning
+        Also added the following messages to the /Car/(CARIDENTIFIER)/Messages API. 
+        - PITSERVICEINPROGRESS: "Pit Service In Progress"
+        - STRAIGHTENUP: "Straighten Up"
+        - TOOFARBACK: "Too Far Back"
+        - TOOFARFORWARD: "Too Far Forward"
+        - TOOFARLEFT: "Too Far Left"
+        - TOOFARRIGHT: "Too Far Right"
+        - TOOMUCHDAMAGE: "Too Much Damage"
+
+    8. Closed #182 (https://github.com/SIMRacingApps/SIMRacingApps/issues/182)
+       Checkered Flag in Standings Banner not working in replay mode
+       
+    9. Closed #186 (https://github.com/SIMRacingApps/SIMRacingApps/issues/186)
+       TeamSpeak: When talking, show channel as @TEAMSPEAK
 
 1.8_Build_BETA-2019.01.26
 
