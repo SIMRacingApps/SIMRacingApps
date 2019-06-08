@@ -6,28 +6,20 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.10_Build_BETA-2019.05.18
+Version: 1.10_Build_BETA-2019.06.08
 
-    1.  Fixed another JavaScript error in Electron when your configurations get corrupted.
-        Unfortunately when this happens, if you have configurations other than "default", you will have to recreate them.
-
-    2.  Added new widgets for Text Gauges.
-    
-    3.  Close #202 (https://github.com/SIMRacingApps/SIMRacingApps/issues/202)
-        Added new Apps called NASCAR-Digital-Dash and NASCAR-Analog-Dash.
-        These are very basic. Use these as is or copy them and customize them.
+    1.  Fixed #204 (https://github.com/SIMRacingApps/SIMRacingApps/issues/204)
+        API : /SIMRacingApps/Data/Car/ Error 500
         
-    4.  Close #201 (https://github.com/SIMRacingApps/SIMRacingApps/issues/201)
-        Added new G-Force widget contributed by Gary Prince.
-        Resulted in 2 new API methods:
-          /Car/(CARIDENTIFIER)/LongitudeAcceraltion/(UOM)
-          /Car/(CARIDENTIFIER)/LatitudeAcceraltion/(UOM)
-          
-    5.  Fixed #203 (https://github.com/SIMRacingApps/SIMRacingApps/issues/203)
-        CMD Black box appears, then disappears and Server does not start.
-        Exception in thread "main" java.lang.UnsatisfiedLinkError: 
-        Can't obtain InputStream for com/sun/jna/win32-x86-64/jnidispatch.dll
-        Updated JNA library from 4.5 to 5.3.
+    2.  Added new iRacing Content from the June 2019 build.
+        - Wildhorse track
+        - Wildwest track
+        - Silverstone Circuit 2019 - 3 Configurations
+        - NASCAR Ford 2019 Mustang
+        - NASCAR Truck 2019 Silverado
+        - Lucas Oil Off Road Pro Trucks 2 & 4
+    
+    3.  Added new widget, Compteur, contributed by Gary Prince
                                
     For notes on previous BETA builds for version 1.9, see below.
     
@@ -61,5 +53,27 @@ Version: 1.10_Build_BETA-2019.05.18
 
 ****************** Previous Versions *************************
 
-For versions prior to 1.9, see the regular release notes.
+For versions prior to 1.10, see the regular release notes.
 
+1.10_Build_BETA-2019.05.18
+
+    1.  Fixed another JavaScript error in Electron when your configurations get corrupted.
+        Unfortunately when this happens, if you have configurations other than "default", you will have to recreate them.
+
+    2.  Added new widgets for Text Gauges.
+    
+    3.  Close #202 (https://github.com/SIMRacingApps/SIMRacingApps/issues/202)
+        Added new Apps called NASCAR-Digital-Dash and NASCAR-Analog-Dash.
+        These are very basic. Use these as is or copy them and customize them.
+        
+    4.  Close #201 (https://github.com/SIMRacingApps/SIMRacingApps/issues/201)
+        Added new G-Force widget contributed by Gary Prince.
+        Resulted in 2 new API methods:
+          /Car/(CARIDENTIFIER)/LongitudeAcceration/(UOM)
+          /Car/(CARIDENTIFIER)/LatitudeAcceration/(UOM)
+          
+    5.  Fixed #203 (https://github.com/SIMRacingApps/SIMRacingApps/issues/203)
+        CMD Black box appears, then disappears and Server does not start.
+        Exception in thread "main" java.lang.UnsatisfiedLinkError: 
+        Can't obtain InputStream for com/sun/jna/win32-x86-64/jnidispatch.dll
+        Updated JNA library from 4.5 to 5.3.

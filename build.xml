@@ -9,6 +9,7 @@
     </script>
     <property environment="env" />
     <property name="launch4j.dir" location="Launch4j" />
+    <property name="vap.version" value="2018.08.17" />
     
     <property name="sign4j.exe" value="Launch4j/sign4j/sign4j.exe" />
     <!-- get jsign from https://ebourg.github.io/jsign -->
@@ -209,7 +210,7 @@
         <copy overwrite="true" file="${deployment.dir}/SIMRacingAppsServer_${version}-signed.exe" todir="${download.dir}"/>
         <copy overwrite="true" file="documentation/SIMRacingApps_ReleaseNotes.txt" todir="${download.dir}" />
         <copy overwrite="true" file="documentation/SIMRacingApps_${version.prefix}ReleaseNotes.txt" todir="${download.dir}" />
-        <copy overwrite="true" file="SIMRacingApps-VoiceAttack-Profile.vap" todir="${download.dir}" />
+        <copy overwrite="true" file="SIMRacingApps-VoiceAttack-Profile.vap" tofile="${download.dir}/SIMRacingApps-VoiceAttack-Profile-${vap.version}.vap" />
         <copy overwrite="true" file="${SIMRacingAppsWebContent.location}/documentation/SIMRacingApps - Quick Start Guide/SIMRacingApps - Quick Start Guide.pdf" todir="${download.dir}" />
         <echo message="Remember to Tag all Git Repositories with: Version_${version}"/>
     </target>
