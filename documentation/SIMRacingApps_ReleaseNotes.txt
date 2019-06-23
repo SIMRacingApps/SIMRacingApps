@@ -4,7 +4,11 @@ Copyright (C) 2015 - 2019 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/11?closed=1)
 
-Version: 1.10_Build_2019.06.22
+Version: 1.10_Build_2019.06.23
+    1.  Fixed the shift point on the new Gander Outdoor Truck. 
+        iRacing was outputting 7000, should be 7300.
+        
+1.10_Build_2019.06.22
     1.  Fixed another JavaScript error in Electron when your configurations get corrupted.
         Unfortunately when this happens, if you have configurations other than "default", you will have to recreate them.
 
