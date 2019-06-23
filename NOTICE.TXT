@@ -40,9 +40,6 @@ OpenStreetMap
     The cartography in our map tiles, and our documentation, are licensed 
     under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA).
     
-MapQuest
-    Use Attribution, Tiles Courtesy of MapQuest.com
-    
 Atom/Electron
     MIT License - https://github.com/atom/electron/blob/master/LICENSE 
 
@@ -57,7 +54,11 @@ Graphics
 
 Translations
     H. Geiger - German 
-        
+
+Apps/Widgets
+    Ricky Thompson
+    Gary Prince
+            
 iRacing
     Information from the irsdk_defines.h are used and translated to the Java syntax.
     

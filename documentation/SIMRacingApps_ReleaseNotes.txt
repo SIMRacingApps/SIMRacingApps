@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2019 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/11?closed=1)
 
-Version: 1.10_Build_BETA-2019.06.08
+Version: 1.10_Build_2019.06.22
     1.  Fixed another JavaScript error in Electron when your configurations get corrupted.
         Unfortunately when this happens, if you have configurations other than "default", you will have to recreate them.
 
@@ -37,7 +37,9 @@ Version: 1.10_Build_BETA-2019.06.08
         - NASCAR Ford 2019 Mustang
         - NASCAR Truck 2019 Silverado
         - Lucas Oil Off Road Pro Trucks 2 & 4
-    
+
+    8.  Updated the German translations. Thanks to H.Gieger
+        
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
