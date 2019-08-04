@@ -2,13 +2,14 @@ SIMRacingApps BETA Release Notes
 Copyright (C) 2015 - 2019 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/12)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/13)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.10_Build_BETA-2019.06.11
+Version: 1.11_Build_BETA-2019.07.13
 
-    1.  Fixed a bug in the new Compteur widget where I fat fingered a cut/paste.
+    1.  Close #183 (https://github.com/SIMRacingApps/SIMRacingApps/issues/183)
+        Standings Banner: Show PIT,GARAGE,OUT,OFF instead of the time when not on track
                                    
     For notes on previous BETA builds for version 1.9, see below.
     
