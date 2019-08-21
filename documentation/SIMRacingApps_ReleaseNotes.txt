@@ -4,11 +4,17 @@ Copyright (C) 2015 - 2019 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/12?closed=1)
 
-Version: 1.11_Build_BETA-2019.07.13
+Version: 1.11_Build_BETA-2019.08.18
 
     1.  Close #183 (https://github.com/SIMRacingApps/SIMRacingApps/issues/183)
         Standings Banner: Show PIT,GARAGE,OUT,OFF instead of the time when not on track
         
+    2.  Fixed #206 (https://github.com/SIMRacingApps/SIMRacingApps/issues/206)
+        Issue with getting DiffCarsRelative data for 2 cards using Id or Position as carId
+
+    3.  Fixed #208 (https://github.com/SIMRacingApps/SIMRacingApps/issues/208)
+        Silverstone 2019 Track has finish line from old configuration 
+       
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
