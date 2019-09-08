@@ -6,14 +6,23 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.11_Build_BETA-2019.08.18
+Version: 1.11_Build_BETA-2019.09.08
 
-    1. Fixed #206 (https://github.com/SIMRacingApps/SIMRacingApps/issues/206)
-       Issue with getting DiffCarsRelative data for 2 cards using Id or Position as carId
+    1. New Content/Changes for iRacing's Sept 2019 build
+       - Audi RS 3 LMS 
+       - Circuit de Barcelona-Catalunya
+       - Fairbury Speedway
+       - Lucas Oil Off Road Pro 2 Lite
+       - NASCAR XFINITY Chevrolet Camaro - 2019
+       - NASCAR XFINITY Ford Mustang - 2019
+       - NASCAR XFINITY Toyota Supra - 2019
+       
+       Changes:
+       - Porsche 911 RSR (Fuel 99 Liters)
+       - Super Late Model (Grill Tape Changed to Race and Qual)
 
-    2. Fixed #208 (https://github.com/SIMRacingApps/SIMRacingApps/issues/208)
-       Silverstone 2019 Track has finish line from old configuration 
-                                   
+    2. Added new In-CarAdjustment gauge called LaunchRPM.
+                                           
     For notes on previous BETA builds for version 1.9, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -47,6 +56,14 @@ Version: 1.11_Build_BETA-2019.08.18
 ****************** Previous Versions *************************
 
 For versions prior to 1.10, see the regular release notes.
+
+Version: 1.11_Build_BETA-2019.09.08
+
+    1. Fixed #206 (https://github.com/SIMRacingApps/SIMRacingApps/issues/206)
+       Issue with getting DiffCarsRelative data for 2 cars using Id or Position as carId
+
+    2. Fixed #208 (https://github.com/SIMRacingApps/SIMRacingApps/issues/208)
+       Silverstone 2019 Track has finish line from old configuration 
 
 1.11_Build_BETA-2019.07.13
 

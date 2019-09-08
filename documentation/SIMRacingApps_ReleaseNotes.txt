@@ -4,16 +4,31 @@ Copyright (C) 2015 - 2019 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/12?closed=1)
 
-Version: 1.11_Build_BETA-2019.08.18
+Version: 1.11_Build_BETA-2019.09.08
 
     1.  Close #183 (https://github.com/SIMRacingApps/SIMRacingApps/issues/183)
         Standings Banner: Show PIT,GARAGE,OUT,OFF instead of the time when not on track
         
     2.  Fixed #206 (https://github.com/SIMRacingApps/SIMRacingApps/issues/206)
-        Issue with getting DiffCarsRelative data for 2 cards using Id or Position as carId
+        Issue with getting DiffCarsRelative data for 2 cars using Id or Position as carId
 
     3.  Fixed #208 (https://github.com/SIMRacingApps/SIMRacingApps/issues/208)
         Silverstone 2019 Track has finish line from old configuration 
+
+    4. New Content/Changes for iRacing's Sept 2019 build
+       - Audi RS 3 LMS 
+       - Circuit de Barcelona-Catalunya
+       - Fairbury Speedway
+       - Lucas Oil Off Road Pro 2 Lite
+       - NASCAR XFINITY Chevrolet Camaro - 2019
+       - NASCAR XFINITY Ford Mustang - 2019
+       - NASCAR XFINITY Toyota Supra - 2019
+       
+       Changes:
+       - Porsche 911 RSR (Fuel 99 Liters)
+       - Super Late Model (Grill Tape Changed to Race and Qual)
+
+    5. Added new In-CarAdjustment gauge called LaunchRPM.
        
     For notes on previous versions, see below.
        
