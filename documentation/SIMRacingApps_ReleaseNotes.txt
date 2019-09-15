@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2019 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/12?closed=1)
 
-Version: 1.11_Build_BETA-2019.09.08
+Version: 1.11_Build_2019.09.15
 
     1.  Close #183 (https://github.com/SIMRacingApps/SIMRacingApps/issues/183)
         Standings Banner: Show PIT,GARAGE,OUT,OFF instead of the time when not on track
