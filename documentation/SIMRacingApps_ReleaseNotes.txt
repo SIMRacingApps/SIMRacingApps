@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2019 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/12?closed=1)
 
-Version: 1.12_Build_BETA-2019.10.20
+Version: 1.12_Build_BETA-2019.12.29
 
     1. Fixed #211 (https://github.com/SIMRacingApps/SIMRacingApps/issues/211)
        Added a blue dot to the Trackmap to indicate where the merge point is for the REFERENCE car.
@@ -15,7 +15,19 @@ Version: 1.12_Build_BETA-2019.10.20
     2. Added new name for Charlotte 2019 ROVAL configuration that came out in iRacing's Oct 2019 patch.
     
     3. Updated Electron from version 4.0.0 to 6.0.12.
-
+    
+    4. Implemented new content from iRacing's Dec 2019 build.
+       - Lernerville Speedway
+       - Lime Rock
+       - Supercars Ford Mustang GT
+       - Supercars Holden ZB Commodore
+       - Fast Repairs Available now on the Pit Commander
+       - There is now a drive through penalty in some series when you exceed the x17 incident limit.
+         But, the telemetry is still reporting the DQ limit, which will be higher.
+       
+    5. Fixed Track Map for Nurbugring Tourist layout.
+       Changed the definition of the finish line to be at 100%, not 0%.
+       
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
