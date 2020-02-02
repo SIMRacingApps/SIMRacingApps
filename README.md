@@ -50,7 +50,7 @@ See below for details on creating your own App or Widget.
 You can also share your App or Widget by creating a .SRA file that can be uploaded to the [FaceBook Group's](https://www.facebook.com/groups/SIMRacingApps) File Section. .SRA files are simply .ZIP files renamed that contain your App or Widget's files relative to the Documents/SIMRacingApps folder. The .SRA file is intended to be uploaded on the SIMRacingApps main menu at the bottom of the page. Each file in the archive will be extracted to the users personal folder located at Documents/SIMRacingApps.
 
 ## Developers: How to work with the SIMRacingApp's repositories
-### [SIMRacingApps](https://github/SIMRacingApps/SIMRacingApps)
+### [SIMRacingApps](https://github.com/SIMRacingApps/SIMRacingApps)
 
 The SIMRacingApps repository is the main repository. 
 It contains the Ant build file for creating the .exe and copying the docs to the website.
@@ -68,14 +68,14 @@ For more information, see the README.md files in each of the repositories.
 
 Once you have committed your changes in your fork, send me a pull request and I will consider merging your changes into the master branch.
 
-### [SIMRacingAppsServer](https://github/SIMRacingApps/SIMRacingAppsServer)
+### [SIMRacingAppsServer](https://github.com/SIMRacingApps/SIMRacingAppsServer)
 
 This repository contains the server side generic API interface implementation.
 The structure of this repository is setup to support build a WAR file originally because I was going to deploy to TomCat. 
 I found that Jetty worked better for my needs, as it had a way to create an embedded server as long as I started all the servlets myself. The final .exe that is built can also be used in the classpath for a Java based application just as you
 would for a jar file.
 
-### [SIMRacingAppsWebContent](https://github/SIMRacingApps/SIMRacingAppsWebContent)
+### [SIMRacingAppsWebContent](https://github.com/SIMRacingApps/SIMRacingAppsWebContent)
 
 This repository contains all the Web based Apps and Widgets.
 It's has only 2 3rd party dependencies, RequireJS and AngularJS. 
@@ -89,12 +89,12 @@ Each of the repositories that follow this naming convention is the implementatio
 The results of building this project may be used to include the SIM in the default .exe file that is created.
 If not, the Ant build file can also build a .SRA file that can be uploaded to any SRA server installation to add a SIM manually.
 
-1. [SIMRacingAppsSIMPluginTemplate](https://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
+1. [SIMRacingAppsSIMPluginTemplate](https://github.com/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
    This is a sample repository to use when starting a new SIM Plug-in.
-1. [SIMRacingAppsSIMPluginiRacing](https://github/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
+1. [SIMRacingAppsSIMPluginiRacing](https://github.com/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
    This is a plug-in for https://iRacing.com.
 
-### [SIMRacingAppsOverwolf](https://github/SIMRacingApps/SIMRacingAppsOverwolf)
+### [SIMRacingAppsOverwolf](https://github.com/SIMRacingApps/SIMRacingAppsOverwolf)
 
 Overwolf is 3rd Party Software that renders HTML5/JavaScript pages and injects them into the game's display.  
 
@@ -105,7 +105,7 @@ It also allows for creating multiple configurations and switching between them.
 NOTE: Due to Overwolf having issues from time to time with iRacing's anti-cheat software. 
 I have become frustrated with trying to keep it working. As of the end of 2017, I am no longer actively supporting this. Feel free to clone this and work on it yourself and I will consider merging any pull requests you send me.
 
-### [SIMRacingAppsElectron](https://github/SIMRacingApps/SIMRacingAppsElectron)
+### [SIMRacingAppsElectron](https://github.com/SIMRacingApps/SIMRacingAppsElectron)
 
 Electron is 3rd Party Software that renders HTML5/JavaScript pages in Native OS Windows.
 It allows for control of how these windows look and feel.
@@ -122,12 +122,12 @@ electron-autoupdate = Y
 electron-autostart = Y
 
 
-### [SIMRacingApps.github.io](https://github/SIMRacingApps/SIMRacingApps.github.io)
+### [SIMRacingApps.github.io](https://github.com/SIMRacingApps/SIMRacingApps.github.io)
 
 This repository is for the https://SIMRacingApps.com web site.
 When pushing to this repository, GitHub automatically publishes the content to the web site.
 
-The Ant build file in the [SIMRacingApps](https://github/SIMRacingApps/SIMRacingApps) repository
+The Ant build file in the [SIMRacingApps](https://github.com/SIMRacingApps/SIMRacingApps) repository
 will automatically copy the documentation and version files to this repository.
 So, any time you upload a new build, you should also commit and push this one as well. 
 
