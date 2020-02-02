@@ -11,8 +11,8 @@
   * It's a Java SDK for developing your own Java Based Apps that can work with any supported SIM.
   * It has a Plugin Interface for server side clients.
   * And it is free, open source, released under the Apache 2.0 license.
-  * Like us on FaceBook [SIMRacingApps](http://www.facebook.com/SIMRacingApps) to keep up with new releases and tips and tricks.
-  * Visit Our Web Page at [SIMRacingApps.com](http://SIMRacingApps.com) for more information.
+  * Like us on FaceBook [SIMRacingApps](https://www.facebook.com/SIMRacingApps) to keep up with new releases and tips and tricks.
+  * Visit Our Web Page at [SIMRacingApps.com](https://SIMRacingApps.com) for more information.
 
 ## Here is a partial list of the Apps and Widgets that are included.
   * CrewChief (Control your pit changes. Calculate fuel mileage, laps on tires, etc.)
@@ -26,7 +26,7 @@
 
 ## Want to try it out? It's simple. 
 ### On the same computer where the simulator is running:
-  * Download the latest version of SIMRacingAppsServer....exe from the [releases page](http://www.github.com/SIMRacingApps/SIMRacingApps/releases/latest) and save it where you can find it later. It is not an installer, it is just an .exe file.
+  * Download the latest version of SIMRacingAppsServer....exe from the [releases page](https://www.github.com/SIMRacingApps/SIMRacingApps/releases/latest) and save it where you can find it later. It is not an installer, it is just an .exe file.
   * Execute SIMRacingAppsServer....exe. 
   * If you do not have Java 1.8 or better installed, it will direct you to the download page so you can install Java.
   * Leave the server window open while racing. You can minimize it, but note the HTTP://... address in the title of this window first. You will use the address to connect to the server from the clients.
@@ -34,14 +34,14 @@
 ### Clients can be from any device connected to your home network (including the SIM computer):
   * Open the browser (Chrome, FireFox, IE10, EDGE, Safari) and enter the HTTP address of the server.
   * Click on an App or Widget and start racing. Clicking the icon will get help for that App or Widget.
-  * In addition to using browsers, I have provided packages for using the [Overwolf Apps](http://www.overwolf.com) and [Atom/Electron](https://github.com/atom/electron) platforms as clients for SIMRacingApps. Each platform has different features that might meet your specific needs. Refer to the readme provided with each package to get a better idea on which one would be best for you.
+  * In addition to using browsers, I have provided packages for using the [Overwolf Apps](https://www.overwolf.com) and [Atom/Electron](https://github.com/atom/electron) platforms as clients for SIMRacingApps. Each platform has different features that might meet your specific needs. Refer to the readme provided with each package to get a better idea on which one would be best for you.
     
 ## There is more...
 
 If you are a developer, you can develop your own Apps, Widgets or Plugins.
 Detailed documentation is available right from the server's main page.
 By making the source available, I hope others will join in and help develop this farther.
-You can find the source on GitHub at http://www.github.com/SIMRacingApps. 
+You can find the source on GitHub at https://www.github.com/SIMRacingApps. 
 Just fork the source, make your changes and submit a pull request.
 
 But, you do not have to be a GitHub expert to help out. 
@@ -50,7 +50,7 @@ See below for details on creating your own App or Widget.
 You can also share your App or Widget by creating a .SRA file that can be uploaded to the [FaceBook Group's](https://www.facebook.com/groups/SIMRacingApps) File Section. .SRA files are simply .ZIP files renamed that contain your App or Widget's files relative to the Documents/SIMRacingApps folder. The .SRA file is intended to be uploaded on the SIMRacingApps main menu at the bottom of the page. Each file in the archive will be extracted to the users personal folder located at Documents/SIMRacingApps.
 
 ## Developers: How to work with the SIMRacingApp's repositories
-### [SIMRacingApps](http://github/SIMRacingApps/SIMRacingApps)
+### [SIMRacingApps](https://github/SIMRacingApps/SIMRacingApps)
 
 The SIMRacingApps repository is the main repository. 
 It contains the Ant build file for creating the .exe and copying the docs to the website.
@@ -68,14 +68,14 @@ For more information, see the README.md files in each of the repositories.
 
 Once you have committed your changes in your fork, send me a pull request and I will consider merging your changes into the master branch.
 
-### [SIMRacingAppsServer](http://github/SIMRacingApps/SIMRacingAppsServer)
+### [SIMRacingAppsServer](https://github/SIMRacingApps/SIMRacingAppsServer)
 
 This repository contains the server side generic API interface implementation.
 The structure of this repository is setup to support build a WAR file originally because I was going to deploy to TomCat. 
 I found that Jetty worked better for my needs, as it had a way to create an embedded server as long as I started all the servlets myself. The final .exe that is built can also be used in the classpath for a Java based application just as you
 would for a jar file.
 
-### [SIMRacingAppsWebContent](http://github/SIMRacingApps/SIMRacingAppsWebContent)
+### [SIMRacingAppsWebContent](https://github/SIMRacingApps/SIMRacingAppsWebContent)
 
 This repository contains all the Web based Apps and Widgets.
 It's has only 2 3rd party dependencies, RequireJS and AngularJS. 
@@ -89,12 +89,12 @@ Each of the repositories that follow this naming convention is the implementatio
 The results of building this project may be used to include the SIM in the default .exe file that is created.
 If not, the Ant build file can also build a .SRA file that can be uploaded to any SRA server installation to add a SIM manually.
 
-1. [SIMRacingAppsSIMPluginTemplate](http://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
+1. [SIMRacingAppsSIMPluginTemplate](https://github/SIMRacingApps/SIMRacingAppsSIMPluginTemplate)
    This is a sample repository to use when starting a new SIM Plug-in.
-1. [SIMRacingAppsSIMPluginiRacing](http://github/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
-   This is a plug-in for http://iRacing.com.
+1. [SIMRacingAppsSIMPluginiRacing](https://github/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
+   This is a plug-in for https://iRacing.com.
 
-### [SIMRacingAppsOverwolf](http://github/SIMRacingApps/SIMRacingAppsOverwolf)
+### [SIMRacingAppsOverwolf](https://github/SIMRacingApps/SIMRacingAppsOverwolf)
 
 Overwolf is 3rd Party Software that renders HTML5/JavaScript pages and injects them into the game's display.  
 
@@ -105,7 +105,7 @@ It also allows for creating multiple configurations and switching between them.
 NOTE: Due to Overwolf having issues from time to time with iRacing's anti-cheat software. 
 I have become frustrated with trying to keep it working. As of the end of 2017, I am no longer actively supporting this. Feel free to clone this and work on it yourself and I will consider merging any pull requests you send me.
 
-### [SIMRacingAppsElectron](http://github/SIMRacingApps/SIMRacingAppsElectron)
+### [SIMRacingAppsElectron](https://github/SIMRacingApps/SIMRacingAppsElectron)
 
 Electron is 3rd Party Software that renders HTML5/JavaScript pages in Native OS Windows.
 It allows for control of how these windows look and feel.
@@ -122,17 +122,17 @@ electron-autoupdate = Y
 electron-autostart = Y
 
 
-### [SIMRacingApps.github.io](http://github/SIMRacingApps/SIMRacingApps.github.io)
+### [SIMRacingApps.github.io](https://github/SIMRacingApps/SIMRacingApps.github.io)
 
-This repository is for the http://SIMRacingApps.com web site.
+This repository is for the https://SIMRacingApps.com web site.
 When pushing to this repository, GitHub automatically publishes the content to the web site.
 
-The Ant build file in the [SIMRacingApps](http://github/SIMRacingApps/SIMRacingApps) repository
+The Ant build file in the [SIMRacingApps](https://github/SIMRacingApps/SIMRacingApps) repository
 will automatically copy the documentation and version files to this repository.
 So, any time you upload a new build, you should also commit and push this one as well. 
 
 =========================================================================================
 
-[Copyright (C) 2015 - 2019 Jeffrey Gilliam](http://SIMRacingApps.com/COPYRIGHT.TXT)
+[Copyright (C) 2015 - 2019 Jeffrey Gilliam](https://SIMRacingApps.com/COPYRIGHT.TXT)
 
-[Apache License 2.0](http://SIMRacingApps.com/LICENSE.TXT)
+[Apache License 2.0](https://SIMRacingApps.com/LICENSE.TXT)
