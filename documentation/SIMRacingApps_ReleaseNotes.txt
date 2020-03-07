@@ -1,10 +1,10 @@
 SIMRacingApps Release Notes
-Copyright (C) 2015 - 2019 Jeffrey Gilliam
+Copyright (C) 2015 - 2020 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/12?closed=1)
 
-Version: 1.12_Build_BETA-2019.12.29
+Version: 1.12_Build_BETA-2020.03.07
 
     1. Fixed #211 (https://github.com/SIMRacingApps/SIMRacingApps/issues/211)
        Added a blue dot to the Trackmap to indicate where the merge point is for the REFERENCE car.
@@ -14,7 +14,7 @@ Version: 1.12_Build_BETA-2019.12.29
        
     2. Added new name for Charlotte 2019 ROVAL configuration that came out in iRacing's Oct 2019 patch.
     
-    3. Updated Electron from version 4.0.0 to 6.0.12.
+    3. Updated Electron from version 4.0.0 to 7.1.14.
     
     4. Implemented new content from iRacing's Dec 2019 build.
        - Lernerville Speedway
@@ -27,6 +27,24 @@ Version: 1.12_Build_BETA-2019.12.29
        
     5. Fixed Track Map for Nurbugring Tourist layout.
        Changed the definition of the finish line to be at 100%, not 0%.
+       
+    6. Added new widgets for Vertical Flags, called FlagsBar-Left, FlagsBar-Right. 
+       By default, Green stays out if no other flag is showing.
+       There are 2 other widgets where you can hide the green unless it's waving.
+    
+    7. Added new API call, /Session/Status, that returns one of the following;
+       - UNKNOWN
+       - ENGINES_STARTED
+       - GREEN
+       - CAUTION
+       - RED
+       - FINISHED
+
+    8. Added content from iRacing's March 2020 build
+       - Porsche 718 Cayman GT4 Clubsport MR
+       - Homestead Miami Speedway (Oval Indy)
+       - Lankebanen (Hell RX)
+       - Texas Motor Speedway (Oval, Legends)
        
     For notes on previous versions, see below.
        
