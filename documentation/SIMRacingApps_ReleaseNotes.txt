@@ -45,6 +45,10 @@ Version: 1.12_Build_BETA-2020.03.07
        - Homestead Miami Speedway (Oval Indy)
        - Lankebanen (Hell RX)
        - Texas Motor Speedway (Oval, Legends)
+
+    9. Added new commands to the Voice Attack Profile (2020.03.07)
+       - Laps Since Pitting
+       - Laps This Stint
        
     For notes on previous versions, see below.
        

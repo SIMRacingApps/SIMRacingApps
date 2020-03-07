@@ -27,6 +27,10 @@ Version: 1.12_Build_BETA-2020.03.07
        - Texas Motor Speedway (Oval, Legends)
     
     4. Update Electron to 7.1.14 from 6.0.12.
+    
+    5. Added new commands to the Voice Attack Profile (2020.03.07)
+       - Laps Since Pitting
+       - Laps This Stint
 
     For notes on previous BETA builds for version 1.12, see below.
     

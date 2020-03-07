@@ -9,7 +9,7 @@
     </script>
     <property environment="env" />
     <property name="launch4j.dir" location="Launch4j" />
-    <property name="vap.version" value="2018.08.17" />
+    <property name="vap.version" value="2020.03.07" />
     
     <property name="sign4j.exe" value="Launch4j/sign4j/sign4j.exe" />
     <!-- get jsign from https://ebourg.github.io/jsign -->
