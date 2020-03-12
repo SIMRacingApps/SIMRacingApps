@@ -6,32 +6,12 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.12_Build_BETA-2020.03.07
+Version: 1.12_Build_BETA-2020.03.12
 
-    1. Added new widgets for Vertical Flags, called FlagsBar-Left, FlagsBar-Right. 
-       By default, Green stays out if no other flag is showing.
-       There are 2 other widgets where you can hide the green unless it's waving.
+    1. Added Africa/South Africa to the ClubNames.json file.
     
-    2. Added new API call, /Session/Status, that returns one of the following;
-       - UNKNOWN
-       - ENGINES_STARTED
-       - GREEN
-       - CAUTION
-       - RED
-       - FINISHED
-       
-    3. Added content from iRacing's March 2020 build
-       - Porsche 718 Cayman GT4 Clubsport MR
-       - Homestead Miami Speedway (Oval Indy)
-       - Lankebanen (Hell RX)
-       - Texas Motor Speedway (Oval, Legends)
+    2. Backed out version 7 of Electron. Now at 6.1.9.
     
-    4. Update Electron to 7.1.14 from 6.0.12.
-    
-    5. Added new commands to the Voice Attack Profile (2020.03.07)
-       - Laps Since Pitting
-       - Laps This Stint
-
     For notes on previous BETA builds for version 1.12, see below.
     
 ------------------------------------------------------------------------------------------------------
@@ -65,6 +45,31 @@ Version: 1.12_Build_BETA-2020.03.07
 ****************** Previous Versions *************************
 
 For versions prior to 1.12, see the regular release notes.
+
+1.12_Build_BETA-2020.03.07
+    1. Added new widgets for Vertical Flags, called FlagsBar-Left, FlagsBar-Right. 
+       By default, Green stays out if no other flag is showing.
+       There are 2 other widgets where you can hide the green unless it's waving.
+    
+    2. Added new API call, /Session/Status, that returns one of the following;
+       - UNKNOWN
+       - ENGINES_STARTED
+       - GREEN
+       - CAUTION
+       - RED
+       - FINISHED
+       
+    3. Added content from iRacing's March 2020 build
+       - Porsche 718 Cayman GT4 Clubsport MR
+       - Homestead Miami Speedway (Oval Indy)
+       - Lankebanen (Hell RX)
+       - Texas Motor Speedway (Oval, Legends)
+    
+    4. Update Electron to 7.1.14 from 6.0.12.
+    
+    5. Added new commands to the Voice Attack Profile (2020.03.07)
+       - Laps Since Pitting
+       - Laps This Stint
 
 1.12_Build_BETA-2019.12.29
     1. Updated the Merge Point (Blue Cone) on all tracks.
