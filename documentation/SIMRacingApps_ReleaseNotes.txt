@@ -4,16 +4,20 @@ Copyright (C) 2015 - 2020 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/14?closed=1)
 
-Version: 1.12_Build_2020.03.28
+Version: 1.13_Build_BETA-2020.04.04
 
-    1. Added new widgets FlagsBarHorizontal.
-    
-    2. Updates for iRacings March 26th, 2020 Patch
-       - Bristol (Single Pit)
-       - Lankebanen (Club) 
-       - Lankebanen (Rally Short) 
-       - Lankebanen (Road Short) 
-       - Lankebanen (Road Long) 
+    1. Fixed RadioControl widget. It would not change channels.
+       iRacing seems to have a bug, where you cannot select the @DRIVERS channel from chat.
+       @TRANSMIT @DRIVERS
+       Does not work 
+
+    2. Fixed #188 (https://github.com/SIMRacingApps/SIMRacingApps/issues/188) 
+       LapDelta widget not always in sync with final time posted by iRacing
+       iRacing was calculating this based on your last clean best lap.
+       I was using the best lap on the Lap Timing box, which doesn't care if it's clean.
+       This was only a problem if your best lap wasn't clean.
+
+    3. Added new widget Incidents
     
     For notes on previous versions, see below.
        
@@ -53,6 +57,17 @@ Version: 1.12_Build_2020.03.28
         Here you can find solutions, work-around, etc.
        
 ****************** Previous Versions *************************
+
+1.12_Build_2020.03.29
+
+    1. Added new widgets FlagsBarHorizontal.
+    
+    2. Updates for iRacings March 26th, 2020 Patch
+       - Bristol (Single Pit)
+       - Lankebanen (Club) 
+       - Lankebanen (Rally Short) 
+       - Lankebanen (Road Short) 
+       - Lankebanen (Road Long) 
 
 1.12_Build_2020.03.15
 
