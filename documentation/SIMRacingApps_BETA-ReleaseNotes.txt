@@ -6,7 +6,15 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.13_Build_BETA-2020.04.04
+Version: 1.13_Build_BETA-2020.04.07
+
+    1. Fixed #218 (https://github.com/SIMRacingApps/SIMRacingApps/issues/218)
+       Car # Sim Not Connected
+       - this was introduced in 1.13_Build_BETA-2020.04.07
+       
+    2. Added ability to select the Pace Car Camera in the CameraSelector Widgets.
+
+1.13_Build_BETA-2020.04.07
 
     1. Fixed RadioControl widget. It would not change channels.
        iRacing seems to have a bug, where you cannot select the @DRIVERS channel from chat.
@@ -19,9 +27,7 @@ Version: 1.13_Build_BETA-2020.04.04
        I was using the best lap on the Lap Timing box, which doesn't care if it's clean.
        This was only a problem if your best lap wasn't clean.
        
-    3. Added new widget Incidents
-    
-    For notes on previous BETA builds for version 1.12, see below.
+    3. Added new Incidents widget.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
