@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2020 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/14?closed=1)
 
-Version: 1.13_Build_BETA-2020.05.17
+Version: 1.13_Build_2020.06.16
 
     1. Fixed RadioControl widget. It would not change channels.
        iRacing seems to have a bug, where you cannot select the @DRIVERS channel from chat.
@@ -24,7 +24,7 @@ Version: 1.13_Build_BETA-2020.05.17
     5. Closed #209 (https://github.com/SIMRacingApps/SIMRacingApps/issues/209)
        Add Real-time iRating to Standing Widget
        Changed iRating to be dynamically calculated as the positions change throughout the race.
-       This only applies to single class races. I have not figured out how multiclass races are calculated.
+       This only applies to single class races. I have not figured out how multi-class races are calculated.
        To turn this feature off and display the iRating the driver started the race with
        add this to the settings.txt.
            dynamic-irating = N
@@ -53,6 +53,30 @@ Version: 1.13_Build_BETA-2020.05.17
     11. Added more information in Voice Attack 2020.05.16 when pitting.
         Now says what tires and fuel you are asking for upon approaching the pits and when issuing the "Pitting In" command. 
         Also says your stall number based on your qualifying position.  
+        
+    12. In the Browser Menu, added the link to the widget to make it easier for streamers to get the links.
+    
+    13. Removed the Delayed Green message. iRacing re-purposed this flag to mean restart pending.
+    
+    14. iRacing's June 2020 build
+        - BMW M4 GT4
+        - Indy Pro 2000 PM-18
+        - NASCAR Chevrolet Monte Carlo - 1987
+        - NASCAR Ford Thunderbird - 1987
+        - NASCAR Gander Outdoors Ford F150
+        - USF 2000
+        - Kentucky Speedway (Name Changed) - re-built from new scan data!
+        - Utilize the TiresAvailable and TiresUsed telemetry variables.
+       
+    15. Added new API /Session/Name and used it in several apps were it was using /Session/Type
+        This will allow for each Heat Race session to have a name.
+
+    16. Closed #226 (https://github.com/SIMRacingApps/SIMRacingApps/issues/226)
+        LIFX lights need option for Green to stay on while under green
+        To turn this off add this to your settings:
+        - LIFX-always-green = N
+       
+    17. Fixed issue where the Fast Repair would turn off if you sent any pit commands after you set it.
 
     For notes on previous versions, see below.
        
