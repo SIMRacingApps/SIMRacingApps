@@ -2,105 +2,18 @@ SIMRacingApps BETA Release Notes
 Copyright (C) 2015 - 2020 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/15)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/16)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.13_Build_BETA-2020.06.07
+Version: 1.14_Build_BETA-2020.07.10
 
-    1. In the Browser Menu, added the link to the widget to make it easier for streamers to get the links.
+    1. Fixed bug that would sometimes cause the main thread to restart.
     
-    2. Removed the Delayed Green message. iRacing re-purposed this flag to mean restart pending.
+    2. Fixed issue where your Best and Last lap times would not display if your country's number format contained a comma.
     
-    3. iRacing's June 2020 build
-       - BMW M4 GT4
-       - Indy Pro 2000 PM-18
-       - NASCAR Chevrolet Monte Carlo - 1987
-       - NASCAR Ford Thunderbird - 1987
-       - NASCAR Gander Outdoors Ford F150
-       - USF 2000
-       - Kentucky Speedway (Name Changed) - re-built from new scan data!
-       - Utilize the TiresAvailable and TiresUsed telemetry variables.
-       
-    4. Added new API /Session/Name and used it in several apps were it was using /Session/Type
-       This will allow for each Heat Race session to have a name.
-
-    5. Closed #226 (https://github.com/SIMRacingApps/SIMRacingApps/issues/226)
-       LIFX lights need option for Green to stay on while under green
-       To turn this off add this to your settings:
-       - LIFX-always-green = N
-       
-    6. Fixed issue where the Fast Repair would turn off if you sent any pit commands after you set it.
-
-1.13_Build_BETA-2020.05.17
-
-    1. Fixed the "What's the Weather" command in Voice Attack to say the SIM Time of Day
-       - Voice Attack profile version 2020.05.16
-       - New API /Session/TimeString
-       
-    2. Added more information in Voice Attack 2020.05.16 when pitting.
-       Now says what tires and fuel you are asking for upon approaching the pits and when issuing the "Pitting In" command.   
-       Also says your stall number based on your qualifying position.  
-
-1.13_Build_BETA-2020.05.12
-
-    1. New API to get the change in the iRating. /Car/REFERENCE/DriverRatingDelta
-    
-    2. New APIs to reload paint for all cars or a specific car.
-       - /Session/setReloadPaint
-       - /Car/{CARIDENTIFIER}/setReloadPaint
-       - Also new commands for Voice Attack  2020.05.12
-         - Reload All Paints
-         - Reload My Paint
-    
-    3. Added North Wilkesboro Speedway Track Profile   
-    
-1.13_Build_BETA-2020.05.02
-
-    1. Fixed Eastern Europe Club Name
-    
-    2. Closed #209 (https://github.com/SIMRacingApps/SIMRacingApps/issues/209)
-       Add Real-time iRating to Standing Widget
-       Changed iRating to be dynamically calculated as the positions change throughout the race.
-       This only applies to single class races. I have not figured out how multiclass races are calculated.
-       To turn this feature off and display the iRating the driver started the race with
-       add this to the settings.txt.
-           dynamic-irating = N
-    
-    3. Created new widget called DriverRating
-    
-    4. Added option to only count full laps since pitting.
-       NOTE: it also doesn't count your in/out laps.
-       It is off by default. To turn it on add the following to the settings.
-       - laps-since-pitting-valid-only = Y
-    
-    5. Went back to version 5.0.13 of Electron as that version was reported as working in some VR environments.
-       Please send me your feedback. To try other versions see instructions here.
-       https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-the-Electron-client
-
-1.13_Build_BETA-2020.04.07
-
-    1. Fixed #218 (https://github.com/SIMRacingApps/SIMRacingApps/issues/218)
-       Car # Sim Not Connected
-       - this was introduced in 1.13_Build_BETA-2020.04.07
-       
-    2. Added ability to select the Pace Car Camera in the CameraSelector Widgets.
-
-1.13_Build_BETA-2020.04.07
-
-    1. Fixed RadioControl widget. It would not change channels.
-       iRacing seems to have a bug, where you cannot select the @DRIVERS channel from chat.
-       @TRANSMIT @DRIVERS
-       Does not work
-       
-    2. Fixed #188 (https://github.com/SIMRacingApps/SIMRacingApps/issues/188) 
-       LapDelta widget not always in sync with final time posted by iRacing
-       iRacing was calculating this based on your last clean best lap.
-       I was using the best lap on the Lap Timing box, which doesn't care if it's clean.
-       This was only a problem if your best lap wasn't clean.
-       
-    3. Added new Incidents widget.
-    
+    3. Fixed an issue where the links on the menu were not correct of you tried to override the language.
+        
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
 ------------------------------------------------------------------------------------------------------
