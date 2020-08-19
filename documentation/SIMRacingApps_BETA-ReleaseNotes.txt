@@ -6,13 +6,25 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.14_Build_BETA-2020.07.10
+Version: 1.14_Build_BETA-2020.08.04
+
+    1. Closed #231 (https://github.com/SIMRacingApps/SIMRacingApps/issues/231)
+       Added 'drive through' penalty in Race Administrator App
+       Replaced the 1 Lap Black flag with Drive Through.
+       
+    2. Fix issue with the Dallara IR 18 where it would cause the shift light to 
+       blink at the wrong time.
+       
+    3. Added the NASCAR Road Course configuration at Daytona from iRacing's Aug 4th patch.
+
+1.14_Build_BETA-2020.07.10
 
     1. Fixed bug that would sometimes cause the main thread to restart.
     
     2. Fixed issue where your Best and Last lap times would not display if your country's number format contained a comma.
     
     3. Fixed an issue where the links on the menu were not correct of you tried to override the language.
+    
         
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
