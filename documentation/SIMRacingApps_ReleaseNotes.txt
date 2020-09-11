@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2020 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/15?closed=1)
 
-Version: 1.14_Build_BETA-2020.08.04
+Version: 1.14_Build_BETA-2020.09.10
 
     1. Fixed bug that would sometimes cause the main thread to restart.
     
@@ -20,6 +20,15 @@ Version: 1.14_Build_BETA-2020.08.04
        blink at the wrong time.
        
     6. Added the NASCAR Road Course configuration at Daytona from iRacing's Aug 4th patch.
+    
+    7. Content from iRacing's Sept. 2020 Build
+       - Crandon International Raceway
+       - Nashville Fairgrounds Speedway
+       - Weedsport Speedway
+       - New Jersey Motorsports Park
+       - Chevrolet Corvette C8.R GTE
+       - Dallara P217
+    
 
     For notes on previous versions, see below.
        

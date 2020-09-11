@@ -6,7 +6,16 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.14_Build_BETA-2020.08.04
+Version: 1.14_Build_BETA-2020.09.10
+    1. Content from iRacing's Sept. 2020 Build
+       - Crandon International Raceway
+       - Nashville Fairgrounds Speedway
+       - Weedsport Speedway
+       - New Jersey Motorsports Park
+       - Chevrolet Corvette C8.R GTE
+       - Dallara P217
+
+1.14_Build_BETA-2020.08.04
 
     1. Closed #231 (https://github.com/SIMRacingApps/SIMRacingApps/issues/231)
        Added 'drive through' penalty in Race Administrator App
