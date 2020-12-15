@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2020 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/17?closed=1)
 
-Version: 1.15_Build_BETA-2020.12.10
+Version: 1.15_Build_BETA-2020.12.14
 
     1. Closed #237 (https://github.com/SIMRacingApps/SIMRacingApps/issues/237)
        TireCompound API
@@ -24,6 +24,10 @@ Version: 1.15_Build_BETA-2020.12.10
        - Charlotte Motor Speedway (Rallycross)
        - Irwindale Speedway (Figure Eight Jump)
        - Long Beach Street Circuit
+
+    4. Added iRacing's Superspeedway Track from the December 2020 Patch 1 release.
+       It's not a real track, but iRacing has mapped the GPS coordinates to a real location that 
+       will not make since if displayed in the TrackMap. So, the background has been grayed out.
 
     For notes on previous versions, see below.
        

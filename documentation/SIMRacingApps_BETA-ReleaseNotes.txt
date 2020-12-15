@@ -6,7 +6,12 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.15_Build_BETA-2020.12.10
+Version: 1.15_Build_BETA-2020.12.14
+    1. Added iRacing's Superspeedway Track from the December 2020 Patch 1 release.
+       It's not a real track, but iRacing has mapped the GPS coordinates to a real location that 
+       will not make since if displayed in the TrackMap. So, the background has been grayed out.
+       
+Version: 1.15_Build_BETA-2020.12.14
     1. Fixed issue with Fast Repair Button on the PitCommander widget. It would not always update properly.
     
     2. Content from iRacing's December 2020 build.
