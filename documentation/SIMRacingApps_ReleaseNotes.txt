@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2020 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/17?closed=1)
 
-Version: 1.15_Build_BETA-2020.12.14
+Version: 1.15_Build_BETA-2020.12.19
 
     1. Closed #237 (https://github.com/SIMRacingApps/SIMRacingApps/issues/237)
        TireCompound API
@@ -13,12 +13,13 @@ Version: 1.15_Build_BETA-2020.12.14
     
     2. Fixed issue with Fast Repair Button on the PitCommander widget. It would not always update properly.
 
-    3. Content from iRacing's December 2020 build.
+    3. Content from iRacing's December 2020 build and patches.
        - Dallara iR-01 (with Tire Compounds, S,M,H)
        - Dallara IR18 (with Tire Compounds, P,A)
        - Dirt Modified
        - Ford GT GT3 - Shift lights have been updated to better match the engine power curve
        - Lamborghini Huracan GT3 EVO
+       - BMW M4 GT3 - Prototype
        - Brands Hatch Circuit (Rallycross)
        - Cedar Lake Speedway (Dirt Oval)
        - Charlotte Motor Speedway (Rallycross)
