@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2020 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/17?closed=1)
 
-Version: 1.15_Build_BETA-2020.12.19
+Version: 1.15_Build_2020.12.28
 
     1. Closed #237 (https://github.com/SIMRacingApps/SIMRacingApps/issues/237)
        TireCompound API
