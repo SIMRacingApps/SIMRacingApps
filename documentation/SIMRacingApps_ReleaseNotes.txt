@@ -1,34 +1,12 @@
 SIMRacingApps Release Notes
-Copyright (C) 2015 - 2020 Jeffrey Gilliam
+Copyright (C) 2015 - 2021 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/17?closed=1)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.15_Build_2020.12.28
+Version: 1.16_Build_BETA-2021.01.06
 
-    1. Closed #237 (https://github.com/SIMRacingApps/SIMRacingApps/issues/237)
-       TireCompound API
-       - /Car/(CARIDENTIFIER)/Gauge/TireCompound
-       - Implemented on McLaren MP4-30, Dallara iR-01, Dallara IR18
-    
-    2. Fixed issue with Fast Repair Button on the PitCommander widget. It would not always update properly.
-
-    3. Content from iRacing's December 2020 build and patches.
-       - Dallara iR-01 (with Tire Compounds, S,M,H)
-       - Dallara IR18 (with Tire Compounds, P,A)
-       - Dirt Modified
-       - Ford GT GT3 - Shift lights have been updated to better match the engine power curve
-       - Lamborghini Huracan GT3 EVO
-       - BMW M4 GT3 - Prototype
-       - Brands Hatch Circuit (Rallycross)
-       - Cedar Lake Speedway (Dirt Oval)
-       - Charlotte Motor Speedway (Rallycross)
-       - Irwindale Speedway (Figure Eight Jump)
-       - Long Beach Street Circuit
-
-    4. Added iRacing's Superspeedway Track from the December 2020 Patch 1 release.
-       It's not a real track, but iRacing has mapped the GPS coordinates to a real location that 
-       will not make since if displayed in the TrackMap. So, the background has been grayed out.
+    1. Added more robust parsing logic for sound devices.
 
     For notes on previous versions, see below.
        
@@ -68,6 +46,32 @@ Version: 1.15_Build_2020.12.28
         Here you can find solutions, work-around, etc.
        
 ****************** Previous Versions *************************
+
+1.15_Build_2020.12.28
+
+    1. Closed #237 (https://github.com/SIMRacingApps/SIMRacingApps/issues/237)
+       TireCompound API
+       - /Car/(CARIDENTIFIER)/Gauge/TireCompound
+       - Implemented on McLaren MP4-30, Dallara iR-01, Dallara IR18
+    
+    2. Fixed issue with Fast Repair Button on the PitCommander widget. It would not always update properly.
+
+    3. Content from iRacing's December 2020 build and patches.
+       - Dallara iR-01 (with Tire Compounds, S,M,H)
+       - Dallara IR18 (with Tire Compounds, P,A)
+       - Dirt Modified
+       - Ford GT GT3 - Shift lights have been updated to better match the engine power curve
+       - Lamborghini Huracan GT3 EVO
+       - BMW M4 GT3 - Prototype
+       - Brands Hatch Circuit (Rallycross)
+       - Cedar Lake Speedway (Dirt Oval)
+       - Charlotte Motor Speedway (Rallycross)
+       - Irwindale Speedway (Figure Eight Jump)
+       - Long Beach Street Circuit
+
+    4. Added iRacing's Superspeedway Track from the December 2020 Patch 1 release.
+       It's not a real track, but iRacing has mapped the GPS coordinates to a real location that 
+       will not make since if displayed in the TrackMap. So, the background has been grayed out.
 
 1.14_Build_2020.10.01
 
