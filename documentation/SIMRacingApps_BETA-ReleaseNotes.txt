@@ -6,11 +6,22 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.16_Build_BETA-2021.01.06
+Version: 1.16_Build_BETA-2021.01.23
 
     1. Added more robust parsing logic for sound devices.
     
     2. Added /SIMPluginCallback/DataPublisher/Post/Results API for widgets to get access to the server results.
+    
+    3. Added code to Electron to help with the Stay On Top logic with versions of Electron later than 5.x.
+       I've been testing with Electron 10.3.0 and it seems to be working fine.
+       I'm still bundling version 5.x, but if you want to try any of the new versions to see if it helps with VR,
+       you can get instructions here, https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-the-Electron-client#different-version-of-electron.
+    
+    4. Added option to start Electron minimized. Add the following to your settings.
+       electron-startminimized = Y
+       
+    5. Implemented PitSvTireCompound from the previous iRacing's 2021 Season 1 Patch 3.
+       Now you can see the Tire Compound you have selected to be put on during the next pit stop.
         
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---

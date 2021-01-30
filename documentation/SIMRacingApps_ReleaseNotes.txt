@@ -4,9 +4,17 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.16_Build_BETA-2021.01.06
+Version: 1.16_Build_BETA-2021.01.23
 
     1. Added more robust parsing logic for sound devices.
+    
+    2. Added code to Electron to help with the Stay On Top logic with versions of Electron later than 5.x.
+    
+    3. Added option to start Electron minimized. Add the following to your settings.
+       electron-startminimized = Y
+       
+    4. Implemented PitSvTireCompound from the previous iRacing's 2021 Season 1 Patch 3.
+       Now you can see the Tire Compound you have selected to be put on during the next pit stop.
 
     For notes on previous versions, see below.
        
