@@ -6,7 +6,15 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.16_Build_BETA-2021.01.23
+Version: 1.16_Build_BETA-2021.02.09
+
+    1. In an attempt to fix stuttering issues in iRacing, SRA now reserves 2 cores by default for the iRacing to use.
+       If the iRacing ever needs more cores, and you have enough to reserve more, add the following to your settings.
+       A value of zero(0) will not reserve any cores.
+       Example of reserving 3 cores:
+          reserved-cores = 3
+
+1.16_Build_BETA-2021.01.23
 
     1. Added more robust parsing logic for sound devices.
     
