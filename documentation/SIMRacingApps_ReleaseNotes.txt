@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.16_Build_BETA-2021.02.09
+Version: 1.16_Build_BETA-2021.03.13
 
     1. Added more robust parsing logic for sound devices.
     
@@ -21,6 +21,23 @@ Version: 1.16_Build_BETA-2021.02.09
        A value of zero(0) will not reserve any cores.
        Example of reserving 3 cores:
           reserved-cores = 3
+
+    6. Fixed issue when the users Documents folder was blank in the registry, to fall back to the default value.
+       This was causing a Null Value Exception on some systems upon startup.
+       
+    7. iRacing added the ability to render your custom paints to a PNG file.
+       I updated the CarImage widget to use it if available.
+
+    8. Added new content from iRacing's March 2021 Build and Hotfixes.
+        - A new pace car, Sedan
+        - A new Road Car, the McLaren 570s GT4, is now available!
+        - (Ford GT GT2) - Up-shift RPM lights have been updated to better match the engine power curve.
+        - The Super Late Model has been re-built, using the latest 2021 NASCAR model!
+        - Bark River International Raceway
+        - A new Dirt Oval track configuration, Dirt, has been added to Bristol Motor Speedway!
+        - A new Dirt Road track configuration, Rallycross, has been added to Circuit de Barcelona-Catalunya!
+        - A new Road track, Hockenheimring Baden-Wurttemberg, is now available!
+        - A new Road track configuration, IndyCar 2012-2018, has been added to Sonoma Raceway!
 
     For notes on previous versions, see below.
        

@@ -6,7 +6,26 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.16_Build_BETA-2021.02.09
+Version: 1.16_Build_BETA-2021.03.13
+
+    1. Fixed issue when the users Documents folder was blank in the registry, to fall back to the default value.
+       This was causing a Null Value Exception on some systems upon startup.
+       
+    2. iRacing added the ability to render your custom paints to a PNG file.
+       I updated the CarImage widget to use it if available.
+       
+    3. Added new content from iRacing's March 2021 Build and Hotfixes.
+        - A new pace car, Sedan
+        - A new Road Car, the McLaren 570s GT4, is now available!
+        - (Ford GT GT2) - Up-shift RPM lights have been updated to better match the engine power curve.
+        - The Super Late Model has been re-built, using the latest 2021 NASCAR model!
+        - Bark River International Raceway
+        - A new Dirt Oval track configuration, Dirt, has been added to Bristol Motor Speedway!
+        - A new Dirt Road track configuration, Rallycross, has been added to Circuit de Barcelona-Catalunya!
+        - A new Road track, Hockenheimring Baden-Wurttemberg, is now available!
+        - A new Road track configuration, IndyCar 2012-2018, has been added to Sonoma Raceway!
+
+1.16_Build_BETA-2021.02.09
 
     1. In an attempt to fix stuttering issues in iRacing, SRA now reserves 2 cores by default for the iRacing to use.
        If the iRacing ever needs more cores, and you have enough to reserve more, add the following to your settings.
