@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.16_Build_BETA-2021.03.13
+Version: 1.16_Build_BETA-2021.03.20
 
     1. Added more robust parsing logic for sound devices.
     
@@ -27,6 +27,7 @@ Version: 1.16_Build_BETA-2021.03.13
        
     7. iRacing added the ability to render your custom paints to a PNG file.
        I updated the CarImage widget to use it if available.
+       It also checks the Documents\iRacing\app.ini[Graphics]hideCarNum setting.
 
     8. Added new content from iRacing's March 2021 Build and Hotfixes.
         - A new pace car, Sedan
@@ -38,6 +39,11 @@ Version: 1.16_Build_BETA-2021.03.13
         - A new Dirt Road track configuration, Rallycross, has been added to Circuit de Barcelona-Catalunya!
         - A new Road track, Hockenheimring Baden-Wurttemberg, is now available!
         - A new Road track configuration, IndyCar 2012-2018, has been added to Sonoma Raceway!
+        
+    9. Added new widgets to compliment the new CarImage widget
+       - CarImageExtended = that shows driver name
+       - CarSelectorImages = to select cars when watching or broadcasting.
+       - CarSelectorImages64 = to select cars when watching or broadcasting.
 
     For notes on previous versions, see below.
        

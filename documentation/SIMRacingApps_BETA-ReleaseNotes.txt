@@ -6,7 +6,18 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.16_Build_BETA-2021.03.13
+Version: 1.16_Build_BETA-2021.03.20
+    1. Fixed #243 (https://github.com/SIMRacingApps/SIMRacingApps/issues/243)
+       CarImage don't show correctly if user has a paint with a custom number
+       Added check for custom paints with car numbers, 
+       if the Documents\iRacing\app.ini[Graphics]hideCarNum is not equal to zero(0).
+       
+    2. Added new widgets to compliment the new CarImage widget
+       - CarImageExtended = that shows driver name
+       - CarSelectorImages = to select cars when watching or broadcasting.
+       - CarSelectorImages64 = to select cars when watching or broadcasting.
+
+1.16_Build_BETA-2021.03.13
 
     1. Fixed issue when the users Documents folder was blank in the registry, to fall back to the default value.
        This was causing a Null Value Exception on some systems upon startup.
