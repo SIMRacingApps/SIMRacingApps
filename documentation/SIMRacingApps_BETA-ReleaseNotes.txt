@@ -6,7 +6,20 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.16_Build_BETA-2021.03.20
+Version: 1.16_Build_BETA-2021.04.05
+    1. Added code to try and bring iRacing Process to the foreground before sending 
+       keystrokes to it. The name of the process it looks for is "iRacing.com Simulator".
+       This can be changed with the following variable in the settings.
+           iracing-title = iRacing.com Simulator
+
+    2. Fixed #246 (https://github.com/SIMRacingApps/SIMRacingApps/issues/246)
+       Shift Overrides in settings are not working
+       
+    3. Added chart.js and angular-chart libraries so we can start building some chart base widgets.
+       Also added a test widget called ChartTest.
+
+1.16_Build_BETA-2021.03.20
+
     1. Fixed #243 (https://github.com/SIMRacingApps/SIMRacingApps/issues/243)
        CarImage don't show correctly if user has a paint with a custom number
        Added check for custom paints with car numbers, 

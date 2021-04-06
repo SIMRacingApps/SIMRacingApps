@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.16_Build_BETA-2021.03.20
+Version: 1.16_Build_BETA-2021.04.05
 
     1. Added more robust parsing logic for sound devices.
     
@@ -44,6 +44,14 @@ Version: 1.16_Build_BETA-2021.03.20
        - CarImageExtended = that shows driver name
        - CarSelectorImages = to select cars when watching or broadcasting.
        - CarSelectorImages64 = to select cars when watching or broadcasting.
+       
+    10. Added code to try and bring iRacing Process to the foreground before sending 
+        keystrokes to it. The name of the process it looks for is "iRacing.com Simulator".
+        This can be changed with the following variable in the settings.
+            iracing-title = iRacing.com Simulator
+
+    11. Fixed #246 (https://github.com/SIMRacingApps/SIMRacingApps/issues/246)
+        Shift Overrides in settings are not working
 
     For notes on previous versions, see below.
        
