@@ -2,77 +2,16 @@ SIMRacingApps BETA Release Notes
 Copyright (C) 2015 - 2021 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/18)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/19)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.16_Build_BETA-2021.04.05
-    1. Added code to try and bring iRacing Process to the foreground before sending 
-       keystrokes to it. The name of the process it looks for is "iRacing.com Simulator".
-       This can be changed with the following variable in the settings.
-           iracing-title = iRacing.com Simulator
+Version: 1.17_Build_BETA-2021.05.06
+    1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
+       CameraSelector Names Overlapped
 
-    2. Fixed #246 (https://github.com/SIMRacingApps/SIMRacingApps/issues/246)
-       Shift Overrides in settings are not working
-       
-    3. Added chart.js and angular-chart libraries so we can start building some chart base widgets.
-       Also added a test widget called ChartTest.
-
-1.16_Build_BETA-2021.03.20
-
-    1. Fixed #243 (https://github.com/SIMRacingApps/SIMRacingApps/issues/243)
-       CarImage don't show correctly if user has a paint with a custom number
-       Added check for custom paints with car numbers, 
-       if the Documents\iRacing\app.ini[Graphics]hideCarNum is not equal to zero(0).
-       
-    2. Added new widgets to compliment the new CarImage widget
-       - CarImageExtended = that shows driver name
-       - CarSelectorImages = to select cars when watching or broadcasting.
-       - CarSelectorImages64 = to select cars when watching or broadcasting.
-
-1.16_Build_BETA-2021.03.13
-
-    1. Fixed issue when the users Documents folder was blank in the registry, to fall back to the default value.
-       This was causing a Null Value Exception on some systems upon startup.
-       
-    2. iRacing added the ability to render your custom paints to a PNG file.
-       I updated the CarImage widget to use it if available.
-       
-    3. Added new content from iRacing's March 2021 Build and Hotfixes.
-        - A new pace car, Sedan
-        - A new Road Car, the McLaren 570s GT4, is now available!
-        - (Ford GT GT2) - Up-shift RPM lights have been updated to better match the engine power curve.
-        - The Super Late Model has been re-built, using the latest 2021 NASCAR model!
-        - Bark River International Raceway
-        - A new Dirt Oval track configuration, Dirt, has been added to Bristol Motor Speedway!
-        - A new Dirt Road track configuration, Rallycross, has been added to Circuit de Barcelona-Catalunya!
-        - A new Road track, Hockenheimring Baden-Wurttemberg, is now available!
-        - A new Road track configuration, IndyCar 2012-2018, has been added to Sonoma Raceway!
-
-1.16_Build_BETA-2021.02.09
-
-    1. In an attempt to fix stuttering issues in iRacing, SRA now reserves 2 cores by default for the iRacing to use.
-       If the iRacing ever needs more cores, and you have enough to reserve more, add the following to your settings.
-       A value of zero(0) will not reserve any cores.
-       Example of reserving 3 cores:
-          reserved-cores = 3
-
-1.16_Build_BETA-2021.01.23
-
-    1. Added more robust parsing logic for sound devices.
-    
-    2. Added /SIMPluginCallback/DataPublisher/Post/Results API for widgets to get access to the server results.
-    
-    3. Added code to Electron to help with the Stay On Top logic with versions of Electron later than 5.x.
-       I've been testing with Electron 10.3.0 and it seems to be working fine.
-       I'm still bundling version 5.x, but if you want to try any of the new versions to see if it helps with VR,
-       you can get instructions here, https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-setup-the-Electron-client#different-version-of-electron.
-    
-    4. Added option to start Electron minimized. Add the following to your settings.
-       electron-startminimized = Y
-       
-    5. Implemented PitSvTireCompound from the previous iRacing's 2021 Season 1 Patch 3.
-       Now you can see the Tire Compound you have selected to be put on during the next pit stop.
+    2. Fixed #245 (https://github.com/SIMRacingApps/SIMRacingApps/issues/245)
+       Gauges do not work in AI Session or when ghosting watching.
         
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
