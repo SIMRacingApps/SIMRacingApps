@@ -6,7 +6,11 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.17_Build_BETA-2021.05.06
+Version: 1.17_Build_BETA-2021.05.11
+    1. Found another issue with issue #245. iRacing outputting a period where
+       I was expecting a comma.
+       
+1.17_Build_BETA-2021.05.06
     1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
        CameraSelector Names Overlapped
 

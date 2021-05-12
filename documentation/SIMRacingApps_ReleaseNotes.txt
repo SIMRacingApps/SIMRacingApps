@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.17_Build_BETA-2021.05.06
+Version: 1.17_Build_BETA-2021.05.11
 
     1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
        CameraSelector Names Overlapped
