@@ -4,13 +4,21 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.17_Build_BETA-2021.05.11
+Version: 1.17_Build_BETA-2021.05.13
 
     1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
        CameraSelector Names Overlapped
 
     2. Fixed #245 (https://github.com/SIMRacingApps/SIMRacingApps/issues/245)
        Gauges do not work in AI Session or when ghosting watching.
+       
+    3. Figured out all the wheel types and colors.
+       So, now your painted wheel types and colors will be shown on the CarImage widget.
+       NOTE: Brushed and Glossy rims will not show, even in iRacing, unless session is launched from the new UI.
+       
+    4. Added new NASCAR Next Gen 2022 cars.
+       NOTE: I'm seeing the voltage and brake bias in the telemetry is not matching the SIM display.
+       
 
     For notes on previous versions, see below.
        
