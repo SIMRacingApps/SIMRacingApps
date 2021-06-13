@@ -6,7 +6,22 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.17_Build_BETA-2021.05.13
+Version: 1.17_Build_BETA-2021.06.13
+    1. Fixed Steering Wheel position. It was off by 6 degrees.
+    
+    2. Added Content from iRacing's June 2021 build and previous patches.
+       - Formula Vee
+       - VW Beetle Lite
+       - SCCA Spec Racer Ford (Updated 6 Gears, Shift Points, Tach)
+       - Porsche 911 GT3 R
+       - Red Bull Ring
+       - Nashville Superspeedway
+       - Chicago Street Circuit
+       
+    3. Fixed an issue with Chrome Browser and the Trackmap black boxes.
+       They changed the default width behavior.
+
+1.17_Build_BETA-2021.05.13
     1. Figured out all the wheel types which was causing the slow down.
        So, now your painted wheel types and colors will be shown on the CarImage widget.
        NOTE: Brushed and Glossy rims will not show, even in iRacing, unless session is launched from the new UI.
