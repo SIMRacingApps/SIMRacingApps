@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.17_Build_BETA-2021.06.13
+Version: 1.17_Build_BETA-2021.06.23
 
     1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
        CameraSelector Names Overlapped
@@ -32,6 +32,19 @@ Version: 1.17_Build_BETA-2021.06.13
        
     7. Fixed an issue with Chrome Browser and the Trackmap black boxes.
        They changed the default width behavior.
+
+    8. Moved the SIMRacingApps/electron-apps folder to the %LOCALAPPDATA% folder.
+       You may remove the Documents/SIMRacingApps/electron-apps folder.
+       This can be changed by specifying the path in the settings with this variable, showing the default path.
+       - electron-apps = %LOCALAPPDATA%/SIMRacingApps/electron-apps
+       
+    9. Added option to have the server continue running when Electron exits.
+       To enable this, add this to your settings. This is the default setting.
+       - electron-kills-server = Y
+       
+    10. Added missing club names
+       - Japan
+       - Mexico
 
     For notes on previous versions, see below.
        

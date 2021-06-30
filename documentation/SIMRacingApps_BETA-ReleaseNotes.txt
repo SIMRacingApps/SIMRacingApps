@@ -6,7 +6,21 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.17_Build_BETA-2021.06.13
+Version: 1.17_Build_BETA-2021.06.23
+    1. Moved the SIMRacingApps/electron-apps folder to the %LOCALAPPDATA% folder. 
+       You may remove the Documents/SIMRacingApps/electron-apps folder.
+       This can be changed by specifying the path in the settings with this variable, showing the default path.
+       - electron-apps = %LOCALAPPDATA%/SIMRacingApps/electron-apps
+       
+    2. Added option to have the server continue running when Electron exits.
+       To enable this, add this to your settings. This is the default setting.
+       - electron-kills-server = Y
+       
+    3. Added missing club names
+       - Japan
+       - Mexico
+       
+1.17_Build_BETA-2021.06.13
     1. Fixed Steering Wheel position. It was off by 6 degrees.
     
     2. Added Content from iRacing's June 2021 build and previous patches.
