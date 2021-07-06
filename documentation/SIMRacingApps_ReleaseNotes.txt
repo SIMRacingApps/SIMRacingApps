@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.17_Build_BETA-2021.06.23
+Version: 1.17_Build_BETA-2021.07.03
 
     1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
        CameraSelector Names Overlapped
@@ -43,8 +43,14 @@ Version: 1.17_Build_BETA-2021.06.23
        - electron-kills-server = Y
        
     10. Added missing club names
-       - Japan
-       - Mexico
+        - Japan
+        - Mexico
+
+    11. Added Pit Open/Closed buttons to the RaceAdministrator App
+        - Implemented Pull Request #2 from Cody Moore
+        - Also added Add/Subtract Caution Laps and One to Green.
+       
+    12. Fixed issue where trailing spaces in the settings were not trimmed off.
 
     For notes on previous versions, see below.
        

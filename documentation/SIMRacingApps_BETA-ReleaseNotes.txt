@@ -6,7 +6,14 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.17_Build_BETA-2021.06.23
+Version: 1.17_Build_BETA-2021.07.03
+    1. Added Pit Open/Closed buttons to the RaceAdministrator App
+       - Implemented Pull Request #2 from Cody Moore
+       - Also added Add/Subtract Caution Laps and One to Green.
+       
+    2. Fixed issue where trailing spaces in the settings were not trimmed off.
+       
+1.17_Build_BETA-2021.06.23
     1. Moved the SIMRacingApps/electron-apps folder to the %LOCALAPPDATA% folder. 
        You may remove the Documents/SIMRacingApps/electron-apps folder.
        This can be changed by specifying the path in the settings with this variable, showing the default path.
