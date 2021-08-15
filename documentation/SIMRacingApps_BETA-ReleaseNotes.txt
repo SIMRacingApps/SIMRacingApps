@@ -6,7 +6,11 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.17_Build_BETA-2021.07.03
+Version: 1.17_Build_BETA-2021.08.14
+    1. Added Content from iRacing's Aug 2021 build. This required some changes to the Track Map calculations.
+       - Mount Washington Auto Road
+
+1.17_Build_BETA-2021.07.03
     1. Added Pit Open/Closed buttons to the RaceAdministrator App
        - Implemented Pull Request #2 from Cody Moore
        - Also added Add/Subtract Caution Laps and One to Green.
