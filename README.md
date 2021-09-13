@@ -94,17 +94,6 @@ If not, the Ant build file can also build a .SRA file that can be uploaded to an
 1. [SIMRacingAppsSIMPluginiRacing](https://github.com/SIMRacingApps/SIMRacingAppsSIMPluginiRacing)
    This is a plug-in for https://iRacing.com.
 
-### [SIMRacingAppsOverwolf](https://github.com/SIMRacingApps/SIMRacingAppsOverwolf)
-
-Overwolf is 3rd Party Software that renders HTML5/JavaScript pages and injects them into the game's display.  
-
-This repository is the main menu implemented as an Overwolf package.
-It allows for launching Apps and Widgets and remembering the location and size of each.
-It also allows for creating multiple configurations and switching between them.
-
-NOTE: Due to Overwolf having issues from time to time with iRacing's anti-cheat software. 
-I have become frustrated with trying to keep it working. As of the end of 2017, I am no longer actively supporting this. Feel free to clone this and work on it yourself and I will consider merging any pull requests you send me.
-
 ### [SIMRacingAppsElectron](https://github.com/SIMRacingApps/SIMRacingAppsElectron)
 
 Electron is 3rd Party Software that renders HTML5/JavaScript pages in Native OS Windows.
