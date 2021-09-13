@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.17_Build_BETA-2021.08.14
+Version: 1.17_Build_BETA-2021.09.12
 
     1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
        CameraSelector Names Overlapped
@@ -21,7 +21,7 @@ Version: 1.17_Build_BETA-2021.08.14
 
     5. Fixed Steering Wheel position. It was off by 6 degrees.
        
-    6. Added Content from iRacing's June 2021 build and subsequent patches.
+    6. Added Content from iRacing's June-Sept 2021 build and subsequent patches.
        - Formula Vee
        - VW Beetle Lite
        - SCCA Spec Racer Ford (Updated 6 Gears, Shift Points, Tach)
@@ -30,6 +30,10 @@ Version: 1.17_Build_BETA-2021.08.14
        - Nashville Superspeedway
        - Chicago Street Circuit
        - Mount Washington Auto Road (This required some changes to the Track Map calculations)
+       - Ferrari 488 GT3 Evo 2020
+       - Porsche 911 GT3 Cup (992)
+       - Hickory Motor Speedway
+       - Hungaroring Circuit
        
     7. Fixed an issue with Chrome Browser and the Trackmap black boxes.
        They changed the default width behavior.
