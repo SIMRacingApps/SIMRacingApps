@@ -6,7 +6,10 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.17_Build_BETA-2021.09.12
+Version: 1.17_Build_BETA-2021.09.16
+    1. Fix spelling error with the "reserved-cores" setting. No longer needs the one with the space in it.
+
+1.17_Build_BETA-2021.09.12
     1. Added "Firewall" warning to the Electron loading page.
     
     2. Added content from iRacing's Sept 2021 build.
