@@ -4,7 +4,29 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.17_Build_2021.10.28
+Version: 1.18_Build_BETA-2021.12.13
+    1. Added ability to override car profile values in the settings.
+       - {Car}-{Gauge}-{Track}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-{PowerLevel}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-States-{StateName}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-States-{StateName}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-{PowerLevel}-States-{StateName}-{Attribute} = {value}
+       - See Wiki at https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-override-car-profile-gauge-values-in-settings
+
+    2. Added new content from iRacing's Dec 2021 build.
+       - Honda Civic Type R
+       - Hyundai Elantra N TC
+       - Mercedes-AMG F1 W12 E Performance
+       - Knockhill Racing Circuit
+       - Watkins Glen International (Fully re-scanned and re-built for 2021)
+       - Hockenheimring Baden-W�rttemberg - 4 New Track Configurations for the Porsche Experience Center
+         
+    3. Fixed VIR East/West Trackmap
+       - When you load East, iRacing reports it as West and vice verser.
+         So I made the track map match no matter the name.
+
+1.17_Build_2021.10.28
     1. Added Phoenix 2021 Raceway from iRacing's Oct-2021 build.
 
 1.17_Build_2021.09.26

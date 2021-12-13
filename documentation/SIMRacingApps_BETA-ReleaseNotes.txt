@@ -6,77 +6,28 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.17_Build_BETA-2021.09.16
-    1. Fix spelling error with the "reserved-cores" setting. No longer needs the one with the space in it.
+Version: 1.18_Build_BETA-2021.12.13
+    1. Added ability to override car profile values in the settings.
+       - {Car}-{Gauge}-{Track}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-{PowerLevel}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-States-{StateName}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-States-{StateName}-{Attribute} = {value}
+       - {Car}-{Gauge}-{Track}-{Gear}-{PowerLevel}-States-{StateName}-{Attribute} = {value}
+       - See Wiki at https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-override-car-profile-gauge-values-in-settings
 
-1.17_Build_BETA-2021.09.12
-    1. Added "Firewall" warning to the Electron loading page.
-    
-    2. Added content from iRacing's Sept 2021 build.
-       - Ferrari 488 GT3 Evo 2020
-       - Porsche 911 GT3 Cup (992)
-       - Hickory Motor Speedway
-       - Hungaroring Circuit
-
-1.17_Build_BETA-2021.08.14
-    1. Added Content from iRacing's Aug 2021 build. This required some changes to the Track Map calculations.
-       - Mount Washington Auto Road
-
-1.17_Build_BETA-2021.07.03
-    1. Added Pit Open/Closed buttons to the RaceAdministrator App
-       - Implemented Pull Request #2 from Cody Moore
-       - Also added Add/Subtract Caution Laps and One to Green.
+    2. Added new content from iRacing's Dec 2021 build.
+       - Honda Civic Type R
+       - Hyundai Elantra N TC
+       - Mercedes-AMG F1 W12 E Performance
+       - Knockhill Racing Circuit
+       - Watkins Glen International (Fully re-scanned and re-built for 2021)
+       - Hockenheimring Baden-W�rttemberg - 4 New Track Configurations for the Porsche Experience Center
        
-    2. Fixed issue where trailing spaces in the settings were not trimmed off.
+    3. Fixed VIR East/West Trackmap
+       - When you load East, iRacing reports it as West and vice verser.
+         So I made the track map match no matter the name.
        
-1.17_Build_BETA-2021.06.23
-    1. Moved the SIMRacingApps/electron-apps folder to the %LOCALAPPDATA% folder. 
-       You may remove the Documents/SIMRacingApps/electron-apps folder.
-       This can be changed by specifying the path in the settings with this variable, showing the default path.
-       - electron-apps = %LOCALAPPDATA%/SIMRacingApps/electron-apps
-       
-    2. Added option to have the server continue running when Electron exits.
-       To enable this, add this to your settings. This is the default setting.
-       - electron-kills-server = Y
-       
-    3. Added missing club names
-       - Japan
-       - Mexico
-       
-1.17_Build_BETA-2021.06.13
-    1. Fixed Steering Wheel position. It was off by 6 degrees.
-    
-    2. Added Content from iRacing's June 2021 build and previous patches.
-       - Formula Vee
-       - VW Beetle Lite
-       - SCCA Spec Racer Ford (Updated 6 Gears, Shift Points, Tach)
-       - Porsche 911 GT3 R
-       - Red Bull Ring
-       - Nashville Superspeedway
-       - Chicago Street Circuit
-       
-    3. Fixed an issue with Chrome Browser and the Trackmap black boxes.
-       They changed the default width behavior.
-
-1.17_Build_BETA-2021.05.13
-    1. Figured out all the wheel types which was causing the slow down.
-       So, now your painted wheel types and colors will be shown on the CarImage widget.
-       NOTE: Brushed and Glossy rims will not show, even in iRacing, unless session is launched from the new UI.
-       
-    2. Added new NASCAR Next Gen 2022 cars.
-       NOTE: I'm seeing the voltage and brake bias in the telemetry is not matching the SIM display.
-
-1.17_Build_BETA-2021.05.11
-    1. Found another issue with issue #245. iRacing outputting a period where
-       I was expecting a comma.
-       
-1.17_Build_BETA-2021.05.06
-    1. Fixed #249 (https://github.com/SIMRacingApps/SIMRacingApps/issues/249)
-       CameraSelector Names Overlapped
-
-    2. Fixed #245 (https://github.com/SIMRacingApps/SIMRacingApps/issues/245)
-       Gauges do not work in AI Session or when ghosting watching.
-        
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
 ------------------------------------------------------------------------------------------------------
