@@ -6,7 +6,10 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.18_Build_BETA-2021.12.13
+Version: 1.18_Build_BETA-2021.12.19
+    1. Fixed issue with NASCAR Next Gen where the Chevrolet and Toyota logos were wrong.
+
+1.18_Build_BETA-2021.12.13
     1. Added ability to override car profile values in the settings.
        - {Car}-{Gauge}-{Track}-{Attribute} = {value}
        - {Car}-{Gauge}-{Track}-{Gear}-{Attribute} = {value}
