@@ -6,7 +6,15 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.18_Build_BETA-2021.12.19
+Version: 1.18_Build_BETA-2021.12.31
+    1. Added new setting "fuel-level-needed-buffer-laps" to allow users to defined how many laps to add to the full needed calculation. Default is 1 lap.
+       fuel-level-needed-buffer-laps = 1
+       
+    2. Added option to Electron scripts to allow it to run with newer versions of Electron for testing purposes.
+    
+    3. Corrected issue with Silverstone GP Layout and Pit Road.
+       
+1.18_Build_BETA-2021.12.19
     1. Fixed issue with NASCAR Next Gen where the Chevrolet and Toyota logos were wrong.
 
 1.18_Build_BETA-2021.12.13

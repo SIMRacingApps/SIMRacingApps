@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2021 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.18_Build_BETA-2021.12.19
+Version: 1.18_Build_BETA-2021.12.31
     1. Added ability to override car profile values in the settings.
        - {Car}-{Gauge}-{Track}-{Attribute} = {value}
        - {Car}-{Gauge}-{Track}-{Gear}-{Attribute} = {value}
@@ -27,6 +27,13 @@ Version: 1.18_Build_BETA-2021.12.19
          So I made the track map match no matter the name.
 
     4. Fixed issue with NASCAR Next Gen where the Chevrolet and Toyota logos were wrong.
+
+    5. Added new setting "fuel-level-needed-buffer-laps" to allow users to defined how many laps to add to the full needed calculation. Default is 1 lap.
+       fuel-level-needed-buffer-laps = 1
+       
+    6. Added option to Electron scripts to allow it to run with newer versions of Electron for testing purposes.
+
+    7. Corrected issue with Silverstone GP Layout and Pit Road.
 
 1.17_Build_2021.10.28
     1. Added Phoenix 2021 Raceway from iRacing's Oct-2021 build.
