@@ -1,10 +1,10 @@
 SIMRacingApps Release Notes
-Copyright (C) 2015 - 2021 Jeffrey Gilliam
+Copyright (C) 2015 - 2022 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.18_Build_BETA-2021.12.31
+Version: 1.18_Build_BETA-2022.01.28
     1. Added ability to override car profile values in the settings.
        - {Car}-{Gauge}-{Track}-{Attribute} = {value}
        - {Car}-{Gauge}-{Track}-{Gear}-{Attribute} = {value}
@@ -14,13 +14,14 @@ Version: 1.18_Build_BETA-2021.12.31
        - {Car}-{Gauge}-{Track}-{Gear}-{PowerLevel}-States-{StateName}-{Attribute} = {value}
        - See Wiki at https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-override-car-profile-gauge-values-in-settings
 
-    2. Added new content from iRacing's Dec 2021 build.
+    2. Added new content from iRacing's Dec 2021 and Jan 2022 builds.
        - Honda Civic Type R
        - Hyundai Elantra N TC
        - Mercedes-AMG F1 W12 E Performance
        - Knockhill Racing Circuit
        - Watkins Glen International (Fully re-scanned and re-built for 2021)
-       - Hockenheimring Baden-W�rttemberg - 4 New Track Configurations for the Porsche Experience Center
+       - Hockenheimring Baden-Wurttemberg - 4 New Track Configurations for the Porsche Experience Center
+       - LA Coliseum.
          
     3. Fixed VIR East/West Trackmap
        - When you load East, iRacing reports it as West and vice verser.
@@ -34,6 +35,13 @@ Version: 1.18_Build_BETA-2021.12.31
     6. Added option to Electron scripts to allow it to run with newer versions of Electron for testing purposes.
 
     7. Corrected issue with Silverstone GP Layout and Pit Road.
+    
+    8. Fixed issue with Brake Bias on NASCAR Next Gen 2022 where the telemetry did not match the black box display in game.
+       This fix has the side affect, that cars that do not display the percentage found in the setup, will.
+       For example, the NASCAR Trucks would only display the delta change -3 to 3%. It now applies that change to the setup value.
+       If you want to display the raw telemetry value, you can turn this off by adding this setting.
+       - Brake-Bias-Correction = N
+    
 
 1.17_Build_2021.10.28
     1. Added Phoenix 2021 Raceway from iRacing's Oct-2021 build.

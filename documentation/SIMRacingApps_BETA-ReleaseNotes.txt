@@ -1,12 +1,21 @@
 SIMRacingApps BETA Release Notes
-Copyright (C) 2015 - 2021 Jeffrey Gilliam
+Copyright (C) 2015 - 2022 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/19)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.18_Build_BETA-2021.12.31
+Version: 1.18_Build_BETA-2022.01.28
+    1. Added LA Coliseum from iRacing's Jan 2022 build.
+    
+    2. Fixed issue with Brake Bias on NASCAR Next Gen 2022 where the telemetry did not match the black box display in game.
+       This fix has the side affect, that cars that do not display the percentage found in the setup, will.
+       For example, the NASCAR Trucks would only display the delta change -3 to 3%. It now applies that change to the setup value.
+       If you want to display the raw telemetry value, you can turn this off by adding this setting.
+       - Brake-Bias-Correction = N
+    
+1.18_Build_BETA-2021.12.31
     1. Added new setting "fuel-level-needed-buffer-laps" to allow users to defined how many laps to add to the full needed calculation. Default is 1 lap.
        fuel-level-needed-buffer-laps = 1
        
@@ -33,7 +42,7 @@ Version: 1.18_Build_BETA-2021.12.31
        - Mercedes-AMG F1 W12 E Performance
        - Knockhill Racing Circuit
        - Watkins Glen International (Fully re-scanned and re-built for 2021)
-       - Hockenheimring Baden-W�rttemberg - 4 New Track Configurations for the Porsche Experience Center
+       - Hockenheimring Baden-Wurttemberg - 4 New Track Configurations for the Porsche Experience Center
        
     3. Fixed VIR East/West Trackmap
        - When you load East, iRacing reports it as West and vice verser.
