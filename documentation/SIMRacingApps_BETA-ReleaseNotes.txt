@@ -6,14 +6,36 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.18_Build_BETA-2022.01.28
+Version: 1.18_Build_BETA-2022.03.10
     1. Added LA Coliseum from iRacing's Jan 2022 build.
     
     2. Fixed issue with Brake Bias on NASCAR Next Gen 2022 where the telemetry did not match the black box display in game.
        This fix has the side affect, that cars that do not display the percentage found in the setup, will.
        For example, the NASCAR Trucks would only display the delta change -3 to 3%. It now applies that change to the setup value.
-       If you want to display the raw telemetry value, you can turn this off by adding this setting.
+       If you want to display the raw telemetry value, you can turn this off by adding this setting and override that setting by car.
        - Brake-Bias-Correction = N
+       - Brake-Bias-Correction-{CARNAME} = Y
+       
+    3. Added logic to Electron to move any apps/widget that are off screen to the primary monitor.
+       You will have to move them back to where you want them.
+       This is the number 1 issue that I get questions on.
+       This most often occurs after a Windows update, or switch resolutions while SRA is running.
+
+    4. Added content from iRacing's March 2022 build
+       - Aston Martin Vantage GT4 (amvantagegt4)
+       - Hyundai Veloster N TC (hyundaivelostern)
+       - iRacing Formula iR-04 (formulair04)
+       - NASCAR Buick LeSabre - 1987 (stockcars_buicklesabre87)
+       - Stock Car Pro Series Toyota Corolla (stockcarbrasil_corolla)
+       - Stock Car Pro Series Chevrolet Cruze (stockcarbrasil_cruze)
+       - Federated Auto Parts Raceway at I-55
+       - Winton Motor Raceway (national,club)
+       
+    5. Disabled the Pit Count Down by default, but left the pit position calls enabled.
+       You can disable the iRacing spotter or set it to "Low" and control SRA it with these settings.
+       * pit-count-down-enabled = Y
+       * pit-count-down-pit-position-enabled = Y
+       
     
 1.18_Build_BETA-2021.12.31
     1. Added new setting "fuel-level-needed-buffer-laps" to allow users to defined how many laps to add to the full needed calculation. Default is 1 lap.
