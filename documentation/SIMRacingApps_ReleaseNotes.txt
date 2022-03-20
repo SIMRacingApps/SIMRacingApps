@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2022 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/18?closed=1)
 
-Version: 1.18_Build_BETA-2022.03.10
+Version: 1.18_Build_2022.03.20
     1. Added ability to override car profile values in the settings.
        - {Car}-{Gauge}-{Track}-{Attribute} = {value}
        - {Car}-{Gauge}-{Track}-{Gear}-{Attribute} = {value}
