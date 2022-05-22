@@ -2,73 +2,16 @@ SIMRacingApps BETA Release Notes
 Copyright (C) 2015 - 2022 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/19)
+(https://github.com/SIMRacingApps/SIMRacingApps/milestone/21)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.18_Build_BETA-2022.03.10
-    1. Added LA Coliseum from iRacing's Jan 2022 build.
+Version: 1.19_Build_BETA-2022.05.22
+    1. Added new configuration for Bristol Dirt 2022.
     
-    2. Fixed issue with Brake Bias on NASCAR Next Gen 2022 where the telemetry did not match the black box display in game.
-       This fix has the side affect, that cars that do not display the percentage found in the setup, will.
-       For example, the NASCAR Trucks would only display the delta change -3 to 3%. It now applies that change to the setup value.
-       If you want to display the raw telemetry value, you can turn this off by adding this setting and override that setting by car.
-       - Brake-Bias-Correction = N
-       - Brake-Bias-Correction-{CARNAME} = Y
-       
-    3. Added logic to Electron to move any apps/widget that are off screen to the primary monitor.
-       You will have to move them back to where you want them.
-       This is the number 1 issue that I get questions on.
-       This most often occurs after a Windows update, or switch resolutions while SRA is running.
-
-    4. Added content from iRacing's March 2022 build
-       - Aston Martin Vantage GT4 (amvantagegt4)
-       - Hyundai Veloster N TC (hyundaivelostern)
-       - iRacing Formula iR-04 (formulair04)
-       - NASCAR Buick LeSabre - 1987 (stockcars_buicklesabre87)
-       - Stock Car Pro Series Toyota Corolla (stockcarbrasil_corolla)
-       - Stock Car Pro Series Chevrolet Cruze (stockcarbrasil_cruze)
-       - Federated Auto Parts Raceway at I-55
-       - Winton Motor Raceway (national,club)
-       
-    5. Disabled the Pit Count Down by default, but left the pit position calls enabled.
-       You can disable the iRacing spotter or set it to "Low" and control SRA it with these settings.
-       * pit-count-down-enabled = Y
-       * pit-count-down-pit-position-enabled = Y
-       
-    
-1.18_Build_BETA-2021.12.31
-    1. Added new setting "fuel-level-needed-buffer-laps" to allow users to defined how many laps to add to the full needed calculation. Default is 1 lap.
-       fuel-level-needed-buffer-laps = 1
-       
-    2. Added option to Electron scripts to allow it to run with newer versions of Electron for testing purposes.
-    
-    3. Corrected issue with Silverstone GP Layout and Pit Road.
-       
-1.18_Build_BETA-2021.12.19
-    1. Fixed issue with NASCAR Next Gen where the Chevrolet and Toyota logos were wrong.
-
-1.18_Build_BETA-2021.12.13
-    1. Added ability to override car profile values in the settings.
-       - {Car}-{Gauge}-{Track}-{Attribute} = {value}
-       - {Car}-{Gauge}-{Track}-{Gear}-{Attribute} = {value}
-       - {Car}-{Gauge}-{Track}-{Gear}-{PowerLevel}-{Attribute} = {value}
-       - {Car}-{Gauge}-{Track}-States-{StateName}-{Attribute} = {value}
-       - {Car}-{Gauge}-{Track}-{Gear}-States-{StateName}-{Attribute} = {value}
-       - {Car}-{Gauge}-{Track}-{Gear}-{PowerLevel}-States-{StateName}-{Attribute} = {value}
-       - See Wiki at https://github.com/SIMRacingApps/SIMRacingApps/wiki/How-to-override-car-profile-gauge-values-in-settings
-
-    2. Added new content from iRacing's Dec 2021 build.
-       - Honda Civic Type R
-       - Hyundai Elantra N TC
-       - Mercedes-AMG F1 W12 E Performance
-       - Knockhill Racing Circuit
-       - Watkins Glen International (Fully re-scanned and re-built for 2021)
-       - Hockenheimring Baden-Wurttemberg - 4 New Track Configurations for the Porsche Experience Center
-       
-    3. Fixed VIR East/West Trackmap
-       - When you load East, iRacing reports it as West and vice verser.
-         So I made the track map match no matter the name.
+    2. Fixed issue where the "hideCarNum" variable was moved from the app.ini to the rendererDX11.ini file.
+       It defaults to the Monitor file. But if you use VR, you can add this variable with the file of choice to the settings.
+       * iracing-renderer-file = rendererDX11Monitor.ini
        
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
