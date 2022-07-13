@@ -3,6 +3,9 @@
 	<name>SIMRacingApps</name>
 	<comment></comment>
 	<projects>
+		<project>SIMRacingAppsServer</project>
+		<project>SIMRacingAppsSIMPluginiRacing</project>
+		<project>SIMRacingAppsWebContent</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

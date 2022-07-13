@@ -4,12 +4,35 @@ Copyright (C) 2015 - 2022 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/20?closed=1)
 
-Version: 1.19_Build_BETA-2022.05.22
+Version: 1.19_Build_BETA-2022.07.12
     1. Added new configuration for Bristol Dirt 2022.
     
     2. Fixed issue where the "hideCarNum" variable was moved from the app.ini to the rendererDX11.ini file.
        It defaults to the Monitor file. But if you use VR, you can add this variable with the file of choice to the settings.
-       * iracing-renderer-file = rendererDX11Monitor.ini
+          iracing-renderer-file = rendererDX11Monitor.ini
+
+	3. New content from iRacing's June 2022 build and patches.
+       - Mercedes-AMG GT3 2020
+       - Mercedes-AMG GT4
+       - Radical SR10
+       - Sandown International Motor Raceway
+       - Fuji International Speedway
+       - Port Royal Speedway
+       - Atlanta New Scan
+	
+    4. Because iRacing added an option to disable their Pit Count Down, 
+       I'm re-enabling SRA's Pit Count Down if the option in iRacing has been turned off.
+       After making the change in iRacing, exit iRacing to update the app.ini and restart SRA.
+       Make sure to turn on SRA, update/add the following to the settings.
+         pit-count-down-enabled = Y
+         
+    5. Fixed issue with the car's bearing calculation where some tracks where correct and others not.
+       Changed the Track/Bearing and Car/{REFERENCECAR}/Bearing API to normalize the bearing where north is 270 degrees like all other API calls.
+       This also required a change to the WindGauge widget.
+    
+    6. Added an option to the Car/{REFERENCECAR}/Bearing API to use the YawNorth telemetry value instead of the track based bearing.
+       Here is the new setting and it defaults to Y.
+         bearing-uses-actual-yaw = Y
 
     For notes on previous versions, see below.
        
