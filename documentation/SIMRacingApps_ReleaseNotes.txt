@@ -4,14 +4,14 @@ Copyright (C) 2015 - 2022 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/20?closed=1)
 
-Version: 1.19_Build_BETA-2022.07.12
+Version: 1.19_Build_BETA-2022.08.03
     1. Added new configuration for Bristol Dirt 2022.
     
     2. Fixed issue where the "hideCarNum" variable was moved from the app.ini to the rendererDX11.ini file.
        It defaults to the Monitor file. But if you use VR, you can add this variable with the file of choice to the settings.
           iracing-renderer-file = rendererDX11Monitor.ini
 
-	3. New content from iRacing's June 2022 build and patches.
+    3. New content from iRacing's June 2022 build and patches thus far.
        - Mercedes-AMG GT3 2020
        - Mercedes-AMG GT4
        - Radical SR10
@@ -19,7 +19,8 @@ Version: 1.19_Build_BETA-2022.07.12
        - Fuji International Speedway
        - Port Royal Speedway
        - Atlanta New Scan
-	
+       - Indianapolis Motor Speedway Road Course
+
     4. Because iRacing added an option to disable their Pit Count Down, 
        I'm re-enabling SRA's Pit Count Down if the option in iRacing has been turned off.
        After making the change in iRacing, exit iRacing to update the app.ini and restart SRA.
@@ -34,6 +35,22 @@ Version: 1.19_Build_BETA-2022.07.12
        Here is the new setting and it defaults to Y.
          bearing-uses-actual-yaw = Y
 
+    7. In the RaceAdministrator app, added code to close the pits before the stages end.
+       To enable this you will have to download the 
+       https://raw.githubusercontent.com/SIMRacingApps/SIMRacingAppsWebContent/master/apps/RaceAdministrator/default.js 
+       file and save it in the Documents/SIMRacingApps/apps/RaceAdministrator folder. 
+       Then before each session modify the variables around line 260 to suite your needs.
+       New API, /Session/IsPitRoadOpen was created to support this feature.
+
+    8. Added new widget called Pit Road Lights
+    
+    9. Closed #173 (https://github.com/SIMRacingApps/SIMRacingApps/issues/173)
+       Added red dots on the TrackMap and also made displaying them an option controlled with the parameter, SHOWSECTORS.
+       Streamers need to add "&SHOWSECTORS=Y" to the end of the TrackMap URL to enable them. They are off by default.
+       Added these new API methods
+       - /Track/Sectors/(SECTORTYPE)/(UOM)
+       - /Car/(CARIDENTIFIER)/Sector
+    
     For notes on previous versions, see below.
        
 ------------------------------------------------------------------------------------------------------
