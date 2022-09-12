@@ -4,14 +4,14 @@ Copyright (C) 2015 - 2022 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/20?closed=1)
 
-Version: 1.19_Build_BETA-2022.08.03
+Version: 1.19_Build_BETA-2022.09.09
     1. Added new configuration for Bristol Dirt 2022.
     
     2. Fixed issue where the "hideCarNum" variable was moved from the app.ini to the rendererDX11.ini file.
        It defaults to the Monitor file. But if you use VR, you can add this variable with the file of choice to the settings.
           iracing-renderer-file = rendererDX11Monitor.ini
 
-    3. New content from iRacing's June 2022 build and patches thus far.
+    3. New content from iRacing's June 2022 and Oct 2022 builds and patches thus far.
        - Mercedes-AMG GT3 2020
        - Mercedes-AMG GT4
        - Radical SR10
@@ -20,6 +20,12 @@ Version: 1.19_Build_BETA-2022.08.03
        - Port Royal Speedway
        - Atlanta New Scan
        - Indianapolis Motor Speedway Road Course
+       - Porsche Mission R
+       - Lucas Oil Speedway - Dirt Oval
+       - Motorsport Arena Oschersleben - Road Course (4 configs)
+       - Rudskogen Motorsenter - Road Course
+       - Indianapolis Motor Speedway - IndyCar Oval 2022 Laser Scan Update
+       - Porsche 911 GT3 Cup (992) Shiftlamp RPM range has been adjusted.
 
     4. Because iRacing added an option to disable their Pit Count Down, 
        I'm re-enabling SRA's Pit Count Down if the option in iRacing has been turned off.
@@ -50,6 +56,11 @@ Version: 1.19_Build_BETA-2022.08.03
        Added these new API methods
        - /Track/Sectors/(SECTORTYPE)/(UOM)
        - /Car/(CARIDENTIFIER)/Sector
+
+    10. Close #264 (https://github.com/SIMRacingApps/SIMRacingApps/issues/264)
+        Added new widget called SIMState to show the SIM's State (OFF, REPLAY, LIVE)
+        Thanks to Ricky Thompson for this suggestion.
+       
     
     For notes on previous versions, see below.
        

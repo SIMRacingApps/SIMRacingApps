@@ -6,7 +6,21 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.19_Build_BETA-2022.08.03
+Version: 1.19_Build_BETA-2022.09.09
+    1. Added content from iRacing's Oct 2022 build.
+       - Porsche Mission R
+       - Lucas Oil Speedway - Dirt Oval
+       - Motorsport Arena Oschersleben - Road Course (4 configs)
+       - Rudskogen Motorsenter - Road Course
+       - Indianapolis Motor Speedway - IndyCar Oval 2022 Laser Scan Update
+       - Porsche 911 GT3 Cup (992) Shiftlamp RPM range has been adjusted.
+
+## 1.19_Build_BETA-2022.08.16
+    1. Close #264 (https://github.com/SIMRacingApps/SIMRacingApps/issues/264)
+       Added new widget called SIMState to show the SIM's State (OFF, REPLAY, LIVE)
+       Thanks to Ricky Thompson for this suggestion.
+       
+## 1.19_Build_BETA-2022.08.03
     1. New content from iRacing's July Patch
        - Indianapolis Motor Speedway Road Course
        
@@ -26,7 +40,7 @@ Version: 1.19_Build_BETA-2022.08.03
        - /Track/Sectors/(SECTORTYPE)/(UOM)
        - /Car/(CARIDENTIFIER)/Sector
 
-1.19_Build_BETA-2022.07.12
+## 1.19_Build_BETA-2022.07.12
     1. New content from iRacing's June 2022 build and patches.
        - Mercedes-AMG GT3 2020
        - Mercedes-AMG GT4
@@ -50,7 +64,7 @@ Version: 1.19_Build_BETA-2022.08.03
        Here is the new setting and it defaults to Y.
          bearing-uses-actual-yaw = Y
    
-1.19_Build_BETA-2022.05.22
+## 1.19_Build_BETA-2022.05.22
     1. Added new configuration for Bristol Dirt 2022.
     
     2. Fixed issue where the "hideCarNum" variable was moved from the app.ini to the rendererDX11.ini file.
