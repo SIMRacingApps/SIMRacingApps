@@ -6,7 +6,10 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.19_Build_BETA-2022.09.09
+Version: 1.19_Build_BETA-2022.09.15
+    1. Changed logging level of "Loading Gauge" to FINEST.
+    
+## 1.19_Build_BETA-2022.09.09
     1. Added content from iRacing's Oct 2022 build.
        - Porsche Mission R
        - Lucas Oil Speedway - Dirt Oval
@@ -15,8 +18,7 @@ Version: 1.19_Build_BETA-2022.09.09
        - Indianapolis Motor Speedway - IndyCar Oval 2022 Laser Scan Update
        - Porsche 911 GT3 Cup (992) Shiftlamp RPM range has been adjusted.
 
-## 1.19_Build_BETA-2022.08.16
-    1. Close #264 (https://github.com/SIMRacingApps/SIMRacingApps/issues/264)
+    2. Close #264 (https://github.com/SIMRacingApps/SIMRacingApps/issues/264)
        Added new widget called SIMState to show the SIM's State (OFF, REPLAY, LIVE)
        Thanks to Ricky Thompson for this suggestion.
        
