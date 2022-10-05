@@ -4,7 +4,10 @@ Copyright (C) 2015 - 2022 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/20?closed=1)
 
-Version: 1.19_Build_2022.09.18
+Version: 1.19_Build_2022.10.04
+    1. Fixed issue with Replay option in Electron Menu.
+    
+1.19_Build_2022.09.18
     1. Added new configuration for Bristol Dirt 2022.
     
     2. Fixed issue where the "hideCarNum" variable was moved from the app.ini to the rendererDX11.ini file.
