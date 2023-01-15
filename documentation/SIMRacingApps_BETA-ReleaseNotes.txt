@@ -1,77 +1,22 @@
 SIMRacingApps BETA Release Notes
-Copyright (C) 2015 - 2022 Jeffrey Gilliam
+Copyright (C) 2015 - 2023 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/21)
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.19_Build_BETA-2022.09.15
-    1. Changed logging level of "Loading Gauge" to FINEST.
+Version: 1.20_Build_BETA-2023.01.15
+    1. Added content from iRacing's December 2022 build and patches as of January 13, 2023.
+       - BMW M Hybrid V8
+       - Mercedes-AMG W13 E Performance
+       - Toyota GR86
+       - Lincoln Speedway
+       - Circuit de Nevers Magny-Cours
+       - Daytona Rallycross No Joker versions of Long and Short
+       - [Legacy] Phoenix Raceway - 2008 Rallycross No Joker
     
-## 1.19_Build_BETA-2022.09.09
-    1. Added content from iRacing's Oct 2022 build.
-       - Porsche Mission R
-       - Lucas Oil Speedway - Dirt Oval
-       - Motorsport Arena Oschersleben - Road Course (4 configs)
-       - Rudskogen Motorsenter - Road Course
-       - Indianapolis Motor Speedway - IndyCar Oval 2022 Laser Scan Update
-       - Porsche 911 GT3 Cup (992) Shiftlamp RPM range has been adjusted.
-
-    2. Close #264 (https://github.com/SIMRacingApps/SIMRacingApps/issues/264)
-       Added new widget called SIMState to show the SIM's State (OFF, REPLAY, LIVE)
-       Thanks to Ricky Thompson for this suggestion.
-       
-## 1.19_Build_BETA-2022.08.03
-    1. New content from iRacing's July Patch
-       - Indianapolis Motor Speedway Road Course
-       
-    2. In the RaceAdministrator app, added code to close the pits before the stages end.
-       To enable this you will have to download the 
-       https://raw.githubusercontent.com/SIMRacingApps/SIMRacingAppsWebContent/master/apps/RaceAdministrator/default.js 
-       file and save it in the Documents/SIMRacingApps/apps/RaceAdministrator folder. 
-       Then before each session modify the variables around line 260 to suite your needs.
-       New API, /Session/IsPitRoadOpen was created to support this feature.
-       
-    3. Added new widget called Pit Road Lights
-    
-    4. Close #173 (https://github.com/SIMRacingApps/SIMRacingApps/issues/173)
-       Added red dots on the TrackMap and also made displaying them an option controlled with the parameter, SHOWSECTORS.
-       Streamers need to add "&SHOWSECTORS=Y" to the end of the TrackMap URL to enable them. They are off by default.
-       Added these new API methods
-       - /Track/Sectors/(SECTORTYPE)/(UOM)
-       - /Car/(CARIDENTIFIER)/Sector
-
-## 1.19_Build_BETA-2022.07.12
-    1. New content from iRacing's June 2022 build and patches.
-       - Mercedes-AMG GT3 2020
-       - Mercedes-AMG GT4
-       - Radical SR10
-       - Sandown International Motor Raceway
-       - Fuji International Speedway
-       - Port Royal Speedway
-       - Atlanta New Scan
-
-    2. Because iRacing added an option to disable their Pit Count Down, 
-       I'm re-enabling SRA's Pit Count Down if the option in iRacing has been turned off.
-       After making the change in iRacing, exit iRacing to update the app.ini and restart SRA.
-       Make sure to turn on SRA, update/add the following to the settings.
-       pit-count-down-enabled = Y
-     
-    3. Fixed issue with the car's bearing calculation where some tracks where correct and others not.
-       Changed the Track/Bearing and Car/{REFERENCECAR}/Bearing API to normalize the bearing where north is 270 degrees like all other API calls.
-       This also required a change to the WindGauge widget.
-
-    4. Added an option to the Car/{REFERENCECAR}/Bearing API to use the YawNorth telemetry value instead of the track based bearing.
-       Here is the new setting and it defaults to Y.
-         bearing-uses-actual-yaw = Y
-   
-## 1.19_Build_BETA-2022.05.22
-    1. Added new configuration for Bristol Dirt 2022.
-    
-    2. Fixed issue where the "hideCarNum" variable was moved from the app.ini to the rendererDX11.ini file.
-       It defaults to the Monitor file. But if you use VR, you can add this variable with the file of choice to the settings.
-       * iracing-renderer-file = rendererDX11Monitor.ini
+    2. Fixed issue where it as not detecting if SRA was already running and starting another instance.
        
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
