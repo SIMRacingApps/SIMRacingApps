@@ -6,7 +6,33 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.20_Build_BETA-2023.01.15
+Version: 1.20_Build_BETA-2023.03.14
+    1. New widget called ABSActive
+       - New API for gauges /Car/{REFERENCECAR}/Gauge/ABSActive
+    
+    2. Closed #267 (https://github.com/SIMRacingApps/SIMRacingApps/issues/267)
+       ReplayControl - change >>>>> to say LIVE
+       
+    3. Closed #266 (https://github.com/SIMRacingApps/SIMRacingApps/issues/266)
+       Camera names with slash in their name do not work
+       Fixed issue with CameraControl widget when camera names had special characters in them.
+
+    4. New content from iRacing's March 2023 build and patches to date of this version.
+       - Late Model Stock is replacing the existing iRacing Late Model vehicle, the Chevrolet Monte Carlo SS.
+       - Ray FF1600
+       - Renault Clio R.S. V
+       - Circuito de Jerez - Angel Nieto (2 configs Grand Prix, and Moto)
+       - NASCAR Cup Series Next Gen Cars
+         Engine rev limiters have been reduced.
+         Shift light RPM have been updated.
+         These cars now report brake pressure bias in the garage which matches with the dcBrakeBias value in telemetry.
+         This does not match the In Car Black Box, though. Not sure what iRacing is trying to do. Will wait and see.
+       - Changed the InGarage widget to use the new variable, IsGarageVisible that's in the telemetry.
+         It is faster and works even if you're not driving in a team event (according to the iRacing release notes).
+       - NASCAR Cup Series Gen 4 Chevrolet
+
+1.20_Build_BETA-2023.01.15
+
     1. Added content from iRacing's December 2022 build and patches as of January 13, 2023.
        - BMW M Hybrid V8
        - Mercedes-AMG W13 E Performance
