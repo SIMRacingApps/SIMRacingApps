@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2023 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/20?closed=1)
 
-Version: 1.20_Build_BETA-2023.03.14
+Version: 1.20_Build_BETA-2023.04.18
     1. Added content from iRacing's December 2022 and March 2023 build and patches up through this release date.
        - BMW M Hybrid V8
        - Mercedes-AMG W13 E Performance
@@ -37,6 +37,12 @@ Version: 1.20_Build_BETA-2023.03.14
     5. Closed #266 (https://github.com/SIMRacingApps/SIMRacingApps/issues/266)
        Camera names with slash in their name do not work
        Fixed issue with CameraControl widget when camera names had special characters in them.
+
+    6. Added 2 new API calls get and set the restart method.
+       - /Session/Restart
+       - /Session/setRestart (DOUBLEFILE, SINGLE)
+       
+    7. Added Button to Race Administrator to change the restart method. It will detect the current method and offer to change it.
     
 1.19_Build_2022.10.04
     1. Fixed issue with Replay option in Electron Menu.

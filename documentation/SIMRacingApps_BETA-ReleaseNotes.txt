@@ -6,7 +6,14 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.20_Build_BETA-2023.03.14
+Version: 1.20_Build_BETA-2023.04.18
+    1. Added 2 new API calls get and set the restart method.
+       - /Session/Restart
+       - /Session/setRestart (DOUBLEFILE, SINGLE)
+       
+    2. Added Button to Race Administrator to change the restart method. It will detect the current method and offer to change it.
+
+1.20_Build_BETA-2023.03.14
     1. New widget called ABSActive
        - New API for gauges /Car/{REFERENCECAR}/Gauge/ABSActive
     
