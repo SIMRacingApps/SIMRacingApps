@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2023 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/20?closed=1)
 
-Version: 1.20_Build_BETA-2023.09.17
+Version: 1.20_Build_2023.10.08
     1. Added content from iRacing's December 2022, March 2023, June 2023 and September 2023 builds and patches up through this release date.
        - BMW M Hybrid V8
        - Mercedes-AMG W13 E Performance
@@ -35,8 +35,8 @@ Version: 1.20_Build_BETA-2023.09.17
        - Ferrari 296 GT3
        - NASCAR Classic Pontiac Grand Prix - 1987
        - Porsche 963 GTP
-       - Super Formula SF23
-       - Circuit de L�denon
+       - Super Formula SF23 (Toyota, Honda)
+       - Circuit de Ledenon
        - Kern County Raceway Park (Asphalt Track, Dirt Track, Legends, and Dirt Mini Oval)
        - Circuit Zandvoort, 2023 rescan and full update (Grand Prix, Grand Prix w/ Chicane, Nationaal, and Oostelijk)
     

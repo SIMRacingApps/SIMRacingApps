@@ -6,7 +6,13 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.20_Build_BETA-2023.09.17
+Version: 1.20_Build_BETA-2023.09.27
+    1. Fixed issue with the Fuel Pressure Gauge on the SF23 Toyota
+    
+    2. Add content from iRacing's Sept. 27, 2023 patch.
+       - Super Formula SF23 Honda
+
+1.20_Build_BETA-2023.09.17
     1. Content from iRacing's June 2023 Build
        - Cadillac V-Series.R GTP
        - Ligier JS P320
@@ -23,7 +29,7 @@ Version: 1.20_Build_BETA-2023.09.17
        - NASCAR Classic Pontiac Grand Prix - 1987
        - Porsche 963 GTP
        - Super Formula SF23
-       - Circuit de L�denon
+       - Circuit de Ledenon
        - Kern County Raceway Park (Asphalt Track, Dirt Track, Legends, and Dirt Mini Oval)
        - Circuit Zandvoort, 2023 rescan and full update (Grand Prix, Grand Prix w/ Chicane, Nationaal, and Oostelijk)
        
