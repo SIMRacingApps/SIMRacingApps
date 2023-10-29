@@ -4,7 +4,7 @@ Copyright (C) 2015 - 2023 Jeffrey Gilliam
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/22?closed=1)
 
-Version: 1.20_Build_2023.10.08
+Version: 1.20_Build_2023.10.25
     1. Fix issue with VIR not working with the Track Map Widget.
     
 1.20_Build_2023.10.08
