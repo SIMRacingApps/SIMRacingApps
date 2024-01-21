@@ -122,6 +122,6 @@ So, any time you upload a new build, you should also commit and push this one as
 
 =========================================================================================
 
-[Copyright (C) 2015 - 2023 Jeffrey Gilliam](https://SIMRacingApps.com/COPYRIGHT.TXT)
+[Copyright (C) 2015 - 2024 Jeffrey Gilliam](https://SIMRacingApps.com/COPYRIGHT.TXT)
 
 [Apache License 2.0](https://SIMRacingApps.com/LICENSE.TXT)

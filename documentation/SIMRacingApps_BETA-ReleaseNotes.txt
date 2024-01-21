@@ -1,5 +1,5 @@
 SIMRacingApps BETA Release Notes
-Copyright (C) 2015 - 2023 Jeffrey Gilliam
+Copyright (C) 2015 - 2024 Jeffrey Gilliam
 ---------------------------
 For a complete list of issues completed in this version goto 
 (https://github.com/SIMRacingApps/SIMRacingApps/milestone/22)

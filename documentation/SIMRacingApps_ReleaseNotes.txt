@@ -1,10 +1,12 @@
 SIMRacingApps Release Notes
-Copyright (C) 2015 - 2023 Jeffrey Gilliam
+Copyright (C) 2015 - 2024 Jeffrey Gilliam
 ---------------------------
-For a complete list of issues completed in this version goto 
-(https://github.com/SIMRacingApps/SIMRacingApps/milestone/22?closed=1)
 
-Version: 1.21_Build_2023.12.07
+Version: 1.21_Build_2024.01.21
+    1. Fixed #274 (https://github.com/SIMRacingApps/SIMRacingApps/issues/274)
+       Mangy-Cours track map Finish Line in wrong place.
+       
+1.21_Build_2023.12.07
     1. Added content from iRacing's December 2023 build
        - Audi R8 LMS EVO II GT3
        - Autodromo Internazionale del Mugello (Grand Prix, and Short)
