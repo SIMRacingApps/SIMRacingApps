@@ -6,125 +6,50 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.20_Build_BETA-2023.09.27
-    1. Fixed issue with the Fuel Pressure Gauge on the SF23 Toyota
-    
-    2. Add content from iRacing's Sept. 27, 2023 patch.
-       - Super Formula SF23 Honda
-
-1.20_Build_BETA-2023.09.17
-    1. Content from iRacing's June 2023 Build
-       - Cadillac V-Series.R GTP
-       - Ligier JS P320
-       - Porsche 911 GT3 R (992)
-       - MotorLand Aragon (7 configs)
-       - Willow Springs International Raceway
-       - New Track Configuration: Chicago Street Course - 2023 Cup
-       
-    2. Fixed the Race Administrator app where any commands that included the car number was not working.
-    
-    3. Content from iRacing's Sept 2023 Build
-       - Acura ARX-06 GTP
-       - Ferrari 296 GT3
-       - NASCAR Classic Pontiac Grand Prix - 1987
-       - Porsche 963 GTP
-       - Super Formula SF23
-       - Circuit de Ledenon
-       - Kern County Raceway Park (Asphalt Track, Dirt Track, Legends, and Dirt Mini Oval)
-       - Circuit Zandvoort, 2023 rescan and full update (Grand Prix, Grand Prix w/ Chicane, Nationaal, and Oostelijk)
-       
-    4. Fixed Brake Bias Issue with the new Late Model Stock car.
-       Thanks to Jacob Elliott for reporting this.
-       
-    5. Enhanced the Race Administrator app by changing the admin commands to use the driver's name instead of their number.
-       iRacing made some changes for teams that changed how the numbers work. 
-       I also added support for the commands to be changed in the settings.
-       In the commands below, the variables in brackets [] will be substituted. Here are the supported variables.
-            - [TEXT] = All text sent to the chat window, including admin commands.
-            - {ENTER} = Replaced with the Enter key.
-            - [DRIVER] = The driver's car number, for legacy support.
-            - [NUMBER] = The driver's car number.
-            - [DRIVERNAME] = The driver's name with spaces replaced with dots.
-            - [TIME] = The number of minutes or laps depending on the command.
-            = [NAME] = The name of the Radio Channel.
-       
-       Here are all the commands you can add in the settings with their default values.
-       Just copy/paste them to the top of the settings and restart SRA.
-       Refer to iRacing's help at https://support.iracing.com/support/solutions/articles/31000133518-session-admin-chat-commands
-       
-        iracing-sendkeys-CHAT-ALL = [TEXT]{ENTER}
-        iracing-sendkeys-CHAT-DRIVER = /[DRIVERNAME] [TEXT]
+Version: 1.22_Build_BETA-2024.03.16
+    1. Algarve International Circuit
+    2. Kokomo Speedway, A new track config, "Tires Out". The original track config has been named "Tires In".
+    3. Lime Rock Park, A new track config, School.
+    4. Millbridge Speedway
+    5. Misano World Circuit Marco Simoncelli
+    6. Sonoma Raceway, The track configurations formerly known as Cup and Cup Historic 
+       have been renamed to NASCAR Long and NASCAR Short respectively.
+    7. Dirt Micro Sprint (2 models Winged and Non-Winged)
+    8. SRX
+    9. Super Formula Lights
+    10. Pit Command widget to show Tire Compounds on cars updated for DRY, WET compounds
+        - The IMSA GT3 Class stable of cars (Audi R8 LMS EVO II GT3,BMW M4 GT3, Ferrari 296 GT3, Lamborghini Huracan GT3 EVO, Mercedes-AMG GT3 2020, and Porsche 911 GT3 R (992))
+        - The GTP Class stable of cars (Acura ARX-06 GTP, BMW M Hybrid V8, Cadillac V-Series.R GTP, and Porsche 963 GTP)
+        - Toyota GR86
+        - Dallara P217
+        - FIA F4
+        - Super Formula Lights
+    11. Rain Support
+        - Added Precipitation Percentage to the WeatherInfo widget when raining.
+        - New API /Track/Condition to return the state of the track as reported by the SIM.
+        - Updated the TrackMap, CrewChief Apps with the Track Condition.
         
-        iracing-sendkeys-ADMIN_COMMANDS-ADMIN = !admin [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-ADVANCE = !advance
-        iracing-sendkeys-ADMIN_COMMANDS-BLACK = !black [DRIVERNAME] [TIME]
-        iracing-sendkeys-ADMIN_COMMANDS-CHAT = !chat [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-CLEAR = !clear [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-DQ = !dq [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-EOL = !eol [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-NADMIN = !nadmin [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-NCHAT = !nchat [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-REMOVE = !remove [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-WAVEBY = !waveby [DRIVERNAME]
-        iracing-sendkeys-ADMIN_COMMANDS-YELLOW = !yellow
-        iracing-sendkeys-ADMIN_COMMANDS-PITCLOSE = !pitclose
-        iracing-sendkeys-ADMIN_COMMANDS-PITOPEN = !pitopen
-        iracing-sendkeys-ADMIN_COMMANDS-PACELAPS = !pacelaps [LAPS]
-        iracing-sendkeys-ADMIN_COMMANDS-RESTART = !restart [METHOD]
-        
-        iracing-sendkeys-RADIO_COMMANDS-ADD = @add [NAME]
-        iracing-sendkeys-RADIO_COMMANDS-REMOVE = @remove [NAME]
-        iracing-sendkeys-RADIO_COMMANDS-TRANSMIT = @transmit [NAME]
-        iracing-sendkeys-RADIO_COMMANDS-MUTE = @mute [NAME]
-        iracing-sendkeys-RADIO_COMMANDS-UNMUTE = @unmute [NAME]
-        iracing-sendkeys-RADIO_COMMANDS-SCAN = @scan
-        iracing-sendkeys-RADIO_COMMANDS-NOSCAN = @noscan
-       
-1.20_Build_BETA-2023.04.18
-    1. Added 2 new API calls get and set the restart method.
-       - /Session/Restart
-       - /Session/setRestart (DOUBLEFILE, SINGLE)
-       
-    2. Added Button to Race Administrator to change the restart method. It will detect the current method and offer to change it.
 
-1.20_Build_BETA-2023.03.14
-    1. New widget called ABSActive
-       - New API for gauges /Car/{REFERENCECAR}/Gauge/ABSActive
+Notes from iRacing's Release Notes to be considered in next BETA cycle:
+    x. Rain Telemetry variables and data have been added!
+        - Session string WeekendInfo:TrackWeatherType: extended to cover dynamic weather.
+          - WeekendInfo:TrackWeatherType: "Timeline"
+        - Session string WeekendInfo:TrackSkies: extended to cover dynamic weather.
+          - WeekendInfo:TrackSkies: "Dynamic"
+        - New Session string WeekendInfo:TrackPrecipitation: that returns initial precipitation at start/finish line at start of session.
+          - WeekendInfo:TrackPrecipitation: "70 %"
+        - Session string WeekendInfo:WeekendOptions:WeatherType: extended to cover dynamic weather.
+          - WeekendInfo:WeekendOptions:WeatherType: "Timeline"
+        - Session string WeekendInfo:WeekendOptions:Skies: extended to cover dynamic weather.
+          - WeekendInfo:WeekendOptions:Skies: "Dynamic"    
+    x. From 3/13 patch
+        - Added "WeatherDeclaredWet" telemetry variable, this is set to true when the marshal allows use of rain tires.
+          - "WeatherDeclaredWet": 1
+          - Possibly use is to gray out wet tires from being selected.
+    x. The Tire Compound change command has been added to the IRSDK.
+        Macro support for tire types, #tc 1.
+        Possibly add buttons on the PitCommander widget to select tire compound. David Tucker yet to announce API logic.
     
-    2. Closed #267 (https://github.com/SIMRacingApps/SIMRacingApps/issues/267)
-       ReplayControl - change >>>>> to say LIVE
-       
-    3. Closed #266 (https://github.com/SIMRacingApps/SIMRacingApps/issues/266)
-       Camera names with slash in their name do not work
-       Fixed issue with CameraControl widget when camera names had special characters in them.
-
-    4. New content from iRacing's March 2023 build and patches to date of this version.
-       - Late Model Stock is replacing the existing iRacing Late Model vehicle, the Chevrolet Monte Carlo SS.
-       - Ray FF1600
-       - Renault Clio R.S. V
-       - Circuito de Jerez - Angel Nieto (2 configs Grand Prix, and Moto)
-       - NASCAR Cup Series Next Gen Cars
-         Engine rev limiters have been reduced.
-         Shift light RPM have been updated.
-         These cars now report brake pressure bias in the garage which matches with the dcBrakeBias value in telemetry.
-         This does not match the In Car Black Box, though. Not sure what iRacing is trying to do. Will wait and see.
-       - Changed the InGarage widget to use the new variable, IsGarageVisible that's in the telemetry.
-         It is faster and works even if you're not driving in a team event (according to the iRacing release notes).
-       - NASCAR Cup Series Gen 4 Chevrolet
-
-1.20_Build_BETA-2023.01.15
-
-    1. Added content from iRacing's December 2022 build and patches as of January 13, 2023.
-       - BMW M Hybrid V8
-       - Mercedes-AMG W13 E Performance
-       - Toyota GR86
-       - Lincoln Speedway
-       - Circuit de Nevers Magny-Cours
-       - Daytona Rallycross No Joker versions of Long and Short
-       - [Legacy] Phoenix Raceway - 2008 Rallycross No Joker
-    
-    2. Fixed issue where it as not detecting if SRA was already running and starting another instance.
-       
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
 ------------------------------------------------------------------------------------------------------

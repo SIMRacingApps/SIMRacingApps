@@ -2,7 +2,30 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2024 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.21_Build_2024.01.21
+Version: 1.22_Build_BETA-2024.03.16
+    1. Algarve International Circuit
+    2. Kokomo Speedway, A new track config, "Tires Out". The original track config has been named "Tires In".
+    3. Lime Rock Park, A new track config, School.
+    4. Millbridge Speedway
+    5. Misano World Circuit Marco Simoncelli
+    6. Sonoma Raceway, The track configurations formerly known as Cup and Cup Historic 
+       have been renamed to NASCAR Long and NASCAR Short respectively.
+    7. Dirt Micro Sprint (2 models Winged and Non-Winged)
+    8. SRX
+    9. Super Formula Lights
+    10. Pit Command widget to show Tire Compounds on cars updated for DRY, WET compounds
+        - The IMSA GT3 Class stable of cars (Audi R8 LMS EVO II GT3,BMW M4 GT3, Ferrari 296 GT3, Lamborghini Huracan GT3 EVO, Mercedes-AMG GT3 2020, and Porsche 911 GT3 R (992))
+        - The GTP Class stable of cars (Acura ARX-06 GTP, BMW M Hybrid V8, Cadillac V-Series.R GTP, and Porsche 963 GTP)
+        - Toyota GR86
+        - Dallara P217
+        - FIA F4
+        - Super Formula Lights
+    11. Rain Support
+        - Added Precipitation Percentage to the WeatherInfo widget when raining.
+        - New API /Track/Condition to return the state of the track as reported by the SIM.
+        - Updated the TrackMap, CrewChief Apps with the Track Condition.
+
+1.21_Build_2024.01.21
     1. Fixed #274 (https://github.com/SIMRacingApps/SIMRacingApps/issues/274)
        Mangy-Cours track map Finish Line in wrong place.
        
