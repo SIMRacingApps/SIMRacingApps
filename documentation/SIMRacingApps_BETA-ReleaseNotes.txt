@@ -6,7 +6,13 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.22_Build_BETA-2024.03.16
+Version: 1.22_Build_BETA-2024.04.02
+    1. New widget TireCompound for viewing selected compound and changing it as desired. 
+       Added it to the CrewChief, PitCommander and Dash-Minimum apps.
+    2. Two new “Outlaw” models have been added for the Dirt Micro Sprint Car!
+    3. Tire Compounds updated for Ford GT GT3 and the McLaren MP4-12C GT3 to include Wet tires.
+
+1.22_Build_BETA-2024.03.16
     1. Algarve International Circuit
     2. Kokomo Speedway, A new track config, "Tires Out". The original track config has been named "Tires In".
     3. Lime Rock Park, A new track config, School.
@@ -29,7 +35,7 @@ Version: 1.22_Build_BETA-2024.03.16
         - New API /Track/Condition to return the state of the track as reported by the SIM.
         - Updated the TrackMap, CrewChief Apps with the Track Condition.
         
-
+================
 Notes from iRacing's Release Notes to be considered in next BETA cycle:
     x. Rain Telemetry variables and data have been added!
         - Session string WeekendInfo:TrackWeatherType: extended to cover dynamic weather.
@@ -46,9 +52,6 @@ Notes from iRacing's Release Notes to be considered in next BETA cycle:
         - Added "WeatherDeclaredWet" telemetry variable, this is set to true when the marshal allows use of rain tires.
           - "WeatherDeclaredWet": 1
           - Possibly use is to gray out wet tires from being selected.
-    x. The Tire Compound change command has been added to the IRSDK.
-        Macro support for tire types, #tc 1.
-        Possibly add buttons on the PitCommander widget to select tire compound. David Tucker yet to announce API logic.
     
 ------------------------------------------------------------------------------------------------------
 ---                    Configuration Tips                                                          ---
