@@ -6,10 +6,32 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.22_Build_BETA-2024.04.02
+Version: 1.22_Build_BETA-2024.06.10
+    1. Reverted admin commands back to using numbers and added the commands to the end of the settings with their default values.
+    2. Added content from iRacing's June 2024 build.
+       - Circuito de Navarra (3 configs)
+       - Oswego Speedway (2 configs, Dirt Oval coming soon!)
+       - Sachsenring
+       - Indianapolis Motor Speedway (Oval) [NASCAR version]
+       - Chevrolet Corvette Z06 GT3.R
+       - Ford Mustang GT3
+       - Street Stock (Casino, Eagle)
+       - Ten Newly Rain-Ready Vehicles
+         - Aston Martin Vantage GT4
+         - BMW M4 GT4
+         - McLaren 570S GT4
+         - Mercedes-AMG GT4
+         - Porsche 718 Cayman GT4 Clubsport MR
+         - Chevrolet Corvette Z06 GT3.R
+         - Ford Mustang GT3
+         - Global Mazda MX-5 Cup
+         - Ligier JS P320
+         - Porsche 911 GT3 Cup (992) - Shift lamps have been adjusted
+    
+1.22_Build_BETA-2024.04.02
     1. New widget TireCompound for viewing selected compound and changing it as desired. 
        Added it to the CrewChief, PitCommander and Dash-Minimum apps.
-    2. Two new “Outlaw” models have been added for the Dirt Micro Sprint Car!
+    2. Two new ï¿½Outlawï¿½ models have been added for the Dirt Micro Sprint Car!
     3. Tire Compounds updated for Ford GT GT3 and the McLaren MP4-12C GT3 to include Wet tires.
 
 1.22_Build_BETA-2024.03.16
