@@ -2,29 +2,7 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2024 Jeffrey Gilliam
 ---------------------------
 
-    1. Reverted admin commands back to using numbers and added the commands to the end of the settings with their default values.
-    2. Added content from iRacing's June 2024 build.
-       - Circuito de Navarra (3 configs)
-       - Oswego Speedway (2 configs, Dirt Oval coming soon!)
-       - Sachsenring
-       - Indianapolis Motor Speedway (Oval) [NASCAR version]
-       - Chevrolet Corvette Z06 GT3.R
-       - Ford Mustang GT3
-       - Street Stock (Casino, Eagle)
-       - Ten Newly Rain-Ready Vehicles
-         - Aston Martin Vantage GT4
-         - BMW M4 GT4
-         - McLaren 570S GT4
-         - Mercedes-AMG GT4
-         - Porsche 718 Cayman GT4 Clubsport MR
-         - Chevrolet Corvette Z06 GT3.R
-         - Ford Mustang GT3
-         - Global Mazda MX-5 Cup
-         - Ligier JS P320
-         - Porsche 911 GT3 Cup (992)
-
-
-Version: 1.22_Build_BETA-2024.06.10
+Version: 1.22_Build_BETA-2024.09.14
     1. Algarve International Circuit
     2. Kokomo Speedway, A new track config, "Tires Out". The original track config has been named "Tires In".
     3. Lime Rock Park, A new track config, School.
@@ -34,7 +12,7 @@ Version: 1.22_Build_BETA-2024.06.10
        have been renamed to NASCAR Long and NASCAR Short respectively.
     7. Dirt Micro Sprint (4 models Winged and Non-Winged, Outlaw)
     8. Circuito de Navarra (3 configs)
-    9. Oswego Speedway (2 configs, Dirt Oval coming soon!)
+    9. Oswego Speedway (2 configs, Dirt Oval)
     10. Sachsenring
     11. New Track Configuration: Indianapolis Motor Speedway (Oval) [NASCAR version]
     12. SRX
@@ -49,8 +27,18 @@ Version: 1.22_Build_BETA-2024.06.10
     18. New widget TireCompound for viewing selected compound and changing it as desired. 
         Added it to the CrewChief, PitCommander and Dash-Minimum apps.
     19. Pit Command widget to show Tire Compounds on cars updated for DRY, WET compounds
-        - The IMSA GT3 Class stable of cars (Audi R8 LMS EVO II GT3,BMW M4 GT3, Ferrari 296 GT3, Ford GT GT3, Lamborghini Huracan GT3 EVO, Mercedes-AMG GT3 2020, McLaren MP4-12C, and Porsche 911 GT3 R (992))
-        - The GTP Class stable of cars (Acura ARX-06 GTP, BMW M Hybrid V8, Cadillac V-Series.R GTP, and Porsche 963 GTP)
+        - Audi R8 LMS EVO II GT3
+        - BMW M4 GT3
+        - Ferrari 296 GT3
+        - Ford GT GT3
+        - Lamborghini Huracan GT3 EVO
+        - Mercedes-AMG GT3 2020
+        - McLaren MP4-12C
+        - Porsche 911 GT3 R (992
+        - Acura ARX-06 GTP
+        - BMW M Hybrid V8
+        - Cadillac V-Series.R GTP
+        - Porsche 963 GTP
         - Toyota GR86
         - Dallara P217
         - FIA F4
@@ -65,7 +53,18 @@ Version: 1.22_Build_BETA-2024.06.10
         - Global Mazda MX-5 Cup
         - Ligier JS P320
         - Porsche 911 GT3 Cup (992)
+        - Mustang FR500S
+        - Renault Clio
+        - McLaren 720S GT3 EVO
+        - BMW M4 G82 GT4
     20. Reverted admin commands back to using numbers and added the commands to the end of the settings with their default values.
+    21. Content from iRacing's Sept. 2024 builds
+       - McLaren 720S GT3 EVO (replacing McLaren MP4-12C GT3)
+       - BMW M4 G82 GT4
+       - Mini Stock [FREE!]
+       - Dirt Mini Stock [FREE!]
+       - Cadwell Park Circuit [4 configs]
+       - Circuit de Spa-Francorchamps 2024 Rescan [4 configs]
 
 1.21_Build_2024.01.21
     1. Fixed #274 (https://github.com/SIMRacingApps/SIMRacingApps/issues/274)

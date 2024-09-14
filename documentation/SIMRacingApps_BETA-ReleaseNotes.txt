@@ -6,7 +6,22 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.22_Build_BETA-2024.06.10
+Version: 1.22_Build_BETA-2024.09.14
+    1. Added iRacing content from Sept 2024 builds
+       - Cadwell Park Circuit [4 configs]
+       - Circuit de Spa-Francorchamps 2024 Rescan [4 configs]
+       - Circuit Zolder (Art Update)
+       - McLaren 720S GT3 EVO (replacing McLaren MP4-12C GT3)
+       - BMW M4 G82 GT4
+       - Mini Stock [FREE!]
+       - Dirt Mini Stock [FREE!]
+       - 8 newly Rain-Ready Vehicles (TCR Class Cars, Mustang FR500S, Renault Clio, McLaren 720S GT3 EVO, and BMW M4 G82 GT4)
+       
+1.22_Build_BETA-2024.06.10
+    1. Added content from iRacing's July 2024 build.
+       - Oswego Speedway (Dirt Oval)
+
+1.22_Build_BETA-2024.06.10
     1. Reverted admin commands back to using numbers and added the commands to the end of the settings with their default values.
     2. Added content from iRacing's June 2024 build.
        - Circuito de Navarra (3 configs)
@@ -31,7 +46,7 @@ Version: 1.22_Build_BETA-2024.06.10
 1.22_Build_BETA-2024.04.02
     1. New widget TireCompound for viewing selected compound and changing it as desired. 
        Added it to the CrewChief, PitCommander and Dash-Minimum apps.
-    2. Two new �Outlaw� models have been added for the Dirt Micro Sprint Car!
+    2. Two new Outlaw models have been added for the Dirt Micro Sprint Car!
     3. Tire Compounds updated for Ford GT GT3 and the McLaren MP4-12C GT3 to include Wet tires.
 
 1.22_Build_BETA-2024.03.16
