@@ -2,7 +2,7 @@ SIMRacingApps Release Notes
 Copyright (C) 2015 - 2024 Jeffrey Gilliam
 ---------------------------
 
-Version: 1.22_Build_BETA-2024.09.14
+Version: 1.22_Build_2024.10.31
     1. Algarve International Circuit
     2. Kokomo Speedway, A new track config, "Tires Out". The original track config has been named "Tires In".
     3. Lime Rock Park, A new track config, School.

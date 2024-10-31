@@ -6,7 +6,7 @@ For a complete list of issues completed in this version goto
 and click on either open or closed. Be sure to look at the date closed
 and download the BETA released after that date.
 
-Version: 1.22_Build_BETA-2024.09.14
+Version: 1.22_Build_BETA-2024.09.27
     1. Added iRacing content from Sept 2024 builds
        - Cadwell Park Circuit [4 configs]
        - Circuit de Spa-Francorchamps 2024 Rescan [4 configs]
